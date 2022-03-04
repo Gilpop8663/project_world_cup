@@ -26,6 +26,7 @@ export default function Header({ isLoggedIn }: IHeader) {
     <Container>
       <Link to="/">홈</Link>
       <Link to="/result">결과 보기</Link>
+      <Link to="/make">월드컵 생성하기</Link>
       {!isLoggedIn && <Link to="/login">로그인</Link>}
       {!isLoggedIn && <Link to="/sign-up">회원가입</Link>}
       {isLoggedIn && <Logout onClick={onLogoutClick}>로그아웃</Logout>}
