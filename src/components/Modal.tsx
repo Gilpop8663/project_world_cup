@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const ModalBox = styled.div`
   position: fixed;
@@ -34,11 +36,18 @@ const ModalContent = styled.div`
   background: white;
 `;
 export default function Modal({ winner }: any) {
+  const navigate = useNavigate();
+
+  const goToResult = () => {
+    navigate('/result');
+  };
+
   return (
     <ModalBox>
       <Overlay />
       <ModalContent>
         <p>{winner[0].candidate} 우승!!</p>
+        <p onClick={goToResult}>랭킹 보러 가기</p>
       </ModalContent>
     </ModalBox>
   );
