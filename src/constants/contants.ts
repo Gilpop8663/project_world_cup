@@ -10,6 +10,7 @@ export const CREATOR_ID = 'creatorId';
 export const PROFILE_IMG = 'profileImg';
 
 export const COMMENT = 'comment';
+export const WORLD_CUP = 'worldCup';
 
 //GUEST
 export const GUEST_ICON =

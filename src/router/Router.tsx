@@ -4,6 +4,7 @@ import Login from 'pages/login/Login';
 import MakeWorldCup from 'pages/makeWorldCup/MakeWorldCup';
 import Result from 'pages/result/Result';
 import SignUp from 'pages/signUp/SignUp';
+import ViewWorldCup from 'pages/viewWolrdCup/ViewWorldCup';
 import WorldCup from 'pages/worldCup/WorldCup';
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
@@ -18,11 +19,13 @@ export default function Router({ userObj, isLoggedIn }: IRouter) {
     <BrowserRouter>
       <Header isLoggedIn={isLoggedIn} />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/world/:id" element={<WorldCup />} />
+        <Route path="/view" element={<ViewWorldCup />} />
+        <Route path="/result" element={<Result userObj={userObj} />} />
         <Route path="/login" element={<Login />} />
         <Route path="/sign-up" element={<SignUp />} />
         <Route path="/make" element={<MakeWorldCup />} />
-        <Route path="/result" element={<Result userObj={userObj} />} />
+        <Route path="/" element={<Home />} />
       </Routes>
     </BrowserRouter>
   );
