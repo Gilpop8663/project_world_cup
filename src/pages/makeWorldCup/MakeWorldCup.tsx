@@ -2,6 +2,7 @@ import {
   ERROR_MAX,
   ERROR_MIN,
   ERROR_REQUIRED,
+  WORLD_CUP,
   WORLD_CUP_ITEM,
 } from 'constants/contants';
 import { dbService } from '../../firebase';
@@ -11,6 +12,7 @@ import { v4 as uuidv4 } from 'uuid';
 import { useForm } from 'react-hook-form';
 import styled from 'styled-components';
 import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
 
 const Container = styled.div`
   display: flex;
@@ -67,6 +69,7 @@ export default function MakeWorldCup() {
     formState: { errors },
   } = useForm();
   const onSubmit = async (data: any) => {
+    console.log(data);
     let listArr = [
       { id: uuidv4(), candidate: data.worldCupItem1, score: 0 },
       { id: uuidv4(), candidate: data.worldCupItem2, score: 0 },
@@ -85,12 +88,17 @@ export default function MakeWorldCup() {
       { id: uuidv4(), candidate: data.worldCupItem15, score: 0 },
       { id: uuidv4(), candidate: data.worldCupItem16, score: 0 },
     ];
-    const docRef = await addDoc(collection(dbService, 'wolrdCup'), {
-      title: data.title,
-      list: listArr,
-      id: uuidv4(),
-      count: 0,
-    });
+    axios
+      .post('http://localhost:4000/world', {
+        title: data.title,
+        list: listArr,
+        id: uuidv4(),
+        count: 0,
+        createdAt: Date.now(),
+      })
+      .then((res) => console.log(res))
+      .catch((error) => console.log(error));
+
     navigate('/');
   };
 
