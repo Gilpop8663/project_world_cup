@@ -114,14 +114,24 @@ function WorldCup() {
       console.log('결승 리스트', final);
       console.log('4강 리스트', semiFinals);
       console.log('8강 리스트', quarterFinals);
+      console.log('전체리스트', data);
     }
   }, [winner]);
 
   const setDraw = (addNum: number, setListFunction: any, setList: any) => {
     setListFunction((prev: any) => {
       const winnerList = setList[index + addNum];
+      // if (quarterFinals.length < 8) {
+      //   winnerList.score += 1;
+      // } else {
+      //   winnerList.score += 0;
+      // }
+      // winnerList.score += 0.5;
+      console.log(winnerList);
+
       return [...prev, winnerList];
     });
+    setList[index + addNum].score += 1;
   };
 
   const selectCondidate = (addNum: number) => {
