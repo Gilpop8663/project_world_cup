@@ -1,14 +1,22 @@
-import styled from 'styled-components';
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
 import { authService, firebaseApp } from './firebase';
 import Router from 'router/Router';
 
 function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState<any>(authService.currentUser);
+  const [userObj, setUserObj] = useState<object | null>(null);
 
-  console.log(isLoggedIn);
-  return <Router isLoggedIn={isLoggedIn} />;
+  useEffect(() => {
+    authService.onAuthStateChanged((user) => {
+      if (user) {
+        setUserObj(user);
+      } else {
+        setUserObj(null);
+      }
+    });
+  }, []);
+
+  console.log(userObj);
+  return <Router userObj={userObj} isLoggedIn={Boolean(userObj)} />;
 }
 
 export default App;
