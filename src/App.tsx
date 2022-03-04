@@ -1,5 +1,10 @@
 function App() {
-  return <div>hello world</div>;
+  return (
+    <div>
+      <img src="" alt="" />
+      <img src="" alt="" />
+    </div>
+  );
 }
 
 export default App;
