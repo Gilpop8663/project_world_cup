@@ -1,0 +1,69 @@
+{
+  "title": "자바스크립트 월드컵 (16강)",
+  "list": [
+    {
+      "id": 1,
+      "candidate": "1번"
+    },
+    {
+      "id": 2,
+      "candidate": "2번"
+    },
+    {
+      "id": 3,
+      "candidate": "3번"
+    },
+    {
+      "id": 4,
+      "candidate": "4번"
+    },
+    {
+      "id": 5,
+      "candidate": "5번"
+    },
+    {
+      "id": 6,
+      "candidate": "6번"
+    },
+    {
+      "id": 7,
+      "candidate": "7번"
+    },
+    {
+      "id": 8,
+      "candidate": "8번"
+    },
+    {
+      "id": 9,
+      "candidate": "9번"
+    },
+    {
+      "id": 10,
+      "candidate": "10번"
+    },
+    {
+      "id": 11,
+      "candidate": "11번"
+    },
+    {
+      "id": 12,
+      "candidate": "12번"
+    },
+    {
+      "id": 13,
+      "candidate": "13번"
+    },
+    {
+      "id": 14,
+      "candidate": "14번"
+    },
+    {
+      "id": 15,
+      "candidate": "15번"
+    },
+    {
+      "id": 16,
+      "candidate": "16번"
+    }
+  ]
+}
