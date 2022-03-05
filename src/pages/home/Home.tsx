@@ -35,12 +35,12 @@ export default function Home() {
   const [listArr, setListArr] = useState<any>([{}]);
   useEffect(() => {
     axios.get('http://localhost:4000/world').then((res) => {
-      console.log(res);
+      // console.log(res);
       setListArr(res.data);
     });
   }, []);
 
-  console.log(listArr);
+  // console.log(listArr);
   const goToWorldCup = (item: any) => {
     navigate(`/world/${item.id}`);
   };
