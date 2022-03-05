@@ -35,11 +35,11 @@ const ModalContent = styled.div`
   border-radius: 20px;
   background: white;
 `;
-export default function Modal({ winner }: any) {
+export default function Modal({ winner, resultId }: any) {
   const navigate = useNavigate();
 
   const goToResult = () => {
-    navigate('/result');
+    navigate(`/result/${resultId}`);
   };
 
   return (

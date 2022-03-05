@@ -188,7 +188,7 @@ function WorldCup() {
           </RightCandidate>
         </RightSelectBox>
       </SelectContainer>
-      {modal && <Modal winner={winner} />}
+      {modal && <Modal winner={winner} resultId={keyword} />}
     </>
   );
 }

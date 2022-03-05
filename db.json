@@ -6,7 +6,7 @@
         {
           "id": "2f13a751-5ceb-440d-8986-63ad3f19fe35",
           "candidate": "냉면.",
-          "score": 5
+          "score": 21
         },
         {
           "id": "78d1c448-7fc2-4a2c-9177-c8c8561c6851",
@@ -16,7 +16,7 @@
         {
           "id": "07d835cf-ca21-4f28-b884-c01770000361",
           "candidate": "피자.",
-          "score": 3
+          "score": 9
         },
         {
           "id": "b84c6248-acab-4873-b090-5066533d82c4",
@@ -26,7 +26,7 @@
         {
           "id": "13595618-1bd5-46d5-8988-d018d34d1ea1",
           "candidate": "보쌈.",
-          "score": 5
+          "score": 14
         },
         {
           "id": "e8309867-a27a-4555-92c2-9f07c4a1e5f1",
@@ -36,7 +36,7 @@
         {
           "id": "e239e7fa-e50b-45fc-b271-e856a848dfd3",
           "candidate": "비빔밥.",
-          "score": 0
+          "score": 7
         },
         {
           "id": "436179ff-3d41-41fd-a80e-8dd1470dec67",
@@ -46,7 +46,7 @@
         {
           "id": "50076506-4b8f-4fba-aa6a-d45840bc47e6",
           "candidate": "우동.",
-          "score": 0
+          "score": 14
         },
         {
           "id": "df7164d7-b442-4092-a96e-29392e6af048",
@@ -56,32 +56,32 @@
         {
           "id": "791cbda1-492e-4472-a81d-8df780401425",
           "candidate": "초밥.",
-          "score": 0
+          "score": 4
         },
         {
           "id": "f7e48f32-6873-41e1-80c4-96b27d36f9f6",
           "candidate": "돈까스",
-          "score": 5
+          "score": 7
         },
         {
           "id": "0fe37a7c-80f4-4b70-b2fc-72812a10583e",
           "candidate": "스파게티",
-          "score": 1
+          "score": 9
         },
         {
           "id": "fc14dcb5-e781-42cb-9787-de0d9650c16c",
           "candidate": "낙곱새",
-          "score": 3
+          "score": 4
         },
         {
           "id": "452e33d2-d3f0-49f1-84d6-25f07f70ec2d",
           "candidate": "닭발.",
-          "score": 1
+          "score": 5
         },
         {
           "id": "fccf6bed-bdec-476e-94a0-2d8e8980a2dd",
           "candidate": "쫄면.",
-          "score": 2
+          "score": 6
         }
       ],
       "id": "65f5ab74-8ea4-4d9b-b616-69ae8c8a523e",

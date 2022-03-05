@@ -2,6 +2,7 @@ import Header from 'components/Header';
 import Home from 'pages/home/Home';
 import Login from 'pages/login/Login';
 import MakeWorldCup from 'pages/makeWorldCup/MakeWorldCup';
+import Ranking from 'pages/ranking/Ranking';
 import Result from 'pages/result/Result';
 import SignUp from 'pages/signUp/SignUp';
 import ViewWorldCup from 'pages/viewWolrdCup/ViewWorldCup';
@@ -21,7 +22,8 @@ export default function Router({ userObj, isLoggedIn }: IRouter) {
       <Routes>
         <Route path="/world/:id" element={<WorldCup />} />
         <Route path="/view" element={<ViewWorldCup />} />
-        <Route path="/result" element={<Result userObj={userObj} />} />
+        {/* <Route path="/result" element={<Result userObj={userObj} />} /> */}
+        <Route path="/result/:id" element={<Ranking />} />
         <Route path="/login" element={<Login />} />
         <Route path="/sign-up" element={<SignUp />} />
         <Route path="/make" element={<MakeWorldCup />} />
