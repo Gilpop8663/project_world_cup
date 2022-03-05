@@ -40,6 +40,7 @@ export default function Home() {
     });
   }, []);
 
+  console.log(listArr);
   const goToWorldCup = (item: any) => {
     navigate(`/world/${item.id}`);
   };

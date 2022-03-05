@@ -1,708 +1,271 @@
 {
   "world": [
     {
-      "title": "배달음식 월드컵",
+      "title": "음식월드컵",
       "list": [
         {
-          "id": "2f13a751-5ceb-440d-8986-63ad3f19fe35",
-          "candidate": "냉면.",
-          "score": 21
-        },
-        {
-          "id": "78d1c448-7fc2-4a2c-9177-c8c8561c6851",
-          "candidate": "치킨. ",
-          "score": 0
-        },
-        {
-          "id": "07d835cf-ca21-4f28-b884-c01770000361",
-          "candidate": "피자.",
-          "score": 9
-        },
-        {
-          "id": "b84c6248-acab-4873-b090-5066533d82c4",
-          "candidate": "족발.",
-          "score": 0
-        },
-        {
-          "id": "13595618-1bd5-46d5-8988-d018d34d1ea1",
-          "candidate": "보쌈.",
-          "score": 14
-        },
-        {
-          "id": "e8309867-a27a-4555-92c2-9f07c4a1e5f1",
-          "candidate": "떡볶이.",
-          "score": 0
-        },
-        {
-          "id": "e239e7fa-e50b-45fc-b271-e856a848dfd3",
-          "candidate": "비빔밥.",
-          "score": 7
-        },
-        {
-          "id": "436179ff-3d41-41fd-a80e-8dd1470dec67",
-          "candidate": "육회.",
-          "score": 3
-        },
-        {
-          "id": "50076506-4b8f-4fba-aa6a-d45840bc47e6",
-          "candidate": "우동.",
-          "score": 14
-        },
-        {
-          "id": "df7164d7-b442-4092-a96e-29392e6af048",
-          "candidate": "라멘.",
-          "score": 2
-        },
-        {
-          "id": "791cbda1-492e-4472-a81d-8df780401425",
-          "candidate": "초밥.",
-          "score": 4
-        },
-        {
-          "id": "f7e48f32-6873-41e1-80c4-96b27d36f9f6",
-          "candidate": "돈까스",
-          "score": 7
-        },
-        {
-          "id": "0fe37a7c-80f4-4b70-b2fc-72812a10583e",
-          "candidate": "스파게티",
-          "score": 9
-        },
-        {
-          "id": "fc14dcb5-e781-42cb-9787-de0d9650c16c",
-          "candidate": "낙곱새",
-          "score": 4
-        },
-        {
-          "id": "452e33d2-d3f0-49f1-84d6-25f07f70ec2d",
-          "candidate": "닭발.",
+          "id": "d1b3a754-4db4-4fdc-9d6d-d70e155fa57e",
+          "candidate": "양곱창",
           "score": 5
         },
         {
-          "id": "fccf6bed-bdec-476e-94a0-2d8e8980a2dd",
-          "candidate": "쫄면.",
-          "score": 6
-        }
-      ],
-      "id": "65f5ab74-8ea4-4d9b-b616-69ae8c8a523e",
-      "count": 0,
-      "createdAt": 1646459290340
-    },
-    {
-      "title": "test1",
-      "list": [
-        {
-          "id": "65bae69d-fa0c-44b7-921f-afca1f953380",
-          "candidate": "khj",
-          "score": 0
-        },
-        {
-          "id": "1151ecf8-147c-4afc-aa72-bd8146c59e43",
-          "candidate": "hjk",
-          "score": 0
-        },
-        {
-          "id": "d83e32c7-307e-4bb2-8f7e-c9c755ac273e",
-          "candidate": "hjk",
-          "score": 0
-        },
-        {
-          "id": "478d2cda-a455-4acd-a59a-2802018c6735",
-          "candidate": "hkjkhj",
-          "score": 0
-        },
-        {
-          "id": "ef7f5eda-2b35-4a43-a681-1692b28bd679",
-          "candidate": "hk1",
-          "score": 0
-        },
-        {
-          "id": "e0e4ba89-5e2e-42d1-ac99-19a92ead17aa",
-          "candidate": "hkj",
-          "score": 0
-        },
-        {
-          "id": "9bea6464-9334-4e92-a9d0-4a81ee590ebd",
-          "candidate": "hkj",
-          "score": 0
-        },
-        {
-          "id": "befb21a3-5289-446d-b097-c9a589494490",
-          "candidate": "kjh",
-          "score": 0
-        },
-        {
-          "id": "e8618860-8636-47ef-90eb-fdc5fdc092ae",
-          "candidate": "jkh",
-          "score": 0
-        },
-        {
-          "id": "e0539c1c-353c-4a39-9541-2c77e1e18a8a",
-          "candidate": "jkh",
-          "score": 0
-        },
-        {
-          "id": "8dc60c6a-095f-48da-82df-aba4a80f54d4",
-          "candidate": "kjhkj",
-          "score": 0
-        },
-        {
-          "id": "8a843cfc-4c07-4107-b017-18d033360d31",
-          "candidate": "hkjh",
-          "score": 0
-        },
-        {
-          "id": "2d488336-0e52-43eb-b31b-f24c18a02836",
-          "candidate": "kjh",
-          "score": 0
-        },
-        {
-          "id": "0b18da0f-9200-4a4e-af53-472ebdc48e99",
-          "candidate": "jkh",
-          "score": 0
-        },
-        {
-          "id": "c1c27d7b-57b9-413d-ba66-4a946f23e630",
-          "candidate": "jkh",
-          "score": 0
-        },
-        {
-          "id": "87dd0ba0-0c1f-4707-9f60-2793b38f5f53",
-          "candidate": "jkh",
-          "score": 0
-        }
-      ],
-      "id": "349da069-e820-45d1-87c2-b577611e33e5",
-      "count": 0,
-      "createdAt": 1646460600166
-    },
-    {
-      "title": "test2",
-      "list": [
-        {
-          "id": "b2ccb780-dbf4-4bb3-b70d-bff5c269bf1f",
-          "candidate": "h8hui",
-          "score": 0
-        },
-        {
-          "id": "7aca1346-1c52-4140-8d56-870000713c74",
-          "candidate": "iuh",
-          "score": 0
-        },
-        {
-          "id": "96e77e1a-8c8a-4bda-aa97-15bb503719ad",
-          "candidate": "iuh",
-          "score": 0
-        },
-        {
-          "id": "ba9c0908-1a93-4b36-b20c-225768667961",
-          "candidate": "hui",
-          "score": 0
-        },
-        {
-          "id": "d96b9696-26ca-4309-aeab-eb0081cfd4ff",
-          "candidate": "hiu",
-          "score": 0
-        },
-        {
-          "id": "864536fa-73c0-4793-a478-b8be3c9beaea",
-          "candidate": "hiu",
-          "score": 0
-        },
-        {
-          "id": "321e84d1-8443-407c-8fd5-ffff3aa20c85",
-          "candidate": "hiu",
-          "score": 0
-        },
-        {
-          "id": "da143d38-0b52-42cf-bae3-deb6eb5bec85",
-          "candidate": "uhi",
-          "score": 0
-        },
-        {
-          "id": "55e437b0-2754-47ac-b5bb-0b73b2ba44f5",
-          "candidate": "hiu",
-          "score": 0
-        },
-        {
-          "id": "0d1f82af-0056-4cf7-84a1-25ae3d88d39e",
-          "candidate": "hiu",
-          "score": 0
-        },
-        {
-          "id": "244e1895-b53a-4243-a9dd-4eb98a313d85",
-          "candidate": "hiu",
-          "score": 0
-        },
-        {
-          "id": "01e19349-45bf-432c-b2e9-ecd220dee519",
-          "candidate": "ihu",
-          "score": 0
-        },
-        {
-          "id": "38aa5062-bfd4-441a-8664-df34095affc8",
-          "candidate": "iuh",
-          "score": 0
-        },
-        {
-          "id": "ccaa6dea-f338-424f-ad4a-8a09c0a5bcc7",
-          "candidate": "iuh",
-          "score": 0
-        },
-        {
-          "id": "cee943cd-5a26-477c-ad70-be7afb47d1e6",
-          "candidate": "hiu",
-          "score": 0
-        },
-        {
-          "id": "1c25f26f-a3ac-4983-ac79-4600c824dd73",
-          "candidate": "ihu",
-          "score": 0
-        }
-      ],
-      "id": "741038b1-7e82-4d2f-9b57-766c8f377e7f",
-      "count": 0,
-      "createdAt": 1646460617818
-    },
-    {
-      "title": "test3",
-      "list": [
-        {
-          "id": "71ac8769-4e66-4168-af4b-2758722b0b87",
-          "candidate": "njk",
-          "score": 0
-        },
-        {
-          "id": "1cc63ee6-c55d-432a-b457-4980c5da1e69",
-          "candidate": "njk",
-          "score": 0
-        },
-        {
-          "id": "8f6b4f6c-d2cb-45c5-964c-00eb6a718db7",
-          "candidate": "njk",
-          "score": 0
-        },
-        {
-          "id": "c8b0247f-3f72-4132-862e-77910782367d",
-          "candidate": "jnk",
-          "score": 0
-        },
-        {
-          "id": "c342a66d-c2a0-4edb-a0aa-c9dc5a8e5363",
-          "candidate": "njk",
-          "score": 0
-        },
-        {
-          "id": "02647b8d-6ed3-4cc6-b707-5302d3cd828d",
-          "candidate": "nkj",
-          "score": 0
+          "id": "8fc8f825-8b0a-45d4-b498-012fdb633e10",
+          "candidate": "소곱창",
+          "score": 8
         },
         {
-          "id": "acdf9890-6d27-4381-ba15-b3136e9b8bd3",
-          "candidate": "123",
-          "score": 0
+          "id": "269a85ff-e0d9-4438-a5d7-b91fb138eaba",
+          "candidate": "순댓국",
+          "score": 5
         },
         {
-          "id": "64c2b957-659d-4009-9677-0b4dc9b1a88b",
-          "candidate": "jkjnk",
-          "score": 0
+          "id": "86aec635-bbac-4d0e-a21f-0fa6ce7a4156",
+          "candidate": "칼국수",
+          "score": 12
         },
         {
-          "id": "06acb20a-089d-4fcf-8be6-775ce909971b",
-          "candidate": "j213",
-          "score": 0
+          "id": "af49b2e5-08cc-4b25-9a9b-93cec88033a5",
+          "candidate": "김치국",
+          "score": 5
         },
         {
-          "id": "17f12f80-2c1b-4dea-b910-8989f4cc7b3a",
-          "candidate": "njn",
-          "score": 0
+          "id": "1f138893-15d2-40ef-bf87-4310f45d6a66",
+          "candidate": "호박찜",
+          "score": 5
         },
-        {
-          "id": "74ac96d5-ee4a-409b-94cc-7fc40ca52f55",
-          "candidate": "kjnk",
-          "score": 0
-        },
-        {
-          "id": "4e3854cc-c2c1-4cd2-a771-61007a8371ef",
-          "candidate": "jkn",
-          "score": 0
-        },
-        {
-          "id": "6e27c650-aa24-458c-b7ba-c61da15562b0",
-          "candidate": "kjn",
-          "score": 0
-        },
-        {
-          "id": "ce7fd1d4-87bd-48c9-8003-7cdf5714e915",
-          "candidate": "knj",
-          "score": 0
-        },
-        {
-          "id": "326146a1-73d0-43fb-a4ee-c6d689f12ade",
-          "candidate": "njk",
-          "score": 0
-        },
-        {
-          "id": "473244ab-0568-43f7-b82c-520f9b1d5d14",
-          "candidate": "kjn",
-          "score": 0
-        }
-      ],
-      "id": "6b29c508-fa33-494e-ba64-e1ad2a7c5430",
-      "count": 0,
-      "createdAt": 1646460630266
-    },
-    {
-      "title": "test4",
-      "list": [
-        {
-          "id": "b934e2b1-76eb-4729-9532-8cb20e4027c4",
-          "candidate": "njk",
-          "score": 0
-        },
-        {
-          "id": "624e7914-b6e2-4213-882a-f1d722af5f2d",
-          "candidate": "njk",
-          "score": 0
-        },
-        {
-          "id": "83026851-1f96-43ec-879e-986025da3036",
-          "candidate": "jkn",
-          "score": 0
-        },
-        {
-          "id": "2af70d96-0ace-4786-a628-be8573540295",
-          "candidate": "jnk",
-          "score": 0
-        },
-        {
-          "id": "2c4da04d-cced-411f-b066-948b6d5ceb44",
-          "candidate": "jkn",
-          "score": 0
-        },
-        {
-          "id": "414b0fe4-5339-41ed-9029-6b83b59bec41",
-          "candidate": "jkn",
-          "score": 0
-        },
-        {
-          "id": "8b64580a-bdfe-4a82-8849-6ed6cf5f7817",
-          "candidate": "jnk",
-          "score": 0
-        },
-        {
-          "id": "aade940a-92c1-4ed3-b63e-66c9d9f1c70f",
-          "candidate": "jkn",
-          "score": 0
-        },
-        {
-          "id": "102e5504-2261-40fe-8107-a375a89a4c73",
-          "candidate": "jkn",
-          "score": 0
-        },
-        {
-          "id": "17cd306f-4dfb-4050-9a31-fb931388184b",
-          "candidate": "jnk",
-          "score": 0
-        },
-        {
-          "id": "13f9e977-c17f-4af6-aeb7-f1bd9b9003c4",
-          "candidate": "jnk",
-          "score": 0
-        },
-        {
-          "id": "7e08a983-ba03-48b4-a476-88bf6f5c4bd6",
-          "candidate": "kjn",
-          "score": 0
-        },
-        {
-          "id": "f8238928-d73e-4d94-b319-a7473e075bdc",
-          "candidate": "jnk",
-          "score": 0
-        },
-        {
-          "id": "341d6533-7888-41fc-b926-133eb7ce4d35",
-          "candidate": "jkn",
-          "score": 0
-        },
-        {
-          "id": "c5b32529-1f4a-493d-9cf2-2ebb06bef610",
-          "candidate": "jkn",
-          "score": 0
-        },
-        {
-          "id": "5ca76b90-d63e-45db-b716-c3be09732ce4",
-          "candidate": "jna",
-          "score": 0
-        }
-      ],
-      "id": "bffef248-befa-467b-ab71-119a9701df7e",
-      "count": 0,
-      "createdAt": 1646460640051
-    },
-    {
-      "title": "test5",
-      "list": [
-        {
-          "id": "26479e9f-9bef-46b2-8e45-fd1108d2e87f",
-          "candidate": "njkknj",
-          "score": 0
-        },
-        {
-          "id": "98e09f18-1f29-4d91-8810-31faedda100f",
-          "candidate": "kjn",
-          "score": 0
-        },
-        {
-          "id": "e1893b06-eedc-4c12-af1b-df90113119a2",
-          "candidate": "kjn",
-          "score": 0
-        },
-        {
-          "id": "0cf4f131-436b-4c8a-86de-dceceaf5eeb3",
-          "candidate": "knj",
-          "score": 0
-        },
-        {
-          "id": "59e96903-4511-40ce-a628-65844ac686e2",
-          "candidate": "jknjk",
-          "score": 0
-        },
-        {
-          "id": "fbda1ae8-f9f2-4be0-ab5d-05f0093e8896",
-          "candidate": "nkj",
-          "score": 0
-        },
-        {
-          "id": "dc20c360-d5fe-4d8f-82af-c415a4599943",
-          "candidate": "njk",
-          "score": 0
-        },
-        {
-          "id": "45be70c0-6d44-429f-9d42-75469d5a8f83",
-          "candidate": "njk",
-          "score": 0
-        },
-        {
-          "id": "c9bcc0f2-5d79-4c86-aa5e-5f8669919541",
-          "candidate": "knj",
-          "score": 0
-        },
-        {
-          "id": "56e6b21f-a4a0-4c91-802f-33ec00eb24d6",
-          "candidate": "jknkjn",
-          "score": 0
-        },
-        {
-          "id": "52be0bed-00c1-465c-b837-acd5802bc103",
-          "candidate": "knj",
-          "score": 0
-        },
-        {
-          "id": "4a57f103-9ee3-41bc-bcc8-faeef8a1c021",
-          "candidate": "nkj",
-          "score": 0
-        },
-        {
-          "id": "a69640f9-3886-4398-a21c-96d1c241a8f0",
-          "candidate": "nkj",
-          "score": 0
-        },
-        {
-          "id": "0582ff93-c434-432e-aaa2-62654fa91e78",
-          "candidate": "nkj",
-          "score": 0
-        },
-        {
-          "id": "1065c3ce-9999-4a88-9d02-24fa6221629b",
-          "candidate": "nkjnjkjk",
-          "score": 0
-        },
-        {
-          "id": "8e8e04d2-9eae-4174-b35d-d95449a5dc0e",
-          "candidate": "njk",
-          "score": 0
-        }
-      ],
-      "id": "449bc0b7-2ea1-4f2a-b112-ccc43d0e7cd6",
-      "count": 0,
-      "createdAt": 1646460648514
-    },
-    {
-      "title": "test7",
-      "list": [
         {
-          "id": "7ed3b534-b4ce-4b80-923e-e2887e7a3608",
-          "candidate": "jnk",
+          "id": "d4cb8a8f-ffcf-4b7f-8acd-4505d969a4e2",
+          "candidate": "김치돼지갈비찜",
           "score": 4
         },
         {
-          "id": "c3f3e46d-fd3c-434f-9be5-93bae442b6e3",
-          "candidate": "nkj",
-          "score": 0
+          "id": "7468db7b-2dfb-4a93-98aa-3927faab175e",
+          "candidate": "비빔밥",
+          "score": 14
         },
         {
-          "id": "34acb43f-b13d-4333-b903-5bd980eeab55",
-          "candidate": "njk",
-          "score": 1
+          "id": "bceadd0e-1ea4-4fe6-a559-b50f9f8797d2",
+          "candidate": "돼지갈비",
+          "score": 7
         },
         {
-          "id": "f135b6fd-7b84-413f-b356-bf8a66bfbbaf",
-          "candidate": "jknn",
-          "score": 0
+          "id": "a04f735c-f78f-44e8-89e3-9762be3f209d",
+          "candidate": "삼겹살",
+          "score": 5
         },
         {
-          "id": "104beb77-f7db-4dd3-a9ac-1e276116c1d2",
-          "candidate": "kj23",
+          "id": "7c7156bd-a75e-4a89-a0a9-8da79c4684b0",
+          "candidate": "된장찌개",
           "score": 2
         },
         {
-          "id": "553b8df2-7b72-47f3-af1e-e67a84dce617",
-          "candidate": "njknjk",
-          "score": 0
+          "id": "ced30966-1056-4e6f-8136-774973be232d",
+          "candidate": "콩나물국",
+          "score": 12
         },
         {
-          "id": "9440e475-8aed-4008-bd56-971fc13ef80d",
-          "candidate": "kn3",
+          "id": "19a54ba5-794a-4359-8477-51392e78af7f",
+          "candidate": "콩자반",
+          "score": 2
+        },
+        {
+          "id": "0e7348b8-6c50-42f6-a68b-1b844eddf9ba",
+          "candidate": "두부부침",
+          "score": 8
+        },
+        {
+          "id": "db300846-4a04-4a0c-8be0-73cc5a778349",
+          "candidate": "코다리찜",
+          "score": 5
+        },
+        {
+          "id": "6b8caa81-5fe8-4acd-9536-05cd81afcc77",
+          "candidate": "불고기",
+          "score": 21
+        }
+      ],
+      "id": "329fbe57-a354-4d22-8614-1f205b5fb1ac",
+      "count": 0,
+      "createdAt": 1646472577229,
+      "comments": []
+    },
+    {
+      "title": "hk31232",
+      "list": [
+        {
+          "id": "68348674-41e3-4494-ac0b-04f5c56e9869",
+          "candidate": "jkh",
+          "score": 5
+        },
+        {
+          "id": "bd19a305-21da-4711-96ef-a4db2a963ad7",
+          "candidate": "khj",
           "score": 1
         },
         {
-          "id": "0e409de6-1557-4d85-8045-f4be341fbd14",
-          "candidate": "jknj",
-          "score": 0
+          "id": "5961776b-db8d-4952-97e1-f750dd2c1bfa",
+          "candidate": "jk321",
+          "score": 1
         },
         {
-          "id": "1fd95fb7-6c1f-4e1d-847d-eec31d4c4b4a",
-          "candidate": "knj",
+          "id": "52f402de-6701-4fc3-9985-f87e55c42f40",
+          "candidate": "jhk",
+          "score": 4
+        },
+        {
+          "id": "9548b20e-6517-41c8-980d-5805e80d2e87",
+          "candidate": "hjk",
+          "score": 2
+        },
+        {
+          "id": "022a5902-aa2a-43ad-a734-254c1e4e47ba",
+          "candidate": "kjhk",
+          "score": 2
+        },
+        {
+          "id": "534b927b-4ae9-4139-8aaf-c9d03a7b35c6",
+          "candidate": "hjkhj",
+          "score": 1
+        },
+        {
+          "id": "d023dfa2-866f-4cab-91e3-dc837ba5030f",
+          "candidate": "hj132",
+          "score": 6
+        },
+        {
+          "id": "359945df-a9d8-428e-b0bb-a087235bf3b6",
+          "candidate": "j123",
           "score": 3
         },
         {
-          "id": "2cea5a29-9c32-4a68-bb94-1928aa25e9f5",
-          "candidate": "knj",
-          "score": 0
-        },
-        {
-          "id": "16ed63fc-e620-4d8b-ac5a-f08afe6264b6",
-          "candidate": "knj",
-          "score": 1
-        },
-        {
-          "id": "89040c41-ee4f-46d3-b7f4-202400dd4bd1",
-          "candidate": "n321",
-          "score": 0
-        },
-        {
-          "id": "97a10cde-f812-43c2-a85a-c609475e597c",
-          "candidate": "kknj",
+          "id": "7f3bd6af-700d-4198-a89c-4fda38576259",
+          "candidate": "hjk",
           "score": 2
         },
         {
-          "id": "b42ed0af-25ca-4313-9cb9-5cab7318ac54",
-          "candidate": "njk",
-          "score": 0
-        },
-        {
-          "id": "61adb93f-9dae-4b4d-b39d-dba43970f40f",
-          "candidate": "nj132",
+          "id": "6e2f7ac4-095a-42f2-8211-5d5dcd8b30d9",
+          "candidate": "k123",
           "score": 1
         },
         {
-          "id": "eeb54b13-43e4-4996-80c1-43794d9d69c5",
-          "candidate": "jnk",
-          "score": 0
+          "id": "5adf6fce-1568-45aa-8c15-9362d2eaf59e",
+          "candidate": "hkj",
+          "score": 4
+        },
+        {
+          "id": "a305a07d-71a1-450c-a163-a1d0b4582b93",
+          "candidate": "hjkk",
+          "score": 2
+        },
+        {
+          "id": "3ee21e37-f293-40e4-89d6-579f635621d5",
+          "candidate": "hjkhj",
+          "score": 2
+        },
+        {
+          "id": "65dca3f0-4bea-4a77-8676-c6163445f77a",
+          "candidate": "hkj",
+          "score": 1
+        },
+        {
+          "id": "082a5e51-633e-405a-90ce-054745cfb476",
+          "candidate": "jkh",
+          "score": 8
         }
       ],
-      "id": "8f810f09-599e-4818-8e89-ea0749304781",
+      "id": "9f25ffaa-49f8-4a5f-bd7f-8f7e29fcaaa9",
       "count": 0,
-      "createdAt": 1646460672282
+      "createdAt": 1646472692482,
+      "comments": []
     },
     {
-      "title": "test7",
+      "title": "asd",
       "list": [
         {
-          "id": "7ed3b534-b4ce-4b80-923e-e2887e7a3608",
-          "candidate": "jnk",
+          "id": "f7bfe993-230e-45bd-9500-ef95b6c6e2dd",
+          "candidate": "kjl",
+          "score": 4
+        },
+        {
+          "id": "5e4848d4-1c53-452c-90e1-bd2a7fc41dff",
+          "candidate": "jkljlk",
           "score": 0
         },
         {
-          "id": "c3f3e46d-fd3c-434f-9be5-93bae442b6e3",
-          "candidate": "nkj",
+          "id": "c249e4dd-054b-4707-ad11-9a809d9ece24",
+          "candidate": "jklljk",
+          "score": 1
+        },
+        {
+          "id": "42a58923-250c-4c0a-a4cb-6199b8a705af",
+          "candidate": "jklljk",
           "score": 0
         },
         {
-          "id": "34acb43f-b13d-4333-b903-5bd980eeab55",
-          "candidate": "njk",
+          "id": "16dd532b-88bb-4446-b991-53489c4bcb5c",
+          "candidate": "jlk",
+          "score": 2
+        },
+        {
+          "id": "8b2a8495-9bbc-4993-8576-2d12d69ad826",
+          "candidate": "jks",
           "score": 0
         },
         {
-          "id": "f135b6fd-7b84-413f-b356-bf8a66bfbbaf",
-          "candidate": "jknn",
+          "id": "008f4584-b919-493f-ac20-1a946b0c06a4",
+          "candidate": "ljk",
+          "score": 1
+        },
+        {
+          "id": "24910aaf-85b2-48c8-a583-0ff208c3d0ae",
+          "candidate": "ljk",
           "score": 0
         },
         {
-          "id": "104beb77-f7db-4dd3-a9ac-1e276116c1d2",
-          "candidate": "kj23",
+          "id": "eeac21c1-6328-44a1-831f-f8ec26cd7cc9",
+          "candidate": "jlk",
+          "score": 3
+        },
+        {
+          "id": "7a121ca2-5347-41aa-b3e2-86b264da375a",
+          "candidate": "lkj",
           "score": 0
         },
         {
-          "id": "553b8df2-7b72-47f3-af1e-e67a84dce617",
-          "candidate": "njknjk",
+          "id": "507c4da3-2d87-4590-81a2-8f464949720e",
+          "candidate": "jkll",
+          "score": 1
+        },
+        {
+          "id": "dd726608-71c8-4bd2-aa09-74cb5c61669c",
+          "candidate": "jkj",
           "score": 0
         },
         {
-          "id": "9440e475-8aed-4008-bd56-971fc13ef80d",
-          "candidate": "kn3",
+          "id": "6e0ea4e4-14ca-4c80-8579-c31ba57ccfd4",
+          "candidate": "klkj",
+          "score": 2
+        },
+        {
+          "id": "c392c060-2e15-4c4f-8ba3-11e724b39ad5",
+          "candidate": "jkl",
           "score": 0
         },
         {
-          "id": "0e409de6-1557-4d85-8045-f4be341fbd14",
-          "candidate": "jknj",
-          "score": 0
+          "id": "361b3a20-5c2d-49be-bc85-101af38360a5",
+          "candidate": "jlk",
+          "score": 1
         },
         {
-          "id": "1fd95fb7-6c1f-4e1d-847d-eec31d4c4b4a",
-          "candidate": "knj",
-          "score": 0
-        },
-        {
-          "id": "2cea5a29-9c32-4a68-bb94-1928aa25e9f5",
-          "candidate": "knj",
-          "score": 0
-        },
-        {
-          "id": "16ed63fc-e620-4d8b-ac5a-f08afe6264b6",
-          "candidate": "knj",
-          "score": 0
-        },
-        {
-          "id": "89040c41-ee4f-46d3-b7f4-202400dd4bd1",
-          "candidate": "n321",
-          "score": 0
-        },
-        {
-          "id": "97a10cde-f812-43c2-a85a-c609475e597c",
-          "candidate": "kknj",
-          "score": 0
-        },
-        {
-          "id": "b42ed0af-25ca-4313-9cb9-5cab7318ac54",
-          "candidate": "njk",
-          "score": 0
-        },
-        {
-          "id": "61adb93f-9dae-4b4d-b39d-dba43970f40f",
-          "candidate": "nj132",
-          "score": 0
-        },
-        {
-          "id": "eeb54b13-43e4-4996-80c1-43794d9d69c5",
-          "candidate": "jnk",
+          "id": "04cf9eec-9096-4e34-abef-758d6a96cfa1",
+          "candidate": "jlk",
           "score": 0
         }
       ],
-      "id": "8eb0f9b6-c47d-43e5-a9c7-43a849b86031",
+      "id": "78d36270-a029-457a-9a39-f6c547c80ae2",
       "count": 0,
-      "createdAt": 1646460672282
+      "createdAt": 1646473055851,
+      "comments": []
     }
   ]
 }

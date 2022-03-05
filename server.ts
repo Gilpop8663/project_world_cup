@@ -13,6 +13,8 @@ server.use(
   })
 );
 
+server.use(jsonServer.bodyParser);
+
 server.use(router);
 
 server.listen(port, () => {

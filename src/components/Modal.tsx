@@ -39,7 +39,7 @@ export default function Modal({ winner, resultId }: any) {
   const navigate = useNavigate();
 
   const goToResult = () => {
-    navigate(`/result/${resultId}`);
+    navigate(`/ranking/${resultId}`);
   };
 
   return (

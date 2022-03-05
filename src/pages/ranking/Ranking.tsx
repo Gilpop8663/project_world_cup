@@ -5,21 +5,7 @@ import styled from 'styled-components';
 
 const Container = styled.div`
   width: 100%;
-`;
-
-const RankingContainer = styled.div`
-  background-color: beige;
-  width: 15%;
-`;
-
-const NameContainer = styled.div`
-  background-color: aqua;
-  width: 30%;
-`;
-
-const PercentContainer = styled.div`
-  background-color: green;
-  width: 55%;
+  height: 100%;
 `;
 
 const TitleText = styled.p`
@@ -76,7 +62,7 @@ export default function Ranking() {
   const [data, setData] = useState<any>();
 
   const location = useLocation();
-  const keyword = location.pathname.slice(8);
+  const keyword = location.pathname.slice(9);
 
   useEffect(() => {
     axios
@@ -86,6 +72,7 @@ export default function Ranking() {
 
   console.log(data && data.list);
 
+  if (!data) return null;
   return (
     <Container>
       <TitleWrapper>
@@ -104,20 +91,19 @@ export default function Ranking() {
           </TitleText>
         </PercentTitle>
       </TitleWrapper>
-      {data &&
-        data.list.map((ele: any, idx: number) => (
-          <TitleWrapper key={idx}>
-            <RankingTitle>
-              <TitleText>{idx + 1}위</TitleText>
-            </RankingTitle>
-            <NameTitle>
-              <TitleText>{ele.candidate}</TitleText>
-            </NameTitle>
-            <PercentTitle>
-              <TitleText>{ele.score}</TitleText>
-            </PercentTitle>
-          </TitleWrapper>
-        ))}
+      {data.list.map((ele: any, idx: number) => (
+        <TitleWrapper key={idx}>
+          <RankingTitle>
+            <TitleText>{idx + 1}위</TitleText>
+          </RankingTitle>
+          <NameTitle>
+            <TitleText>{ele.candidate}</TitleText>
+          </NameTitle>
+          <PercentTitle>
+            <TitleText>{ele.score}</TitleText>
+          </PercentTitle>
+        </TitleWrapper>
+      ))}
     </Container>
   );
 }
