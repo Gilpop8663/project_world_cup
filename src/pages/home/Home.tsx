@@ -12,8 +12,8 @@ export default function Home() {
   }, []);
   return (
     <div>
-      {listArr.map((item: any) => (
-        <div key={item.id}>
+      {listArr.map((item: any, idx: number) => (
+        <div key={idx}>
           <Link to={`/world/${item.id}`}>{item.title}</Link>
         </div>
       ))}

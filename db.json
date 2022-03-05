@@ -1,178 +1,92 @@
 {
   "world": [
     {
-      "title": "자바스크립트 월드컵 (16강)",
-      "count": 0,
+      "title": "배달음식 월드컵",
       "list": [
         {
-          "id": 1,
-          "candidate": "1번",
+          "id": "2f13a751-5ceb-440d-8986-63ad3f19fe35",
+          "candidate": "냉면.",
+          "score": 1
+        },
+        {
+          "id": "78d1c448-7fc2-4a2c-9177-c8c8561c6851",
+          "candidate": "치킨. ",
           "score": 0
         },
         {
-          "id": 2,
-          "candidate": "2번",
+          "id": "07d835cf-ca21-4f28-b884-c01770000361",
+          "candidate": "피자.",
+          "score": 2
+        },
+        {
+          "id": "b84c6248-acab-4873-b090-5066533d82c4",
+          "candidate": "족발.",
           "score": 0
         },
         {
-          "id": 3,
-          "candidate": "3번",
+          "id": "13595618-1bd5-46d5-8988-d018d34d1ea1",
+          "candidate": "보쌈.",
+          "score": 4
+        },
+        {
+          "id": "e8309867-a27a-4555-92c2-9f07c4a1e5f1",
+          "candidate": "떡볶이.",
           "score": 0
         },
         {
-          "id": 4,
-          "candidate": "4번",
+          "id": "e239e7fa-e50b-45fc-b271-e856a848dfd3",
+          "candidate": "비빔밥.",
           "score": 0
         },
         {
-          "id": 5,
-          "candidate": "5번",
+          "id": "436179ff-3d41-41fd-a80e-8dd1470dec67",
+          "candidate": "육회.",
+          "score": 1
+        },
+        {
+          "id": "50076506-4b8f-4fba-aa6a-d45840bc47e6",
+          "candidate": "우동.",
           "score": 0
         },
         {
-          "id": 6,
-          "candidate": "6번",
+          "id": "df7164d7-b442-4092-a96e-29392e6af048",
+          "candidate": "라멘.",
+          "score": 1
+        },
+        {
+          "id": "791cbda1-492e-4472-a81d-8df780401425",
+          "candidate": "초밥.",
           "score": 0
         },
         {
-          "id": 7,
-          "candidate": "7번",
+          "id": "f7e48f32-6873-41e1-80c4-96b27d36f9f6",
+          "candidate": "돈까스",
+          "score": 2
+        },
+        {
+          "id": "0fe37a7c-80f4-4b70-b2fc-72812a10583e",
+          "candidate": "스파게티",
           "score": 0
         },
         {
-          "id": 8,
-          "candidate": "8번",
-          "score": 0
+          "id": "fc14dcb5-e781-42cb-9787-de0d9650c16c",
+          "candidate": "낙곱새",
+          "score": 3
         },
         {
-          "id": 9,
-          "candidate": "9번",
-          "score": 0
+          "id": "452e33d2-d3f0-49f1-84d6-25f07f70ec2d",
+          "candidate": "닭발.",
+          "score": 1
         },
         {
-          "id": 10,
-          "candidate": "10번",
-          "score": 0
-        },
-        {
-          "id": 11,
-          "candidate": "11번",
-          "score": 0
-        },
-        {
-          "id": 12,
-          "candidate": "12번",
-          "score": 0
-        },
-        {
-          "id": 13,
-          "candidate": "13번",
-          "score": 0
-        },
-        {
-          "id": 14,
-          "candidate": "14번",
-          "score": 0
-        },
-        {
-          "id": 15,
-          "candidate": "15번",
-          "score": 0
-        },
-        {
-          "id": 16,
-          "candidate": "16번",
-          "score": 0
-        }
-      ]
-    },
-    {
-      "title": "asdasd",
-      "list": [
-        {
-          "id": "ba1d7d51-5752-4c6e-8f32-2de8fe658677",
-          "candidate": "xvz",
-          "score": 0
-        },
-        {
-          "id": "2138c601-5130-4070-af43-1867b6e8d772",
-          "candidate": "zxvzxv",
-          "score": 0
-        },
-        {
-          "id": "d52e49c6-9487-4146-a88e-07563918b92d",
-          "candidate": "xzvzxv",
-          "score": 0
-        },
-        {
-          "id": "a48faae2-c8e6-43ee-b2b0-c45e48d0dab9",
-          "candidate": "vzxv",
-          "score": 0
-        },
-        {
-          "id": "a2f223f7-f49a-4114-9949-d3bed5be5525",
-          "candidate": "xvzxv",
-          "score": 0
-        },
-        {
-          "id": "9a2928ab-d714-49bc-a6bb-a3ba1dd8d47f",
-          "candidate": "xvzxv",
-          "score": 0
-        },
-        {
-          "id": "bfc14b45-0b21-4b32-bc98-26951ece7da9",
-          "candidate": "zxvxv",
-          "score": 0
-        },
-        {
-          "id": "0867bcf6-5e2c-4e4a-94ee-4fc340f57fa9",
-          "candidate": "vzx",
-          "score": 0
-        },
-        {
-          "id": "f9fba09a-8862-40bf-89ea-e1d2803f8e7b",
-          "candidate": "asdas",
-          "score": 0
-        },
-        {
-          "id": "0f9c45da-feb4-4a14-8838-cda99972457f",
-          "candidate": "vzxvz",
-          "score": 0
-        },
-        {
-          "id": "bfe165db-d70e-463d-a702-a6e581d67ec4",
-          "candidate": "xvzx",
-          "score": 0
-        },
-        {
-          "id": "7e57699d-c607-46c5-b0b1-c1c155a1e7d0",
-          "candidate": "zxvzx",
-          "score": 0
-        },
-        {
-          "id": "4fd8e7b2-a37e-4a52-a095-f979bca3ad68",
-          "candidate": "fzxxz",
-          "score": 0
-        },
-        {
-          "id": "3e2d6796-e345-4a5e-b3fd-6159bcaddf17",
-          "candidate": "vzxvzx",
-          "score": 0
-        },
-        {
-          "id": "60041912-6b06-463d-8e95-c9e53db93b17",
-          "candidate": "vzxv",
-          "score": 0
-        },
-        {
-          "id": "b7bb194a-c446-4638-abb4-7760239a9582",
-          "candidate": "xzvzx",
+          "id": "fccf6bed-bdec-476e-94a0-2d8e8980a2dd",
+          "candidate": "쫄면.",
           "score": 0
         }
       ],
-      "id": "12814984-4e17-46c0-84d1-604993f33fc1",
+      "id": "65f5ab74-8ea4-4d9b-b616-69ae8c8a523e",
       "count": 0,
-      "createdAt": 1646415035229
+      "createdAt": 1646459290340
     }
   ]
 }
