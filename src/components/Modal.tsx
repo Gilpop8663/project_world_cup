@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 const ModalBox = styled.div`
   position: fixed;
@@ -36,10 +36,15 @@ const ModalContent = styled.div`
   background: white;
 `;
 export default function Modal({ winner }: any) {
+  const location = useLocation();
   const navigate = useNavigate();
-
+  const keyword = location.pathname.slice(7);
   const goToResult = () => {
-    navigate('/result');
+    if (location.pathname.slice(0, 6) === '/world') {
+      navigate(`/world/${keyword}/result`);
+    } else {
+      navigate(`/`);
+    }
   };
 
   return (

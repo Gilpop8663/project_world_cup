@@ -120,6 +120,10 @@ function WorldCup() {
       console.log('8강 리스트', quarterFinals);
       console.log('전체리스트', data);
     }
+    axios.put(`http://localhost:4000/world/${keyword}`, {
+      list: data.list,
+      ...data,
+    });
   }, [winner]);
 
   const setDraw = (addNum: number, setListFunction: any, setList: any) => {

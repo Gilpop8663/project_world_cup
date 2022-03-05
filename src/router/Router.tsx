@@ -12,19 +12,38 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 interface IRouter {
   isLoggedIn: boolean;
   userObj: object | null;
+  setRefetch: React.Dispatch<React.SetStateAction<boolean>>;
+  refetch: boolean;
 }
 
-export default function Router({ userObj, isLoggedIn }: IRouter) {
+export default function Router({
+  userObj,
+  isLoggedIn,
+  setRefetch,
+  refetch,
+}: IRouter) {
   return (
     <BrowserRouter>
       <Header isLoggedIn={isLoggedIn} />
       <Routes>
+        <Route
+          path="/world/:id/result"
+          element={
+            <Result
+              refetch={refetch}
+              setRefetch={setRefetch}
+              userObj={userObj}
+            />
+          }
+        />
         <Route path="/world/:id" element={<WorldCup />} />
         <Route path="/view" element={<ViewWorldCup />} />
-        <Route path="/result" element={<Result userObj={userObj} />} />
         <Route path="/login" element={<Login />} />
         <Route path="/sign-up" element={<SignUp />} />
-        <Route path="/make" element={<MakeWorldCup />} />
+        <Route
+          path="/make"
+          element={<MakeWorldCup setRefetch={setRefetch} />}
+        />
         <Route path="/" element={<Home />} />
       </Routes>
     </BrowserRouter>
