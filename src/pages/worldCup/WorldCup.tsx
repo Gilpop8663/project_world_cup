@@ -142,6 +142,10 @@ function WorldCup() {
       //   },
       // });
     }
+    axios.put(`http://localhost:4000/world/${keyword}`, {
+      list: data.list,
+      ...data,
+    });
   }, [winner]);
   console.log(data.list);
 

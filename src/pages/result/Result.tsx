@@ -9,6 +9,7 @@ import {
 } from 'firebase/firestore';
 import { dbService } from '../../firebase';
 import styled from 'styled-components';
+import { v4 as uuidv4 } from 'uuid';
 import {
   CREATED_AT,
   CREATOR_ID,
@@ -18,6 +19,8 @@ import {
 } from '../../constants/contants';
 import { onEnterPress } from 'utils/utilFn';
 import Comment from './components/Comment';
+import axios from 'axios';
+import { useLocation } from 'react-router-dom';
 
 const Container = styled.div`
   display: flex;
@@ -96,37 +99,45 @@ const ToDosContainer = styled.ul``;
 
 interface IResult {
   userObj?: any;
+  setRefetch: React.Dispatch<React.SetStateAction<boolean>>;
+  refetch: boolean;
 }
 
-export default function Result({ userObj }: IResult) {
+export default function Result({ userObj, setRefetch, refetch }: IResult) {
   const [toDos, setToDos] = useState('');
-  const [toDoList, setToDoList] = useState<any>([]);
+  const [data, setData] = useState<any>([{}]);
+  const [comment, setComment] = useState<any>([]);
+  const location = useLocation();
+  const keyword = location.pathname.split('/');
 
+  // console.log(keyword);
   useEffect(() => {
-    const q = query(
-      collection(dbService, COMMENT),
-      orderBy(CREATED_AT, 'desc')
-    );
-    onSnapshot(q, async (snapshot) => {
-      const toDosArr = snapshot.docs.map((item: any) => {
-        return {
-          id: item.id,
-          ...item.data(),
-        };
-      });
-      setToDoList(toDosArr);
+    axios.get(`http://localhost:4000/world/${keyword[2]}`).then((res) => {
+      setData(res.data);
+      setComment(res.data.comments);
     });
-  }, []);
+  }, [refetch]);
 
   const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    await addDoc(collection(dbService, COMMENT), {
-      text: toDos,
-      createdAt: Date.now(),
-      creatorId: userObj.uid,
-      userId: userObj.displayName ? userObj.displayName : GUEST_NAME,
-      userImage: userObj.photoURL !== null ? userObj.photoURL : GUEST_ICON,
-    });
+    axios
+      .put(`http://localhost:4000/world/${keyword[2]}`, {
+        ...data,
+        comments: [
+          ...data.comments,
+          {
+            id: uuidv4(),
+            text: toDos,
+            createdAt: Date.now(),
+            creatorId: userObj.uid,
+            userId: userObj.displayName ? userObj.displayName : GUEST_NAME,
+            userImage:
+              userObj.photoURL !== null ? userObj.photoURL : GUEST_ICON,
+          },
+        ],
+      })
+      .then((res) => setRefetch((prev) => !prev))
+      .catch((error) => console.log(error));
     setToDos('');
   };
   const onChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
@@ -139,11 +150,11 @@ export default function Result({ userObj }: IResult) {
     <Container>
       {userObj && (
         <Form onSubmit={onSubmit} onKeyPress={(e) => onEnterPress(e, onSubmit)}>
-          <ToDoWelcome>To Do List</ToDoWelcome>(
+          <ToDoWelcome>댓글</ToDoWelcome>
           <InputWrapper>
             <Input
               onChange={onChange}
-              placeholder="할 일을 적어주세요"
+              placeholder="댓글을 남겨주세요"
               value={toDos}
             />
             <SubmitInput
@@ -152,11 +163,11 @@ export default function Result({ userObj }: IResult) {
               value="보내기"
             />
           </InputWrapper>
-          )
         </Form>
       )}
+
       <ToDosContainer>
-        {toDoList.map((item: any) => (
+        {comment?.map((item: any) => (
           <Comment
             key={item.id}
             id={item.id}
@@ -165,6 +176,8 @@ export default function Result({ userObj }: IResult) {
             userId={item.userId}
             createdAt={item.createdAt}
             userImage={item.userImage}
+            data={data}
+            setRefetch={setRefetch}
           />
         ))}
       </ToDosContainer>

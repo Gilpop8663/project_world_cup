@@ -1,6 +1,8 @@
+import axios from 'axios';
 import { COMMENT } from 'constants/contants';
 import { deleteDoc, doc, updateDoc } from 'firebase/firestore';
 import React, { useRef, useState } from 'react';
+import { useLocation } from 'react-router-dom';
 import styled from 'styled-components';
 import { dateFormater, onEnterPress } from 'utils/utilFn';
 import { dbService } from '../../../firebase';
@@ -12,6 +14,8 @@ interface IToDoProps {
   userId: string;
   createdAt: number | Date;
   userImage: string;
+  data: any;
+  setRefetch: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 const Container = styled.li`
@@ -166,15 +170,32 @@ export default function Comment({
   photoURL,
   createdAt,
   userImage,
+  data,
+  setRefetch,
 }: IToDoProps) {
   const [isEdit, setIsEdit] = useState(false);
   const [editMessage, setEditMessage] = useState(text);
   const toDoRef = doc(dbService, COMMENT, `${id}`);
   const editRef = useRef<HTMLTextAreaElement>(null);
-  const onDeleteClick = async () => {
+  const location = useLocation();
+  const keyword = location.pathname.split('/');
+  const onDeleteClick = async (id: string) => {
     const ok = window.confirm('정말 삭제하시겠습니까?');
     if (ok) {
-      await deleteDoc(toDoRef);
+      const findIndex = data.comments.findIndex((item: any) => item.id === id);
+      // console.log(...data.comments.slice(0, findIndex));
+      // console.log(...data.comments.slice(findIndex + 1));
+      const newComments = [
+        ...data.comments.slice(0, findIndex),
+        ...data.comments.slice(findIndex + 1),
+      ];
+      console.log(newComments);
+      await axios
+        .put(`http://localhost:4000/world/${keyword[2]}`, {
+          ...data,
+          comments: newComments,
+        })
+        .then(() => setRefetch((prev: boolean) => !prev));
     }
   };
   const onToggleEdit = () => {
@@ -208,7 +229,7 @@ export default function Comment({
             {createdAt && <CreateDate>{dateFormater(createdAt)}</CreateDate>}
           </UserInfoWrapper>
           <ButtonWrapper>
-            <DeleteButton onClick={onDeleteClick}>삭제</DeleteButton>
+            <DeleteButton onClick={() => onDeleteClick(id)}>삭제</DeleteButton>
             <ToDoBtn onClick={onToggleEdit}>수정</ToDoBtn>
             {isEdit && (
               <EditForm
