@@ -2,12 +2,10 @@ import {
   ERROR_MAX,
   ERROR_MIN,
   ERROR_REQUIRED,
-  WORLD_CUP,
   WORLD_CUP_ITEM,
 } from 'constants/contants';
-import { dbService } from '../../firebase';
-import { addDoc, collection } from 'firebase/firestore';
-import React, { useState } from 'react';
+
+import React from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import { useForm } from 'react-hook-form';
 import styled from 'styled-components';
@@ -48,18 +46,7 @@ const InputBox = styled.div`
   margin: 10px;
 `;
 
-const ButtonWrapper = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-`;
-
 const SubmitInput = styled.input``;
-
-const firstArr = [1, 2, 3, 4];
-const secondArr = [5, 6, 7, 8];
-const thirdArr = [9, 10, 11, 12];
-const fourthArr = [13, 14, 15, 16];
 
 export default function MakeWorldCup() {
   const navigate = useNavigate();
@@ -95,8 +82,9 @@ export default function MakeWorldCup() {
         id: uuidv4(),
         count: 0,
         createdAt: Date.now(),
+        comments: [],
       })
-      .then((res) => console.log(res))
+      .then((res) => console.log('성공'))
       .catch((error) => console.log(error));
 
     navigate('/');

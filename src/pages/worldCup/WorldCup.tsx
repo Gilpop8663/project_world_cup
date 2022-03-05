@@ -15,7 +15,6 @@ const SelectContainer = styled.div`
   display: flex;
   justify-content: space-around;
   width: 100%;
-  height: 1000px;
 `;
 
 const LeftSelectBox = styled.div`
@@ -113,19 +112,6 @@ function WorldCup() {
   useEffect(() => {
     if (winner.length === 1) {
       toggleModal();
-
-      console.log('우승자', winner);
-      console.log('결승 리스트', final);
-      console.log('4강 리스트', semiFinals);
-      console.log('8강 리스트', quarterFinals);
-      console.log('전체리스트', data);
-
-      // axios
-      //   .put(`http://localhost:4000/world/?id=${data.id}`, {
-      //     list: list,
-      //   })
-      //   .then((res) => console.log('122', res.data.list));
-
       axios
         .put(`http://localhost:4000/world/${keyword}`, {
           ...data,
@@ -133,19 +119,7 @@ function WorldCup() {
         })
         .then((res) => console.log('성공'));
       // .catch((error) => console.log(error));
-
-      // axios({
-      //   method: 'put',
-      //   url: `http://localhost:4000/world?id=${keyword}`,
-      //   data: {
-      //     title: 'Making PUT Requests with Axios',
-      //   },
-      // });
     }
-    axios.put(`http://localhost:4000/world/${keyword}`, {
-      list: data.list,
-      ...data,
-    });
   }, [winner]);
   console.log(data.list);
 
@@ -214,7 +188,7 @@ function WorldCup() {
           </RightCandidate>
         </RightSelectBox>
       </SelectContainer>
-      {modal && <Modal winner={winner} />}
+      {modal && <Modal winner={winner} resultId={keyword} />}
     </>
   );
 }

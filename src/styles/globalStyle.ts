@@ -49,8 +49,21 @@ button {
 	background-color: transparent;
 }
 body{
-	font-size: 10px;
+
 }
+a { 
+	text-decoration: none;
+} 
+a:visited{
+	color: black; text-decoration: none;
+}
+
+a:link {
+	color: black; text-decoration: none;
+}
+
 `;
+
+//nine01223.tistory.com/180 [스프링연구소(spring-lab)]
 
 export default GlobalStyle;
