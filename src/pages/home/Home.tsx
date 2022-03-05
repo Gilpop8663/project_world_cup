@@ -1,6 +1,12 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import styled from 'styled-components';
+
+const WorldCupTitle = styled(Link)`
+  font-size: 30px;
+  /* text-decoration: none; */
+`;
 
 export default function Home() {
   const [listArr, setListArr] = useState<any>([{}]);
@@ -14,7 +20,7 @@ export default function Home() {
     <div>
       {listArr.map((item: any, idx: number) => (
         <div key={idx}>
-          <Link to={`/world/${item.id}`}>{item.title}</Link>
+          <WorldCupTitle to={`/world/${item.id}`}>{item.title}</WorldCupTitle>
         </div>
       ))}
     </div>
