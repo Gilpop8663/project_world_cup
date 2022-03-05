@@ -119,8 +119,33 @@ function WorldCup() {
       console.log('4강 리스트', semiFinals);
       console.log('8강 리스트', quarterFinals);
       console.log('전체리스트', data);
+
+      // axios
+      //   .put(`http://localhost:4000/world/?id=${data.id}`, {
+      //     list: list,
+      //   })
+      //   .then((res) => console.log('122', res.data.list));
+
+      axios
+        .put(`http://localhost:4000/world/${keyword}`, {
+          ...data,
+          list: data.list,
+        })
+        .then((res) => console.log('성공'));
+      // .catch((error) => console.log(error));
+
+      // axios({
+      //   method: 'put',
+      //   url: `http://localhost:4000/world?id=${keyword}`,
+      //   data: {
+      //     title: 'Making PUT Requests with Axios',
+      //   },
+      // });
     }
   }, [winner]);
+  console.log(data.list);
+
+  // console.log(data);
 
   const setDraw = (addNum: number, setListFunction: any, setList: any) => {
     setListFunction((prev: any) => {
@@ -165,8 +190,7 @@ function WorldCup() {
     const addNum = 1;
     selectCondidate(addNum);
   };
-
-  if (!list) return null;
+  // if (!list) return null;
 
   return (
     <>
