@@ -23,7 +23,7 @@ export interface IWorldCupProps {
   creatorId: string;
 }
 
-interface IWorldCupItemProps {
+export interface IWorldCupItemProps {
   id: string;
   candidate: string;
   roundWin: number;
@@ -31,11 +31,10 @@ interface IWorldCupItemProps {
   champion: number;
 }
 
-interface IWorldCupCommentProps {
+export interface IWorldCupCommentProps {
   id: string;
   text: string;
   createdAt: Date;
   creatorId: string;
   userId: string;
-  userImage: string;
 }
