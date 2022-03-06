@@ -81,117 +81,117 @@
           "id": "913742ee-c61d-4bb0-8427-141daacfa57f",
           "candidate": "찜닭",
           "roundWin": 16,
-          "roundLose": 31,
+          "roundLose": 32,
           "champion": 1
         },
         {
-          "id": "3bde6cdf-a854-4d0f-b367-198377c68516",
-          "candidate": "국밥",
-          "roundWin": 30,
-          "roundLose": 29,
-          "champion": 3
-        },
-        {
-          "id": "7fa11373-aa8d-4d99-873d-9fe96f3bde2b",
-          "candidate": "돼지갈비",
-          "roundWin": 44,
+          "id": "1896b7b1-1177-4730-a783-408595a778cf",
+          "candidate": "보쌈",
+          "roundWin": 41,
           "roundLose": 28,
-          "champion": 4
-        },
-        {
-          "id": "dff2835d-342e-4d84-95ab-4046348b5c49",
-          "candidate": "닭볶음탕",
-          "roundWin": 30,
-          "roundLose": 30,
-          "champion": 2
-        },
-        {
-          "id": "1a43bc2a-f7a7-46e1-af78-5a52848ff603",
-          "candidate": "김치",
-          "roundWin": 29,
-          "roundLose": 29,
-          "champion": 3
-        },
-        {
-          "id": "d6d49789-806f-4eaa-a3a9-2b0687039fb4",
-          "candidate": "치킨 ",
-          "roundWin": 33,
-          "roundLose": 30,
-          "champion": 2
+          "champion": 5
         },
         {
           "id": "c17f5bcb-46a1-45f8-bc41-f703ddba39f3",
           "candidate": "삼겹살",
           "roundWin": 27,
-          "roundLose": 32,
+          "roundLose": 33,
           "champion": 0
         },
         {
-          "id": "a491d780-ff7b-411b-83ef-537356fa8784",
-          "candidate": "떡볶이",
-          "roundWin": 24,
+          "id": "d6d49789-806f-4eaa-a3a9-2b0687039fb4",
+          "candidate": "치킨 ",
+          "roundWin": 35,
           "roundLose": 31,
-          "champion": 1
-        },
-        {
-          "id": "4a0ab2d2-fb47-4270-a488-bbca89582aea",
-          "candidate": "피자",
-          "roundWin": 36,
-          "roundLose": 28,
-          "champion": 4
-        },
-        {
-          "id": "1896b7b1-1177-4730-a783-408595a778cf",
-          "candidate": "보쌈",
-          "roundWin": 40,
-          "roundLose": 27,
-          "champion": 5
-        },
-        {
-          "id": "57db1541-f51f-4502-87c7-c82b4a30e522",
-          "candidate": "짬뽕",
-          "roundWin": 25,
-          "roundLose": 32,
-          "champion": 0
+          "champion": 2
         },
         {
           "id": "82522aae-c8fc-4e4d-9c86-52b8cc595d94",
           "candidate": "라면",
           "roundWin": 18,
-          "roundLose": 32,
+          "roundLose": 33,
           "champion": 0
         },
         {
-          "id": "6f550cc1-dff4-4032-9087-5dc9d262dc74",
-          "candidate": "김치볶음밥",
-          "roundWin": 36,
-          "roundLose": 30,
-          "champion": 2
-        },
-        {
-          "id": "df18fa49-9289-4dfe-a606-8f49446cdb2e",
-          "candidate": "족발",
-          "roundWin": 32,
-          "roundLose": 30,
-          "champion": 2
-        },
-        {
-          "id": "14075f40-ca09-4c8c-9d59-c02041426e30",
-          "candidate": "새우튀김",
+          "id": "dff2835d-342e-4d84-95ab-4046348b5c49",
+          "candidate": "닭볶음탕",
           "roundWin": 31,
-          "roundLose": 30,
+          "roundLose": 31,
           "champion": 2
+        },
+        {
+          "id": "4a0ab2d2-fb47-4270-a488-bbca89582aea",
+          "candidate": "피자",
+          "roundWin": 36,
+          "roundLose": 29,
+          "champion": 4
+        },
+        {
+          "id": "3bde6cdf-a854-4d0f-b367-198377c68516",
+          "candidate": "국밥",
+          "roundWin": 33,
+          "roundLose": 30,
+          "champion": 3
         },
         {
           "id": "4c0ebba0-2ef9-440d-9714-12f833b7a6e3",
           "candidate": "샐러드",
           "roundWin": 29,
-          "roundLose": 31,
+          "roundLose": 32,
           "champion": 1
+        },
+        {
+          "id": "a491d780-ff7b-411b-83ef-537356fa8784",
+          "candidate": "떡볶이",
+          "roundWin": 25,
+          "roundLose": 32,
+          "champion": 1
+        },
+        {
+          "id": "14075f40-ca09-4c8c-9d59-c02041426e30",
+          "candidate": "새우튀김",
+          "roundWin": 31,
+          "roundLose": 31,
+          "champion": 2
+        },
+        {
+          "id": "df18fa49-9289-4dfe-a606-8f49446cdb2e",
+          "candidate": "족발",
+          "roundWin": 34,
+          "roundLose": 31,
+          "champion": 2
+        },
+        {
+          "id": "6f550cc1-dff4-4032-9087-5dc9d262dc74",
+          "candidate": "김치볶음밥",
+          "roundWin": 36,
+          "roundLose": 31,
+          "champion": 2
+        },
+        {
+          "id": "7fa11373-aa8d-4d99-873d-9fe96f3bde2b",
+          "candidate": "돼지갈비",
+          "roundWin": 45,
+          "roundLose": 29,
+          "champion": 4
+        },
+        {
+          "id": "57db1541-f51f-4502-87c7-c82b4a30e522",
+          "candidate": "짬뽕",
+          "roundWin": 25,
+          "roundLose": 33,
+          "champion": 0
+        },
+        {
+          "id": "1a43bc2a-f7a7-46e1-af78-5a52848ff603",
+          "candidate": "김치",
+          "roundWin": 33,
+          "roundLose": 29,
+          "champion": 4
         }
       ],
       "id": "62aa538c-aefb-4a0b-b99d-e6ef4bda1df8",
-      "count": 32,
+      "count": 33,
       "createdAt": 1646562077549,
       "comments": [
         {
@@ -222,6 +222,22 @@
           "id": "37eed257-2998-4cf9-8d06-5321b71c67d0",
           "text": "ㅁㄴㄻㄴㄻㄴㄻㄴㄻㄴㄻㄴㄻㄴㄻㄴㄻㄴ러ㄴㅁㅇㄴㅁㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇㄻㄴㄻㄴㄻㄴㄻㄴㄻㄴㄻㄴ런ㅁㅇㅁㄴㅇㄴㅁㅇㅁㄴㅇㅁㄴㄻㄴㄻㄴㄻㄴㄻㄴㄹㅋㅌㅋㅌㅍㅋㅌㅍㅋㅌㅍㅋㅌㅊㅍㅋㅌㅍㅋㅌㅍㅋㅌㅍㅋㅌㅍㅋㅌㅍㅋㅌㅍㅋㅌㅍㅋㅌㅍㅋㅌㅍㅋㅌㅍㅋㅌㅍㅋㅌㅍㅋㅌㅍㅋㅌㅍㅋㅌㅍㅋㅌㅍㅋㅌㅍㅋㅌㅍㅋㅌㅍㅋㅌㅍㅋㅌㅍㅋㅌㅍㅋㅌㅍㅋㅌㅍㅋㅌㅍ\n\n\n\n\n",
           "createdAt": 1646580200062,
+          "creatorId": "102227633035821763864",
+          "userId": "긴고랑",
+          "userImage": "data:image/png;base64,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"
+        },
+        {
+          "id": "ce3ea4c4-1d3a-4ba3-989d-07b9bcb0ebfc",
+          "text": "asd",
+          "createdAt": 1646591871476,
+          "creatorId": "102227633035821763864",
+          "userId": "긴고랑",
+          "userImage": "data:image/png;base64,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"
+        },
+        {
+          "id": "9a5bcdbd-3b7d-4c24-a61d-ee05c90ef57c",
+          "text": "asf",
+          "createdAt": 1646591896964,
           "creatorId": "102227633035821763864",
           "userId": "긴고랑",
           "userImage": "data:image/png;base64,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"
@@ -353,122 +369,223 @@
       "title": "7",
       "list": [
         {
-          "id": "38b7155d-9fe2-4764-a80f-d1f4db69f6f5",
-          "candidate": "m",
-          "roundWin": 7,
+          "id": "c2ff48fa-523b-4a5f-82cd-1e8ffbd456c5",
+          "candidate": "l",
+          "roundWin": 8,
           "roundLose": 7,
+          "champion": 1
+        },
+        {
+          "id": "985dece5-9e87-41ed-94f2-c4dc665294fd",
+          "candidate": "c",
+          "roundWin": 5,
+          "roundLose": 8,
           "champion": 0
         },
         {
           "id": "1752b33e-6945-4469-964b-51ca29da23bc",
           "candidate": "u",
           "roundWin": 6,
-          "roundLose": 6,
+          "roundLose": 7,
           "champion": 1
         },
         {
-          "id": "985dece5-9e87-41ed-94f2-c4dc665294fd",
-          "candidate": "c",
-          "roundWin": 4,
+          "id": "7b082b03-34fb-49f6-93f3-0f72055825f9",
+          "candidate": "b",
+          "roundWin": 8,
           "roundLose": 7,
-          "champion": 0
-        },
-        {
-          "id": "b3e27d8a-f250-483c-947e-964d1c4eaefe",
-          "candidate": "h",
-          "roundWin": 7,
-          "roundLose": 6,
           "champion": 1
         },
         {
           "id": "9cac6172-06c1-4684-88ce-9f35e168d42b",
           "candidate": "o",
           "roundWin": 7,
-          "roundLose": 7,
+          "roundLose": 8,
+          "champion": 0
+        },
+        {
+          "id": "66351db0-d8fe-4437-a0ad-8c45efce5b7b",
+          "candidate": "v",
+          "roundWin": 3,
+          "roundLose": 8,
           "champion": 0
         },
         {
           "id": "25ae20f1-4e7e-4e6c-b92e-b42695b27fba",
           "candidate": "k",
           "roundWin": 13,
-          "roundLose": 5,
+          "roundLose": 6,
           "champion": 2
         },
         {
-          "id": "68b2f628-c3f3-468b-9678-c6684220ee60",
-          "candidate": "i",
+          "id": "8a4e0f32-8001-4f17-924b-08c6a5a649cb",
+          "candidate": "p",
           "roundWin": 6,
+          "roundLose": 8,
+          "champion": 0
+        },
+        {
+          "id": "b3e27d8a-f250-483c-947e-964d1c4eaefe",
+          "candidate": "h",
+          "roundWin": 7,
           "roundLose": 7,
+          "champion": 1
+        },
+        {
+          "id": "c2a575b0-ccd1-4aca-b4aa-c9405a9763cb",
+          "candidate": "g",
+          "roundWin": 6,
+          "roundLose": 8,
+          "champion": 0
+        },
+        {
+          "id": "38b7155d-9fe2-4764-a80f-d1f4db69f6f5",
+          "candidate": "m",
+          "roundWin": 7,
+          "roundLose": 8,
+          "champion": 0
+        },
+        {
+          "id": "afb19b03-d6bb-47d7-9afc-75990d325698",
+          "candidate": "h",
+          "roundWin": 7,
+          "roundLose": 8,
           "champion": 0
         },
         {
           "id": "9fb04cc6-c9b1-43e8-a0c1-e1eabb674f26",
           "candidate": "jn",
           "roundWin": 9,
-          "roundLose": 7,
+          "roundLose": 8,
           "champion": 0
         },
         {
           "id": "7a31cc69-4050-4ea3-9c73-b27d2888e809",
           "candidate": "b",
-          "roundWin": 5,
-          "roundLose": 7,
+          "roundWin": 6,
+          "roundLose": 8,
           "champion": 0
         },
         {
-          "id": "66351db0-d8fe-4437-a0ad-8c45efce5b7b",
-          "candidate": "v",
-          "roundWin": 2,
-          "roundLose": 7,
-          "champion": 0
-        },
-        {
-          "id": "c2ff48fa-523b-4a5f-82cd-1e8ffbd456c5",
-          "candidate": "l",
-          "roundWin": 8,
-          "roundLose": 6,
-          "champion": 1
-        },
-        {
-          "id": "c2a575b0-ccd1-4aca-b4aa-c9405a9763cb",
-          "candidate": "g",
-          "roundWin": 5,
-          "roundLose": 7,
+          "id": "68b2f628-c3f3-468b-9678-c6684220ee60",
+          "candidate": "i",
+          "roundWin": 6,
+          "roundLose": 8,
           "champion": 0
         },
         {
           "id": "d4fc5e62-931b-4864-b2c7-efda196c2fa9",
           "candidate": "y",
-          "roundWin": 12,
+          "roundWin": 16,
           "roundLose": 6,
-          "champion": 1
-        },
-        {
-          "id": "8a4e0f32-8001-4f17-924b-08c6a5a649cb",
-          "candidate": "p",
-          "roundWin": 3,
-          "roundLose": 7,
-          "champion": 0
-        },
-        {
-          "id": "afb19b03-d6bb-47d7-9afc-75990d325698",
-          "candidate": "h",
-          "roundWin": 5,
-          "roundLose": 7,
-          "champion": 0
-        },
-        {
-          "id": "7b082b03-34fb-49f6-93f3-0f72055825f9",
-          "candidate": "b",
-          "roundWin": 6,
-          "roundLose": 6,
-          "champion": 1
+          "champion": 2
         }
       ],
       "id": "883a191f-a456-44eb-84e2-4e41c1f76406",
-      "count": 7,
+      "count": 8,
       "createdAt": 1646563671358,
       "comments": [
+        {
+          "id": "06f4dd25-5a40-4464-918c-225a722a20f8",
+          "text": "ㅁㄴㅇㅁㄴㅇㅁㄴ\nㅁㄴㅇㅁㄴㅇ",
+          "createdAt": 1646592501906,
+          "creatorId": "102227633035821763864",
+          "userId": "긴고랑"
+        },
+        {
+          "id": "3550b4d8-8452-4a51-a9fe-c8c2cb619508",
+          "text": "ㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㄻㄴㄻㄴㄻㄴㄻㄴ",
+          "createdAt": 1646592499264,
+          "creatorId": "102227633035821763864",
+          "userId": "긴고랑"
+        },
+        {
+          "id": "ff5f0bdb-52a8-4d59-9ef8-bb3e4ebd18ed",
+          "text": "ㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㄻㄴㄻㄴㄻㄻㄴㄻㄴㄹㄴㅁ",
+          "createdAt": 1646592495737,
+          "creatorId": "102227633035821763864",
+          "userId": "긴고랑"
+        },
+        {
+          "id": "6127210e-ef70-402e-9943-ba275d5ec2c4",
+          "text": "ㅁㄴㅇㅁㄴ",
+          "createdAt": 1646591930291,
+          "creatorId": "102227633035821763864",
+          "userId": "긴고랑",
+          "userImage": "data:image/png;base64,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"
+        },
+        {
+          "id": "7499fc65-3036-4c4f-81ec-dc14ba7e9dcb",
+          "text": "ㅁㄴㅇㅁㄴㅇ",
+          "createdAt": 1646591919852,
+          "creatorId": "102227633035821763864",
+          "userId": "긴고랑",
+          "userImage": "data:image/png;base64,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"
+        },
+        {
+          "id": "cfa87adf-e7a8-4637-970c-1357fee26e00",
+          "text": "ㅁㄴㅇ",
+          "createdAt": 1646591919084,
+          "creatorId": "102227633035821763864",
+          "userId": "긴고랑",
+          "userImage": "data:image/png;base64,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"
+        },
+        {
+          "id": "31bc6c91-52c6-4299-8d3a-0f9f0cfecb22",
+          "text": "ㅋㅌㅊㅋㅌ",
+          "createdAt": 1646591916764,
+          "creatorId": "102227633035821763864",
+          "userId": "긴고랑",
+          "userImage": "data:image/png;base64,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"
+        },
+        {
+          "id": "6d623db0-0f5f-4c47-b455-1836034245d7",
+          "text": "ㅁㄴㅇㅁㄴ",
+          "createdAt": 1646591916243,
+          "creatorId": "102227633035821763864",
+          "userId": "긴고랑",
+          "userImage": "data:image/png;base64,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"
+        },
+        {
+          "id": "bda3be6b-06fc-4309-836e-a4479824b39e",
+          "text": "네네",
+          "createdAt": 1646591911924,
+          "creatorId": "102227633035821763864",
+          "userId": "긴고랑",
+          "userImage": "data:image/png;base64,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"
+        },
+        {
+          "id": "272d6828-a5b3-496b-a965-f2708c77104b",
+          "text": "잘되네요",
+          "createdAt": 1646591911324,
+          "creatorId": "102227633035821763864",
+          "userId": "긴고랑",
+          "userImage": "data:image/png;base64,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"
+        },
+        {
+          "id": "21be18ad-da3e-4c51-8114-c84624e453be",
+          "text": "에",
+          "createdAt": 1646591909780,
+          "creatorId": "102227633035821763864",
+          "userId": "긴고랑",
+          "userImage": "data:image/png;base64,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"
+        },
+        {
+          "id": "64ad84c0-769c-42df-b8c3-9db600c3de9e",
+          "text": "ㅋㅌㅊ",
+          "createdAt": 1646591908852,
+          "creatorId": "102227633035821763864",
+          "userId": "긴고랑",
+          "userImage": "data:image/png;base64,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"
+        },
+        {
+          "id": "d30be0c0-6853-462e-afd3-2d2740e1f6ba",
+          "text": "ㅁㄴㅇ",
+          "createdAt": 1646591908324,
+          "creatorId": "102227633035821763864",
+          "userId": "긴고랑",
+          "userImage": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAXVBMVEX///+AgIB7e3t6enrCwsJ3d3f6+vqCgoL29vaIiIjPz8/Ly8vu7u7y8vKurq7r6+vX19ehoaGMjIzd3d3l5eWbm5uTk5OsrKzFxcWlpaW5ubnZ2dm1tbW8vLyXl5dsXrfwAAAHf0lEQVR4nO2d6XbaMBCFbQl5X/BuNr//Y1YmkEADCWNrrGva719O21T3zGibRXacBfCCpIr66FAngbfE/7csweFUlL5SUkqllF82x6h+I5lp3PhCCPcG/aMou+17iKx3vrxT9yVThllue3izqQb1WN5FpGpq20OcRV6In/R9+GsW2B7mdE7ub/rOGsPK9kAnkgzyBX0jKrY91klsXzLgRWJve7QT6F/XN3pqZHu8ZPaveuinxPiUdbtu31fr2CSPiibQdaUUZ6QSTYy/up7IAu/sKcM9uMaY6KIPLBpCT8yKtMg807jDnY+Bb0CgltimtpU8Y2fChBpRgkrsZ0/CT4kDpKPmpvSNEgvbah5RGPLRM4inua0xHz3jJ7YFfaM0KtAVO9uC/mZj1oRaItjd0dBWeKsQbLExbkItESqO4xmehWeFnW1Vt2xN7hRXFNK2b+q8docECuIEDPq0mza2dX0x/1r4GJxdf+ARKGEuwynHLHSRzjVcTuqWKKup0VvFLQIkQWX+xPapEGQiHric1BV729o+OHI5Kcrp22u5BKIsNQnbNNRGhIiA801DffiGWExPbNNQK9zaVjfCcq+4gHG9YFxoXHGyrW6EUSDGPd+blTH8TSHCFTHhVOi2tuVpalaFoW15murtFRrOV/xzCn2Ag2n0X+Es3t9LERRyXi0wFL7/bvH+Oz7vqa20Lc/5F07eDuMFGCSuz5D+/VJ4tK1uhC2mr5EQhUN8AWGU/Bpb5kmjIOoxak4bQpRhBiGfwhDgaqFp+DIzENuh42z4FIJk1/gmIkqG1OGbiBCJGc2ey4g+RHLNYbzmo5QnbvkqFTLb2s6kjDlgF8JNzbVZfEdBLKacGVIMN+W8H0Lknpy3jyYGbx9rS1kVIuQtmBUCbBfvr5A1XgqhkLXaBEMhZ8UQxErDeqaB2C2cE+eWD3Gm4UyRYpxLOW9PGDFvxmgiSAUtR3flFYhp6Dg5mw0lRHmpw7kjYjgpXxwDIwM8EjC5qcRpWM9YJKLkZUZSDoEg6dELHJluiVDF/glHljREuDh9YT51gfYuxsxnzL4Ds9l/kRm1ooTZCm/YPHlwdgoC5ED6F3VrSiLsY1/Gukl9pJ3wjoMZI4Lcex9h5pkanAP3A4wcUCXKnekRRqJSmOvoBc9AVAqjavYp3Xw3hTuu3bOdf3iDdlITbopR+PwD1KegvwGRbfqJZOZEBF9nRmamojDqnn9k3mvJEA34vzEvjYF8nrlSz1hrVjALR+YYEecNup+YbkSUyvVfmXzDAAsgPiedGD1d0RdLJrZCITSMvsqkjj3wS8U9U6oX5Dp2iisR/RZVrmWZuUD2U3WwPWQiOdFPoQNsj6E+47aO08wttBqUVdwp/obkpmJts9ChRmxWc167gRTOQCq7eBlS+HuFKynxgoFRR0ojIKWhQJ7TJRHRtkOM53QpUAtsBMRTrBTIx9J2ZUY8kq/AkOUlz5nSoCC6FVmRbsGzxHItc7FupkYTZdvn4Ib08ug4/Pox5580ijaLYAP7Sbwr3TnyPtC/oey2cBmoYJuV0lxdm5Cy3QN9PDePC2Gwau9Tpd9FCKbMN41vXt5VZLiL7F4cg1ivK5zth1qkW2ytuWu1c7msdydS+ZmNWsW0L9UC8q4ih3jhKZlnIetjEQ9EhscF441VsYR3ftModgs5a9XY0HfWKIsFNB6s6TtrZLdjXvBuDq9ozBjXnKSzab8vjRsmfV7vAugbkQOLq9bDwvvDDwh3b/6cc7Q9Ae8RoWEz5i2OAS+YnY0Rygy8Re3MXTvYXn6chygNxTu8As5DLwjXSHQuHTAteMbEE65pCSzQRGV/HkILnN9NCy9QL6mzalJXIFBbcYbEAHsOXpleluoZ6+tlZvKK2qHug9+ZdkjlfD3XMGJSGcDcBqZFmVR9y/iCFwOKXkHN+7Ex44iBrBD5NPoIchl8tS4TTqiqMtCxvDS0ICPnl1WYkLS7IufXcZggljfyfpiSB1qXO+f30rmgPcjL88QcL4oUemN9G5gJ2lunnF+L44J2cBtsD3cCirRdsL7RzQTt7SXWr3IwQVO4viONVkgK13B+/oeL/wrvWeFmQVS4wmPpf4X/nJe+v8JVeilpx1+lDUkK17gf0u4WazyXKlKF7bpC+h/4FIFrjGK8f6wtpEWEWb8tyoJPzVtMayG0hnDJ2bV1hfUnVbjVtkdNQE5rsK1sj/tVZDn1XZSD7aG/hHQ308tMax9+V5T+vILvBK/2+RYhyxn2+8ADq1+/ZWxMnCnvTN0s14NHQMhwY6yV7dCg2VF759FsL0LdsXX6khHSbfe1+XaSNG4UwKIjlFv0bL1ryaZlaEl/XZw23nDibtFP413I3Lr9WJ0UYXGqlmlb9+q+K125lEwxihuyaOH3QLz8cCpCpVh1am1Suc0xqq09q+DV0bFo/XEkRpWK0W5u2WR9hfBkhBMk1XaTFUMZfgxNTJ2nl3/tl013iqoU59GPK16Q1lXUn47drmnL0Hel0sgz4injn+q/5vpl23THPqryAE/aIzytN03yujpsozjuN0/p42hb1UnKqusPH5qLzVVndboAAAAASUVORK5CYII="
+        },
         {
           "id": "4d1240a4-57d2-4f57-ad25-ff7dc3766e6a",
           "text": "ㅇㅁㄴㅇㅁㄴㄹ",
@@ -981,124 +1098,124 @@
       "comments": []
     },
     {
-      "title": "asdsd",
+      "title": "ㅁㄴㅇㅁㄴ",
       "list": [
         {
-          "id": "3cad1a55-14fe-477b-aeb0-1b61b8897813",
-          "candidate": "asdasd",
+          "id": "f4465efd-f145-484c-9b52-57564a7142e2",
+          "candidate": "ㅎ",
           "roundWin": 0,
           "roundLose": 0,
           "champion": 0
         },
         {
-          "id": "b6cb911e-028b-4c69-99be-ff94eba67291",
-          "candidate": "asd",
+          "id": "0a686c57-1338-4ea5-ae37-3d5fc84d5c44",
+          "candidate": "ㅈ",
           "roundWin": 0,
           "roundLose": 0,
           "champion": 0
         },
         {
-          "id": "0f10cfa4-030a-4bca-8664-29fffe7e9f08",
-          "candidate": "asdas",
+          "id": "1f322648-a7f5-440f-84c1-1cc050343572",
+          "candidate": "ㅊ",
           "roundWin": 0,
           "roundLose": 0,
           "champion": 0
         },
         {
-          "id": "d058ae9c-57d6-43c5-8909-ecb351d68b4f",
-          "candidate": "sadasd",
+          "id": "492154a4-3998-4c5c-9c2a-14a79d86c76a",
+          "candidate": "ㅌ",
           "roundWin": 0,
           "roundLose": 0,
           "champion": 0
         },
         {
-          "id": "3260cb50-5c79-4b75-9bb3-079d61ebb6a2",
-          "candidate": "sdas",
+          "id": "a162f29b-a7bd-4305-9d6b-a92996c30407",
+          "candidate": "ㅍ",
           "roundWin": 0,
           "roundLose": 0,
           "champion": 0
         },
         {
-          "id": "09793234-297c-4a81-bfed-bc27b071914f",
-          "candidate": "asd",
+          "id": "84e53ed4-9c58-461d-9caf-a90dbfbdd75a",
+          "candidate": "ㅠ",
           "roundWin": 0,
           "roundLose": 0,
           "champion": 0
         },
         {
-          "id": "1b90bf80-4c09-4c34-893c-7b180040bbca",
-          "candidate": "asd",
+          "id": "acfa379a-446f-4e1f-b4f0-e8897c135e18",
+          "candidate": "ㅊ",
           "roundWin": 0,
           "roundLose": 0,
           "champion": 0
         },
         {
-          "id": "7bdfbe12-8f1d-4de2-b352-792cf1d3979a",
-          "candidate": "asdas",
+          "id": "59301268-09ce-4009-96d1-3171a1f1688e",
+          "candidate": "ㄱ",
           "roundWin": 0,
           "roundLose": 0,
           "champion": 0
         },
         {
-          "id": "3f79298e-d6fd-4ee6-90ea-8f889235319a",
-          "candidate": "asd",
+          "id": "8843eb8b-c70a-4748-97ab-49b7c86c8be7",
+          "candidate": "ㅌ",
           "roundWin": 0,
           "roundLose": 0,
           "champion": 0
         },
         {
-          "id": "8c7ce8ea-6621-46c4-aea0-9b1958d3ad28",
-          "candidate": "asd",
+          "id": "d0e82378-e0e2-4846-99b2-cbe118b4fdbc",
+          "candidate": "ㄴ",
           "roundWin": 0,
           "roundLose": 0,
           "champion": 0
         },
         {
-          "id": "8b406905-cbe3-491f-a4e8-86e7131d2758",
-          "candidate": "asdasd",
+          "id": "260f3457-2e71-47f4-ac42-29efde387c8b",
+          "candidate": "ㄷ",
           "roundWin": 0,
           "roundLose": 0,
           "champion": 0
         },
         {
-          "id": "fcbf6ae8-cbe4-4090-8a56-a11f17da73ff",
-          "candidate": "asd",
+          "id": "ad848193-3c60-471a-9cf1-4d6e086342f3",
+          "candidate": "ㄹ",
           "roundWin": 0,
           "roundLose": 0,
           "champion": 0
         },
         {
-          "id": "b3430153-449d-4acd-a59d-4aaaa624e27b",
-          "candidate": "asdlk",
+          "id": "835fcba4-942b-4c67-b466-a84476a09b19",
+          "candidate": "ㅁ",
           "roundWin": 0,
           "roundLose": 0,
           "champion": 0
         },
         {
-          "id": "ee3ed1de-e68d-4636-a5a1-a7c3ab84e195",
-          "candidate": "jhkj",
+          "id": "43974fbd-e2c8-4d04-bb57-f22e2d907075",
+          "candidate": "ㅂ",
           "roundWin": 0,
           "roundLose": 0,
           "champion": 0
         },
         {
-          "id": "6f16f028-e769-49ab-9b9a-7b00f5e3efa0",
-          "candidate": "hkj",
+          "id": "21f5902e-b38a-4e94-afba-a8da3fa8fb89",
+          "candidate": "ㅅ",
           "roundWin": 0,
           "roundLose": 0,
           "champion": 0
         },
         {
-          "id": "3e4cff69-c8b2-4811-a801-d0ee14e2ad6c",
-          "candidate": "hkj",
+          "id": "6fbf8f1c-7f3f-4a0c-a87d-e4e509a1c767",
+          "candidate": "ㅇ",
           "roundWin": 0,
           "roundLose": 0,
           "champion": 0
         }
       ],
-      "id": "0ddd4793-13ea-4996-a114-46d2e09b841f",
+      "id": "4b64bea7-0671-47c7-82c0-6ef81f8cd8da",
       "count": 0,
-      "createdAt": 1646587832267,
+      "createdAt": 1646597066721,
       "comments": [],
       "creatorId": "102227633035821763864"
     }

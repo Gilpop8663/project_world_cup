@@ -7,10 +7,8 @@ import { dateFormater } from 'utils/utilFn';
 interface IToDoProps {
   id: string;
   text: string;
-  photoURL: string;
   userId: string;
   createdAt: number | Date;
-  userImage: string;
   creatorId: string;
   data: any;
   userObj: IUserObjProps | any;
@@ -26,7 +24,7 @@ const Container = styled.li`
 `;
 
 const ToDoText = styled.span`
-  font-size: 1.6em;
+  font-size: 1.2em;
   white-space: pre-wrap;
   margin-bottom: 20px;
 `;
@@ -36,7 +34,7 @@ const ButtonWrapper = styled.div``;
 const ToDoBtn = styled.button`
   width: 60px;
   height: 30px;
-  font-size: 1.2em;
+  font-size: 0.8em;
   border-radius: 15px;
   border: ${({ theme }) => theme.baseBorderStyle};
   font-weight: bold;
@@ -53,30 +51,24 @@ const DeleteButton = styled(ToDoBtn)`
 
 const UserInfoWrapper = styled.div`
   display: flex;
-`;
-
-const UserImage = styled.img`
-  width: 50px;
-  height: 50px;
-  border-radius: 25px;
+  align-items: flex-end;
 `;
 
 const CreateDate = styled.span`
-  font-size: 1.6em;
+  font-size: 1em;
   color: rgba(0, 0, 0, 0.5);
   font-weight: 100;
   margin-left: 10px;
 `;
 
 const UserWrapper = styled.div`
-  display: flex;
+  display: grid;
+  grid-template-columns: 6fr 1fr;
   margin-bottom: 10px;
-  justify-content: space-between;
-  width: 100%;
 `;
 
 const UserInfo = styled.div`
-  font-size: 1.6em;
+  font-size: 1.2em;
   font-weight: bold;
 `;
 
@@ -90,10 +82,8 @@ export default function Comment({
   id,
   text,
   userId,
-  photoURL,
   creatorId,
   createdAt,
-  userImage,
   data,
   setRefetch,
   userObj,
@@ -119,7 +109,6 @@ export default function Comment({
 
   return (
     <Container>
-      <UserImage src={userImage} />
       <MessageWrapper>
         <UserWrapper>
           <UserInfoWrapper>
