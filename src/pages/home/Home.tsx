@@ -1,70 +1,26 @@
 import axios from 'axios';
-import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import WorldCupList from 'components/WorldCupList';
+import { useEffect, useState } from 'react';
 import styled from 'styled-components';
-import { useNavigate } from 'react-router-dom';
+import { IWorldCupProps } from 'utils/interface';
 
-const WorldCupTitle = styled.p`
-  font-size: 30px;
-`;
+const Container = styled.div``;
 
-const Container = styled.div`
-  display: grid;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 40px;
-  margin: 0 auto;
-  width: 70%;
-`;
-const TitleBox: any = styled.div`
-  background-color: beige;
-  border-radius: 20px;
-  width: 100%;
-  height: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-`;
-// const Container = styled.div``;
-// const Container = styled.div``;
-
-const ResultLink = styled.div`
-  padding: 10px 15px;
-  background-color: tomato;
-  cursor: pointer;
-`;
 export default function Home() {
-  const navigate = useNavigate();
   const [listArr, setListArr] = useState<any>([{}]);
   useEffect(() => {
     axios.get('http://localhost:4000/world').then((res) => {
-      setListArr(res.data);
+      setListArr(
+        res.data.sort(
+          (a: IWorldCupProps, b: IWorldCupProps) => b.count - a.count
+        )
+      );
     });
   }, []);
 
-  const goToWorldCup = (item: any) => {
-    navigate(`/world/${item.id}`);
-  };
-
-  console.log(listArr);
-  const goToResult = (worldId: any) => {
-    navigate(`/world/${worldId}/result`);
-  };
   return (
     <Container>
-      {listArr.map((item: any, idx: number) => (
-        <div key={idx}>
-          <TitleBox
-            onClick={() => {
-              goToWorldCup(item);
-            }}
-          >
-            <WorldCupTitle>{item.title}</WorldCupTitle>
-          </TitleBox>
-          <ResultLink onClick={() => goToResult(item.id)}>랭킹 보기</ResultLink>
-        </div>
-      ))}
+      <WorldCupList data={listArr} />
     </Container>
   );
 }

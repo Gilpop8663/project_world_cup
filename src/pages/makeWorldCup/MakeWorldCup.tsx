@@ -11,6 +11,7 @@ import { useForm } from 'react-hook-form';
 import styled from 'styled-components';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import { IUserObjProps } from 'utils/interface';
 
 const Container = styled.div`
   display: flex;
@@ -48,7 +49,7 @@ const InputBox = styled.div`
 
 const SubmitInput = styled.input``;
 
-export default function MakeWorldCup() {
+export default function MakeWorldCup({ userObj }: IUserObjProps) {
   const navigate = useNavigate();
   const {
     register,
@@ -179,6 +180,7 @@ export default function MakeWorldCup() {
         count: 0,
         createdAt: Date.now(),
         comments: [],
+        creatorId: userObj.userId,
       })
       .then((res) => console.log('성공'))
       .catch((error) => console.log(error));
