@@ -63,7 +63,6 @@ function WorldCup() {
   const [winner, setWinner] = useState<any>([]);
   const [roundInfo, setRoundInfo] = useState<string>('🏆 16강전');
   const [modal, setModal] = useState(false);
-
   const location = useLocation();
   const keyword = location.pathname.slice(7);
 
@@ -79,10 +78,20 @@ function WorldCup() {
     setModal(!modal);
   };
 
+  const shuffleArray = (array: any) => {
+    for (let i = 0; i < array.length; i++) {
+      let j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+  };
+
   useEffect(() => {
     axios
       .get(`http://localhost:4000/world?id=${keyword}`)
-      .then((res) => (setData(res.data[0]), setList(res.data[0].list)));
+      .then(
+        (res) => (setData(res.data[0]), setList(shuffleArray(res.data[0].list)))
+      );
   }, []);
 
   useEffect(() => {
@@ -116,15 +125,11 @@ function WorldCup() {
         .put(`http://localhost:4000/world/${keyword}`, {
           ...data,
           list: data.list,
+          count: (data.count += 1),
         })
         .then((res) => console.log('성공'));
-      // .catch((error) => console.log(error));
     }
   }, [winner]);
-  console.log(data.list);
-
-  // console.log(data);
-
   const setDraw = (addNum: number, setListFunction: any, setList: any) => {
     setListFunction((prev: any) => {
       const winnerList = setList[index + addNum];
@@ -168,7 +173,6 @@ function WorldCup() {
     const addNum = 1;
     selectCondidate(addNum);
   };
-  // if (!list) return null;
 
   return (
     <>

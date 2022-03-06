@@ -8,7 +8,7 @@ const Container = styled.div`
   height: 100%;
 `;
 
-const TitleText = styled.p`
+const TitleText: any = styled.p`
   font-size: 23px;
   font-weight: 700;
 `;
@@ -40,7 +40,7 @@ const NameTitle = styled.div`
 `;
 
 const PercentTitle = styled.div`
-  background-color: green;
+  background-color: orange;
   width: 55%;
   height: 100%;
   display: flex;
@@ -60,19 +60,30 @@ const PercentTitle = styled.div`
 
 export default function Ranking() {
   const [data, setData] = useState<any>();
+  const [count, setCount] = useState<number>(0);
 
   const location = useLocation();
   const keyword = location.pathname.slice(9);
 
   useEffect(() => {
-    axios
-      .get(`http://localhost:4000/world?id=${keyword}`)
-      .then((res) => setData(res.data[0]));
+    axios.get(`http://localhost:4000/world?id=${keyword}`).then((res) => {
+      setData(res.data[0].list.sort((a: any, b: any) => b.score - a.score));
+      setCount(res.data[0].count);
+    });
   }, []);
 
-  console.log(data && data.list);
+  const winnerPercent = (num: any) => {
+    let sumScore: number = 0;
+    for (let i = 0; i < data.length; i++) {
+      sumScore += data[i].score;
+    }
+    const percent: number = (num / sumScore) * 100;
+    return percent.toFixed(1);
+  };
 
-  if (!data) return null;
+  console.log(count);
+  console.log(data && data);
+
   return (
     <Container>
       <TitleWrapper>
@@ -91,19 +102,20 @@ export default function Ranking() {
           </TitleText>
         </PercentTitle>
       </TitleWrapper>
-      {data.list.map((ele: any, idx: number) => (
-        <TitleWrapper key={idx}>
-          <RankingTitle>
-            <TitleText>{idx + 1}위</TitleText>
-          </RankingTitle>
-          <NameTitle>
-            <TitleText>{ele.candidate}</TitleText>
-          </NameTitle>
-          <PercentTitle>
-            <TitleText>{ele.score}</TitleText>
-          </PercentTitle>
-        </TitleWrapper>
-      ))}
+      {data &&
+        data.map((ele: any, idx: number) => (
+          <TitleWrapper key={idx}>
+            <RankingTitle>
+              <TitleText>{idx + 1}위</TitleText>
+            </RankingTitle>
+            <NameTitle>
+              <TitleText>{ele.candidate}</TitleText>
+            </NameTitle>
+            <PercentTitle>
+              <TitleText>{winnerPercent(ele.score)}%</TitleText>
+            </PercentTitle>
+          </TitleWrapper>
+        ))}
     </Container>
   );
 }

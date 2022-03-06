@@ -4,88 +4,88 @@
       "title": "음식월드컵",
       "list": [
         {
-          "id": "d1b3a754-4db4-4fdc-9d6d-d70e155fa57e",
-          "candidate": "양곱창",
-          "score": 5
-        },
-        {
-          "id": "8fc8f825-8b0a-45d4-b498-012fdb633e10",
-          "candidate": "소곱창",
-          "score": 8
-        },
-        {
-          "id": "269a85ff-e0d9-4438-a5d7-b91fb138eaba",
-          "candidate": "순댓국",
-          "score": 5
-        },
-        {
-          "id": "86aec635-bbac-4d0e-a21f-0fa6ce7a4156",
-          "candidate": "칼국수",
-          "score": 12
+          "id": "ced30966-1056-4e6f-8136-774973be232d",
+          "candidate": "콩나물국",
+          "score": 28
         },
         {
           "id": "af49b2e5-08cc-4b25-9a9b-93cec88033a5",
           "candidate": "김치국",
-          "score": 5
-        },
-        {
-          "id": "1f138893-15d2-40ef-bf87-4310f45d6a66",
-          "candidate": "호박찜",
-          "score": 5
-        },
-        {
-          "id": "d4cb8a8f-ffcf-4b7f-8acd-4505d969a4e2",
-          "candidate": "김치돼지갈비찜",
-          "score": 4
-        },
-        {
-          "id": "7468db7b-2dfb-4a93-98aa-3927faab175e",
-          "candidate": "비빔밥",
-          "score": 14
-        },
-        {
-          "id": "bceadd0e-1ea4-4fe6-a559-b50f9f8797d2",
-          "candidate": "돼지갈비",
-          "score": 7
-        },
-        {
-          "id": "a04f735c-f78f-44e8-89e3-9762be3f209d",
-          "candidate": "삼겹살",
-          "score": 5
-        },
-        {
-          "id": "7c7156bd-a75e-4a89-a0a9-8da79c4684b0",
-          "candidate": "된장찌개",
-          "score": 2
-        },
-        {
-          "id": "ced30966-1056-4e6f-8136-774973be232d",
-          "candidate": "콩나물국",
-          "score": 12
-        },
-        {
-          "id": "19a54ba5-794a-4359-8477-51392e78af7f",
-          "candidate": "콩자반",
-          "score": 2
-        },
-        {
-          "id": "0e7348b8-6c50-42f6-a68b-1b844eddf9ba",
-          "candidate": "두부부침",
-          "score": 8
+          "score": 17
         },
         {
           "id": "db300846-4a04-4a0c-8be0-73cc5a778349",
           "candidate": "코다리찜",
-          "score": 5
+          "score": 18
+        },
+        {
+          "id": "d1b3a754-4db4-4fdc-9d6d-d70e155fa57e",
+          "candidate": "양곱창",
+          "score": 26
+        },
+        {
+          "id": "7c7156bd-a75e-4a89-a0a9-8da79c4684b0",
+          "candidate": "된장찌개",
+          "score": 11
+        },
+        {
+          "id": "d4cb8a8f-ffcf-4b7f-8acd-4505d969a4e2",
+          "candidate": "김치돼지갈비찜",
+          "score": 19
+        },
+        {
+          "id": "a04f735c-f78f-44e8-89e3-9762be3f209d",
+          "candidate": "삼겹살",
+          "score": 15
+        },
+        {
+          "id": "8fc8f825-8b0a-45d4-b498-012fdb633e10",
+          "candidate": "소곱창",
+          "score": 21
+        },
+        {
+          "id": "86aec635-bbac-4d0e-a21f-0fa6ce7a4156",
+          "candidate": "칼국수",
+          "score": 30
+        },
+        {
+          "id": "19a54ba5-794a-4359-8477-51392e78af7f",
+          "candidate": "콩자반",
+          "score": 17
+        },
+        {
+          "id": "0e7348b8-6c50-42f6-a68b-1b844eddf9ba",
+          "candidate": "두부부침",
+          "score": 15
         },
         {
           "id": "6b8caa81-5fe8-4acd-9536-05cd81afcc77",
           "candidate": "불고기",
-          "score": 21
+          "score": 52
+        },
+        {
+          "id": "1f138893-15d2-40ef-bf87-4310f45d6a66",
+          "candidate": "호박찜",
+          "score": 14
+        },
+        {
+          "id": "7468db7b-2dfb-4a93-98aa-3927faab175e",
+          "candidate": "비빔밥",
+          "score": 36
+        },
+        {
+          "id": "269a85ff-e0d9-4438-a5d7-b91fb138eaba",
+          "candidate": "순댓국",
+          "score": 12
+        },
+        {
+          "id": "bceadd0e-1ea4-4fe6-a559-b50f9f8797d2",
+          "candidate": "돼지갈비",
+          "score": 29
         }
       ],
       "id": "329fbe57-a354-4d22-8614-1f205b5fb1ac",
-      "count": 0,
+      "count": 10,
       "createdAt": 1646472577229,
       "comments": []
     },
@@ -265,6 +265,362 @@
       "id": "78d36270-a029-457a-9a39-f6c547c80ae2",
       "count": 0,
       "createdAt": 1646473055851,
+      "comments": []
+    },
+    {
+      "title": "로아 개사기 직업 월드컵",
+      "list": [
+        {
+          "id": "dec0e00c-d337-46a1-ac5d-e6f50fd09e9d",
+          "candidate": "창술사",
+          "score": 5
+        },
+        {
+          "id": "079d8c7e-250b-41f8-b374-a83cfb820abe",
+          "candidate": "바드 . ",
+          "score": 0
+        },
+        {
+          "id": "c7060375-16c9-49b2-a519-c34eb1780482",
+          "candidate": "인파이터 ",
+          "score": 2
+        },
+        {
+          "id": "8c80ebe4-90c4-487e-b0b9-5f2449c6dc2f",
+          "candidate": "기공사",
+          "score": 1
+        },
+        {
+          "id": "9f6a9666-afc5-4fab-85d7-26a3517a0404",
+          "candidate": "배틀마스터",
+          "score": 1
+        },
+        {
+          "id": "f34b45ad-eac7-474e-80cf-e195f8e2bd0b",
+          "candidate": "워로드",
+          "score": 1
+        },
+        {
+          "id": "ca3c31e3-b666-40f9-bcfe-7e45aa25d232",
+          "candidate": "버서커",
+          "score": 5
+        },
+        {
+          "id": "88754f6b-d8f9-4263-8ab1-482228ee35a7",
+          "candidate": "디스트로이어",
+          "score": 0
+        },
+        {
+          "id": "e8fde393-1cd7-4295-9fb4-3e9ed2a559b7",
+          "candidate": "호크아이",
+          "score": 1
+        },
+        {
+          "id": "47af7607-bcea-47a4-8415-a86b12bbe0e4",
+          "candidate": "스카우터",
+          "score": 2
+        },
+        {
+          "id": "66512ed3-cf7e-4ea9-aef8-381c40b62d9c",
+          "candidate": "데빌헌터",
+          "score": 1
+        },
+        {
+          "id": "02db8d24-7aff-4cce-86f6-67218ca878a1",
+          "candidate": "블래스터",
+          "score": 3
+        },
+        {
+          "id": "c12bbc8d-4ea3-48bd-a7cc-ffa2a1185c5b",
+          "candidate": "블레이드",
+          "score": 4
+        },
+        {
+          "id": "700f4c2e-5c63-4fe8-bc26-a38f61135531",
+          "candidate": "리퍼.",
+          "score": 2
+        },
+        {
+          "id": "bd4fa81c-a866-436a-a8ee-d5d932b08286",
+          "candidate": "데모닉",
+          "score": 1
+        },
+        {
+          "id": "39277194-027f-4131-830d-52e79f377595",
+          "candidate": "건슬링어",
+          "score": 1
+        }
+      ],
+      "id": "31c0e56f-c18c-49e8-b326-542b97eb2901",
+      "count": 1,
+      "createdAt": 1646501869114,
+      "comments": []
+    },
+    {
+      "title": "테스트 월드컵",
+      "list": [
+        {
+          "id": "dad277f4-0ed4-4f51-965f-86ee2efcc618",
+          "candidate": "ㄲㄲㄱ",
+          "score": 1
+        },
+        {
+          "id": "193c6e6f-4269-4bb1-ae45-79263e882214",
+          "candidate": "ㅎㅎㅎㅎㅎㅎ",
+          "score": 2
+        },
+        {
+          "id": "3bc490df-2a42-4f69-94d5-a77a8a19b06b",
+          "candidate": "ㅌㅌㅌㅌㅌㅌ",
+          "score": 1
+        },
+        {
+          "id": "379e55be-e3e2-41c2-8ade-7d210edf7e8c",
+          "candidate": "ㄸㄸㄸ",
+          "score": 0
+        },
+        {
+          "id": "692134b1-b565-4ba0-9ef3-e0bd079329d9",
+          "candidate": "ㅊㅊㅊㅊㅊㅊ",
+          "score": 2
+        },
+        {
+          "id": "ff80ebf1-06e5-49e6-a204-749605937fb0",
+          "candidate": "ㅁㅁㅁㅁㅁㅁ",
+          "score": 5
+        },
+        {
+          "id": "240f8226-edd4-49d0-a119-4394bdf3eed2",
+          "candidate": "ㅆㅆㅆ",
+          "score": 6
+        },
+        {
+          "id": "1f8506b3-bd52-468e-91e2-5958b81bdf55",
+          "candidate": "ㅋㅋㅋㅋㅋㅋ",
+          "score": 9
+        },
+        {
+          "id": "d6d87172-f1f9-418b-87f8-05ed20f54fb1",
+          "candidate": "ㄹㄹㄹㄹㄹ",
+          "score": 3
+        },
+        {
+          "id": "eb73f87c-8d26-4e05-8f15-d5e4de0a8880",
+          "candidate": "ㅉㅉㅉ",
+          "score": 3
+        },
+        {
+          "id": "0832afd0-8945-45cd-a1df-160f8017226e",
+          "candidate": "ㅃㅃㅃㅂ",
+          "score": 1
+        },
+        {
+          "id": "4baed498-a3b6-43ca-a4db-6b339520b843",
+          "candidate": "ㅇㅇㅇㅇㅇ",
+          "score": 0
+        },
+        {
+          "id": "b21b88df-e14a-4812-b05c-cb89288a6bc6",
+          "candidate": "ㅍㅍㅍㅍㅍㅎㅎ",
+          "score": 2
+        },
+        {
+          "id": "e91133b6-dea4-481e-a20c-049deb5e06e2",
+          "candidate": "ㅏㅏㅏㅏ",
+          "score": 6
+        },
+        {
+          "id": "6eca391a-7d98-4e4d-934a-778291236616",
+          "candidate": "ㄴㄴㄴㄴ",
+          "score": 2
+        },
+        {
+          "id": "4b79909e-b409-4c2b-ab3d-7d8de2ed79df",
+          "candidate": "ㅔㅔㅔㅔㅔㅔㅔ",
+          "score": 2
+        }
+      ],
+      "id": "945fed7a-f815-4f8f-b15b-c7a7b3972bdd",
+      "count": 5,
+      "createdAt": 1646511015415,
+      "comments": []
+    },
+    {
+      "title": "테스트 월드컵",
+      "list": [
+        {
+          "id": "069c4381-6f8e-41ce-9737-3cdd6c51ef72",
+          "candidate": "eee",
+          "score": 7
+        },
+        {
+          "id": "1cc8ac44-b09e-48b0-80f3-2b423c9a8725",
+          "candidate": "4444",
+          "score": 1
+        },
+        {
+          "id": "608d57d8-e053-4eba-8ff9-efa4d6e3c9b4",
+          "candidate": "ddd",
+          "score": 5
+        },
+        {
+          "id": "8750b285-54d9-41a7-b10b-c226b4bcf81b",
+          "candidate": "888",
+          "score": 4
+        },
+        {
+          "id": "add40c91-4e78-4ab8-b505-657acfa76cd3",
+          "candidate": "777",
+          "score": 4
+        },
+        {
+          "id": "3f8f56e5-6139-45a4-8e85-fb1b36d6acce",
+          "candidate": "333",
+          "score": 1
+        },
+        {
+          "id": "714bb5dd-936c-416c-80f5-c94f68e530db",
+          "candidate": "222",
+          "score": 5
+        },
+        {
+          "id": "aacd1cd1-32ed-4d94-b855-a36dcec9b60f",
+          "candidate": "555",
+          "score": 0
+        },
+        {
+          "id": "5d1cf07a-d409-4ee9-b5b9-330b9ef8b613",
+          "candidate": "ggg",
+          "score": 4
+        },
+        {
+          "id": "ebaab1f0-a7c0-48b1-9146-d4ddf06e783e",
+          "candidate": "fff",
+          "score": 1
+        },
+        {
+          "id": "aaa8f522-b512-43e4-8675-a11a83288774",
+          "candidate": "aaaa",
+          "score": 5
+        },
+        {
+          "id": "8e9c4882-1188-4fc6-8944-9d01242c2c04",
+          "candidate": "ccc",
+          "score": 2
+        },
+        {
+          "id": "86911f9f-73f1-4482-bbbf-456d15148400",
+          "candidate": "999",
+          "score": 3
+        },
+        {
+          "id": "d67631fe-1a7f-48b0-9e22-d9f605984a72",
+          "candidate": "111",
+          "score": 5
+        },
+        {
+          "id": "d973c38f-0ddf-4122-bcf1-f6d0424873d0",
+          "candidate": "666",
+          "score": 3
+        },
+        {
+          "id": "0c302c98-50c7-4dd3-973e-e76e302f6449",
+          "candidate": "bbb",
+          "score": 5
+        }
+      ],
+      "id": "5e4ddb2d-a626-4cac-8c0f-dc08ff72a085",
+      "count": 4,
+      "createdAt": 1646556028726,
+      "comments": []
+    },
+    {
+      "title": "테스트월드컵33",
+      "list": [
+        {
+          "id": "33ed7396-fcff-4fbb-a9c4-ba33ad30f48c",
+          "candidate": "카카카",
+          "score": 4
+        },
+        {
+          "id": "31a547c9-5319-4aa9-9d3f-d9c05128c6da",
+          "candidate": "222",
+          "score": 0
+        },
+        {
+          "id": "ed90df7b-4984-4f6d-8e9c-e46ac232614a",
+          "candidate": "아아아",
+          "score": 1
+        },
+        {
+          "id": "4e66217a-e823-4094-b8ef-603f1517dc40",
+          "candidate": "다다다",
+          "score": 0
+        },
+        {
+          "id": "3f927d5f-2b01-468f-99c0-21d06422f9ce",
+          "candidate": "111",
+          "score": 2
+        },
+        {
+          "id": "293db475-b7cf-493b-8158-5277d6b46d82",
+          "candidate": "바바바",
+          "score": 0
+        },
+        {
+          "id": "e95a0bd3-4ee2-4232-b59c-c7643a59548a",
+          "candidate": "라라라",
+          "score": 1
+        },
+        {
+          "id": "2db8017d-a0e9-4ccf-a207-5121e82b3846",
+          "candidate": "가가가",
+          "score": 0
+        },
+        {
+          "id": "92b057f6-09e0-452f-b0df-7a02794ed652",
+          "candidate": "자자자",
+          "score": 3
+        },
+        {
+          "id": "c47a0518-2667-49b3-b448-fcf619882b41",
+          "candidate": "나나나",
+          "score": 0
+        },
+        {
+          "id": "cbf1a1dc-471b-4362-9876-b20caa7f94af",
+          "candidate": "마마마",
+          "score": 1
+        },
+        {
+          "id": "f4f27b55-3879-44f6-ab80-310ddb16c103",
+          "candidate": "파파파",
+          "score": 0
+        },
+        {
+          "id": "bd6b1391-3bb1-4f43-a635-aafc370cd5c2",
+          "candidate": "타타타",
+          "score": 2
+        },
+        {
+          "id": "db3c114c-d9bb-45ea-97ae-095d5a61eaf4",
+          "candidate": "차차차",
+          "score": 0
+        },
+        {
+          "id": "e45dcb46-74a6-41fc-82fc-f8ff6864c8b1",
+          "candidate": "하하하",
+          "score": 1
+        },
+        {
+          "id": "8c968a26-1b83-4689-aed0-1a1c5b9aacd3",
+          "candidate": "사사사",
+          "score": 0
+        }
+      ],
+      "id": "365ee042-60ae-4f9e-b3be-de9267bcbe3e",
+      "count": 1,
+      "createdAt": 1646556453356,
       "comments": []
     }
   ]
