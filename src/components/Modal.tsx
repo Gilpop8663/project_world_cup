@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const ModalBox = styled.div`
@@ -26,27 +26,42 @@ const Overlay = styled.div`
 `;
 
 const ModalContent = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   position: absolute;
   transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
   width: 70%;
   height: 70%;
+
   border-radius: 20px;
   background: white;
+`;
+
+const WinnerText = styled.h1`
+  font-size: 6.5vw;
+  text-align: center;
+  color: black;
 `;
 export default function Modal({ winner, resultId }: any) {
   const navigate = useNavigate();
 
   const goToResult = () => {
-    navigate(`/ranking/${resultId}`);
+    navigate(`/world/${resultId}/result`);
   };
 
   return (
     <ModalBox>
       <Overlay />
       <ModalContent>
-        <p>{winner[0].candidate} 우승!!</p>
+        <WinnerText data-splitting>
+          우승자는 {winner[0].candidate}입니다!!!
+        </WinnerText>
+        <span>🏆</span>
+
         <p onClick={goToResult}>랭킹 보러 가기</p>
       </ModalContent>
     </ModalBox>

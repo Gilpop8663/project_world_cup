@@ -5,8 +5,8 @@ import styled from 'styled-components';
 import { setEnvironmentData } from 'worker_threads';
 
 const Container = styled.div`
-  width: 100%;
   height: 100%;
+  padding: 20px;
 `;
 
 const TitleText: any = styled.p`
@@ -24,7 +24,7 @@ const TitleWrapper = styled.div`
 
 const RankingTitle = styled.div`
   background-color: beige;
-  width: 5%;
+  width: 8%;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -35,7 +35,7 @@ const RankingTitle = styled.div`
 
 const NameTitle = styled.div`
   background-color: aqua;
-  width: 15%;
+  width: 26%;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -46,7 +46,7 @@ const NameTitle = styled.div`
 
 const PercentTitle = styled.div`
   background-color: orange;
-  width: 20%;
+  width: 33%;
   height: 100%;
   padding: 15px;
   border: 2px solid white;
@@ -66,23 +66,15 @@ const Chart = styled.div`
   background-color: pink;
   border-radius: 2px;
 `;
-// const Container = styled.div``;
-// const Container = styled.div``;
-// const Container = styled.div``;
-// const Container = styled.div``;
-// const Container = styled.div``;
-// const Container = styled.div``;
-// const Container = styled.div``;
-// const Container = styled.div``;
 
 export default function Ranking() {
   const [data, setData] = useState<any>();
   const [count, setCount] = useState<number>(0);
 
   const location = useLocation();
-  const keyword = location.pathname.slice(9);
+  const keyword = location.pathname.split('/');
   useEffect(() => {
-    axios.get(`http://localhost:4000/world?id=${keyword}`).then((res) => {
+    axios.get(`http://localhost:4000/world?id=${keyword[2]}`).then((res) => {
       const sortRoundWin: any = res.data[0].list.sort(
         (a: any, b: any) =>
           b.roundWin / (b.roundWin + b.roundLose) -
