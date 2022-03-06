@@ -7,7 +7,6 @@ import GoogleLoginBtn from './GoogleLoginBtn';
 
 const Container = styled.div`
   display: flex;
-  width: 30vw;
   justify-content: space-between;
   align-items: center;
   padding: 30px;

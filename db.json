@@ -75,121 +75,153 @@
   ],
   "world": [
     {
-      "title": "음식월드컵",
+      "title": "음식 월드컵 ",
       "list": [
         {
-          "id": "d1b3a754-4db4-4fdc-9d6d-d70e155fa57e",
-          "candidate": "양곱창",
-          "score": 19
+          "id": "913742ee-c61d-4bb0-8427-141daacfa57f",
+          "candidate": "찜닭",
+          "roundWin": 16,
+          "roundLose": 31,
+          "champion": 1
         },
         {
-          "id": "8fc8f825-8b0a-45d4-b498-012fdb633e10",
-          "candidate": "소곱창",
-          "score": 8
+          "id": "3bde6cdf-a854-4d0f-b367-198377c68516",
+          "candidate": "국밥",
+          "roundWin": 30,
+          "roundLose": 29,
+          "champion": 3
         },
         {
-          "id": "269a85ff-e0d9-4438-a5d7-b91fb138eaba",
-          "candidate": "순댓국",
-          "score": 9
-        },
-        {
-          "id": "86aec635-bbac-4d0e-a21f-0fa6ce7a4156",
-          "candidate": "칼국수",
-          "score": 12
-        },
-        {
-          "id": "af49b2e5-08cc-4b25-9a9b-93cec88033a5",
-          "candidate": "김치국",
-          "score": 12
-        },
-        {
-          "id": "1f138893-15d2-40ef-bf87-4310f45d6a66",
-          "candidate": "호박찜",
-          "score": 5
-        },
-        {
-          "id": "d4cb8a8f-ffcf-4b7f-8acd-4505d969a4e2",
-          "candidate": "김치돼지갈비찜",
-          "score": 8
-        },
-        {
-          "id": "7468db7b-2dfb-4a93-98aa-3927faab175e",
-          "candidate": "비빔밥",
-          "score": 14
-        },
-        {
-          "id": "bceadd0e-1ea4-4fe6-a559-b50f9f8797d2",
+          "id": "7fa11373-aa8d-4d99-873d-9fe96f3bde2b",
           "candidate": "돼지갈비",
-          "score": 17
+          "roundWin": 44,
+          "roundLose": 28,
+          "champion": 4
         },
         {
-          "id": "a04f735c-f78f-44e8-89e3-9762be3f209d",
+          "id": "dff2835d-342e-4d84-95ab-4046348b5c49",
+          "candidate": "닭볶음탕",
+          "roundWin": 30,
+          "roundLose": 30,
+          "champion": 2
+        },
+        {
+          "id": "1a43bc2a-f7a7-46e1-af78-5a52848ff603",
+          "candidate": "김치",
+          "roundWin": 29,
+          "roundLose": 29,
+          "champion": 3
+        },
+        {
+          "id": "d6d49789-806f-4eaa-a3a9-2b0687039fb4",
+          "candidate": "치킨 ",
+          "roundWin": 33,
+          "roundLose": 30,
+          "champion": 2
+        },
+        {
+          "id": "c17f5bcb-46a1-45f8-bc41-f703ddba39f3",
           "candidate": "삼겹살",
-          "score": 5
+          "roundWin": 27,
+          "roundLose": 32,
+          "champion": 0
         },
         {
-          "id": "7c7156bd-a75e-4a89-a0a9-8da79c4684b0",
-          "candidate": "된장찌개",
-          "score": 6
+          "id": "a491d780-ff7b-411b-83ef-537356fa8784",
+          "candidate": "떡볶이",
+          "roundWin": 24,
+          "roundLose": 31,
+          "champion": 1
         },
         {
-          "id": "ced30966-1056-4e6f-8136-774973be232d",
-          "candidate": "콩나물국",
-          "score": 12
+          "id": "4a0ab2d2-fb47-4270-a488-bbca89582aea",
+          "candidate": "피자",
+          "roundWin": 36,
+          "roundLose": 28,
+          "champion": 4
         },
         {
-          "id": "19a54ba5-794a-4359-8477-51392e78af7f",
-          "candidate": "콩자반",
-          "score": 9
+          "id": "1896b7b1-1177-4730-a783-408595a778cf",
+          "candidate": "보쌈",
+          "roundWin": 40,
+          "roundLose": 27,
+          "champion": 5
         },
         {
-          "id": "0e7348b8-6c50-42f6-a68b-1b844eddf9ba",
-          "candidate": "두부부침",
-          "score": 8
+          "id": "57db1541-f51f-4502-87c7-c82b4a30e522",
+          "candidate": "짬뽕",
+          "roundWin": 25,
+          "roundLose": 32,
+          "champion": 0
         },
         {
-          "id": "db300846-4a04-4a0c-8be0-73cc5a778349",
-          "candidate": "코다리찜",
-          "score": 8
+          "id": "82522aae-c8fc-4e4d-9c86-52b8cc595d94",
+          "candidate": "라면",
+          "roundWin": 18,
+          "roundLose": 32,
+          "champion": 0
         },
         {
-          "id": "6b8caa81-5fe8-4acd-9536-05cd81afcc77",
-          "candidate": "불고기",
-          "score": 21
+          "id": "6f550cc1-dff4-4032-9087-5dc9d262dc74",
+          "candidate": "김치볶음밥",
+          "roundWin": 36,
+          "roundLose": 30,
+          "champion": 2
+        },
+        {
+          "id": "df18fa49-9289-4dfe-a606-8f49446cdb2e",
+          "candidate": "족발",
+          "roundWin": 32,
+          "roundLose": 30,
+          "champion": 2
+        },
+        {
+          "id": "14075f40-ca09-4c8c-9d59-c02041426e30",
+          "candidate": "새우튀김",
+          "roundWin": 31,
+          "roundLose": 30,
+          "champion": 2
+        },
+        {
+          "id": "4c0ebba0-2ef9-440d-9714-12f833b7a6e3",
+          "candidate": "샐러드",
+          "roundWin": 29,
+          "roundLose": 31,
+          "champion": 1
         }
       ],
-      "id": "329fbe57-a354-4d22-8614-1f205b5fb1ac",
-      "count": 0,
-      "createdAt": 1646472577229,
+      "id": "62aa538c-aefb-4a0b-b99d-e6ef4bda1df8",
+      "count": 32,
+      "createdAt": 1646562077549,
       "comments": [
         {
-          "id": "09227a59-c37e-40bb-abb9-5d3caae4394d",
-          "text": "hgjgh",
-          "createdAt": 1646508893201,
+          "id": "0889848d-7669-4901-b1c6-3b83cd2137ee",
+          "text": "오 보쌈이 일등이엿군요 요알못들;;",
+          "createdAt": 1646579971582,
           "creatorId": "102227633035821763864",
           "userId": "긴고랑",
           "userImage": "data:image/png;base64,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"
         },
         {
-          "id": "a759d8a2-c96c-4f31-98dd-bb353c38913a",
-          "text": "fghfg",
-          "createdAt": 1646508894028,
+          "id": "fd664ff9-9990-4a7c-9b9a-df2543b76b66",
+          "text": "ㅁㄴㅇㅁㄴㄻㄴㄻㄴㄻㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴ",
+          "createdAt": 1646580131650,
           "creatorId": "102227633035821763864",
           "userId": "긴고랑",
           "userImage": "data:image/png;base64,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"
         },
         {
-          "id": "de8a8297-dcc5-47b9-8ea4-1a5e7d1ad35e",
-          "text": "fgjfgj",
-          "createdAt": 1646508894749,
+          "id": "ab16ecac-d57e-4f33-a25c-c1e7bc66bde6",
+          "text": "잘나 오는데요\n\n쉬프트 앤터도 되나요",
+          "createdAt": 1646580151254,
           "creatorId": "102227633035821763864",
           "userId": "긴고랑",
           "userImage": "data:image/png;base64,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"
         },
         {
-          "id": "55070efe-c256-4b37-a445-769af963bb44",
-          "text": "이제 비로그인으로 가보렉요",
-          "createdAt": 1646508900673,
+          "id": "37eed257-2998-4cf9-8d06-5321b71c67d0",
+          "text": "ㅁㄴㄻㄴㄻㄴㄻㄴㄻㄴㄻㄴㄻㄴㄻㄴㄻㄴ러ㄴㅁㅇㄴㅁㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇㄻㄴㄻㄴㄻㄴㄻㄴㄻㄴㄻㄴ런ㅁㅇㅁㄴㅇㄴㅁㅇㅁㄴㅇㅁㄴㄻㄴㄻㄴㄻㄴㄻㄴㄹㅋㅌㅋㅌㅍㅋㅌㅍㅋㅌㅍㅋㅌㅊㅍㅋㅌㅍㅋㅌㅍㅋㅌㅍㅋㅌㅍㅋㅌㅍㅋㅌㅍㅋㅌㅍㅋㅌㅍㅋㅌㅍㅋㅌㅍㅋㅌㅍㅋㅌㅍㅋㅌㅍㅋㅌㅍㅋㅌㅍㅋㅌㅍㅋㅌㅍㅋㅌㅍㅋㅌㅍㅋㅌㅍㅋㅌㅍㅋㅌㅍㅋㅌㅍㅋㅌㅍㅋㅌㅍ\n\n\n\n\n",
+          "createdAt": 1646580200062,
           "creatorId": "102227633035821763864",
           "userId": "긴고랑",
           "userImage": "data:image/png;base64,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"
@@ -197,199 +229,756 @@
       ]
     },
     {
-      "title": "hk31232",
+      "title": "das",
       "list": [
         {
-          "id": "68348674-41e3-4494-ac0b-04f5c56e9869",
-          "candidate": "jkh",
-          "score": 25
+          "id": "8c527469-b865-4ddc-ae5e-b82896b2c8ff",
+          "candidate": "j21213",
+          "roundWin": 5,
+          "roundLose": 4,
+          "champion": 1
         },
         {
-          "id": "bd19a305-21da-4711-96ef-a4db2a963ad7",
+          "id": "eeda1e5d-d815-4092-8382-84a79b92c976",
+          "candidate": "jk",
+          "roundWin": 5,
+          "roundLose": 5,
+          "champion": 0
+        },
+        {
+          "id": "420eea4b-6efe-4484-9a39-66daa32282db",
+          "candidate": "h",
+          "roundWin": 2,
+          "roundLose": 5,
+          "champion": 0
+        },
+        {
+          "id": "fced0deb-b6e2-4633-b892-ec7daa5e0c05",
+          "candidate": "t",
+          "roundWin": 3,
+          "roundLose": 5,
+          "champion": 0
+        },
+        {
+          "id": "3ee917e7-017a-4333-b909-52219d7af857",
+          "candidate": "j",
+          "roundWin": 2,
+          "roundLose": 5,
+          "champion": 0
+        },
+        {
+          "id": "9fc0b68d-cd9a-4668-b6bd-3a55da7de25f",
+          "candidate": "hu",
+          "roundWin": 5,
+          "roundLose": 5,
+          "champion": 0
+        },
+        {
+          "id": "9237f224-3ef2-4efc-b08e-a013dc8a4328",
+          "candidate": "7",
+          "roundWin": 4,
+          "roundLose": 5,
+          "champion": 0
+        },
+        {
+          "id": "11e06c5e-852c-45d3-9141-64a7646e990d",
+          "candidate": "b",
+          "roundWin": 2,
+          "roundLose": 5,
+          "champion": 0
+        },
+        {
+          "id": "70059722-edd6-486b-980d-455fab7aa441",
+          "candidate": "gj",
+          "roundWin": 7,
+          "roundLose": 4,
+          "champion": 1
+        },
+        {
+          "id": "819cb30f-17a1-46ba-b550-073499286797",
+          "candidate": "6",
+          "roundWin": 7,
+          "roundLose": 4,
+          "champion": 1
+        },
+        {
+          "id": "27b232d7-e882-4318-9e5b-17e8f37a2801",
+          "candidate": "kn",
+          "roundWin": 3,
+          "roundLose": 5,
+          "champion": 0
+        },
+        {
+          "id": "e6604e58-fc15-4135-a33e-f7dc90b8d986",
+          "candidate": "asd",
+          "roundWin": 10,
+          "roundLose": 4,
+          "champion": 1
+        },
+        {
+          "id": "b8d511b1-f72a-425c-a274-3f8f0c037a79",
+          "candidate": "k",
+          "roundWin": 5,
+          "roundLose": 5,
+          "champion": 0
+        },
+        {
+          "id": "915ebf38-2070-4db5-a831-34083fe276b5",
+          "candidate": "9",
+          "roundWin": 7,
+          "roundLose": 4,
+          "champion": 1
+        },
+        {
+          "id": "476b2c02-aa40-4c82-b17b-7db0cfadc9c1",
+          "candidate": "i0",
+          "roundWin": 7,
+          "roundLose": 5,
+          "champion": 0
+        },
+        {
+          "id": "1f81f082-570b-41c7-9750-ca6f32171c26",
+          "candidate": "ufth",
+          "roundWin": 1,
+          "roundLose": 5,
+          "champion": 0
+        }
+      ],
+      "id": "495d5486-0389-441f-9918-2b26893be6e8",
+      "count": 5,
+      "createdAt": 1646563541988,
+      "comments": []
+    },
+    {
+      "title": "7",
+      "list": [
+        {
+          "id": "38b7155d-9fe2-4764-a80f-d1f4db69f6f5",
+          "candidate": "m",
+          "roundWin": 7,
+          "roundLose": 7,
+          "champion": 0
+        },
+        {
+          "id": "1752b33e-6945-4469-964b-51ca29da23bc",
+          "candidate": "u",
+          "roundWin": 6,
+          "roundLose": 6,
+          "champion": 1
+        },
+        {
+          "id": "985dece5-9e87-41ed-94f2-c4dc665294fd",
+          "candidate": "c",
+          "roundWin": 4,
+          "roundLose": 7,
+          "champion": 0
+        },
+        {
+          "id": "b3e27d8a-f250-483c-947e-964d1c4eaefe",
+          "candidate": "h",
+          "roundWin": 7,
+          "roundLose": 6,
+          "champion": 1
+        },
+        {
+          "id": "9cac6172-06c1-4684-88ce-9f35e168d42b",
+          "candidate": "o",
+          "roundWin": 7,
+          "roundLose": 7,
+          "champion": 0
+        },
+        {
+          "id": "25ae20f1-4e7e-4e6c-b92e-b42695b27fba",
+          "candidate": "k",
+          "roundWin": 13,
+          "roundLose": 5,
+          "champion": 2
+        },
+        {
+          "id": "68b2f628-c3f3-468b-9678-c6684220ee60",
+          "candidate": "i",
+          "roundWin": 6,
+          "roundLose": 7,
+          "champion": 0
+        },
+        {
+          "id": "9fb04cc6-c9b1-43e8-a0c1-e1eabb674f26",
+          "candidate": "jn",
+          "roundWin": 9,
+          "roundLose": 7,
+          "champion": 0
+        },
+        {
+          "id": "7a31cc69-4050-4ea3-9c73-b27d2888e809",
+          "candidate": "b",
+          "roundWin": 5,
+          "roundLose": 7,
+          "champion": 0
+        },
+        {
+          "id": "66351db0-d8fe-4437-a0ad-8c45efce5b7b",
+          "candidate": "v",
+          "roundWin": 2,
+          "roundLose": 7,
+          "champion": 0
+        },
+        {
+          "id": "c2ff48fa-523b-4a5f-82cd-1e8ffbd456c5",
+          "candidate": "l",
+          "roundWin": 8,
+          "roundLose": 6,
+          "champion": 1
+        },
+        {
+          "id": "c2a575b0-ccd1-4aca-b4aa-c9405a9763cb",
+          "candidate": "g",
+          "roundWin": 5,
+          "roundLose": 7,
+          "champion": 0
+        },
+        {
+          "id": "d4fc5e62-931b-4864-b2c7-efda196c2fa9",
+          "candidate": "y",
+          "roundWin": 12,
+          "roundLose": 6,
+          "champion": 1
+        },
+        {
+          "id": "8a4e0f32-8001-4f17-924b-08c6a5a649cb",
+          "candidate": "p",
+          "roundWin": 3,
+          "roundLose": 7,
+          "champion": 0
+        },
+        {
+          "id": "afb19b03-d6bb-47d7-9afc-75990d325698",
+          "candidate": "h",
+          "roundWin": 5,
+          "roundLose": 7,
+          "champion": 0
+        },
+        {
+          "id": "7b082b03-34fb-49f6-93f3-0f72055825f9",
+          "candidate": "b",
+          "roundWin": 6,
+          "roundLose": 6,
+          "champion": 1
+        }
+      ],
+      "id": "883a191f-a456-44eb-84e2-4e41c1f76406",
+      "count": 7,
+      "createdAt": 1646563671358,
+      "comments": [
+        {
+          "id": "4d1240a4-57d2-4f57-ad25-ff7dc3766e6a",
+          "text": "ㅇㅁㄴㅇㅁㄴㄹ",
+          "createdAt": 1646583816292,
+          "creatorId": "102227633035821763864",
+          "userId": "긴고랑",
+          "userImage": "data:image/png;base64,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"
+        },
+        {
+          "id": "6a6df736-30dc-485a-bfbb-6be72b52a0d5",
+          "text": "ㅋㅌㅍㅋㅌㅍ",
+          "createdAt": 1646583817971,
+          "creatorId": "102227633035821763864",
+          "userId": "긴고랑",
+          "userImage": "data:image/png;base64,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"
+        }
+      ]
+    },
+    {
+      "title": "213",
+      "list": [
+        {
+          "id": "d8c117cb-d8af-420d-a230-745925ce7f52",
+          "candidate": "w",
+          "roundWin": 5,
+          "roundLose": 8,
+          "champion": 0
+        },
+        {
+          "id": "a40a9b73-d280-497c-a43a-ddfde9ebc5f5",
+          "candidate": "f",
+          "roundWin": 8,
+          "roundLose": 8,
+          "champion": 0
+        },
+        {
+          "id": "4316d17f-3289-45be-97c4-afd580688b14",
+          "candidate": "j",
+          "roundWin": 7,
+          "roundLose": 7,
+          "champion": 1
+        },
+        {
+          "id": "50d781f9-2342-44d7-b5f7-9e379e514eda",
+          "candidate": "b",
+          "roundWin": 7,
+          "roundLose": 8,
+          "champion": 0
+        },
+        {
+          "id": "d97b1481-40ef-4752-aea6-927727c2f576",
+          "candidate": "y",
+          "roundWin": 12,
+          "roundLose": 7,
+          "champion": 1
+        },
+        {
+          "id": "6fb52b78-051b-47d4-9259-45ec40dd2196",
+          "candidate": "g",
+          "roundWin": 11,
+          "roundLose": 7,
+          "champion": 1
+        },
+        {
+          "id": "ea9db2b5-f57f-449a-b9b8-96a4aaff3ea3",
+          "candidate": "v",
+          "roundWin": 4,
+          "roundLose": 8,
+          "champion": 0
+        },
+        {
+          "id": "26e30274-b562-48ec-aabf-138c8c8cd428",
+          "candidate": "e",
+          "roundWin": 15,
+          "roundLose": 7,
+          "champion": 1
+        },
+        {
+          "id": "e78aa7b3-0dc0-48cb-8096-37a4a12543e1",
+          "candidate": "d",
+          "roundWin": 7,
+          "roundLose": 8,
+          "champion": 0
+        },
+        {
+          "id": "78323a6c-c6a5-494c-813d-02cad03407fc",
+          "candidate": "u",
+          "roundWin": 3,
+          "roundLose": 8,
+          "champion": 0
+        },
+        {
+          "id": "4807ac06-a4f9-4d7e-97c6-416e86a2726c",
+          "candidate": "c",
+          "roundWin": 11,
+          "roundLose": 7,
+          "champion": 1
+        },
+        {
+          "id": "8ab9e986-4cf5-43ec-a210-ab1b70663d3b",
+          "candidate": "t",
+          "roundWin": 4,
+          "roundLose": 8,
+          "champion": 0
+        },
+        {
+          "id": "90a2b79c-01bd-4a0b-a364-0144b2094464",
+          "candidate": "t",
+          "roundWin": 5,
+          "roundLose": 7,
+          "champion": 1
+        },
+        {
+          "id": "0b43ca00-9801-4a26-81ff-0b59e370b534",
+          "candidate": "r",
+          "roundWin": 6,
+          "roundLose": 7,
+          "champion": 1
+        },
+        {
+          "id": "e011f3fd-4917-4767-87a8-255258607c0a",
+          "candidate": "h",
+          "roundWin": 4,
+          "roundLose": 8,
+          "champion": 0
+        },
+        {
+          "id": "f5771be3-883a-4770-a71f-ba8c1db977df",
+          "candidate": "x",
+          "roundWin": 11,
+          "roundLose": 7,
+          "champion": 1
+        }
+      ],
+      "id": "b8ebff95-9bb0-4529-b5c6-b9cb0fe395cf",
+      "count": 8,
+      "createdAt": 1646567190036,
+      "comments": [
+        {
+          "id": "7fe5cdb0-5452-4531-a748-23fd018227ad",
+          "text": "저희 쩌는데요",
+          "createdAt": 1646580252565,
+          "creatorId": "102227633035821763864",
+          "userId": "긴고랑",
+          "userImage": "data:image/png;base64,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"
+        }
+      ]
+    },
+    {
+      "title": "hjk",
+      "list": [
+        {
+          "id": "d2ab8daf-b925-45ba-b924-8119f5888511",
+          "candidate": "jkh",
+          "roundWin": 4,
+          "roundLose": 0,
+          "champion": 1
+        },
+        {
+          "id": "56263fe7-7bb1-49aa-a795-83618fbedc53",
+          "candidate": "kjh",
+          "roundWin": 0,
+          "roundLose": 1,
+          "champion": 0
+        },
+        {
+          "id": "f24f66e5-db9c-4e55-9b5f-0f7dcbbac017",
+          "candidate": "kjh",
+          "roundWin": 1,
+          "roundLose": 1,
+          "champion": 0
+        },
+        {
+          "id": "8cbf3f8e-85f9-459b-ab52-9ce28f9ba61b",
+          "candidate": "jkhjhk",
+          "roundWin": 0,
+          "roundLose": 1,
+          "champion": 0
+        },
+        {
+          "id": "bbbf3f77-7aab-4be2-8fb0-4cb1b8794612",
+          "candidate": "jkh",
+          "roundWin": 2,
+          "roundLose": 1,
+          "champion": 0
+        },
+        {
+          "id": "e15dd7a3-26ba-43a2-aee5-acd44d30b6c1",
           "candidate": "khj",
-          "score": 4
+          "roundWin": 0,
+          "roundLose": 1,
+          "champion": 0
         },
         {
-          "id": "5961776b-db8d-4952-97e1-f750dd2c1bfa",
-          "candidate": "jk321",
-          "score": 6
-        },
-        {
-          "id": "52f402de-6701-4fc3-9985-f87e55c42f40",
-          "candidate": "jhk",
-          "score": 10
-        },
-        {
-          "id": "9548b20e-6517-41c8-980d-5805e80d2e87",
-          "candidate": "hjk",
-          "score": 12
-        },
-        {
-          "id": "022a5902-aa2a-43ad-a734-254c1e4e47ba",
-          "candidate": "kjhk",
-          "score": 5
-        },
-        {
-          "id": "534b927b-4ae9-4139-8aaf-c9d03a7b35c6",
-          "candidate": "hjkhj",
-          "score": 6
-        },
-        {
-          "id": "d023dfa2-866f-4cab-91e3-dc837ba5030f",
-          "candidate": "hj132",
-          "score": 15
-        },
-        {
-          "id": "359945df-a9d8-428e-b0bb-a087235bf3b6",
-          "candidate": "j123",
-          "score": 18
-        },
-        {
-          "id": "7f3bd6af-700d-4198-a89c-4fda38576259",
-          "candidate": "hjk",
-          "score": 5
-        },
-        {
-          "id": "6e2f7ac4-095a-42f2-8211-5d5dcd8b30d9",
-          "candidate": "k123",
-          "score": 6
-        },
-        {
-          "id": "5adf6fce-1568-45aa-8c15-9362d2eaf59e",
+          "id": "6ae5aaca-417b-4b10-bb42-ad8972d12d44",
           "candidate": "hkj",
-          "score": 10
+          "roundWin": 1,
+          "roundLose": 1,
+          "champion": 0
         },
         {
-          "id": "a305a07d-71a1-450c-a163-a1d0b4582b93",
-          "candidate": "hjkk",
-          "score": 12
+          "id": "f2f11a97-9823-4a0f-b296-6132cd929533",
+          "candidate": "khj",
+          "roundWin": 0,
+          "roundLose": 1,
+          "champion": 0
         },
         {
-          "id": "3ee21e37-f293-40e4-89d6-579f635621d5",
-          "candidate": "hjkhj",
-          "score": 5
+          "id": "c2f70c1e-5f08-4986-a1b6-6ba99d8f953d",
+          "candidate": "jhhk",
+          "roundWin": 3,
+          "roundLose": 1,
+          "champion": 0
         },
         {
-          "id": "65dca3f0-4bea-4a77-8676-c6163445f77a",
-          "candidate": "hkj",
-          "score": 6
-        },
-        {
-          "id": "082a5e51-633e-405a-90ce-054745cfb476",
+          "id": "2bb78ec9-1993-4413-a66c-8fc9bb5d7858",
           "candidate": "jkh",
-          "score": 20
+          "roundWin": 0,
+          "roundLose": 1,
+          "champion": 0
+        },
+        {
+          "id": "35b7709b-0be3-4541-bcc6-a38f4ef8d6c2",
+          "candidate": "hjkk",
+          "roundWin": 1,
+          "roundLose": 1,
+          "champion": 0
+        },
+        {
+          "id": "766e885d-f770-4b95-a081-ce9edffd8264",
+          "candidate": "hkj",
+          "roundWin": 0,
+          "roundLose": 1,
+          "champion": 0
+        },
+        {
+          "id": "c41e0992-4b43-472b-ae1c-46a122343c80",
+          "candidate": "hj",
+          "roundWin": 2,
+          "roundLose": 1,
+          "champion": 0
+        },
+        {
+          "id": "59909aab-17c7-4e20-ab15-c846245fe5cb",
+          "candidate": "jh",
+          "roundWin": 0,
+          "roundLose": 1,
+          "champion": 0
+        },
+        {
+          "id": "f07fb037-df7c-4efc-8e82-5c6cbb361068",
+          "candidate": "jkh",
+          "roundWin": 1,
+          "roundLose": 1,
+          "champion": 0
+        },
+        {
+          "id": "83ab492f-7d7e-4e8e-8e7e-c3873f2f9e5a",
+          "candidate": "jkh",
+          "roundWin": 0,
+          "roundLose": 1,
+          "champion": 0
         }
       ],
-      "id": "9f25ffaa-49f8-4a5f-bd7f-8f7e29fcaaa9",
-      "count": 0,
-      "createdAt": 1646472692482,
-      "comments": [
-        {
-          "id": "7109d5e9-1b46-4376-bfae-1d23739cc552",
-          "text": "asfasf",
-          "createdAt": 1646507638530,
-          "userId": "Anonymous",
-          "userImage": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAXVBMVEX///+AgIB7e3t6enrCwsJ3d3f6+vqCgoL29vaIiIjPz8/Ly8vu7u7y8vKurq7r6+vX19ehoaGMjIzd3d3l5eWbm5uTk5OsrKzFxcWlpaW5ubnZ2dm1tbW8vLyXl5dsXrfwAAAHf0lEQVR4nO2d6XbaMBCFbQl5X/BuNr//Y1YmkEADCWNrrGva719O21T3zGibRXacBfCCpIr66FAngbfE/7csweFUlL5SUkqllF82x6h+I5lp3PhCCPcG/aMou+17iKx3vrxT9yVThllue3izqQb1WN5FpGpq20OcRV6In/R9+GsW2B7mdE7ub/rOGsPK9kAnkgzyBX0jKrY91klsXzLgRWJve7QT6F/XN3pqZHu8ZPaveuinxPiUdbtu31fr2CSPiibQdaUUZ6QSTYy/up7IAu/sKcM9uMaY6KIPLBpCT8yKtMg807jDnY+Bb0CgltimtpU8Y2fChBpRgkrsZ0/CT4kDpKPmpvSNEgvbah5RGPLRM4inua0xHz3jJ7YFfaM0KtAVO9uC/mZj1oRaItjd0dBWeKsQbLExbkItESqO4xmehWeFnW1Vt2xN7hRXFNK2b+q8docECuIEDPq0mza2dX0x/1r4GJxdf+ARKGEuwynHLHSRzjVcTuqWKKup0VvFLQIkQWX+xPapEGQiHric1BV729o+OHI5Kcrp22u5BKIsNQnbNNRGhIiA801DffiGWExPbNNQK9zaVjfCcq+4gHG9YFxoXHGyrW6EUSDGPd+blTH8TSHCFTHhVOi2tuVpalaFoW15murtFRrOV/xzCn2Ag2n0X+Es3t9LERRyXi0wFL7/bvH+Oz7vqa20Lc/5F07eDuMFGCSuz5D+/VJ4tK1uhC2mr5EQhUN8AWGU/Bpb5kmjIOoxak4bQpRhBiGfwhDgaqFp+DIzENuh42z4FIJk1/gmIkqG1OGbiBCJGc2ey4g+RHLNYbzmo5QnbvkqFTLb2s6kjDlgF8JNzbVZfEdBLKacGVIMN+W8H0Lknpy3jyYGbx9rS1kVIuQtmBUCbBfvr5A1XgqhkLXaBEMhZ8UQxErDeqaB2C2cE+eWD3Gm4UyRYpxLOW9PGDFvxmgiSAUtR3flFYhp6Dg5mw0lRHmpw7kjYjgpXxwDIwM8EjC5qcRpWM9YJKLkZUZSDoEg6dELHJluiVDF/glHljREuDh9YT51gfYuxsxnzL4Ds9l/kRm1ooTZCm/YPHlwdgoC5ED6F3VrSiLsY1/Gukl9pJ3wjoMZI4Lcex9h5pkanAP3A4wcUCXKnekRRqJSmOvoBc9AVAqjavYp3Xw3hTuu3bOdf3iDdlITbopR+PwD1KegvwGRbfqJZOZEBF9nRmamojDqnn9k3mvJEA34vzEvjYF8nrlSz1hrVjALR+YYEecNup+YbkSUyvVfmXzDAAsgPiedGD1d0RdLJrZCITSMvsqkjj3wS8U9U6oX5Dp2iisR/RZVrmWZuUD2U3WwPWQiOdFPoQNsj6E+47aO08wttBqUVdwp/obkpmJts9ChRmxWc167gRTOQCq7eBlS+HuFKynxgoFRR0ojIKWhQJ7TJRHRtkOM53QpUAtsBMRTrBTIx9J2ZUY8kq/AkOUlz5nSoCC6FVmRbsGzxHItc7FupkYTZdvn4Ib08ug4/Pox5580ijaLYAP7Sbwr3TnyPtC/oey2cBmoYJuV0lxdm5Cy3QN9PDePC2Gwau9Tpd9FCKbMN41vXt5VZLiL7F4cg1ivK5zth1qkW2ytuWu1c7msdydS+ZmNWsW0L9UC8q4ih3jhKZlnIetjEQ9EhscF441VsYR3ftModgs5a9XY0HfWKIsFNB6s6TtrZLdjXvBuDq9ozBjXnKSzab8vjRsmfV7vAugbkQOLq9bDwvvDDwh3b/6cc7Q9Ae8RoWEz5i2OAS+YnY0Rygy8Re3MXTvYXn6chygNxTu8As5DLwjXSHQuHTAteMbEE65pCSzQRGV/HkILnN9NCy9QL6mzalJXIFBbcYbEAHsOXpleluoZ6+tlZvKK2qHug9+ZdkjlfD3XMGJSGcDcBqZFmVR9y/iCFwOKXkHN+7Ex44iBrBD5NPoIchl8tS4TTqiqMtCxvDS0ICPnl1WYkLS7IufXcZggljfyfpiSB1qXO+f30rmgPcjL88QcL4oUemN9G5gJ2lunnF+L44J2cBtsD3cCirRdsL7RzQTt7SXWr3IwQVO4viONVkgK13B+/oeL/wrvWeFmQVS4wmPpf4X/nJe+v8JVeilpx1+lDUkK17gf0u4WazyXKlKF7bpC+h/4FIFrjGK8f6wtpEWEWb8tyoJPzVtMayG0hnDJ2bV1hfUnVbjVtkdNQE5rsK1sj/tVZDn1XZSD7aG/hHQ308tMax9+V5T+vILvBK/2+RYhyxn2+8ADq1+/ZWxMnCnvTN0s14NHQMhwY6yV7dCg2VF759FsL0LdsXX6khHSbfe1+XaSNG4UwKIjlFv0bL1ryaZlaEl/XZw23nDibtFP413I3Lr9WJ0UYXGqlmlb9+q+K125lEwxihuyaOH3QLz8cCpCpVh1am1Suc0xqq09q+DV0bFo/XEkRpWK0W5u2WR9hfBkhBMk1XaTFUMZfgxNTJ2nl3/tl013iqoU59GPK16Q1lXUn47drmnL0Hel0sgz4injn+q/5vpl23THPqryAE/aIzytN03yujpsozjuN0/p42hb1UnKqusPH5qLzVVndboAAAAASUVORK5CYII="
-        }
-      ]
+      "id": "ef794c43-6e75-407d-a170-156f4ffa764b",
+      "count": 1,
+      "createdAt": 1646570140072,
+      "comments": []
     },
     {
-      "title": "asd",
+      "title": "테스트",
       "list": [
         {
-          "id": "f7bfe993-230e-45bd-9500-ef95b6c6e2dd",
-          "candidate": "kjl",
-          "score": 16
+          "id": "b20c8c87-2135-4eaa-a557-cbbfb4c44f4b",
+          "candidate": "ㄹ",
+          "roundWin": 4,
+          "roundLose": 3,
+          "champion": 1
         },
         {
-          "id": "5e4848d4-1c53-452c-90e1-bd2a7fc41dff",
-          "candidate": "jkljlk",
-          "score": 2
+          "id": "ed1d951a-97e2-42a6-aa13-25773b2a38d3",
+          "candidate": "ㅅ",
+          "roundWin": 3,
+          "roundLose": 4,
+          "champion": 0
         },
         {
-          "id": "c249e4dd-054b-4707-ad11-9a809d9ece24",
-          "candidate": "jklljk",
-          "score": 4
+          "id": "48b1438d-05f4-49ca-9ea7-8447c0fac749",
+          "candidate": "ㅕ",
+          "roundWin": 2,
+          "roundLose": 4,
+          "champion": 0
         },
         {
-          "id": "42a58923-250c-4c0a-a4cb-6199b8a705af",
-          "candidate": "jklljk",
-          "score": 4
+          "id": "c28e6980-2825-47b3-aa64-6fc85617a1f3",
+          "candidate": "ㅎㅇㅁ",
+          "roundWin": 2,
+          "roundLose": 4,
+          "champion": 0
         },
         {
-          "id": "16dd532b-88bb-4446-b991-53489c4bcb5c",
-          "candidate": "jlk",
-          "score": 8
+          "id": "73005733-c018-447e-acc5-581bd252e9af",
+          "candidate": "ㄴ",
+          "roundWin": 5,
+          "roundLose": 4,
+          "champion": 0
         },
         {
-          "id": "8b2a8495-9bbc-4993-8576-2d12d69ad826",
-          "candidate": "jks",
-          "score": 2
+          "id": "6a7d3bd3-fe61-4877-98eb-272f109b4835",
+          "candidate": "ㅈ",
+          "roundWin": 0,
+          "roundLose": 4,
+          "champion": 0
         },
         {
-          "id": "008f4584-b919-493f-ac20-1a946b0c06a4",
-          "candidate": "ljk",
-          "score": 4
+          "id": "01e26e83-8975-4742-abeb-44a76084e0fb",
+          "candidate": "ㄹㅎ",
+          "roundWin": 6,
+          "roundLose": 3,
+          "champion": 1
         },
         {
-          "id": "24910aaf-85b2-48c8-a583-0ff208c3d0ae",
-          "candidate": "ljk",
-          "score": 6
+          "id": "685aa4b7-6e32-4994-a607-2301865c9842",
+          "candidate": "ㅁ",
+          "roundWin": 4,
+          "roundLose": 4,
+          "champion": 0
         },
         {
-          "id": "eeac21c1-6328-44a1-831f-f8ec26cd7cc9",
-          "candidate": "jlk",
-          "score": 12
+          "id": "b52da254-4cdb-4cf7-910b-a60eadaf7774",
+          "candidate": "ㅑ",
+          "roundWin": 5,
+          "roundLose": 4,
+          "champion": 0
         },
         {
-          "id": "7a121ca2-5347-41aa-b3e2-86b264da375a",
-          "candidate": "lkj",
-          "score": 2
+          "id": "85a7a39c-d4bd-44b5-be08-ab3efa7144a8",
+          "candidate": "ㅇ",
+          "roundWin": 2,
+          "roundLose": 4,
+          "champion": 0
         },
         {
-          "id": "507c4da3-2d87-4590-81a2-8f464949720e",
-          "candidate": "jkll",
-          "score": 4
+          "id": "262a9d38-7a82-4994-9516-62b64697e77a",
+          "candidate": "ㅛ",
+          "roundWin": 5,
+          "roundLose": 4,
+          "champion": 0
         },
         {
-          "id": "dd726608-71c8-4bd2-aa09-74cb5c61669c",
-          "candidate": "jkj",
-          "score": 4
+          "id": "f94ef9ec-b301-4305-ae14-58ad2230688a",
+          "candidate": "ㅐ",
+          "roundWin": 5,
+          "roundLose": 4,
+          "champion": 0
         },
         {
-          "id": "6e0ea4e4-14ca-4c80-8579-c31ba57ccfd4",
-          "candidate": "klkj",
-          "score": 8
+          "id": "82108978-bc46-4860-b8fe-43070e02f0d9",
+          "candidate": "ㅔ",
+          "roundWin": 4,
+          "roundLose": 4,
+          "champion": 0
         },
         {
-          "id": "c392c060-2e15-4c4f-8ba3-11e724b39ad5",
-          "candidate": "jkl",
-          "score": 2
+          "id": "d900040c-d24b-4076-b7c2-4244c987a1e0",
+          "candidate": "ㄱ",
+          "roundWin": 8,
+          "roundLose": 2,
+          "champion": 2
         },
         {
-          "id": "361b3a20-5c2d-49be-bc85-101af38360a5",
-          "candidate": "jlk",
-          "score": 4
+          "id": "c246f49d-50ec-4f45-a581-a3464cfbf149",
+          "candidate": "ㄷ",
+          "roundWin": 3,
+          "roundLose": 4,
+          "champion": 0
         },
         {
-          "id": "04cf9eec-9096-4e34-abef-758d6a96cfa1",
-          "candidate": "jlk",
-          "score": 8
+          "id": "1f00db71-4fd4-4ad7-8a60-601a0aba8d1c",
+          "candidate": "ㅂ",
+          "roundWin": 2,
+          "roundLose": 4,
+          "champion": 0
         }
       ],
-      "id": "78d36270-a029-457a-9a39-f6c547c80ae2",
-      "count": 0,
-      "createdAt": 1646473055851,
-      "comments": [
+      "id": "cfac7b8e-f225-4ecb-b5e3-c6dbcce5898e",
+      "count": 4,
+      "createdAt": 1646577247743,
+      "comments": []
+    },
+    {
+      "title": "ㅁㄴㅇㅁㄴ",
+      "list": [
         {
-          "id": "7010aad8-c9ff-4a04-b12a-d72687042727",
-          "text": "asf",
-          "createdAt": 1646508600117,
-          "creatorId": "102227633035821763864",
-          "userId": "긴고랑",
-          "userImage": "data:image/png;base64,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"
+          "id": "1c064847-ba38-4de2-be9f-b63f9f533b99",
+          "candidate": "ㅁㄴㅇㄴㅁ",
+          "roundWin": 0,
+          "roundLose": 0,
+          "champion": 0
+        },
+        {
+          "id": "76e285df-13b6-4032-bb06-a47c0c14e82c",
+          "candidate": "ㄴㅁㅇㅁㄴ",
+          "roundWin": 0,
+          "roundLose": 0,
+          "champion": 0
+        },
+        {
+          "id": "1676da9b-2e6d-4f22-b231-916f6d5216c6",
+          "candidate": "ㅁㄴㅇㅁㄴ",
+          "roundWin": 0,
+          "roundLose": 0,
+          "champion": 0
+        },
+        {
+          "id": "45273d69-03d2-4732-857a-5d8043892579",
+          "candidate": "ㄴ",
+          "roundWin": 0,
+          "roundLose": 0,
+          "champion": 0
+        },
+        {
+          "id": "ef58664c-e0e7-4b2f-b2de-807c1870027d",
+          "candidate": "ㅇㄴㅁㅇㄴㅁ",
+          "roundWin": 0,
+          "roundLose": 0,
+          "champion": 0
+        },
+        {
+          "id": "556ad122-0416-41be-b5f4-de8720987afd",
+          "candidate": "ㅁㄴㅇㅁㄴㅇ",
+          "roundWin": 0,
+          "roundLose": 0,
+          "champion": 0
+        },
+        {
+          "id": "87e7c119-b05c-4498-bde1-a6575c172cff",
+          "candidate": "ㅇㅁㄴㅇ",
+          "roundWin": 0,
+          "roundLose": 0,
+          "champion": 0
+        },
+        {
+          "id": "fa28b84d-51cc-402b-9aae-f2ba3dbde953",
+          "candidate": "ㅇㅁㄴㅇㅁㄴ",
+          "roundWin": 0,
+          "roundLose": 0,
+          "champion": 0
+        },
+        {
+          "id": "ae3c5232-5943-4ef8-b903-9010eaeed694",
+          "candidate": "ㅇㄴㅁㅇ",
+          "roundWin": 0,
+          "roundLose": 0,
+          "champion": 0
+        },
+        {
+          "id": "a1cc45ec-9a93-4113-a0ec-d72d0b310ff7",
+          "candidate": "ㅁㄴㅇㅁㄴ",
+          "roundWin": 0,
+          "roundLose": 0,
+          "champion": 0
+        },
+        {
+          "id": "d91e7246-540c-4746-a069-321d4d7e3613",
+          "candidate": "ㅇㅁㄴㅇ",
+          "roundWin": 0,
+          "roundLose": 0,
+          "champion": 0
+        },
+        {
+          "id": "6957bd11-1eda-48dd-b14c-4919123531df",
+          "candidate": "ㅁㄴㅇㅁㄴㅇ",
+          "roundWin": 0,
+          "roundLose": 0,
+          "champion": 0
+        },
+        {
+          "id": "43814464-20b9-4273-bf89-f15e50c63888",
+          "candidate": "ㅁㄴㅇㄴㅁㅇ",
+          "roundWin": 0,
+          "roundLose": 0,
+          "champion": 0
+        },
+        {
+          "id": "422c9684-27cb-4129-9937-801601dc89a8",
+          "candidate": "ㅇㅁㄴㅇㅁㄴ",
+          "roundWin": 0,
+          "roundLose": 0,
+          "champion": 0
+        },
+        {
+          "id": "ef52b0ef-ed22-46d9-9b51-312a9468adad",
+          "candidate": "ㄴㅁㅇㅁㄴㅇ",
+          "roundWin": 0,
+          "roundLose": 0,
+          "champion": 0
+        },
+        {
+          "id": "6cef8b4b-7ba1-4df3-b4bf-d7ae76e55cac",
+          "candidate": "ㅁㄴㅇㅁㄴ",
+          "roundWin": 0,
+          "roundLose": 0,
+          "champion": 0
         }
-      ]
+      ],
+      "id": "6f23c596-0071-4f30-a202-ad54a369e0ba",
+      "count": 0,
+      "createdAt": 1646583851241,
+      "comments": []
     }
   ]
 }

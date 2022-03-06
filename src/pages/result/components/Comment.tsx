@@ -19,12 +19,10 @@ interface IToDoProps {
 
 const Container = styled.li`
   display: flex;
-  width: 600px;
-  height: 100%;
   border: ${({ theme }) => theme.baseBorderStyle};
   background-color: white;
   border-top: none;
-  padding: 17px;
+  padding: 15px;
 `;
 
 const ToDoText = styled.span`
@@ -74,7 +72,7 @@ const UserWrapper = styled.div`
   display: flex;
   margin-bottom: 10px;
   justify-content: space-between;
-  width: 500px;
+  width: 100%;
 `;
 
 const UserInfo = styled.div`

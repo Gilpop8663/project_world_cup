@@ -30,11 +30,12 @@ export default function GoogleLoginBtn({ onGoogleLogin, setUserObj }: any) {
     console.log(error);
   };
 
+  const ID: any = process.env.REACT_APP_GOOGLE_ID;
   return (
     <div>
       <GoogleLogin
         buttonText="로그인"
-        clientId={clientId}
+        clientId={ID}
         responseType={'id_token'}
         onSuccess={onSuccess}
         onFailure={onFailure}

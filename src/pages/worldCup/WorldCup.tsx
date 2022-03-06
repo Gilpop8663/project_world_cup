@@ -63,26 +63,27 @@ function WorldCup() {
   const [winner, setWinner] = useState<any>([]);
   const [roundInfo, setRoundInfo] = useState<string>('🏆 16강전');
   const [modal, setModal] = useState(false);
-
   const location = useLocation();
   const keyword = location.pathname.slice(7);
-
-  useEffect(() => {
-    if (modal) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = 'auto';
-    }
-  }, [modal]);
 
   const toggleModal = () => {
     setModal(!modal);
   };
 
+  const shuffleArray = (array: any) => {
+    for (let i = 0; i < array.length; i++) {
+      let j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+  };
+
   useEffect(() => {
     axios
       .get(`http://localhost:4000/world?id=${keyword}`)
-      .then((res) => (setData(res.data[0]), setList(res.data[0].list)));
+      .then(
+        (res) => (setData(res.data[0]), setList(shuffleArray(res.data[0].list)))
+      );
   }, []);
 
   useEffect(() => {
@@ -116,21 +117,35 @@ function WorldCup() {
         .put(`http://localhost:4000/world/${keyword}`, {
           ...data,
           list: data.list,
+          count: (data.count += 1),
         })
         .then((res) => console.log('성공'));
-      // .catch((error) => console.log(error));
     }
   }, [winner]);
-  console.log(data.list);
 
-  // console.log(data);
+  console.log(data);
 
   const setDraw = (addNum: number, setListFunction: any, setList: any) => {
     setListFunction((prev: any) => {
       const winnerList = setList[index + addNum];
       return [...prev, winnerList];
     });
-    setList[index + addNum].score += 1;
+    if (addNum === 0) {
+      setList[index].roundWin += 1;
+      setList[index + 1].roundLose += 1;
+    }
+    if (addNum === 1) {
+      setList[index + 1].roundWin += 1;
+      setList[index].roundLose += 1;
+    }
+    if (setListFunction === setWinner) {
+      if (addNum === 0) {
+        setList[index].champion += 1;
+      }
+      if (addNum === 1) {
+        setList[index + 1].champion += 1;
+      }
+    }
   };
 
   const selectCondidate = (addNum: number) => {
@@ -168,7 +183,6 @@ function WorldCup() {
     const addNum = 1;
     selectCondidate(addNum);
   };
-  // if (!list) return null;
 
   return (
     <>

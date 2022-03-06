@@ -29,22 +29,28 @@ const TitleBox: any = styled.div`
 // const Container = styled.div``;
 // const Container = styled.div``;
 
+const ResultLink = styled.div`
+  padding: 10px 15px;
+  background-color: tomato;
+  cursor: pointer;
+`;
 export default function Home() {
   const navigate = useNavigate();
-
   const [listArr, setListArr] = useState<any>([{}]);
   useEffect(() => {
     axios.get('http://localhost:4000/world').then((res) => {
-      // console.log(res);
       setListArr(res.data);
     });
   }, []);
 
-  // console.log(listArr);
   const goToWorldCup = (item: any) => {
     navigate(`/world/${item.id}`);
   };
 
+  console.log(listArr);
+  const goToResult = (worldId: any) => {
+    navigate(`/world/${worldId}/result`);
+  };
   return (
     <Container>
       {listArr.map((item: any, idx: number) => (
@@ -56,6 +62,7 @@ export default function Home() {
           >
             <WorldCupTitle>{item.title}</WorldCupTitle>
           </TitleBox>
+          <ResultLink onClick={() => goToResult(item.id)}>랭킹 보기</ResultLink>
         </div>
       ))}
     </Container>

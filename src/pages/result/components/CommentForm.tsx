@@ -9,18 +9,17 @@ import { GUEST_ICON, GUEST_NAME } from '../../../constants/contants';
 import { IUserObjProps } from 'utils/interface';
 
 const Container = styled.div`
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  padding-right: 20px;
 `;
 
 const Form = styled.form`
   display: flex;
   flex-direction: column;
-  width: 600px;
-  height: 100%;
   border: ${({ theme }) => theme.baseBorderStyle};
-  padding: 17px;
+  padding: 15px;
 `;
 
 const Input = styled.textarea`
@@ -81,7 +80,9 @@ const InputWrapper = styled.div`
   align-items: center;
 `;
 
-const MessageContainer = styled.ul``;
+const MessageContainer = styled.ul`
+  overflow-y: scroll;
+`;
 
 export default function CommentForm({ userObj }: IUserObjProps) {
   const [message, setMessage] = useState('');
@@ -128,23 +129,28 @@ export default function CommentForm({ userObj }: IUserObjProps) {
   };
   return (
     <Container>
-      {Object.keys(userObj).length === 3 && (
-        <Form onSubmit={onSubmit} onKeyPress={(e) => onEnterPress(e, onSubmit)}>
-          <ToDoWelcome>댓글</ToDoWelcome>
-          <InputWrapper>
-            <Input
-              onChange={onChange}
-              placeholder="댓글을 남겨주세요"
-              value={message}
-            />
-            <SubmitInput
-              isMessage={message !== ''}
-              type="submit"
-              value="보내기"
-            />
-          </InputWrapper>
-        </Form>
-      )}
+      <Form onSubmit={onSubmit} onKeyPress={(e) => onEnterPress(e, onSubmit)}>
+        <ToDoWelcome>댓글</ToDoWelcome>
+        <InputWrapper>
+          <Input
+            disabled={Object.keys(userObj).length !== 3}
+            minLength={1}
+            maxLength={100}
+            onChange={onChange}
+            placeholder={
+              Object.keys(userObj).length !== 3
+                ? '로그인 후에 입력 가능합니다'
+                : '댓글을 입력해주세요'
+            }
+            value={message}
+          />
+          <SubmitInput
+            isMessage={message !== ''}
+            type="submit"
+            value="보내기"
+          />
+        </InputWrapper>
+      </Form>
 
       <MessageContainer>
         {comment?.map((item: any) => (
