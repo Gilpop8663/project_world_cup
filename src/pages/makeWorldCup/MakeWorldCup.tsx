@@ -58,22 +58,118 @@ export default function MakeWorldCup() {
   const onSubmit = async (data: any) => {
     console.log(data);
     let listArr = [
-      { id: uuidv4(), candidate: data.worldCupItem1, score: 0 },
-      { id: uuidv4(), candidate: data.worldCupItem2, score: 0 },
-      { id: uuidv4(), candidate: data.worldCupItem3, score: 0 },
-      { id: uuidv4(), candidate: data.worldCupItem4, score: 0 },
-      { id: uuidv4(), candidate: data.worldCupItem5, score: 0 },
-      { id: uuidv4(), candidate: data.worldCupItem6, score: 0 },
-      { id: uuidv4(), candidate: data.worldCupItem7, score: 0 },
-      { id: uuidv4(), candidate: data.worldCupItem8, score: 0 },
-      { id: uuidv4(), candidate: data.worldCupItem9, score: 0 },
-      { id: uuidv4(), candidate: data.worldCupItem10, score: 0 },
-      { id: uuidv4(), candidate: data.worldCupItem11, score: 0 },
-      { id: uuidv4(), candidate: data.worldCupItem12, score: 0 },
-      { id: uuidv4(), candidate: data.worldCupItem13, score: 0 },
-      { id: uuidv4(), candidate: data.worldCupItem14, score: 0 },
-      { id: uuidv4(), candidate: data.worldCupItem15, score: 0 },
-      { id: uuidv4(), candidate: data.worldCupItem16, score: 0 },
+      {
+        id: uuidv4(),
+        candidate: data.worldCupItem1,
+        roundWin: 0,
+        roundLose: 0,
+        champion: 0,
+      },
+      {
+        id: uuidv4(),
+        candidate: data.worldCupItem2,
+        roundWin: 0,
+        roundLose: 0,
+        champion: 0,
+      },
+      {
+        id: uuidv4(),
+        candidate: data.worldCupItem3,
+        roundWin: 0,
+        roundLose: 0,
+        champion: 0,
+      },
+      {
+        id: uuidv4(),
+        candidate: data.worldCupItem4,
+        roundWin: 0,
+        roundLose: 0,
+        champion: 0,
+      },
+      {
+        id: uuidv4(),
+        candidate: data.worldCupItem5,
+        roundWin: 0,
+        roundLose: 0,
+        champion: 0,
+      },
+      {
+        id: uuidv4(),
+        candidate: data.worldCupItem6,
+        roundWin: 0,
+        roundLose: 0,
+        champion: 0,
+      },
+      {
+        id: uuidv4(),
+        candidate: data.worldCupItem7,
+        roundWin: 0,
+        roundLose: 0,
+        champion: 0,
+      },
+      {
+        id: uuidv4(),
+        candidate: data.worldCupItem8,
+        roundWin: 0,
+        roundLose: 0,
+        champion: 0,
+      },
+      {
+        id: uuidv4(),
+        candidate: data.worldCupItem9,
+        roundWin: 0,
+        roundLose: 0,
+        champion: 0,
+      },
+      {
+        id: uuidv4(),
+        candidate: data.worldCupItem10,
+        roundWin: 0,
+        roundLose: 0,
+        champion: 0,
+      },
+      {
+        id: uuidv4(),
+        candidate: data.worldCupItem11,
+        roundWin: 0,
+        roundLose: 0,
+        champion: 0,
+      },
+      {
+        id: uuidv4(),
+        candidate: data.worldCupItem12,
+        roundWin: 0,
+        roundLose: 0,
+        champion: 0,
+      },
+      {
+        id: uuidv4(),
+        candidate: data.worldCupItem13,
+        roundWin: 0,
+        roundLose: 0,
+        champion: 0,
+      },
+      {
+        id: uuidv4(),
+        candidate: data.worldCupItem14,
+        roundWin: 0,
+        roundLose: 0,
+        champion: 0,
+      },
+      {
+        id: uuidv4(),
+        candidate: data.worldCupItem15,
+        roundWin: 0,
+        roundLose: 0,
+        champion: 0,
+      },
+      {
+        id: uuidv4(),
+        candidate: data.worldCupItem16,
+        roundWin: 0,
+        roundLose: 0,
+        champion: 0,
+      },
     ];
     axios
       .post('http://localhost:4000/world', {
@@ -96,7 +192,7 @@ export default function MakeWorldCup() {
         <Title
           {...register('title', {
             required: ERROR_REQUIRED,
-            minLength: { value: 3, message: ERROR_MIN },
+            minLength: { value: 1, message: ERROR_MIN },
           })}
         />
         {errors.title && <p>{errors.title?.message}</p>}
@@ -107,7 +203,7 @@ export default function MakeWorldCup() {
                 {...register(`${WORLD_CUP_ITEM}1`, {
                   required: ERROR_REQUIRED,
                   minLength: {
-                    value: 3,
+                    value: 1,
                     message: ERROR_MIN,
                   },
                   maxLength: {
@@ -123,7 +219,7 @@ export default function MakeWorldCup() {
                 {...register(`${WORLD_CUP_ITEM}2`, {
                   required: ERROR_REQUIRED,
                   minLength: {
-                    value: 3,
+                    value: 1,
                     message: ERROR_MIN,
                   },
                   maxLength: {
@@ -139,7 +235,7 @@ export default function MakeWorldCup() {
                 {...register(`${WORLD_CUP_ITEM}3`, {
                   required: ERROR_REQUIRED,
                   minLength: {
-                    value: 3,
+                    value: 1,
                     message: ERROR_MIN,
                   },
                   maxLength: {
@@ -155,7 +251,7 @@ export default function MakeWorldCup() {
                 {...register(`${WORLD_CUP_ITEM}4`, {
                   required: ERROR_REQUIRED,
                   minLength: {
-                    value: 3,
+                    value: 1,
                     message: ERROR_MIN,
                   },
                   maxLength: {
@@ -173,7 +269,7 @@ export default function MakeWorldCup() {
                 {...register(`${WORLD_CUP_ITEM}5`, {
                   required: ERROR_REQUIRED,
                   minLength: {
-                    value: 3,
+                    value: 1,
                     message: ERROR_MIN,
                   },
                   maxLength: {
@@ -189,7 +285,7 @@ export default function MakeWorldCup() {
                 {...register(`${WORLD_CUP_ITEM}6`, {
                   required: ERROR_REQUIRED,
                   minLength: {
-                    value: 3,
+                    value: 1,
                     message: ERROR_MIN,
                   },
                   maxLength: {
@@ -205,7 +301,7 @@ export default function MakeWorldCup() {
                 {...register(`${WORLD_CUP_ITEM}7`, {
                   required: ERROR_REQUIRED,
                   minLength: {
-                    value: 3,
+                    value: 1,
                     message: ERROR_MIN,
                   },
                   maxLength: {
@@ -221,7 +317,7 @@ export default function MakeWorldCup() {
                 {...register(`${WORLD_CUP_ITEM}8`, {
                   required: ERROR_REQUIRED,
                   minLength: {
-                    value: 3,
+                    value: 1,
                     message: ERROR_MIN,
                   },
                   maxLength: {
@@ -239,7 +335,7 @@ export default function MakeWorldCup() {
                 {...register(`${WORLD_CUP_ITEM}9`, {
                   required: ERROR_REQUIRED,
                   minLength: {
-                    value: 3,
+                    value: 1,
                     message: ERROR_MIN,
                   },
                   maxLength: {
@@ -255,7 +351,7 @@ export default function MakeWorldCup() {
                 {...register(`${WORLD_CUP_ITEM}10`, {
                   required: ERROR_REQUIRED,
                   minLength: {
-                    value: 3,
+                    value: 1,
                     message: ERROR_MIN,
                   },
                   maxLength: {
@@ -271,7 +367,7 @@ export default function MakeWorldCup() {
                 {...register(`${WORLD_CUP_ITEM}11`, {
                   required: ERROR_REQUIRED,
                   minLength: {
-                    value: 3,
+                    value: 1,
                     message: ERROR_MIN,
                   },
                   maxLength: {
@@ -287,7 +383,7 @@ export default function MakeWorldCup() {
                 {...register(`${WORLD_CUP_ITEM}12`, {
                   required: ERROR_REQUIRED,
                   minLength: {
-                    value: 3,
+                    value: 1,
                     message: ERROR_MIN,
                   },
                   maxLength: {
@@ -305,7 +401,7 @@ export default function MakeWorldCup() {
                 {...register(`${WORLD_CUP_ITEM}13`, {
                   required: ERROR_REQUIRED,
                   minLength: {
-                    value: 3,
+                    value: 1,
                     message: ERROR_MIN,
                   },
                   maxLength: {
@@ -321,7 +417,7 @@ export default function MakeWorldCup() {
                 {...register(`${WORLD_CUP_ITEM}14`, {
                   required: ERROR_REQUIRED,
                   minLength: {
-                    value: 3,
+                    value: 1,
                     message: ERROR_MIN,
                   },
                   maxLength: {
@@ -337,7 +433,7 @@ export default function MakeWorldCup() {
                 {...register(`${WORLD_CUP_ITEM}15`, {
                   required: ERROR_REQUIRED,
                   minLength: {
-                    value: 3,
+                    value: 1,
                     message: ERROR_MIN,
                   },
                   maxLength: {
@@ -353,7 +449,7 @@ export default function MakeWorldCup() {
                 {...register(`${WORLD_CUP_ITEM}16`, {
                   required: ERROR_REQUIRED,
                   minLength: {
-                    value: 3,
+                    value: 1,
                     message: ERROR_MIN,
                   },
                   maxLength: {
