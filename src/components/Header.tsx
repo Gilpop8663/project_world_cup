@@ -38,6 +38,9 @@ export default function Header({ setUserObj, userObj }: IUser) {
         </GoogleLoginBtn>
       )}
       {Object.keys(userObj).length === 3 && (
+        <Link to="/my-page">마이 페이지</Link>
+      )}
+      {Object.keys(userObj).length === 3 && (
         <GoogleLogout clientId={clientId} onLogoutSuccess={onLogoutClick}>
           로그아웃
         </GoogleLogout>
