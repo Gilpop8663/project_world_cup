@@ -61,7 +61,6 @@ export default function MakeWorldCup() {
       {
         id: uuidv4(),
         candidate: data.worldCupItem1,
-        score: 0,
         roundWin: 0,
         roundLose: 0,
         champion: 0,
@@ -69,7 +68,6 @@ export default function MakeWorldCup() {
       {
         id: uuidv4(),
         candidate: data.worldCupItem2,
-        score: 0,
         roundWin: 0,
         roundLose: 0,
         champion: 0,
@@ -77,7 +75,6 @@ export default function MakeWorldCup() {
       {
         id: uuidv4(),
         candidate: data.worldCupItem3,
-        score: 0,
         roundWin: 0,
         roundLose: 0,
         champion: 0,
@@ -85,7 +82,6 @@ export default function MakeWorldCup() {
       {
         id: uuidv4(),
         candidate: data.worldCupItem4,
-        score: 0,
         roundWin: 0,
         roundLose: 0,
         champion: 0,
@@ -93,7 +89,6 @@ export default function MakeWorldCup() {
       {
         id: uuidv4(),
         candidate: data.worldCupItem5,
-        score: 0,
         roundWin: 0,
         roundLose: 0,
         champion: 0,
@@ -101,7 +96,6 @@ export default function MakeWorldCup() {
       {
         id: uuidv4(),
         candidate: data.worldCupItem6,
-        score: 0,
         roundWin: 0,
         roundLose: 0,
         champion: 0,
@@ -109,7 +103,6 @@ export default function MakeWorldCup() {
       {
         id: uuidv4(),
         candidate: data.worldCupItem7,
-        score: 0,
         roundWin: 0,
         roundLose: 0,
         champion: 0,
@@ -117,7 +110,6 @@ export default function MakeWorldCup() {
       {
         id: uuidv4(),
         candidate: data.worldCupItem8,
-        score: 0,
         roundWin: 0,
         roundLose: 0,
         champion: 0,
@@ -125,7 +117,6 @@ export default function MakeWorldCup() {
       {
         id: uuidv4(),
         candidate: data.worldCupItem9,
-        score: 0,
         roundWin: 0,
         roundLose: 0,
         champion: 0,
@@ -133,7 +124,6 @@ export default function MakeWorldCup() {
       {
         id: uuidv4(),
         candidate: data.worldCupItem10,
-        score: 0,
         roundWin: 0,
         roundLose: 0,
         champion: 0,
@@ -141,7 +131,6 @@ export default function MakeWorldCup() {
       {
         id: uuidv4(),
         candidate: data.worldCupItem11,
-        score: 0,
         roundWin: 0,
         roundLose: 0,
         champion: 0,
@@ -149,7 +138,6 @@ export default function MakeWorldCup() {
       {
         id: uuidv4(),
         candidate: data.worldCupItem12,
-        score: 0,
         roundWin: 0,
         roundLose: 0,
         champion: 0,
@@ -157,7 +145,6 @@ export default function MakeWorldCup() {
       {
         id: uuidv4(),
         candidate: data.worldCupItem13,
-        score: 0,
         roundWin: 0,
         roundLose: 0,
         champion: 0,
@@ -165,7 +152,6 @@ export default function MakeWorldCup() {
       {
         id: uuidv4(),
         candidate: data.worldCupItem14,
-        score: 0,
         roundWin: 0,
         roundLose: 0,
         champion: 0,
@@ -173,7 +159,6 @@ export default function MakeWorldCup() {
       {
         id: uuidv4(),
         candidate: data.worldCupItem15,
-        score: 0,
         roundWin: 0,
         roundLose: 0,
         champion: 0,
@@ -181,7 +166,6 @@ export default function MakeWorldCup() {
       {
         id: uuidv4(),
         candidate: data.worldCupItem16,
-        score: 0,
         roundWin: 0,
         roundLose: 0,
         champion: 0,

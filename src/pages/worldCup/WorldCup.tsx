@@ -66,14 +66,6 @@ function WorldCup() {
   const location = useLocation();
   const keyword = location.pathname.slice(7);
 
-  useEffect(() => {
-    if (modal) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = 'auto';
-    }
-  }, [modal]);
-
   const toggleModal = () => {
     setModal(!modal);
   };
@@ -130,12 +122,30 @@ function WorldCup() {
         .then((res) => console.log('성공'));
     }
   }, [winner]);
+
+  console.log(data);
+
   const setDraw = (addNum: number, setListFunction: any, setList: any) => {
     setListFunction((prev: any) => {
       const winnerList = setList[index + addNum];
       return [...prev, winnerList];
     });
-    setList[index + addNum].score += 1;
+    if (addNum === 0) {
+      setList[index].roundWin += 1;
+      setList[index + 1].roundLose += 1;
+    }
+    if (addNum === 1) {
+      setList[index + 1].roundWin += 1;
+      setList[index].roundLose += 1;
+    }
+    if (setListFunction === setWinner) {
+      if (addNum === 0) {
+        setList[index].champion += 1;
+      }
+      if (addNum === 1) {
+        setList[index + 1].champion += 1;
+      }
+    }
   };
 
   const selectCondidate = (addNum: number) => {
