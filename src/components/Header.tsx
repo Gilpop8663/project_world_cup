@@ -9,9 +9,9 @@ const Container = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 60px;
-  border-bottom: 1px solid black;
-  background-color: #f4eeff;
+  padding: 10px 60px;
+  border-bottom: 1.5px solid #7982c9;
+  background-color: white;
 `;
 
 const LinkHeadText = styled(Link)`
@@ -19,15 +19,20 @@ const LinkHeadText = styled(Link)`
   font-weight: 600;
   padding: 15px;
   border-radius: 8px;
-  border: 3px solid #69a2ff;
+  color: #a6b1e1;
 `;
 
 const HeadText = styled.p`
   font-size: 17px;
   font-weight: 600;
   padding: 15px;
-  border-radius: 8px;
-  border: 3px solid #69a2ff;
+  border-radius: 5px;
+  color: #424874;
+`;
+
+const HomeImage = styled.img`
+  width: 30px;
+  height: 30px;
 `;
 
 const clientId: any = process.env.REACT_APP_GOOGLE_ID;
@@ -45,7 +50,9 @@ export default function Header({ setUserObj, userObj }: IUser) {
   };
   return (
     <Container>
-      <LinkHeadText to="/">홈</LinkHeadText>
+      <LinkHeadText to="/">
+        <HomeImage src="/images/home.png" />
+      </LinkHeadText>
       {Object.keys(userObj).length === 3 ? (
         <LinkHeadText to="/make">월드컵 생성하기</LinkHeadText>
       ) : (

@@ -1,5 +1,5 @@
 import axios from 'axios';
-import WorldCupDelete from 'components/WorldDelete';
+import WorldCupList from 'components/WorldCupList';
 import { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { IUserObjProps } from 'utils/interface';
@@ -7,6 +7,7 @@ import { IUserObjProps } from 'utils/interface';
 const Container = styled.div`
   display: flex;
   flex-direction: column;
+  padding: 60px 200px;
 `;
 
 const MyPageTitle = styled.h2`
@@ -32,7 +33,7 @@ export default function MyPage({ userObj }: IUserObjProps) {
   return (
     <Container>
       <MyPageTitle>내가 만든 월드컵</MyPageTitle>
-      <WorldCupDelete
+      <WorldCupList
         setData={setMyData}
         userObj={userObj}
         setRefetch={setRefetch}

@@ -106,7 +106,7 @@ export default function WorldCupDelete({
             <LinkButton onClick={() => goToResult(item.id)}>
               랭킹보기
             </LinkButton>
-            {item.creatorId === userObj.userId && (
+            {item.creatorId === userObj?.userId && (
               <LinkButton onClick={() => onDeleteClick(item.id)}>
                 삭제하기
               </LinkButton>

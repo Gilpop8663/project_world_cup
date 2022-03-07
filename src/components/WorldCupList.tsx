@@ -1,32 +1,34 @@
+import axios from 'axios';
 import WorldCup from 'pages/worldCup/WorldCup';
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
-import { IWorldCupProps } from 'utils/interface';
+import { IUserObjProps, IWorldCupProps } from 'utils/interface';
 
 const Container = styled.div`
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 40px;
 `;
 
 const WorldCupWrapper = styled.div`
-  min-width: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
 `;
 
 const TitleBox: any = styled.div`
-  background-color: #f4eeff;
-  border-radius: 20px;
+  background-color: white;
+  border-radius: 10px;
   width: 100%;
   height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  border: 1.5px solid #424874;
+  color: #424874;
+  font-weight: 600;
+  border: 2px solid #7982c9;
 `;
 
 const WorldCupTitle = styled.p`
@@ -35,28 +37,39 @@ const WorldCupTitle = styled.p`
   padding: 20px;
 `;
 
-const LinkWrapper = styled.div`
+const LinkWrapper = styled.div<{ isDelete: boolean }>`
   margin-top: 10px;
-  width: 100%;
+  width: 90%;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: ${({ isDelete }) =>
+    isDelete ? 'repeat(3, 1fr)' : 'repeat(2, 1fr)'};
   grid-column-gap: 10px;
   text-align: center;
 `;
+
 const LinkSelectButton = styled.div`
   padding: 10px 15px;
-  background-color: #424874;
+  background-color: white;
   cursor: pointer;
   border-radius: 7px;
-  border: 1.5px solid #f4eeff;
+  border: 2px solid #7982c9;
+  font-weight: 600;
+  color: #424874;
 `;
 
 interface IWorldCupList {
   data: IWorldCupProps[];
+  userObj?: IUserObjProps | any;
+  setData?: React.Dispatch<React.SetStateAction<never[]>>;
+  setRefetch?: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-export default function WorldCupList({ data, isSort }: any) {
-  const [listArr, setListArr] = useState<any>([]);
+export default function WorldCupList({
+  data,
+  userObj,
+  setData,
+  setRefetch,
+}: IWorldCupList) {
   const navigate = useNavigate();
 
   const goToWorldCup = (worldId: string) => {
@@ -67,9 +80,17 @@ export default function WorldCupList({ data, isSort }: any) {
     navigate(`/world/${worldId}/result`);
   };
 
-  useEffect(() => {
-    setListArr(data);
-  }, [isSort]);
+  const onDeleteClick = (worldId: string) => {
+    if (!setData) return;
+    if (!setRefetch) return;
+    if (data.length === 1) {
+      setData([]);
+    }
+    axios
+      .delete(`http://localhost:4000/world/${worldId}`)
+      .then(() => setRefetch((prev) => !prev))
+      .catch((error) => console.log('삭제 실패', error));
+  };
 
   return (
     <Container>
@@ -82,7 +103,7 @@ export default function WorldCupList({ data, isSort }: any) {
           >
             <WorldCupTitle>{item.title} 월드컵</WorldCupTitle>
           </TitleBox>
-          <LinkWrapper>
+          <LinkWrapper isDelete={Boolean(setData)}>
             <LinkSelectButton
               onClick={() => {
                 goToWorldCup(item.id);
@@ -93,6 +114,11 @@ export default function WorldCupList({ data, isSort }: any) {
             <LinkSelectButton onClick={() => goToResult(item.id)}>
               랭킹보기
             </LinkSelectButton>
+            {item.creatorId === userObj?.userId && (
+              <LinkSelectButton onClick={() => onDeleteClick(item.id)}>
+                삭제하기
+              </LinkSelectButton>
+            )}
           </LinkWrapper>
         </WorldCupWrapper>
       ))}
