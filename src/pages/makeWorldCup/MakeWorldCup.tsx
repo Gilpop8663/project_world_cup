@@ -11,6 +11,7 @@ import { useForm } from 'react-hook-form';
 import styled from 'styled-components';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import { IUserObjProps } from 'utils/interface';
 
 const Container = styled.div`
   display: flex;
@@ -26,7 +27,9 @@ const Form = styled.form`
   padding-top: 50px;
 `;
 
-const Title = styled.input.attrs({ type: 'text' })``;
+const Title = styled.input.attrs({ type: 'text' })`
+  margin-right: 10px;
+`;
 
 const InputContainer = styled.div`
   display: flex;
@@ -46,9 +49,14 @@ const InputBox = styled.div`
   margin: 10px;
 `;
 
+const TitleWrapper = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
 const SubmitInput = styled.input``;
 
-export default function MakeWorldCup() {
+export default function MakeWorldCup({ userObj }: IUserObjProps) {
   const navigate = useNavigate();
   const {
     register,
@@ -179,6 +187,7 @@ export default function MakeWorldCup() {
         count: 0,
         createdAt: Date.now(),
         comments: [],
+        creatorId: userObj.userId,
       })
       .then((res) => console.log('성공'))
       .catch((error) => console.log(error));
@@ -189,13 +198,16 @@ export default function MakeWorldCup() {
   return (
     <Container>
       <Form onSubmit={handleSubmit(onSubmit)}>
-        <Title
-          {...register('title', {
-            required: ERROR_REQUIRED,
-            minLength: { value: 1, message: ERROR_MIN },
-          })}
-        />
-        {errors.title && <p>{errors.title?.message}</p>}
+        <TitleWrapper>
+          <Title
+            {...register('title', {
+              required: ERROR_REQUIRED,
+              minLength: { value: 1, message: ERROR_MIN },
+            })}
+          />
+          {errors.title && <p>{errors.title?.message}</p>}
+          <p>월드컵</p>
+        </TitleWrapper>
         <InputContainer>
           <ItemInputWrapper>
             <InputBox>

@@ -235,10 +235,6 @@ export default function Ranking() {
     }
   };
 
-  // console.log('챔피언', isSortChampion);
-  // console.log('라운드 승', isSortWin);
-  // console.log('이름', isSortName);
-  // console.log(data && data.sort((a: any, b: any) => a.candidate - b.candidate));
   if (!data) return null;
   if (data[0].roundWin === 0 && data[0].roundLose === 0) {
     return <p>데이터가 없는 월드컵 입니다</p>;

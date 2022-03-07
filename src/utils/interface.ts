@@ -12,3 +12,29 @@ interface IUserObj {
   email: string;
   userName: string;
 }
+
+export interface IWorldCupProps {
+  title: string;
+  list: IWorldCupItemProps[];
+  id: string;
+  count: number;
+  createdAt: Date;
+  comments: IWorldCupCommentProps[];
+  creatorId: string;
+}
+
+export interface IWorldCupItemProps {
+  id: string;
+  candidate: string;
+  roundWin: number;
+  roundLose: number;
+  champion: number;
+}
+
+export interface IWorldCupCommentProps {
+  id: string;
+  text: string;
+  createdAt: Date;
+  creatorId: string;
+  userId: string;
+}
