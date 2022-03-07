@@ -21,6 +21,14 @@ const Container = styled.li`
   background-color: white;
   border-top: none;
   padding: 15px;
+  &:first-child {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+  }
+  &:last-child {
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
 `;
 
 const ToDoText = styled.span`

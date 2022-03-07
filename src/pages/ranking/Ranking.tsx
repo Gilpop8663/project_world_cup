@@ -17,14 +17,15 @@ const TitleWrapper = styled.div`
   display: flex;
   width: 100%;
   height: 50px;
-  margin-bottom: 24px;
+  margin-bottom: 30px;
 `;
 
 const RankingTitle = styled.div`
   background-color: white;
   width: 8%;
   height: 100%;
-  border: 2px solid #a6b1e1;
+  border: 2px solid #7982c9;
+  margin: 3px;
   padding: 10px;
   border-radius: 6px;
   display: flex;
@@ -39,7 +40,8 @@ const NameTitle: any = styled.div`
   background: ${({ sort }: { sort: boolean }) => (sort ? '#F4EEFF' : 'white')};
   width: 20%;
   height: 100%;
-  border: 2px solid #a6b1e1;
+  border: 2px solid #7982c9;
+  margin: 3px;
   cursor: pointer;
   text-align: center;
   padding: 10px;
@@ -53,7 +55,8 @@ const ChampionTitle: any = styled.div`
   background: ${({ sort }: { sort: boolean }) => (sort ? '#F4EEFF' : 'white')};
   width: 36%;
   height: 100%;
-  border: 2px solid #a6b1e1;
+  border: 2px solid #7982c9;
+  margin: 3px;
   cursor: pointer;
   padding: 10px;
   padding-right: 20px;
@@ -67,7 +70,8 @@ const WinnerTitle: any = styled.div`
   background: ${({ sort }: { sort: boolean }) => (sort ? '#F4EEFF' : 'white')};
   width: 36%;
   height: 100%;
-  border: 2px solid #a6b1e1;
+  border: 2px solid #7982c9;
+  margin: 3px;
   cursor: pointer;
   padding: 10px;
   padding-right: 20px;
@@ -87,7 +91,8 @@ const RankingTitleList: any = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid #a6b1e1;
+  border: 2px solid #7982c9;
+  margin: 3px;
   padding: 10px;
   border-radius: 6px;
 `;
@@ -99,7 +104,8 @@ const NameTitleList = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid #a6b1e1;
+  border: 2px solid #7982c9;
+  margin: 3px;
   padding: 10px;
   border-radius: 6px;
 `;
@@ -108,7 +114,8 @@ const PercentTitleList = styled.div`
   background-color: white;
   width: 36%;
   height: 100%;
-  border: 2px solid #a6b1e1;
+  border: 2px solid #7982c9;
+  margin: 3px;
   color: #424874;
   padding: 10px;
   padding-right: 20px;

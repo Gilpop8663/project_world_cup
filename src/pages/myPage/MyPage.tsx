@@ -8,11 +8,20 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   padding: 60px 200px;
+  justify-content: flex-start;
 `;
 
 const MyPageTitle = styled.h2`
-  padding-left: 100px;
   margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+`;
+
+const NoData = styled.h2`
+  font-size: 40px;
+  font-weight: 600;
+  color: white;
 `;
 
 export default function MyPage({ userObj }: IUserObjProps) {
@@ -30,15 +39,21 @@ export default function MyPage({ userObj }: IUserObjProps) {
       });
   }, [refetch, userObj.userId]);
 
+  console.log(myData);
+
   return (
     <Container>
       <MyPageTitle>내가 만든 월드컵</MyPageTitle>
-      <WorldCupList
-        setData={setMyData}
-        userObj={userObj}
-        setRefetch={setRefetch}
-        data={myData}
-      />
+      {myData.length > 0 ? (
+        <WorldCupList
+          setData={setMyData}
+          userObj={userObj}
+          setRefetch={setRefetch}
+          data={myData}
+        />
+      ) : (
+        <NoData>😢 만든 월드컵이 없습니다. 월드컵을 생성해주세요.</NoData>
+      )}
     </Container>
   );
 }

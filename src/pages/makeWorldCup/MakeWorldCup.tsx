@@ -63,6 +63,7 @@ const InputBox = styled.div`
   display: flex;
   flex-direction: column;
   margin: 10px;
+  align-items: flex-end;
 `;
 
 const ItemWrapper = styled.div`
@@ -302,6 +303,10 @@ export default function MakeWorldCup({ userObj }: IUserObjProps) {
               {...register('title', {
                 required: ERROR_REQUIRED,
                 minLength: { value: 1, message: ERROR_MIN },
+                maxLength: {
+                  value: 15,
+                  message: '15글자 이하로 입력해주세요',
+                },
               })}
             />
             <WorldCupText>월드컵</WorldCupText>
