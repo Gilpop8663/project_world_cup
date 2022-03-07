@@ -1,5 +1,5 @@
 import WorldCup from 'pages/worldCup/WorldCup';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 import { IWorldCupProps } from 'utils/interface';
@@ -59,8 +59,7 @@ interface IWorldCupList {
   data: IWorldCupProps[];
 }
 
-export default function WorldCupList({ data, isSort }: any) {
-  const [listArr, setListArr] = useState<any>([]);
+export default function WorldCupList({ data }: IWorldCupList) {
   const navigate = useNavigate();
 
   const goToWorldCup = (worldId: string) => {
@@ -70,11 +69,6 @@ export default function WorldCupList({ data, isSort }: any) {
   const goToResult = (worldId: string) => {
     navigate(`/world/${worldId}/result`);
   };
-
-  useEffect(() => {
-    setListArr(data);
-  }, [isSort]);
-
   return (
     <Container>
       {data?.map((item: any, idx: any) => (
