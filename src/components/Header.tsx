@@ -35,8 +35,7 @@ const HomeImage = styled.img`
   height: 30px;
 `;
 
-const clientId =
-  '586282779729-89d3k141i3b637fm739kvc5odonnmgm3.apps.googleusercontent.com';
+const clientId: any = process.env.REACT_APP_GOOGLE_ID;
 
 export default function Header({ setUserObj, userObj }: IUser) {
   const navigate = useNavigate();

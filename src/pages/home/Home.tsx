@@ -65,7 +65,7 @@ export default function Home() {
         <SortText onClick={() => sortList('sortDate')}>⏱ 최신순</SortText>
         <SortText onClick={() => sortList('sortName')}>🅰 이름순</SortText>
       </SortTextWrapper>
-      <WorldCupList data={listArr} isSort={isSort} />
+      <WorldCupList data={listArr} />
     </Container>
   );
 }
