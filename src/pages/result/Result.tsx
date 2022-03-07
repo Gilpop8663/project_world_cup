@@ -22,6 +22,7 @@ const CommentWrapper = styled.div`
 `;
 
 export default function Result({ userObj }: IUserObjProps) {
+  console.log();
   return (
     <Container>
       <Ranking />
