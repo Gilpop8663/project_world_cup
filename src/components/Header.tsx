@@ -9,11 +9,28 @@ const Container = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px;
+  padding: 20px 60px;
+  border-bottom: 1px solid black;
+  background-color: #f4eeff;
 `;
 
-const clientId =
-  '586282779729-89d3k141i3b637fm739kvc5odonnmgm3.apps.googleusercontent.com';
+const LinkHeadText = styled(Link)`
+  font-size: 17px;
+  font-weight: 600;
+  padding: 15px;
+  border-radius: 8px;
+  border: 3px solid #69a2ff;
+`;
+
+const HeadText = styled.p`
+  font-size: 17px;
+  font-weight: 600;
+  padding: 15px;
+  border-radius: 8px;
+  border: 3px solid #69a2ff;
+`;
+
+const clientId: any = process.env.REACT_APP_GOOGLE_ID;
 
 export default function Header({ setUserObj, userObj }: IUser) {
   const navigate = useNavigate();
@@ -28,9 +45,11 @@ export default function Header({ setUserObj, userObj }: IUser) {
   };
   return (
     <Container>
-      <Link to="/">홈</Link>
-      {Object.keys(userObj).length === 3 && (
-        <Link to="/make">월드컵 생성하기</Link>
+      <LinkHeadText to="/">홈</LinkHeadText>
+      {Object.keys(userObj).length === 3 ? (
+        <LinkHeadText to="/make">월드컵 생성하기</LinkHeadText>
+      ) : (
+        <HeadText>로그인 하고 월드컵 생성하기</HeadText>
       )}
       {Object.keys(userObj).length === 0 && (
         <GoogleLoginBtn setUserObj={setUserObj} onGoogleLogin={onLoginClick}>
@@ -38,7 +57,7 @@ export default function Header({ setUserObj, userObj }: IUser) {
         </GoogleLoginBtn>
       )}
       {Object.keys(userObj).length === 3 && (
-        <Link to="/my-page">마이 페이지</Link>
+        <LinkHeadText to="/my-page">마이 페이지</LinkHeadText>
       )}
       {Object.keys(userObj).length === 3 && (
         <GoogleLogout clientId={clientId} onLogoutSuccess={onLogoutClick}>

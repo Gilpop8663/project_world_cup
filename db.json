@@ -1,3 +1,126 @@
 {
-  "world": []
+  "world": [
+    {
+      "title": ";lj",
+      "list": [
+        {
+          "id": "07472e52-6387-466e-8f2b-6168f317277c",
+          "candidate": "lk",
+          "roundWin": 0,
+          "roundLose": 0,
+          "champion": 0
+        },
+        {
+          "id": "e1eba2c5-b79d-45fa-bb6d-0efbdb01fa40",
+          "candidate": "jlk",
+          "roundWin": 0,
+          "roundLose": 0,
+          "champion": 0
+        },
+        {
+          "id": "77c28703-4b3c-46c2-b9af-65e1b2b45920",
+          "candidate": "j",
+          "roundWin": 0,
+          "roundLose": 0,
+          "champion": 0
+        },
+        {
+          "id": "b0bcc81b-c428-43fb-91fd-7d7e64f80076",
+          "candidate": "lk",
+          "roundWin": 0,
+          "roundLose": 0,
+          "champion": 0
+        },
+        {
+          "id": "eef5bd6c-cd4b-44ea-876c-e88344ec256a",
+          "candidate": "j",
+          "roundWin": 0,
+          "roundLose": 0,
+          "champion": 0
+        },
+        {
+          "id": "9f2037d0-85b3-41f5-a30a-e311b07ac60b",
+          "candidate": "lk",
+          "roundWin": 0,
+          "roundLose": 0,
+          "champion": 0
+        },
+        {
+          "id": "116f5e68-fdcd-4a20-8282-d5811978e716",
+          "candidate": "j",
+          "roundWin": 0,
+          "roundLose": 0,
+          "champion": 0
+        },
+        {
+          "id": "0a1f1693-14e5-4bbd-975b-e0fe94c00ac4",
+          "candidate": "lk",
+          "roundWin": 0,
+          "roundLose": 0,
+          "champion": 0
+        },
+        {
+          "id": "ff4c2be0-8c57-4310-9f28-9e9da94482f0",
+          "candidate": "j",
+          "roundWin": 0,
+          "roundLose": 0,
+          "champion": 0
+        },
+        {
+          "id": "77d996d6-7df8-4e87-b860-f63b6af4fae2",
+          "candidate": "lk",
+          "roundWin": 0,
+          "roundLose": 0,
+          "champion": 0
+        },
+        {
+          "id": "2cd9a0d2-a77e-454c-8e99-4602f80b2793",
+          "candidate": "j",
+          "roundWin": 0,
+          "roundLose": 0,
+          "champion": 0
+        },
+        {
+          "id": "df48234b-fb9f-4fea-9ba5-4560243a5355",
+          "candidate": "lkj",
+          "roundWin": 0,
+          "roundLose": 0,
+          "champion": 0
+        },
+        {
+          "id": "7b6d0a01-3fb5-441f-a36f-a21f3daf554f",
+          "candidate": "lk",
+          "roundWin": 0,
+          "roundLose": 0,
+          "champion": 0
+        },
+        {
+          "id": "623fa3b6-8d0d-4cae-b0ec-599331fe6eb1",
+          "candidate": "j",
+          "roundWin": 0,
+          "roundLose": 0,
+          "champion": 0
+        },
+        {
+          "id": "e2f9190d-a845-42d4-8b57-acd8f9140dfe",
+          "candidate": "lkj",
+          "roundWin": 0,
+          "roundLose": 0,
+          "champion": 0
+        },
+        {
+          "id": "f84e53d9-d0fc-41dd-82fe-974cae61613e",
+          "candidate": "kl",
+          "roundWin": 0,
+          "roundLose": 0,
+          "champion": 0
+        }
+      ],
+      "id": "7420d2bd-0bb5-45ef-a7b8-3a3e9bbc0988",
+      "count": 0,
+      "createdAt": 1646655606156,
+      "comments": [],
+      "creatorId": "102227633035821763864"
+    }
+  ]
 }

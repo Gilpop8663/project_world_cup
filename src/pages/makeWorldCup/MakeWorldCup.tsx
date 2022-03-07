@@ -27,7 +27,9 @@ const Form = styled.form`
   padding-top: 50px;
 `;
 
-const Title = styled.input.attrs({ type: 'text' })``;
+const Title = styled.input.attrs({ type: 'text' })`
+  margin-right: 10px;
+`;
 
 const InputContainer = styled.div`
   display: flex;
@@ -46,6 +48,18 @@ const ItemInput = styled.input.attrs({ type: 'text' })``;
 const InputBox = styled.div`
   margin: 10px;
 `;
+
+const TitleWrapper = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
+const ButtonWrapper = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
+const CancelButton = styled.button``;
 
 const SubmitInput = styled.input``;
 
@@ -188,16 +202,23 @@ export default function MakeWorldCup({ userObj }: IUserObjProps) {
     navigate('/');
   };
 
+  const onCancelClick = () => {
+    navigate('/');
+  };
+
   return (
     <Container>
       <Form onSubmit={handleSubmit(onSubmit)}>
-        <Title
-          {...register('title', {
-            required: ERROR_REQUIRED,
-            minLength: { value: 1, message: ERROR_MIN },
-          })}
-        />
-        {errors.title && <p>{errors.title?.message}</p>}
+        <TitleWrapper>
+          <Title
+            {...register('title', {
+              required: ERROR_REQUIRED,
+              minLength: { value: 1, message: ERROR_MIN },
+            })}
+          />
+          {errors.title && <p>{errors.title?.message}</p>}
+          <p>월드컵</p>
+        </TitleWrapper>
         <InputContainer>
           <ItemInputWrapper>
             <InputBox>
@@ -464,7 +485,10 @@ export default function MakeWorldCup({ userObj }: IUserObjProps) {
             </InputBox>
           </ItemInputWrapper>
         </InputContainer>
-        <SubmitInput type="submit" value="보내기" />
+        <ButtonWrapper>
+          <CancelButton onClick={onCancelClick}>취소하기</CancelButton>
+          <SubmitInput type="submit" value="생성하기" />
+        </ButtonWrapper>
       </Form>
     </Container>
   );

@@ -22,7 +22,9 @@ export default function MyPage({ userObj }: IUserObjProps) {
       .get(`http://localhost:4000/world?creatorId=${userObj.userId}`)
       .then((res) => {
         const isOwner = res.data[0].creatorId === userObj.userId;
-        if (!isOwner) return setMyData([]);
+        if (!isOwner || !myData[0]) {
+          setMyData([]);
+        }
         setMyData(res.data);
       });
   }, [refetch, userObj.userId]);
@@ -30,7 +32,12 @@ export default function MyPage({ userObj }: IUserObjProps) {
   return (
     <Container>
       <MyPageTitle>내가 만든 월드컵</MyPageTitle>
-      <WorldCupDelete userObj={userObj} setRefetch={setRefetch} data={myData} />
+      <WorldCupDelete
+        setData={setMyData}
+        userObj={userObj}
+        setRefetch={setRefetch}
+        data={myData}
+      />
     </Container>
   );
 }
