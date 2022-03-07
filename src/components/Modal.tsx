@@ -37,15 +37,30 @@ const ModalContent = styled.div`
   width: 70%;
   height: 70%;
 
-  border-radius: 20px;
+  border-radius: 14px;
+  border: 2px solid #7982c9;
   background: white;
 `;
 
 const WinnerText = styled.h1`
-  font-size: 6.5vw;
+  font-size: 50px;
   text-align: center;
-  color: black;
+  font-weight: 800;
+  color: #424874;
+  margin-bottom: 40px;
 `;
+
+const GoRankingText = styled.div`
+  padding: 15px;
+  font-size: 30px;
+  text-align: center;
+  font-weight: 600;
+  background-color: #424874;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+`;
+
 export default function Modal({ winner, resultId }: any) {
   const navigate = useNavigate();
 
@@ -58,11 +73,10 @@ export default function Modal({ winner, resultId }: any) {
       <Overlay />
       <ModalContent>
         <WinnerText data-splitting>
-          우승자는 {winner[0].candidate}입니다!!!
+          🥳 우승자는 {winner[0].candidate} 입니다! 🎉
         </WinnerText>
-        <span>🏆</span>
 
-        <p onClick={goToResult}>랭킹 보러 가기</p>
+        <GoRankingText onClick={goToResult}>🏆 랭킹 보러 가기</GoRankingText>
       </ModalContent>
     </ModalBox>
   );
