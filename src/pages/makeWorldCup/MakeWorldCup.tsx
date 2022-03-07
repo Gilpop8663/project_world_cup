@@ -54,6 +54,13 @@ const TitleWrapper = styled.div`
   align-items: center;
 `;
 
+const ButtonWrapper = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
+const CancelButton = styled.button``;
+
 const SubmitInput = styled.input``;
 
 export default function MakeWorldCup({ userObj }: IUserObjProps) {
@@ -192,6 +199,10 @@ export default function MakeWorldCup({ userObj }: IUserObjProps) {
       .then((res) => console.log('성공'))
       .catch((error) => console.log(error));
 
+    navigate('/');
+  };
+
+  const onCancelClick = () => {
     navigate('/');
   };
 
@@ -474,7 +485,10 @@ export default function MakeWorldCup({ userObj }: IUserObjProps) {
             </InputBox>
           </ItemInputWrapper>
         </InputContainer>
-        <SubmitInput type="submit" value="보내기" />
+        <ButtonWrapper>
+          <CancelButton onClick={onCancelClick}>취소하기</CancelButton>
+          <SubmitInput type="submit" value="생성하기" />
+        </ButtonWrapper>
       </Form>
     </Container>
   );

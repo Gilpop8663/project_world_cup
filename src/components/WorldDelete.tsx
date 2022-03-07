@@ -1,5 +1,5 @@
 import axios from 'axios';
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 import { IUserObjProps, IWorldCupProps } from 'utils/interface';
@@ -54,12 +54,14 @@ interface IWorldCupList {
   data: IWorldCupProps[];
   setRefetch?: React.Dispatch<React.SetStateAction<boolean>>;
   userObj?: IUserObjProps | any;
+  setData: React.Dispatch<React.SetStateAction<never[]>>;
 }
 
 export default function WorldCupDelete({
   data,
   setRefetch,
   userObj,
+  setData,
 }: IWorldCupList) {
   const navigate = useNavigate();
 
@@ -72,12 +74,16 @@ export default function WorldCupDelete({
   };
 
   const onDeleteClick = (worldId: string) => {
+    if (data.length === 1) {
+      setData([]);
+    }
     if (!setRefetch) return;
     axios
       .delete(`http://localhost:4000/world/${worldId}`)
       .then(() => setRefetch((prev) => !prev))
       .catch((error) => console.log('삭제 실패', error));
   };
+
   return (
     <Container>
       {data?.map((item, idx) => (
@@ -100,7 +106,7 @@ export default function WorldCupDelete({
             <LinkButton onClick={() => goToResult(item.id)}>
               랭킹보기
             </LinkButton>
-            {item.creatorId === userObj.userId && (
+            {item.creatorId === userObj?.userId && (
               <LinkButton onClick={() => onDeleteClick(item.id)}>
                 삭제하기
               </LinkButton>

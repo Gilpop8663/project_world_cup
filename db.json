@@ -1,81 +1,7 @@
 {
-  "user": [
-    {
-      "userId": "102227633035821763864",
-      "email": "wolfye0611@gmail.com",
-      "userName": "긴고랑",
-      "id": 1
-    },
-    {
-      "userId": "102227633035821763864",
-      "email": "wolfye0611@gmail.com",
-      "userName": "긴고랑",
-      "id": 2
-    },
-    {
-      "userId": "102227633035821763864",
-      "email": "wolfye0611@gmail.com",
-      "userName": "긴고랑",
-      "id": 3
-    },
-    {
-      "userId": "102227633035821763864",
-      "email": "wolfye0611@gmail.com",
-      "userName": "긴고랑",
-      "id": 4
-    },
-    {
-      "userId": "102227633035821763864",
-      "email": "wolfye0611@gmail.com",
-      "userName": "긴고랑",
-      "id": 5
-    },
-    {
-      "userId": "102227633035821763864",
-      "email": "wolfye0611@gmail.com",
-      "userName": "긴고랑",
-      "id": 6
-    },
-    {
-      "userId": "102227633035821763864",
-      "email": "wolfye0611@gmail.com",
-      "userName": "긴고랑",
-      "id": 7
-    },
-    {
-      "userId": "102227633035821763864",
-      "email": "wolfye0611@gmail.com",
-      "userName": "긴고랑",
-      "id": 8
-    },
-    {
-      "userId": "102227633035821763864",
-      "email": "wolfye0611@gmail.com",
-      "userName": "긴고랑",
-      "id": 9
-    },
-    {
-      "userId": "102227633035821763864",
-      "email": "wolfye0611@gmail.com",
-      "userName": "긴고랑",
-      "id": 10
-    },
-    {
-      "userId": "102227633035821763864",
-      "email": "wolfye0611@gmail.com",
-      "userName": "긴고랑",
-      "id": 11
-    },
-    {
-      "userId": "102227633035821763864",
-      "email": "wolfye0611@gmail.com",
-      "userName": "긴고랑",
-      "id": 12
-    }
-  ],
   "world": [
     {
-      "title": "음식",
+      "title": "KLJ",
       "list": [
         {
           "id": "2496c5dd-091d-45aa-835c-538c298ab9a7",
@@ -438,7 +364,7 @@
       "count": 0,
       "createdAt": 1646657281617,
       "comments": [],
-      "creatorId": "102266349003310668092"
+      "creatorId": "102227633035821763864"
     }
   ]
 }
