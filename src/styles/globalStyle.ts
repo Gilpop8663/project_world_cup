@@ -30,6 +30,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 	font-family: 'Nanum Gothic', sans-serif;
+	background-color: #a6b1e1;
 }
 ol, ul {
 	list-style: none;
@@ -57,11 +58,11 @@ a {
 	text-decoration: none;
 } 
 a:visited{
-	color: black; text-decoration: none;
+	color: #424874; text-decoration: none;
 }
 
 a:link {
-	color: black; text-decoration: none;
+	color: #424874; text-decoration: none;
 }
 
 `;

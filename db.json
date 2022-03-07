@@ -78,731 +78,121 @@
       "title": "음식",
       "list": [
         {
-          "id": "eaa8c9bf-6b67-48a7-923b-298a15f61ed5",
-          "candidate": "ㄱ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "146eeb8f-5204-4e11-b993-3057f26cf7bf",
-          "candidate": "ㄹ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "2496c5dd-091d-45aa-835c-538c298ab9a7",
-          "candidate": "ㅇ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "cee5de52-d195-46a9-ac50-fa4f278c77bf",
-          "candidate": "ㅊ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "14c4d872-7b7c-442e-ab53-316d0fbf62b7",
+          "id": "c3ae5f0f-cabe-402e-83d5-74af0dd5e24e",
           "candidate": "ㅍ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "1583c008-06e9-454d-bf63-07c04be02f79",
-          "candidate": "ㅗ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
+          "roundWin": 7,
+          "roundLose": 2,
+          "champion": 1
         },
         {
           "id": "1e845234-05a1-480a-8c45-cfb46bd433a4",
           "candidate": "ㅠ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "dc76d165-8653-4f13-9ee8-e59859f8c2c6",
-          "candidate": "ㅜ",
-          "roundWin": 0,
-          "roundLose": 0,
+          "roundWin": 2,
+          "roundLose": 3,
           "champion": 0
         },
         {
           "id": "0ff165c0-2aed-4277-9281-720f47e22818",
           "candidate": "ㅓ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "38825384-be2c-4f86-b5f1-4135b3976b82",
-          "candidate": "ㅓ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "16a1db82-14cf-426a-ac36-7c99df87ce52",
-          "candidate": "ㅗ",
-          "roundWin": 0,
-          "roundLose": 0,
+          "roundWin": 2,
+          "roundLose": 3,
           "champion": 0
         },
         {
           "id": "cadd8be3-202e-4498-8bd4-4b56cdd52f8b",
           "candidate": "ㅎ",
           "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "c3ae5f0f-cabe-402e-83d5-74af0dd5e24e",
-          "candidate": "ㅍ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "51953afb-1d5f-4b5a-970c-511d182e9023",
-          "candidate": "ㅍㅊ",
-          "roundWin": 0,
-          "roundLose": 0,
+          "roundLose": 3,
           "champion": 0
         },
         {
           "id": "61013b50-e756-4647-9889-6338c8afca70",
           "candidate": "ㅊ",
-          "roundWin": 0,
-          "roundLose": 0,
+          "roundWin": 5,
+          "roundLose": 3,
           "champion": 0
+        },
+        {
+          "id": "38825384-be2c-4f86-b5f1-4135b3976b82",
+          "candidate": "ㅓ",
+          "roundWin": 0,
+          "roundLose": 3,
+          "champion": 0
+        },
+        {
+          "id": "cee5de52-d195-46a9-ac50-fa4f278c77bf",
+          "candidate": "ㅊ",
+          "roundWin": 3,
+          "roundLose": 3,
+          "champion": 0
+        },
+        {
+          "id": "eaa8c9bf-6b67-48a7-923b-298a15f61ed5",
+          "candidate": "ㄱ",
+          "roundWin": 1,
+          "roundLose": 3,
+          "champion": 0
+        },
+        {
+          "id": "1583c008-06e9-454d-bf63-07c04be02f79",
+          "candidate": "ㅗ",
+          "roundWin": 6,
+          "roundLose": 3,
+          "champion": 0
+        },
+        {
+          "id": "2496c5dd-091d-45aa-835c-538c298ab9a7",
+          "candidate": "ㅇ",
+          "roundWin": 1,
+          "roundLose": 3,
+          "champion": 0
+        },
+        {
+          "id": "51953afb-1d5f-4b5a-970c-511d182e9023",
+          "candidate": "ㅍㅊ",
+          "roundWin": 6,
+          "roundLose": 2,
+          "champion": 1
         },
         {
           "id": "53826aa6-2812-400d-a181-b93bc6f26474",
           "candidate": "ㄹ",
-          "roundWin": 0,
-          "roundLose": 0,
+          "roundWin": 2,
+          "roundLose": 3,
           "champion": 0
+        },
+        {
+          "id": "146eeb8f-5204-4e11-b993-3057f26cf7bf",
+          "candidate": "ㄹ",
+          "roundWin": 5,
+          "roundLose": 3,
+          "champion": 0
+        },
+        {
+          "id": "14c4d872-7b7c-442e-ab53-316d0fbf62b7",
+          "candidate": "ㅍ",
+          "roundWin": 0,
+          "roundLose": 3,
+          "champion": 0
+        },
+        {
+          "id": "dc76d165-8653-4f13-9ee8-e59859f8c2c6",
+          "candidate": "ㅜ",
+          "roundWin": 1,
+          "roundLose": 3,
+          "champion": 0
+        },
+        {
+          "id": "16a1db82-14cf-426a-ac36-7c99df87ce52",
+          "candidate": "ㅗ",
+          "roundWin": 4,
+          "roundLose": 2,
+          "champion": 1
         }
       ],
       "id": "1c2d0629-3919-40dd-a22b-fc739594340b",
-      "count": 0,
+      "count": 3,
       "createdAt": 1646650879768,
-      "comments": [],
-      "creatorId": "102266349003310668092"
-    },
-    {
-      "title": "ㅓㅗㅠ",
-      "list": [
-        {
-          "id": "778709c4-92b1-4044-95f8-59623515404f",
-          "candidate": "ㅗㅠ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "975a7682-dec0-4af5-a2b9-f9e07e4d2d24",
-          "candidate": "ㅠㅓㅗ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "5c20227a-fe08-4f77-915e-33a90e1c21d8",
-          "candidate": "ㅠㅗㅓ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "31f456e8-c1f6-470f-b62c-33ac7cdda154",
-          "candidate": "ㅠㅓㅗ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "f6241757-a4d5-4d93-91a6-60fc06060e69",
-          "candidate": "ㅓㅠㅗ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "a81db50b-1021-48c5-a808-a8420b5941bc",
-          "candidate": "ㅠㅓㅗ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "77bfef41-a2b0-4a27-adc7-03a789394792",
-          "candidate": "ㅓㅠㅗ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "43f2eb60-8754-4b28-b238-f52d24abec9d",
-          "candidate": "ㅠㅓㅗ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "a341fa71-0cdc-4d43-a00e-2c6d329df545",
-          "candidate": "ㅠㅓㅗ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "0e75e8ea-52e5-477f-9b6e-0bea42804f3d",
-          "candidate": "ㅠㅗㅓ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "afd21789-2199-456b-b9dc-ec9df7fbff81",
-          "candidate": "ㅠㅓㅗ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "4e11f42e-b91a-4bd8-b8d2-77ac999defc1",
-          "candidate": "ㅠㅓㅗ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "b34c82de-9a68-4511-acd4-1d69e8623df2",
-          "candidate": "ㅠㅗㅓ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "975978d2-9d4c-4c9b-b7bc-76bfbad32daa",
-          "candidate": "ㅓㅠㅗ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "33a22e82-4c68-4d7f-8cb3-e89b9a80b9ac",
-          "candidate": "ㅠㅓㅗ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "cb82fe58-1ec2-4e18-af91-f79306b0fb7d",
-          "candidate": "ㅗ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        }
-      ],
-      "id": "0021c087-ec5f-4076-ac1b-9bc389f8c064",
-      "count": 0,
-      "createdAt": 1646651008162,
-      "comments": [],
-      "creatorId": "102266349003310668092"
-    },
-    {
-      "title": "ㄴㅁㅇ",
-      "list": [
-        {
-          "id": "1c73abc9-30fb-4a5e-a6d5-492db79b523b",
-          "candidate": "ㅠㅗ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "9b33ff75-df63-478c-8e0a-59068ea0c029",
-          "candidate": "ㅠㅗㅓ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "2335e6a2-a8cb-47b5-a3de-88978077be05",
-          "candidate": "ㅗㅓㅠ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "0d71ccfd-1c43-4d0b-a7da-f806c4b21cdb",
-          "candidate": "ㅓㅠㅗ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "74aa0126-47ac-4318-8d85-49fb8f666795",
-          "candidate": "ㅓㅗㅠ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "db7f5ab0-d75d-4e9d-8a2b-e4329ac62d3f",
-          "candidate": "ㅠㅗㅓ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "8d35b2a0-98dc-45bd-a45b-f75f5541a66b",
-          "candidate": "ㅗㅓㅠ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "c01fdb16-ffcb-4f9a-82aa-8c65ca7cdd50",
-          "candidate": "ㅁㅇㄴ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "6a0f0325-220b-4b27-b71a-071a6c5a6fcd",
-          "candidate": "ㅠㅗㅓ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "97e8d61d-bd95-4181-b269-2b6fa8630b2b",
-          "candidate": "ㅗㅓㅠ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "2dc26d46-9c0b-467a-93b5-a6ede6cface1",
-          "candidate": "ㅓㅠㅗ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "df2ce907-3e16-42ba-a4e4-0626bb2ba75e",
-          "candidate": "ㅓㅠㅗ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "b67fafc5-6736-4aa9-8409-e74abcb726fb",
-          "candidate": "ㅠㅓㅗ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "23371140-2ce3-42a5-a81b-1e0cc97469cf",
-          "candidate": "ㅓㅗㅠ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "1fea201c-c400-4986-8df8-ca059b0c4eb3",
-          "candidate": "ㅓㅠㅗ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "b2f19e49-10a3-4318-8d1b-df88b936f023",
-          "candidate": "ㅓㅗㅠㅓㅗㅠ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        }
-      ],
-      "id": "0381f5c4-985a-4065-aae9-836610ef4652",
-      "count": 0,
-      "createdAt": 1646651015726,
-      "comments": [],
-      "creatorId": "102266349003310668092"
-    },
-    {
-      "title": "ㅠㅗ",
-      "list": [
-        {
-          "id": "d34ad4b7-b286-44bd-9e82-bcfda4181cdd",
-          "candidate": "ㅗㅠ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "f91c62eb-9c18-4a70-bfe3-b0e4daecb6c4",
-          "candidate": "ㅠㅗ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "6deebc08-fe54-4ddc-ad04-d6f1038429f3",
-          "candidate": "ㅠㅗ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "eeeb9830-a2e9-4065-959a-a1005dddeb28",
-          "candidate": "ㅠㅗ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "e07da22f-983a-464c-9ac4-f72ef7608af6",
-          "candidate": "ㅗㅠ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "7715dfb3-f862-4a55-9bd5-927c39fd9f76",
-          "candidate": "ㅗㅠ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "8fb3e0b2-dec5-448f-ad57-cdcd80111edf",
-          "candidate": "ㅗㅠ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "b0a2255a-29b6-4c57-b50c-0321faa93fbc",
-          "candidate": "ㅗㅠ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "493f6cd6-1af7-435d-b6d9-fe86a13cf265",
-          "candidate": "ㅗㅠ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "568118ec-34cc-4b0f-b268-8c1d880ca8c1",
-          "candidate": "ㅗㅠ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "b928d23d-2750-4bb5-9190-2a7f4ad6182f",
-          "candidate": "ㅠㅗㅕ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "74d0adfa-44a9-4b09-ac34-bfc17d1e81ba",
-          "candidate": "ㄴㅇㅁ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "d370c20e-7538-45f6-b352-249e789ec58b",
-          "candidate": "ㅓ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "e2dff2ba-2d6d-48ff-8c2c-6eac614cad05",
-          "candidate": "ㅜ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "e9b03d6d-e922-457c-b946-dd3807338b99",
-          "candidate": "ㅎ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "32425b5a-d409-491c-b6ed-93cc5de04865",
-          "candidate": "ㅍ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        }
-      ],
-      "id": "6b7f2e8b-74fa-4c92-9656-61daded0c8f7",
-      "count": 0,
-      "createdAt": 1646651028529,
-      "comments": [],
-      "creatorId": "102266349003310668092"
-    },
-    {
-      "title": "ㄴㅇㅁ",
-      "list": [
-        {
-          "id": "17222184-a327-43be-941d-6f05a489e0a0",
-          "candidate": "1",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "3b490079-94d2-4588-9dda-6396855e1fa5",
-          "candidate": "ㅛ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "e57bee3c-1fbb-4eb2-bf58-4c4c2a59c56e",
-          "candidate": "ㅅ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "4d072a2c-6dcb-497c-bc90-4262411c9273",
-          "candidate": "ㅎ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "23c8d80c-e039-411f-871b-482eb433f93f",
-          "candidate": "2",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "c435071a-661f-439a-8618-e6ba971d1369",
-          "candidate": "ㄹ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "fb9d2767-874d-4da4-b000-b6d2129a5990",
-          "candidate": "ㅍ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "8af176ba-1be0-45c8-9cf4-196e5c85d2a3",
-          "candidate": "ㅠ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "ed4dad1b-870c-4449-b4fa-d5dbfc005ee3",
-          "candidate": "ㅠ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "af2b9ff9-0152-4d5e-bdb7-f5244f286c8e",
-          "candidate": "ㅠ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "75f7ed6a-f763-4148-b38b-63c5e430025e",
-          "candidate": "ㅍ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "3881283f-6c27-492d-a718-4da2c61f8182",
-          "candidate": "ㅊ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "f4326be5-5a4c-4c35-b325-b1c5f76c96ae",
-          "candidate": "ㅊ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "f90eb944-3c94-499a-a08a-c79ac4a16fbd",
-          "candidate": "ㅊ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "bc3e6b3d-4503-4478-a74f-bc1a8c097b5a",
-          "candidate": "ㅊ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "0f300188-317a-4a51-8ed5-7aa1e33cb002",
-          "candidate": "ㅊ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        }
-      ],
-      "id": "a276438b-8370-41b1-ba0e-d0a39dca8c99",
-      "count": 0,
-      "createdAt": 1646651042426,
-      "comments": [],
-      "creatorId": "102266349003310668092"
-    },
-    {
-      "title": "ㄴㅁㅇ",
-      "list": [
-        {
-          "id": "bac6f25d-6424-4b2c-9af8-19886ab9a0d9",
-          "candidate": "ㅛ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "3df2872b-fff4-4af4-81c9-652ba7512258",
-          "candidate": "ㅅ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "719f1dea-b27a-4453-b331-670a64692f51",
-          "candidate": "ㅎ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "72c34f41-f269-474e-ad87-4e54e975d9bd",
-          "candidate": "ㅠ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "be27392e-399c-4b3b-82dd-524c1ad524aa",
-          "candidate": "ㅍ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "9448c0ed-0dbc-469d-a735-37f67194eba5",
-          "candidate": "ㅊㅍ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "d63f0514-cd44-4e79-9138-4a9588dc50b2",
-          "candidate": "ㄹ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "fed5b56f-b5a3-44c4-8daa-44faa9004ea6",
-          "candidate": "ㅊ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "aa4f152c-d24b-443f-9a5d-b2fa3d8dde66",
-          "candidate": "ㅊ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "172358ba-3261-442f-b755-b19cf842f7e4",
-          "candidate": "ㅊ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "5acf0088-f771-4b6a-8ca6-685747958d8b",
-          "candidate": "ㄹ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "41f9d218-5b2e-424e-8e6b-6f63b46c5ca0",
-          "candidate": "ㅊ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "505d4c0a-36d3-4084-8189-277211cda082",
-          "candidate": "ㄷ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "38b9861a-1f6d-406c-8af9-d610428e286f",
-          "candidate": "ㅇ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "79077597-0e68-4228-9e3d-607129fb92c2",
-          "candidate": "ㅁ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "cb8c0292-82d6-49a7-ba20-0319ff1a1fd4",
-          "candidate": "ㅇ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        }
-      ],
-      "id": "d917b45d-e57f-4b9b-b468-f4643f53d5d0",
-      "count": 0,
-      "createdAt": 1646651052510,
       "comments": [],
       "creatorId": "102266349003310668092"
     }
