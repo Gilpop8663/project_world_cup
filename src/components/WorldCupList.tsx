@@ -72,6 +72,7 @@ export default function WorldCupList({
 }: IWorldCupList) {
   const navigate = useNavigate();
 
+  const isDelete = Boolean(setData);
   const goToWorldCup = (worldId: string) => {
     navigate(`/world/${worldId}`);
   };
@@ -103,7 +104,7 @@ export default function WorldCupList({
           >
             <WorldCupTitle>{item.title} 월드컵</WorldCupTitle>
           </TitleBox>
-          <LinkWrapper isDelete={Boolean(setData)}>
+          <LinkWrapper isDelete={isDelete}>
             <LinkSelectButton
               onClick={() => {
                 goToWorldCup(item.id);
@@ -114,7 +115,7 @@ export default function WorldCupList({
             <LinkSelectButton onClick={() => goToResult(item.id)}>
               랭킹보기
             </LinkSelectButton>
-            {item.creatorId === userObj?.userId && (
+            {isDelete && item.creatorId === userObj?.userId && (
               <LinkSelectButton onClick={() => onDeleteClick(item.id)}>
                 삭제하기
               </LinkSelectButton>

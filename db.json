@@ -4,123 +4,259 @@
       "title": "KLJ",
       "list": [
         {
-          "id": "dbee99ec-9b9d-4e5c-b751-1e373ac44b7f",
-          "candidate": "LKJ",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
           "id": "b6841b64-c5dd-4d0e-9cf2-cc06ac8c1874",
           "candidate": "LK",
-          "roundWin": 0,
+          "roundWin": 4,
           "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "1f13dde3-e72c-42e6-a9d0-564658442dcb",
-          "candidate": "JLK",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "c92851e5-1f82-4f0a-93fc-94ae7627328c",
-          "candidate": "JLK",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "d3edbe9c-f694-4249-8820-c8b963fb7e9e",
-          "candidate": "JLK",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "53cc7bad-a235-4b8c-bac8-2286ea091483",
-          "candidate": "AS",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "41099b5d-7518-47c6-a928-191d1b8fbfbc",
-          "candidate": "JLK",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
+          "champion": 1
         },
         {
           "id": "5daea071-33a9-4b68-877a-b0c8fd7e743f",
           "candidate": "JLK",
           "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "c90b5daa-7f4e-441b-a2fe-5921b175f858",
-          "candidate": "JLK",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "e12ed372-139e-4d6c-9681-0992d76e9f72",
-          "candidate": "JLK",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "713ac8da-e8ca-4a71-9ae0-2c615b306f36",
-          "candidate": "JLK",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "9de43041-c171-4eb7-a75c-895eafe1879f",
-          "candidate": "JLK",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "11a7c67b-ecf4-42af-81ab-57c11a360705",
-          "candidate": "JLKJ",
-          "roundWin": 0,
-          "roundLose": 0,
+          "roundLose": 1,
           "champion": 0
         },
         {
           "id": "2df71492-a300-43d8-976a-fad84419c33d",
           "candidate": "LK",
-          "roundWin": 0,
-          "roundLose": 0,
-          "champion": 0
-        },
-        {
-          "id": "b6de03b0-0ec1-4e39-84b5-d713f04d61ce",
-          "candidate": "JLKJLK",
-          "roundWin": 0,
-          "roundLose": 0,
+          "roundWin": 1,
+          "roundLose": 1,
           "champion": 0
         },
         {
           "id": "64581544-62d1-4631-a5c8-9a04de264bfe",
           "candidate": "LK",
           "roundWin": 0,
-          "roundLose": 0,
+          "roundLose": 1,
+          "champion": 0
+        },
+        {
+          "id": "e12ed372-139e-4d6c-9681-0992d76e9f72",
+          "candidate": "JLK",
+          "roundWin": 2,
+          "roundLose": 1,
+          "champion": 0
+        },
+        {
+          "id": "713ac8da-e8ca-4a71-9ae0-2c615b306f36",
+          "candidate": "JLK",
+          "roundWin": 0,
+          "roundLose": 1,
+          "champion": 0
+        },
+        {
+          "id": "11a7c67b-ecf4-42af-81ab-57c11a360705",
+          "candidate": "JLKJ",
+          "roundWin": 1,
+          "roundLose": 1,
+          "champion": 0
+        },
+        {
+          "id": "53cc7bad-a235-4b8c-bac8-2286ea091483",
+          "candidate": "AS",
+          "roundWin": 0,
+          "roundLose": 1,
+          "champion": 0
+        },
+        {
+          "id": "c92851e5-1f82-4f0a-93fc-94ae7627328c",
+          "candidate": "JLK",
+          "roundWin": 3,
+          "roundLose": 1,
+          "champion": 0
+        },
+        {
+          "id": "b6de03b0-0ec1-4e39-84b5-d713f04d61ce",
+          "candidate": "JLKJLK",
+          "roundWin": 0,
+          "roundLose": 1,
+          "champion": 0
+        },
+        {
+          "id": "41099b5d-7518-47c6-a928-191d1b8fbfbc",
+          "candidate": "JLK",
+          "roundWin": 1,
+          "roundLose": 1,
+          "champion": 0
+        },
+        {
+          "id": "c90b5daa-7f4e-441b-a2fe-5921b175f858",
+          "candidate": "JLK",
+          "roundWin": 0,
+          "roundLose": 1,
+          "champion": 0
+        },
+        {
+          "id": "9de43041-c171-4eb7-a75c-895eafe1879f",
+          "candidate": "JLK",
+          "roundWin": 2,
+          "roundLose": 1,
+          "champion": 0
+        },
+        {
+          "id": "d3edbe9c-f694-4249-8820-c8b963fb7e9e",
+          "candidate": "JLK",
+          "roundWin": 0,
+          "roundLose": 1,
+          "champion": 0
+        },
+        {
+          "id": "1f13dde3-e72c-42e6-a9d0-564658442dcb",
+          "candidate": "JLK",
+          "roundWin": 1,
+          "roundLose": 1,
+          "champion": 0
+        },
+        {
+          "id": "dbee99ec-9b9d-4e5c-b751-1e373ac44b7f",
+          "candidate": "LKJ",
+          "roundWin": 0,
+          "roundLose": 1,
           "champion": 0
         }
       ],
       "id": "1d946356-2056-42aa-9cf7-aa59dbfca1f3",
-      "count": 0,
+      "count": 1,
       "createdAt": 1646657970255,
-      "comments": [],
+      "comments": [
+        {
+          "id": "fac190e4-34cd-481b-a45e-8b47ef0c9f07",
+          "text": "ㅋㅌㅊㅋㅌ",
+          "createdAt": 1646660974761,
+          "creatorId": "102227633035821763864",
+          "userId": "긴고랑"
+        },
+        {
+          "id": "42e32b5a-158e-4924-afe7-0bc5a07f6a7f",
+          "text": "ㅁㅇㅁㄴㅇ",
+          "createdAt": 1646660973827,
+          "creatorId": "102227633035821763864",
+          "userId": "긴고랑"
+        }
+      ],
       "creatorId": "102227633035821763864"
+    },
+    {
+      "title": "ASD",
+      "list": [
+        {
+          "id": "af18c097-be0b-4557-ad3c-95e92a5dc707",
+          "candidate": "UJIH",
+          "roundWin": 0,
+          "roundLose": 0,
+          "champion": 0
+        },
+        {
+          "id": "e50eccd4-3f2b-4fa7-a8ac-120d7dd24602",
+          "candidate": "H",
+          "roundWin": 0,
+          "roundLose": 0,
+          "champion": 0
+        },
+        {
+          "id": "a677c1e8-de6f-4f13-ac14-8fca3a0e8dd7",
+          "candidate": "JKH",
+          "roundWin": 0,
+          "roundLose": 0,
+          "champion": 0
+        },
+        {
+          "id": "4f724a19-640e-4da1-a6f7-3651fc504c97",
+          "candidate": "JKHJK",
+          "roundWin": 0,
+          "roundLose": 0,
+          "champion": 0
+        },
+        {
+          "id": "ba5861a2-0755-4832-b4d9-169563d127ef",
+          "candidate": "asd",
+          "roundWin": 0,
+          "roundLose": 0,
+          "champion": 0
+        },
+        {
+          "id": "7eb7a195-1dc9-4b82-b9df-ac6ec9f04825",
+          "candidate": "asd",
+          "roundWin": 0,
+          "roundLose": 0,
+          "champion": 0
+        },
+        {
+          "id": "4c3e2ad3-a9a9-48c3-aba3-94fe747222eb",
+          "candidate": "SAD",
+          "roundWin": 0,
+          "roundLose": 0,
+          "champion": 0
+        },
+        {
+          "id": "4b260799-e3b0-409e-b7f9-bd0437b88775",
+          "candidate": "D",
+          "roundWin": 0,
+          "roundLose": 0,
+          "champion": 0
+        },
+        {
+          "id": "1a39c803-9e71-4b17-b680-6ce2ea10c774",
+          "candidate": "SD",
+          "roundWin": 0,
+          "roundLose": 0,
+          "champion": 0
+        },
+        {
+          "id": "e8bd9f46-1318-4ae4-8c9a-750073f41143",
+          "candidate": "SD",
+          "roundWin": 0,
+          "roundLose": 0,
+          "champion": 0
+        },
+        {
+          "id": "771a78cd-46f9-4a38-a42a-8453712238c6",
+          "candidate": "SDASD",
+          "roundWin": 0,
+          "roundLose": 0,
+          "champion": 0
+        },
+        {
+          "id": "b10636dd-7b7e-4220-bb3f-d9a513392ea0",
+          "candidate": "SD",
+          "roundWin": 0,
+          "roundLose": 0,
+          "champion": 0
+        },
+        {
+          "id": "439093c5-65a5-4619-a1de-6d84e042836d",
+          "candidate": "DSAQDASD",
+          "roundWin": 0,
+          "roundLose": 0,
+          "champion": 0
+        },
+        {
+          "id": "085d6e61-742e-4063-a761-df90d4decadb",
+          "candidate": "SDQSDAD",
+          "roundWin": 0,
+          "roundLose": 0,
+          "champion": 0
+        },
+        {
+          "id": "5ab11ad4-6be4-45cd-8d5d-c009eeb35050",
+          "candidate": "SDAD",
+          "roundWin": 0,
+          "roundLose": 0,
+          "champion": 0
+        },
+        {
+          "id": "f72e8e79-6dfd-40b9-a798-81ae6bafa29e",
+          "candidate": "DAD",
+          "roundWin": 0,
+          "roundLose": 0,
+          "champion": 0
+        }
+      ],
+      "id": "02151ac7-175e-4508-b130-6e522c63ec7c",
+      "count": 0,
+      "createdAt": 1646663387413,
+      "comments": []
     }
   ]
 }
