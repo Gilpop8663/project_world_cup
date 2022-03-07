@@ -9,6 +9,7 @@ import { GUEST_ICON, GUEST_NAME } from '../../../constants/contants';
 import { IUserObjProps, IWorldCupCommentProps } from 'utils/interface';
 
 const Container = styled.div`
+  padding-top: 23px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -20,6 +21,10 @@ const Form = styled.form`
   flex-direction: column;
   border: ${({ theme }) => theme.baseBorderStyle};
   padding: 15px;
+  background-color: white;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  border: 2px solid #7982c9;
 `;
 
 const Input = styled.textarea`
@@ -33,10 +38,12 @@ const Input = styled.textarea`
     font-size: 1.2em;
     border: none;
     width: 100%;
+    background-color: white;
   }
   &:placeholder-shown {
     font-size: 1.2em;
     width: 100%;
+    background-color: white;
   }
   &:focus {
     outline-width: 0;
@@ -71,17 +78,33 @@ const SubmitInput = styled.input<{ isMessage: boolean }>`
   font-size: 0.8em;
   cursor: ${({ isMessage }) => (isMessage ? 'pointer' : 'click')};
   background-color: ${({ theme, isMessage }) =>
-    isMessage ? theme.mainBlueColor : theme.mainWhiteBlueColor};
+    isMessage ? '#8A94E1' : '#A6B1E1'};
 `;
 
 const InputWrapper = styled.div`
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
 `;
 
 const MessageContainer = styled.ul`
   overflow-y: scroll;
+  border-radius: 6px;
+  border: 2px solid #7982c9;
+  &::-webkit-scrollbar {
+    border-radius: 6px;
+    width: 5px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #424874;
+    border-radius: 6px;
+  }
+  &::-webkit-scrollbar-track {
+    border-radius: 6px;
+    background-color: grey;
+    box-shadow: inset 0px 0px 5px white;
+  }
 `;
 
 export default function CommentForm({ userObj }: IUserObjProps) {
