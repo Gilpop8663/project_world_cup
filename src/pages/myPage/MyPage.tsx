@@ -1,5 +1,6 @@
 import axios from 'axios';
 import WorldCupList from 'components/WorldCupList';
+import { BASE_URL } from 'constants/contants';
 import { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { IUserObjProps } from 'utils/interface';
@@ -28,15 +29,13 @@ export default function MyPage({ userObj }: IUserObjProps) {
   const [myData, setMyData] = useState([]);
   const [refetch, setRefetch] = useState(false);
   useEffect(() => {
-    axios
-      .get(`http://localhost:4000/world?creatorId=${userObj.userId}`)
-      .then((res) => {
-        const isOwner = res.data[0].creatorId === userObj.userId;
-        if (!isOwner || !myData[0]) {
-          setMyData([]);
-        }
-        setMyData(res.data);
-      });
+    axios.get(`${BASE_URL}/world?creatorId=${userObj.userId}`).then((res) => {
+      const isOwner = res.data[0].creatorId === userObj.userId;
+      if (!isOwner || !myData[0]) {
+        setMyData([]);
+      }
+      setMyData(res.data);
+    });
   }, [refetch, userObj.userId]);
 
   console.log(myData);

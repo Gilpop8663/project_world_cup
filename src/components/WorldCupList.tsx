@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { BASE_URL } from 'constants/contants';
 import WorldCup from 'pages/worldCup/WorldCup';
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
@@ -88,7 +89,7 @@ export default function WorldCupList({
       setData([]);
     }
     axios
-      .delete(`http://localhost:4000/world/${worldId}`)
+      .delete(`${BASE_URL}/world/${worldId}`)
       .then(() => setRefetch((prev) => !prev))
       .catch((error) => console.log('삭제 실패', error));
   };

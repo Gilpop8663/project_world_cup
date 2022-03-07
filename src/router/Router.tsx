@@ -7,9 +7,14 @@ import Result from 'pages/result/Result';
 import WorldCup from 'pages/worldCup/WorldCup';
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { IUser } from 'utils/interface';
+import { IUser, IUserObjProps } from 'utils/interface';
 
-export default function Router({ userObj, setUserObj }: IUser) {
+interface IRouterProps {
+  userObj: IUserObjProps;
+  setUserObj: React.Dispatch<React.SetStateAction<{}>>;
+}
+
+export default function Router({ userObj, setUserObj }: IRouterProps) {
   return (
     <BrowserRouter>
       <Header setUserObj={setUserObj} userObj={userObj} />

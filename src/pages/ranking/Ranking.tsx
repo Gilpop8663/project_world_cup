@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { BASE_URL } from 'constants/contants';
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import styled from 'styled-components';
@@ -151,7 +152,7 @@ export default function Ranking() {
   const location = useLocation();
   const keyword = location.pathname.split('/');
   useEffect(() => {
-    axios.get(`http://localhost:4000/world?id=${keyword[2]}`).then((res) => {
+    axios.get(`${BASE_URL}/world?id=${keyword[2]}`).then((res) => {
       const sortRoundWin: any = res.data[0].list.sort(
         (a: any, b: any) =>
           b.roundWin / (b.roundWin + b.roundLose) -

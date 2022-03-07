@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Modal from 'components/Modal';
 import { useLocation } from 'react-router-dom';
+import { BASE_URL } from 'constants/contants';
 const TitleText = styled.div`
   margin: 20px 0px 30px 0px;
   font-size: 45px;
@@ -97,7 +98,7 @@ function WorldCup() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:4000/world?id=${keyword}`)
+      .get(`${BASE_URL}/world?id=${keyword}`)
       .then(
         (res) => (setData(res.data[0]), setList(shuffleArray(res.data[0].list)))
       );
@@ -131,7 +132,7 @@ function WorldCup() {
     if (winner.length === 1) {
       toggleModal();
       axios
-        .put(`http://localhost:4000/world/${keyword}`, {
+        .put(`${BASE_URL}/world/${keyword}`, {
           ...data,
           list: data.list,
           count: (data.count += 1),

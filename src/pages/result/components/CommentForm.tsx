@@ -5,7 +5,7 @@ import { onEnterPress } from 'utils/utilFn';
 import Comment from './Comment';
 import axios from 'axios';
 import { useLocation } from 'react-router-dom';
-import { GUEST_ICON, GUEST_NAME } from '../../../constants/contants';
+import { BASE_URL, GUEST_ICON, GUEST_NAME } from '../../../constants/contants';
 import { IUserObjProps, IWorldCupCommentProps } from 'utils/interface';
 
 const Container = styled.div`
@@ -77,8 +77,7 @@ const SubmitInput = styled.input<{ isMessage: boolean }>`
   font-weight: 600;
   font-size: 0.8em;
   cursor: ${({ isMessage }) => (isMessage ? 'pointer' : 'click')};
-  background-color: ${({ theme, isMessage }) =>
-    isMessage ? '#8A94E1' : '#A6B1E1'};
+  background-color: ${({ isMessage }) => (isMessage ? '#8A94E1' : '#A6B1E1')};
 `;
 
 const InputWrapper = styled.div`
@@ -86,11 +85,10 @@ const InputWrapper = styled.div`
   justify-content: space-between;
   align-items: flex-end;
 `;
-
 const MessageContainer = styled.ul<{ isData: boolean }>`
   overflow-y: scroll;
   border-radius: 6px;
-  border: ${({ isData }) => (isData ? '2px solid #7982c9' : 'none')}}
+  border: ${({ isData }) => (isData ? '2px solid #7982c9' : 'none')};
   &::-webkit-scrollbar {
     border-radius: 6px;
     width: 5px;
@@ -116,7 +114,7 @@ export default function CommentForm({ userObj }: IUserObjProps) {
   const keyword = location.pathname.split('/');
 
   useEffect(() => {
-    axios.get(`http://localhost:4000/world/${keyword[2]}`).then((res) => {
+    axios.get(`${BASE_URL}/world/${keyword[2]}`).then((res) => {
       setData(res.data);
       setComment(res.data.comments);
     });
@@ -126,7 +124,7 @@ export default function CommentForm({ userObj }: IUserObjProps) {
     e.preventDefault();
     if (!message) return;
     axios
-      .put(`http://localhost:4000/world/${keyword[2]}`, {
+      .put(`${BASE_URL}/world/${keyword[2]}`, {
         ...data,
         comments: [
           {

@@ -1,5 +1,6 @@
 import axios from 'axios';
 import WorldCupList from 'components/WorldCupList';
+import { BASE_URL } from 'constants/contants';
 import { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { IWorldCupProps } from 'utils/interface';
@@ -29,7 +30,8 @@ export default function Home() {
   const [listArr, setListArr] = useState<any>([{}]);
   const [isSort, setIsSort] = useState<boolean>(true);
   useEffect(() => {
-    axios.get('http://localhost:4000/world').then((res) => {
+    axios.get(`${BASE_URL}/world`).then((res) => {
+      console.log(res.data);
       setListArr(
         res.data.sort(
           (a: IWorldCupProps, b: IWorldCupProps) => b.count - a.count
