@@ -87,10 +87,10 @@ const InputWrapper = styled.div`
   align-items: flex-end;
 `;
 
-const MessageContainer = styled.ul`
+const MessageContainer = styled.ul<{ isData: boolean }>`
   overflow-y: scroll;
   border-radius: 6px;
-  border: 2px solid #7982c9;
+  border: ${({ isData }) => (isData ? '2px solid #7982c9' : 'none')}}
   &::-webkit-scrollbar {
     border-radius: 6px;
     width: 5px;
@@ -174,7 +174,7 @@ export default function CommentForm({ userObj }: IUserObjProps) {
         </InputWrapper>
       </Form>
 
-      <MessageContainer>
+      <MessageContainer isData={comment.length > 0}>
         {comment?.map((item: any) => (
           <Comment
             key={item.id}
