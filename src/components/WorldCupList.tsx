@@ -6,27 +6,28 @@ import { IWorldCupProps } from 'utils/interface';
 
 const Container = styled.div`
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 40px;
 `;
 
 const WorldCupWrapper = styled.div`
-  min-width: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
 `;
 
 const TitleBox: any = styled.div`
-  background-color: #f4eeff;
-  border-radius: 20px;
+  background-color: white;
+  border-radius: 10px;
   width: 100%;
   height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  border: 1.5px solid #424874;
+  color: #424874;
+  font-weight: 600;
+  border: 2px solid #7982c9;
 `;
 
 const WorldCupTitle = styled.p`
@@ -37,18 +38,21 @@ const WorldCupTitle = styled.p`
 
 const LinkWrapper = styled.div`
   margin-top: 10px;
-  width: 100%;
+  width: 90%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 10px;
   text-align: center;
 `;
+
 const LinkSelectButton = styled.div`
   padding: 10px 15px;
-  background-color: #424874;
+  background-color: white;
   cursor: pointer;
   border-radius: 7px;
-  border: 1.5px solid #f4eeff;
+  border: 2px solid #7982c9;
+  font-weight: 600;
+  color: #424874;
 `;
 
 interface IWorldCupList {
