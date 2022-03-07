@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { BASE_URL } from 'constants/contants';
 import { useLocation } from 'react-router-dom';
 import styled from 'styled-components';
 import { IUserObjProps } from 'utils/interface';
@@ -107,7 +108,7 @@ export default function Comment({
         ...data.comments.slice(findIndex + 1),
       ];
       await axios
-        .put(`http://localhost:4000/world/${keyword[2]}`, {
+        .put(`${BASE_URL}/world/${keyword[2]}`, {
           ...data,
           comments: newComments,
         })

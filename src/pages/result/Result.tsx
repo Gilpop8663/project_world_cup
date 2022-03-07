@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { BASE_URL } from 'constants/contants';
 import Ranking from 'pages/ranking/Ranking';
 import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
@@ -40,7 +41,7 @@ export default function Result({ userObj }: IUserObjProps) {
   const location = useLocation();
   const keyword = location.pathname.split('/');
   useEffect(() => {
-    axios.get(`http://localhost:4000/world?id=${keyword[2]}`).then((res) => {
+    axios.get(`${BASE_URL}/world?id=${keyword[2]}`).then((res) => {
       if (res.data[0].count === 0) {
         setNoData(true);
       }

@@ -1,4 +1,5 @@
 import {
+  BASE_URL,
   ERROR_MAX,
   ERROR_MIN,
   ERROR_REQUIRED,
@@ -12,6 +13,7 @@ import styled from 'styled-components';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { IUserObjProps } from 'utils/interface';
+import { onEnterPress } from 'utils/utilFn';
 
 const Container = styled.div`
   display: flex;
@@ -151,7 +153,11 @@ const ItemNumberWrapper = styled.div`
   align-items: flex-end;
 `;
 
-export default function MakeWorldCup({ userObj }: IUserObjProps) {
+interface IMakeProps {
+  userObj: IUserObjProps | any;
+}
+
+export default function MakeWorldCup({ userObj }: IMakeProps) {
   const navigate = useNavigate();
   const {
     register,
@@ -275,7 +281,7 @@ export default function MakeWorldCup({ userObj }: IUserObjProps) {
       },
     ];
     axios
-      .post('http://localhost:4000/world', {
+      .post(`${BASE_URL}/world`, {
         title: data.title,
         list: listArr,
         id: uuidv4(),
@@ -284,7 +290,9 @@ export default function MakeWorldCup({ userObj }: IUserObjProps) {
         comments: [],
         creatorId: userObj.userId,
       })
-      .then((res) => console.log('성공'))
+      .then((res) => {
+        console.log('성공');
+      })
       .catch((error) => console.log(error));
 
     navigate('/');
@@ -296,7 +304,12 @@ export default function MakeWorldCup({ userObj }: IUserObjProps) {
 
   return (
     <Container>
-      <Form onSubmit={handleSubmit(onSubmit)}>
+      <Form
+        onSubmit={handleSubmit(onSubmit)}
+        onKeyPress={(e: React.KeyboardEvent<HTMLFormElement>) =>
+          onEnterPress(e, handleSubmit(onSubmit))
+        }
+      >
         <TitleWrapper>
           <TitleContainer>
             <Title

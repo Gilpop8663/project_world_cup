@@ -17,6 +17,7 @@ export default function GoogleLoginBtn({ onGoogleLogin, setUserObj }: any) {
       email: email,
       userName: name,
     };
+    console.log(googleId);
     await onGoogleLogin();
     setUserObj(userInfoObj);
   };
