@@ -1,6 +1,6 @@
 import axios from 'axios';
 import WorldCup from 'pages/worldCup/WorldCup';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 import { IUserObjProps, IWorldCupProps } from 'utils/interface';

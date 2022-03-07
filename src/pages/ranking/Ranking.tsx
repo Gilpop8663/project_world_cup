@@ -15,95 +15,119 @@ const TitleText: any = styled.p`
 
 const TitleWrapper = styled.div`
   display: flex;
-  align-items: center;
   width: 100%;
-  height: 60px;
+  height: 50px;
+  margin-bottom: 24px;
 `;
 
 const RankingTitle = styled.div`
-  background-color: skyblue;
+  background-color: white;
   width: 8%;
   height: 100%;
+  border: 2px solid #a6b1e1;
+  padding: 10px;
+  border-radius: 6px;
   display: flex;
+  align-items: center;
   justify-content: center;
-  padding: 15px;
-  border: 2px solid white;
-  cursor: pointer;
 `;
 
 const NameTitle: any = styled.div`
-  background: ${({ sort }: { sort: boolean }) =>
-    sort ? '#31adde' : 'skyblue'};
-  width: 26%;
-  height: 100%;
   display: flex;
-  justify-content: space-between;
-  padding: 15px;
-  border: 2px solid white;
+  justify-content: space-around;
+  align-items: center;
+  background: ${({ sort }: { sort: boolean }) => (sort ? '#F4EEFF' : 'white')};
+  width: 20%;
+  height: 100%;
+  border: 2px solid #a6b1e1;
   cursor: pointer;
+  text-align: center;
+  padding: 10px;
+  border-radius: 6px;
 `;
 
 const ChampionTitle: any = styled.div`
   display: flex;
-  justify-content: space-between;
-  background: ${({ sort }: { sort: boolean }) =>
-    sort ? '#31adde' : 'skyblue'};
-  width: 33%;
+  justify-content: space-around;
+  align-items: center;
+  background: ${({ sort }: { sort: boolean }) => (sort ? '#F4EEFF' : 'white')};
+  width: 36%;
   height: 100%;
-  padding: 15px;
-  border: 2px solid white;
+  border: 2px solid #a6b1e1;
   cursor: pointer;
+  padding: 10px;
+  padding-right: 20px;
+  border-radius: 6px;
 `;
 
 const WinnerTitle: any = styled.div`
   display: flex;
-  justify-content: space-between;
-  background: ${({ sort }: { sort: boolean }) =>
-    sort ? '#31adde' : 'skyblue'};
-  width: 33%;
+  justify-content: space-around;
+  align-items: center;
+  background: ${({ sort }: { sort: boolean }) => (sort ? '#F4EEFF' : 'white')};
+  width: 36%;
   height: 100%;
-  padding: 15px;
-  border: 2px solid white;
+  border: 2px solid #a6b1e1;
   cursor: pointer;
+  padding: 10px;
+  padding-right: 20px;
+  border-radius: 6px;
+`;
+
+const ListWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  width: 100%;
 `;
 
 const RankingTitleList: any = styled.div`
-  background-color: skyblue;
+  background-color: white;
   width: 8%;
-  height: 100%;
+  height: 54px;
   display: flex;
   justify-content: center;
-  padding: 15px;
-  border: 2px solid white;
+  align-items: center;
+  border: 2px solid #a6b1e1;
+  padding: 10px;
+  border-radius: 6px;
 `;
 
 const NameTitleList = styled.div`
-  background-color: skyblue;
-  width: 26%;
-  height: 100%;
+  background-color: white;
+  width: 20%;
+  height: 54px;
   display: flex;
   justify-content: center;
-  padding: 15px;
-  border: 2px solid white;
+  align-items: center;
+  border: 2px solid #a6b1e1;
+  padding: 10px;
+  border-radius: 6px;
 `;
 
 const PercentTitleList = styled.div`
-  background-color: skyblue;
-  width: 33%;
+  background-color: white;
+  width: 36%;
   height: 100%;
-  padding: 15px;
-  border: 2px solid white;
+  border: 2px solid #a6b1e1;
+  color: #424874;
+  padding: 10px;
+  padding-right: 20px;
+  border-radius: 6px;
 `;
+
 const ChartWrapper = styled.div`
   width: 100%;
   height: 15px;
-  padding: 3px;
   background-color: white;
+  border: 2px solid #424874;
+  margin-top: 10px;
   border-radius: 5px;
+  padding: 4px;
 `;
+
 const Chart = styled.div`
   height: 100%;
-  background-color: pink;
+  background-color: #8a94e1;
   border-radius: 2px;
 `;
 
@@ -273,7 +297,7 @@ export default function Ranking() {
       </TitleWrapper>
       {data &&
         data.map((ele: any, idx: number) => (
-          <TitleWrapper key={idx}>
+          <ListWrapper key={idx}>
             <RankingTitleList>
               <TitleText>{idx + 1}위</TitleText>
             </RankingTitleList>
@@ -298,7 +322,7 @@ export default function Ranking() {
                 />
               </ChartWrapper>
             </PercentTitleList>
-          </TitleWrapper>
+          </ListWrapper>
         ))}
     </Container>
   );
