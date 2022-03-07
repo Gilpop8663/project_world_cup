@@ -12,9 +12,9 @@ export const dateFormater = (time: number | Date) => {
   if (minute < 1) {
     return 'Now';
   } else if (minute > 1 && hour < 1) {
-    return `${minute.toFixed(0)}m`;
+    return `${minute.toFixed(0)}분 전`;
   } else if (hour > 1 && day < 1) {
-    return `${hour.toFixed(0)}h`;
+    return `${hour.toFixed(0)}시간 전`;
   } else if (day > 1 && oldYear === nowYear) {
     return `${oldMonth} ${oldDay}`;
   } else if (day > 1 && oldYear !== nowYear) {

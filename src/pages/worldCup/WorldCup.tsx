@@ -187,7 +187,7 @@ function WorldCup() {
   return (
     <>
       <TitleBox>
-        <p>{data.title}</p>
+        <p>{data.title} 월드컵</p>
       </TitleBox>
       <RoundBox>
         <RoundText>{roundInfo} </RoundText>

@@ -27,7 +27,9 @@ const Form = styled.form`
   padding-top: 50px;
 `;
 
-const Title = styled.input.attrs({ type: 'text' })``;
+const Title = styled.input.attrs({ type: 'text' })`
+  margin-right: 10px;
+`;
 
 const InputContainer = styled.div`
   display: flex;
@@ -45,6 +47,11 @@ const ItemInput = styled.input.attrs({ type: 'text' })``;
 
 const InputBox = styled.div`
   margin: 10px;
+`;
+
+const TitleWrapper = styled.div`
+  display: flex;
+  align-items: center;
 `;
 
 const SubmitInput = styled.input``;
@@ -191,13 +198,16 @@ export default function MakeWorldCup({ userObj }: IUserObjProps) {
   return (
     <Container>
       <Form onSubmit={handleSubmit(onSubmit)}>
-        <Title
-          {...register('title', {
-            required: ERROR_REQUIRED,
-            minLength: { value: 1, message: ERROR_MIN },
-          })}
-        />
-        {errors.title && <p>{errors.title?.message}</p>}
+        <TitleWrapper>
+          <Title
+            {...register('title', {
+              required: ERROR_REQUIRED,
+              minLength: { value: 1, message: ERROR_MIN },
+            })}
+          />
+          {errors.title && <p>{errors.title?.message}</p>}
+          <p>월드컵</p>
+        </TitleWrapper>
         <InputContainer>
           <ItemInputWrapper>
             <InputBox>

@@ -30,25 +30,24 @@ const TitleBox: any = styled.div`
 `;
 
 const WorldCupTitle = styled.p`
-  font-size: 30px;
+  font-size: 20px;
+  text-align: center;
+  padding: 20px;
 `;
-
-const BtnWrapper = styled.div`
+const LinkWrapper = styled.div`
+  margin-top: 10px;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 10px;
+  text-align: center;
 `;
 
-const ResultLink = styled.div`
-  padding: 10px 15px;
-  background-color: tomato;
+const LinkButton = styled.div`
+  padding: 10px 0px;
+  background-color: #fec96f;
   cursor: pointer;
-`;
-
-const DeleteBtn = styled.div`
-  padding: 10px 15px;
-  background-color: tomato;
-  cursor: pointer;
+  border-radius: 7px;
 `;
 
 interface IWorldCupList {
@@ -88,18 +87,25 @@ export default function WorldCupDelete({
               goToWorldCup(item.id);
             }}
           >
-            <WorldCupTitle>{item.title}</WorldCupTitle>
+            <WorldCupTitle>{item.title} 월드컵</WorldCupTitle>
           </TitleBox>
-          <BtnWrapper>
-            <ResultLink onClick={() => goToResult(item.id)}>
-              랭킹 보기
-            </ResultLink>
+          <LinkWrapper>
+            <LinkButton
+              onClick={() => {
+                goToWorldCup(item.id);
+              }}
+            >
+              참여하기
+            </LinkButton>
+            <LinkButton onClick={() => goToResult(item.id)}>
+              랭킹보기
+            </LinkButton>
             {item.creatorId === userObj.userId && (
-              <DeleteBtn onClick={() => onDeleteClick(item.id)}>
+              <LinkButton onClick={() => onDeleteClick(item.id)}>
                 삭제하기
-              </DeleteBtn>
+              </LinkButton>
             )}
-          </BtnWrapper>
+          </LinkWrapper>
         </WorldCupWrapper>
       ))}
     </Container>
