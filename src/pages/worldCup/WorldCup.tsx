@@ -3,11 +3,12 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Modal from 'components/Modal';
 import { useLocation } from 'react-router-dom';
-
-const TitleBox = styled.div`
-  width: 100%;
-  height: 100px;
-  background-color: aqua;
+const TitleText = styled.div`
+  margin: 20px 0px 30px 0px;
+  font-size: 45px;
+  font-weight: 600;
+  text-align: center;
+  color: white;
 `;
 
 const SelectContainer = styled.div`
@@ -15,43 +16,59 @@ const SelectContainer = styled.div`
   display: flex;
   justify-content: space-around;
   width: 100%;
+  margin-top: 40px;
 `;
 
 const LeftSelectBox = styled.div`
-  width: 500px;
-  height: 500px;
-  background-color: beige;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 400px;
+  background-color: white;
+  color: #424874;
   text-align: center;
+  border-radius: 14px;
+  padding: 15px;
+  border: 2px solid #7982c9;
 `;
 
 const RightSelectBox = styled.div`
-  width: 500px;
-  height: 500px;
-  background-color: yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 400px;
+  background-color: white;
+  color: #424874;
   text-align: center;
+  border-radius: 14px;
+  padding: 15px;
+  border: 2px solid #7982c9;
 `;
 
 const LeftCandidate = styled.p`
-  margin-top: 200px;
   font-size: 70px;
   font-weight: 900;
 `;
 
 const RightCandidate = styled.div`
-  margin-top: 200px;
   font-size: 70px;
-  font-weight: 900;
+  font-weight: 800;
 `;
 
 const RoundBox = styled.div`
   text-align: center;
 `;
 
-const RoundText = styled.div`
-  margin: 0 auto;
-  margin: 30px;
+const RoundText = styled.span`
+  padding: 10px;
   font-size: 30px;
   font-weight: 900;
+  border: 2px solid #7982c9;
+  border-radius: 7px;
+  color: #424874;
+  background-color: white;
 `;
 function WorldCup() {
   const [data, setData] = useState<any>({});
@@ -186,9 +203,8 @@ function WorldCup() {
 
   return (
     <>
-      <TitleBox>
-        <p>{data.title} 월드컵</p>
-      </TitleBox>
+      <TitleText>{data.title} 월드컵</TitleText>
+
       <RoundBox>
         <RoundText>{roundInfo} </RoundText>
       </RoundBox>
