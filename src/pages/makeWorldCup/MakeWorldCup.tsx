@@ -22,46 +22,133 @@ const Container = styled.div`
 const Form = styled.form`
   display: flex;
   flex-direction: column;
-  width: 50vw;
   align-items: center;
   padding-top: 50px;
 `;
 
 const Title = styled.input.attrs({ type: 'text' })`
-  margin-right: 10px;
+  height: 30px;
+  border-radius: 7px;
+  border: 1.5px solid #7982c9;
+  &:focus {
+    outline: none;
+    border: 1.5px solid #424874;
+  }
 `;
 
 const InputContainer = styled.div`
   display: flex;
   justify-content: space-between;
   margin-top: 50px;
+  margin-bottom: 50px;
 `;
 
 const ItemInputWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  margin-right: 10px;
+  margin-right: 30px;
 `;
 
-const ItemInput = styled.input.attrs({ type: 'text' })``;
+const ItemInput = styled.input.attrs({ type: 'text' })`
+  height: 30px;
+  border-radius: 7px;
+  border: 1.5px solid #7982c9;
+  &:focus {
+    outline: none;
+    border: 1.5px solid #424874;
+  }
+`;
 
 const InputBox = styled.div`
+  display: flex;
+  flex-direction: column;
   margin: 10px;
+`;
+
+const ItemWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+`;
+
+const ErrorMessage = styled.div`
+  font-size: 12px;
 `;
 
 const TitleWrapper = styled.div`
   display: flex;
-  align-items: center;
+  flex-direction: column;
 `;
 
 const ButtonWrapper = styled.div`
+  width: 200px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
 `;
 
-const CancelButton = styled.button``;
+const CancelButton = styled.button`
+  padding: 7px 14px;
+  border-radius: 5px;
+  color: #404675;
+  background-color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  &:hover {
+    background-color: #f4efff;
+  }
+  &:focus {
+    outline: none;
+  }
+`;
 
-const SubmitInput = styled.input``;
+const SubmitInput = styled.input`
+  padding: 7px 14px;
+  border-radius: 5px;
+  color: #404675;
+  background-color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  &:hover {
+    background-color: #f4efff;
+  }
+  &:focus {
+    outline: none;
+  }
+`;
+
+const TitleContainer = styled.div`
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+`;
+
+const WorldCupText = styled.span`
+  margin-left: 10px;
+  font-size: 16px;
+`;
+
+const ItemInfo = styled.span`
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  margin-right: 3px;
+`;
+
+const ItemNumber = styled.span`
+  color: white;
+  font-size: 8px;
+  font-weight: bold;
+  margin-right: 5px;
+`;
+
+const ItemNumberWrapper = styled.div`
+  display: flex;
+  align-items: flex-end;
+`;
 
 export default function MakeWorldCup({ userObj }: IUserObjProps) {
   const navigate = useNavigate();
@@ -210,278 +297,409 @@ export default function MakeWorldCup({ userObj }: IUserObjProps) {
     <Container>
       <Form onSubmit={handleSubmit(onSubmit)}>
         <TitleWrapper>
-          <Title
-            {...register('title', {
-              required: ERROR_REQUIRED,
-              minLength: { value: 1, message: ERROR_MIN },
-            })}
-          />
-          {errors.title && <p>{errors.title?.message}</p>}
-          <p>월드컵</p>
+          <TitleContainer>
+            <Title
+              {...register('title', {
+                required: ERROR_REQUIRED,
+                minLength: { value: 1, message: ERROR_MIN },
+              })}
+            />
+            <WorldCupText>월드컵</WorldCupText>
+          </TitleContainer>
+          {errors.title && <ErrorMessage>{errors.title?.message}</ErrorMessage>}
         </TitleWrapper>
         <InputContainer>
           <ItemInputWrapper>
             <InputBox>
-              <ItemInput
-                {...register(`${WORLD_CUP_ITEM}1`, {
-                  required: ERROR_REQUIRED,
-                  minLength: {
-                    value: 1,
-                    message: ERROR_MIN,
-                  },
-                  maxLength: {
-                    value: 10,
-                    message: ERROR_MAX,
-                  },
-                })}
-              />
-              {errors.worldCupItem1 && <p>{errors.worldCupItem1?.message}</p>}
+              <ItemWrapper>
+                <ItemNumberWrapper>
+                  <ItemInfo>1</ItemInfo>
+                  <ItemNumber>NO</ItemNumber>
+                </ItemNumberWrapper>
+                <ItemInput
+                  {...register(`${WORLD_CUP_ITEM}1`, {
+                    required: ERROR_REQUIRED,
+                    minLength: {
+                      value: 1,
+                      message: ERROR_MIN,
+                    },
+                    maxLength: {
+                      value: 10,
+                      message: ERROR_MAX,
+                    },
+                  })}
+                />
+              </ItemWrapper>
+              {errors.worldCupItem1 && (
+                <ErrorMessage>{errors.worldCupItem1?.message}</ErrorMessage>
+              )}
             </InputBox>
             <InputBox>
-              <ItemInput
-                {...register(`${WORLD_CUP_ITEM}2`, {
-                  required: ERROR_REQUIRED,
-                  minLength: {
-                    value: 1,
-                    message: ERROR_MIN,
-                  },
-                  maxLength: {
-                    value: 10,
-                    message: ERROR_MAX,
-                  },
-                })}
-              />
-              {errors.worldCupItem2 && <p>{errors.worldCupItem2?.message}</p>}
+              <ItemWrapper>
+                <ItemNumberWrapper>
+                  <ItemInfo>2</ItemInfo>
+                  <ItemNumber>NO</ItemNumber>
+                </ItemNumberWrapper>
+                <ItemInput
+                  {...register(`${WORLD_CUP_ITEM}2`, {
+                    required: ERROR_REQUIRED,
+                    minLength: {
+                      value: 1,
+                      message: ERROR_MIN,
+                    },
+                    maxLength: {
+                      value: 10,
+                      message: ERROR_MAX,
+                    },
+                  })}
+                />
+              </ItemWrapper>
+              {errors.worldCupItem2 && (
+                <ErrorMessage>{errors.worldCupItem2?.message}</ErrorMessage>
+              )}
             </InputBox>
             <InputBox>
-              <ItemInput
-                {...register(`${WORLD_CUP_ITEM}3`, {
-                  required: ERROR_REQUIRED,
-                  minLength: {
-                    value: 1,
-                    message: ERROR_MIN,
-                  },
-                  maxLength: {
-                    value: 10,
-                    message: ERROR_MAX,
-                  },
-                })}
-              />
-              {errors.worldCupItem3 && <p>{errors.worldCupItem3?.message}</p>}
+              <ItemWrapper>
+                <ItemNumberWrapper>
+                  <ItemInfo>3</ItemInfo>
+                  <ItemNumber>NO</ItemNumber>
+                </ItemNumberWrapper>
+                <ItemInput
+                  {...register(`${WORLD_CUP_ITEM}3`, {
+                    required: ERROR_REQUIRED,
+                    minLength: {
+                      value: 1,
+                      message: ERROR_MIN,
+                    },
+                    maxLength: {
+                      value: 10,
+                      message: ERROR_MAX,
+                    },
+                  })}
+                />
+              </ItemWrapper>
+              {errors.worldCupItem3 && (
+                <ErrorMessage>{errors.worldCupItem3?.message}</ErrorMessage>
+              )}
             </InputBox>
             <InputBox>
-              <ItemInput
-                {...register(`${WORLD_CUP_ITEM}4`, {
-                  required: ERROR_REQUIRED,
-                  minLength: {
-                    value: 1,
-                    message: ERROR_MIN,
-                  },
-                  maxLength: {
-                    value: 10,
-                    message: ERROR_MAX,
-                  },
-                })}
-              />
-              {errors.worldCupItem4 && <p>{errors.worldCupItem4?.message}</p>}
-            </InputBox>
-          </ItemInputWrapper>
-          <ItemInputWrapper>
-            <InputBox>
-              <ItemInput
-                {...register(`${WORLD_CUP_ITEM}5`, {
-                  required: ERROR_REQUIRED,
-                  minLength: {
-                    value: 1,
-                    message: ERROR_MIN,
-                  },
-                  maxLength: {
-                    value: 10,
-                    message: ERROR_MAX,
-                  },
-                })}
-              />
-              {errors.worldCupItem5 && <p>{errors.worldCupItem5?.message}</p>}
-            </InputBox>
-            <InputBox>
-              <ItemInput
-                {...register(`${WORLD_CUP_ITEM}6`, {
-                  required: ERROR_REQUIRED,
-                  minLength: {
-                    value: 1,
-                    message: ERROR_MIN,
-                  },
-                  maxLength: {
-                    value: 10,
-                    message: ERROR_MAX,
-                  },
-                })}
-              />
-              {errors.worldCupItem6 && <p>{errors.worldCupItem6?.message}</p>}
-            </InputBox>
-            <InputBox>
-              <ItemInput
-                {...register(`${WORLD_CUP_ITEM}7`, {
-                  required: ERROR_REQUIRED,
-                  minLength: {
-                    value: 1,
-                    message: ERROR_MIN,
-                  },
-                  maxLength: {
-                    value: 10,
-                    message: ERROR_MAX,
-                  },
-                })}
-              />
-              {errors.worldCupItem7 && <p>{errors.worldCupItem7?.message}</p>}
-            </InputBox>
-            <InputBox>
-              <ItemInput
-                {...register(`${WORLD_CUP_ITEM}8`, {
-                  required: ERROR_REQUIRED,
-                  minLength: {
-                    value: 1,
-                    message: ERROR_MIN,
-                  },
-                  maxLength: {
-                    value: 10,
-                    message: ERROR_MAX,
-                  },
-                })}
-              />
-              {errors.worldCupItem8 && <p>{errors.worldCupItem8?.message}</p>}
+              <ItemWrapper>
+                <ItemNumberWrapper>
+                  <ItemInfo>4</ItemInfo>
+                  <ItemNumber>NO</ItemNumber>
+                </ItemNumberWrapper>
+                <ItemInput
+                  {...register(`${WORLD_CUP_ITEM}4`, {
+                    required: ERROR_REQUIRED,
+                    minLength: {
+                      value: 1,
+                      message: ERROR_MIN,
+                    },
+                    maxLength: {
+                      value: 10,
+                      message: ERROR_MAX,
+                    },
+                  })}
+                />
+              </ItemWrapper>
+              {errors.worldCupItem4 && (
+                <ErrorMessage>{errors.worldCupItem4?.message}</ErrorMessage>
+              )}
             </InputBox>
           </ItemInputWrapper>
           <ItemInputWrapper>
             <InputBox>
-              <ItemInput
-                {...register(`${WORLD_CUP_ITEM}9`, {
-                  required: ERROR_REQUIRED,
-                  minLength: {
-                    value: 1,
-                    message: ERROR_MIN,
-                  },
-                  maxLength: {
-                    value: 10,
-                    message: ERROR_MAX,
-                  },
-                })}
-              />
-              {errors.worldCupItem9 && <p>{errors.worldCupItem9?.message}</p>}
+              <ItemWrapper>
+                <ItemNumberWrapper>
+                  <ItemInfo>5</ItemInfo>
+                  <ItemNumber>NO</ItemNumber>
+                </ItemNumberWrapper>
+                <ItemInput
+                  {...register(`${WORLD_CUP_ITEM}5`, {
+                    required: ERROR_REQUIRED,
+                    minLength: {
+                      value: 1,
+                      message: ERROR_MIN,
+                    },
+                    maxLength: {
+                      value: 10,
+                      message: ERROR_MAX,
+                    },
+                  })}
+                />
+              </ItemWrapper>
+              {errors.worldCupItem5 && (
+                <ErrorMessage>{errors.worldCupItem5?.message}</ErrorMessage>
+              )}
             </InputBox>
             <InputBox>
-              <ItemInput
-                {...register(`${WORLD_CUP_ITEM}10`, {
-                  required: ERROR_REQUIRED,
-                  minLength: {
-                    value: 1,
-                    message: ERROR_MIN,
-                  },
-                  maxLength: {
-                    value: 10,
-                    message: ERROR_MAX,
-                  },
-                })}
-              />
-              {errors.worldCupItem10 && <p>{errors.worldCupItem10?.message}</p>}
+              <ItemWrapper>
+                <ItemNumberWrapper>
+                  <ItemInfo>6</ItemInfo>
+                  <ItemNumber>NO</ItemNumber>
+                </ItemNumberWrapper>
+                <ItemInput
+                  {...register(`${WORLD_CUP_ITEM}6`, {
+                    required: ERROR_REQUIRED,
+                    minLength: {
+                      value: 1,
+                      message: ERROR_MIN,
+                    },
+                    maxLength: {
+                      value: 10,
+                      message: ERROR_MAX,
+                    },
+                  })}
+                />
+              </ItemWrapper>
+              {errors.worldCupItem6 && (
+                <ErrorMessage>{errors.worldCupItem6?.message}</ErrorMessage>
+              )}
             </InputBox>
             <InputBox>
-              <ItemInput
-                {...register(`${WORLD_CUP_ITEM}11`, {
-                  required: ERROR_REQUIRED,
-                  minLength: {
-                    value: 1,
-                    message: ERROR_MIN,
-                  },
-                  maxLength: {
-                    value: 10,
-                    message: ERROR_MAX,
-                  },
-                })}
-              />
-              {errors.worldCupItem11 && <p>{errors.worldCupItem11?.message}</p>}
+              <ItemWrapper>
+                <ItemNumberWrapper>
+                  <ItemInfo>7</ItemInfo>
+                  <ItemNumber>NO</ItemNumber>
+                </ItemNumberWrapper>
+                <ItemInput
+                  {...register(`${WORLD_CUP_ITEM}7`, {
+                    required: ERROR_REQUIRED,
+                    minLength: {
+                      value: 1,
+                      message: ERROR_MIN,
+                    },
+                    maxLength: {
+                      value: 10,
+                      message: ERROR_MAX,
+                    },
+                  })}
+                />
+              </ItemWrapper>
+              {errors.worldCupItem7 && (
+                <ErrorMessage>{errors.worldCupItem7?.message}</ErrorMessage>
+              )}
             </InputBox>
             <InputBox>
-              <ItemInput
-                {...register(`${WORLD_CUP_ITEM}12`, {
-                  required: ERROR_REQUIRED,
-                  minLength: {
-                    value: 1,
-                    message: ERROR_MIN,
-                  },
-                  maxLength: {
-                    value: 10,
-                    message: ERROR_MAX,
-                  },
-                })}
-              />
-              {errors.worldCupItem12 && <p>{errors.worldCupItem12?.message}</p>}
+              <ItemWrapper>
+                <ItemNumberWrapper>
+                  <ItemInfo>8</ItemInfo>
+                  <ItemNumber>NO</ItemNumber>
+                </ItemNumberWrapper>
+                <ItemInput
+                  {...register(`${WORLD_CUP_ITEM}8`, {
+                    required: ERROR_REQUIRED,
+                    minLength: {
+                      value: 1,
+                      message: ERROR_MIN,
+                    },
+                    maxLength: {
+                      value: 10,
+                      message: ERROR_MAX,
+                    },
+                  })}
+                />
+              </ItemWrapper>
+              {errors.worldCupItem8 && (
+                <ErrorMessage>{errors.worldCupItem8?.message}</ErrorMessage>
+              )}
             </InputBox>
           </ItemInputWrapper>
           <ItemInputWrapper>
             <InputBox>
-              <ItemInput
-                {...register(`${WORLD_CUP_ITEM}13`, {
-                  required: ERROR_REQUIRED,
-                  minLength: {
-                    value: 1,
-                    message: ERROR_MIN,
-                  },
-                  maxLength: {
-                    value: 10,
-                    message: ERROR_MAX,
-                  },
-                })}
-              />
-              {errors.worldCupItem13 && <p>{errors.worldCupItem13?.message}</p>}
-            </InputBox>{' '}
+              <ItemWrapper>
+                <ItemNumberWrapper>
+                  <ItemInfo>9</ItemInfo>
+                  <ItemNumber>NO</ItemNumber>
+                </ItemNumberWrapper>
+                <ItemInput
+                  {...register(`${WORLD_CUP_ITEM}9`, {
+                    required: ERROR_REQUIRED,
+                    minLength: {
+                      value: 1,
+                      message: ERROR_MIN,
+                    },
+                    maxLength: {
+                      value: 10,
+                      message: ERROR_MAX,
+                    },
+                  })}
+                />
+              </ItemWrapper>
+              {errors.worldCupItem9 && (
+                <ErrorMessage>{errors.worldCupItem9?.message}</ErrorMessage>
+              )}
+            </InputBox>
             <InputBox>
-              <ItemInput
-                {...register(`${WORLD_CUP_ITEM}14`, {
-                  required: ERROR_REQUIRED,
-                  minLength: {
-                    value: 1,
-                    message: ERROR_MIN,
-                  },
-                  maxLength: {
-                    value: 10,
-                    message: ERROR_MAX,
-                  },
-                })}
-              />
-              {errors.worldCupItem14 && <p>{errors.worldCupItem14?.message}</p>}
-            </InputBox>{' '}
+              <ItemWrapper>
+                <ItemNumberWrapper>
+                  <ItemInfo>10</ItemInfo>
+                  <ItemNumber>NO</ItemNumber>
+                </ItemNumberWrapper>
+                <ItemInput
+                  {...register(`${WORLD_CUP_ITEM}10`, {
+                    required: ERROR_REQUIRED,
+                    minLength: {
+                      value: 1,
+                      message: ERROR_MIN,
+                    },
+                    maxLength: {
+                      value: 10,
+                      message: ERROR_MAX,
+                    },
+                  })}
+                />
+              </ItemWrapper>
+              {errors.worldCupItem10 && (
+                <ErrorMessage>{errors.worldCupItem10?.message}</ErrorMessage>
+              )}
+            </InputBox>
             <InputBox>
-              <ItemInput
-                {...register(`${WORLD_CUP_ITEM}15`, {
-                  required: ERROR_REQUIRED,
-                  minLength: {
-                    value: 1,
-                    message: ERROR_MIN,
-                  },
-                  maxLength: {
-                    value: 10,
-                    message: ERROR_MAX,
-                  },
-                })}
-              />
-              {errors.worldCupItem15 && <p>{errors.worldCupItem15?.message}</p>}
-            </InputBox>{' '}
+              <ItemWrapper>
+                <ItemNumberWrapper>
+                  <ItemInfo>11</ItemInfo>
+                  <ItemNumber>NO</ItemNumber>
+                </ItemNumberWrapper>
+                <ItemInput
+                  {...register(`${WORLD_CUP_ITEM}11`, {
+                    required: ERROR_REQUIRED,
+                    minLength: {
+                      value: 1,
+                      message: ERROR_MIN,
+                    },
+                    maxLength: {
+                      value: 10,
+                      message: ERROR_MAX,
+                    },
+                  })}
+                />
+              </ItemWrapper>
+              {errors.worldCupItem11 && (
+                <ErrorMessage>{errors.worldCupItem11?.message}</ErrorMessage>
+              )}
+            </InputBox>
             <InputBox>
-              <ItemInput
-                {...register(`${WORLD_CUP_ITEM}16`, {
-                  required: ERROR_REQUIRED,
-                  minLength: {
-                    value: 1,
-                    message: ERROR_MIN,
-                  },
-                  maxLength: {
-                    value: 10,
-                    message: ERROR_MAX,
-                  },
-                })}
-              />
-              {errors.worldCupItem16 && <p>{errors.worldCupItem16?.message}</p>}
+              <ItemWrapper>
+                <ItemNumberWrapper>
+                  <ItemInfo>12</ItemInfo>
+                  <ItemNumber>NO</ItemNumber>
+                </ItemNumberWrapper>
+                <ItemInput
+                  {...register(`${WORLD_CUP_ITEM}12`, {
+                    required: ERROR_REQUIRED,
+                    minLength: {
+                      value: 1,
+                      message: ERROR_MIN,
+                    },
+                    maxLength: {
+                      value: 10,
+                      message: ERROR_MAX,
+                    },
+                  })}
+                />
+              </ItemWrapper>
+              {errors.worldCupItem12 && (
+                <ErrorMessage>{errors.worldCupItem12?.message}</ErrorMessage>
+              )}
+            </InputBox>
+          </ItemInputWrapper>
+          <ItemInputWrapper>
+            <InputBox>
+              <ItemWrapper>
+                <ItemNumberWrapper>
+                  <ItemInfo>13</ItemInfo>
+                  <ItemNumber>NO</ItemNumber>
+                </ItemNumberWrapper>
+                <ItemInput
+                  {...register(`${WORLD_CUP_ITEM}13`, {
+                    required: ERROR_REQUIRED,
+                    minLength: {
+                      value: 1,
+                      message: ERROR_MIN,
+                    },
+                    maxLength: {
+                      value: 10,
+                      message: ERROR_MAX,
+                    },
+                  })}
+                />
+              </ItemWrapper>
+              {errors.worldCupItem13 && (
+                <ErrorMessage>{errors.worldCupItem13?.message}</ErrorMessage>
+              )}
+            </InputBox>
+            <InputBox>
+              <ItemWrapper>
+                <ItemNumberWrapper>
+                  <ItemInfo>14</ItemInfo>
+                  <ItemNumber>NO</ItemNumber>
+                </ItemNumberWrapper>
+                <ItemInput
+                  {...register(`${WORLD_CUP_ITEM}14`, {
+                    required: ERROR_REQUIRED,
+                    minLength: {
+                      value: 1,
+                      message: ERROR_MIN,
+                    },
+                    maxLength: {
+                      value: 10,
+                      message: ERROR_MAX,
+                    },
+                  })}
+                />
+              </ItemWrapper>
+              {errors.worldCupItem14 && (
+                <ErrorMessage>{errors.worldCupItem14?.message}</ErrorMessage>
+              )}
+            </InputBox>
+            <InputBox>
+              <ItemWrapper>
+                <ItemNumberWrapper>
+                  <ItemInfo>15</ItemInfo>
+                  <ItemNumber>NO</ItemNumber>
+                </ItemNumberWrapper>
+                <ItemInput
+                  {...register(`${WORLD_CUP_ITEM}15`, {
+                    required: ERROR_REQUIRED,
+                    minLength: {
+                      value: 1,
+                      message: ERROR_MIN,
+                    },
+                    maxLength: {
+                      value: 10,
+                      message: ERROR_MAX,
+                    },
+                  })}
+                />
+              </ItemWrapper>
+              {errors.worldCupItem15 && (
+                <ErrorMessage>{errors.worldCupItem15?.message}</ErrorMessage>
+              )}
+            </InputBox>
+            <InputBox>
+              <ItemWrapper>
+                <ItemNumberWrapper>
+                  <ItemInfo>16</ItemInfo>
+                  <ItemNumber>NO</ItemNumber>
+                </ItemNumberWrapper>
+
+                <ItemInput
+                  {...register(`${WORLD_CUP_ITEM}16`, {
+                    required: ERROR_REQUIRED,
+                    minLength: {
+                      value: 1,
+                      message: ERROR_MIN,
+                    },
+                    maxLength: {
+                      value: 10,
+                      message: ERROR_MAX,
+                    },
+                  })}
+                />
+              </ItemWrapper>
+              {errors.worldCupItem16 && (
+                <ErrorMessage>{errors.worldCupItem16?.message}</ErrorMessage>
+              )}
             </InputBox>
           </ItemInputWrapper>
         </InputContainer>
