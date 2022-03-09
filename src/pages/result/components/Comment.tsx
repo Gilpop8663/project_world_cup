@@ -21,7 +21,7 @@ const Container = styled.li`
   border: ${({ theme }) => theme.baseBorderStyle};
   background-color: white;
   border-top: none;
-  padding: 15px;
+  padding: 15px 3px;
   &:first-child {
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;

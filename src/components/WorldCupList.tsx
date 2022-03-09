@@ -40,7 +40,7 @@ const WorldCupTitle = styled.p`
 
 const LinkWrapper = styled.div<{ isDelete: boolean }>`
   margin-top: 10px;
-  width: 90%;
+  width: 100%;
   display: grid;
   grid-template-columns: ${({ isDelete }) =>
     isDelete ? 'repeat(3, 1fr)' : 'repeat(2, 1fr)'};
@@ -49,11 +49,12 @@ const LinkWrapper = styled.div<{ isDelete: boolean }>`
 `;
 
 const LinkSelectButton = styled.div`
-  padding: 10px 15px;
+  padding: 10px 0px;
   background-color: white;
   cursor: pointer;
   border-radius: 7px;
   border: 2px solid #7982c9;
+  font-size: 14px;
   font-weight: 600;
   color: #424874;
 `;
@@ -85,13 +86,17 @@ export default function WorldCupList({
   const onDeleteClick = (worldId: string) => {
     if (!setData) return;
     if (!setRefetch) return;
-    if (data.length === 1) {
-      setData([]);
+    const ok = window.confirm('정말 삭제하시겠습니까?');
+    console.log(ok);
+    if (ok) {
+      if (data.length === 1) {
+        setData([]);
+      }
+      axios
+        .delete(`${BASE_URL}/world/${worldId}`)
+        .then(() => setRefetch((prev) => !prev))
+        .catch((error) => console.log('삭제 실패', error));
     }
-    axios
-      .delete(`${BASE_URL}/world/${worldId}`)
-      .then(() => setRefetch((prev) => !prev))
-      .catch((error) => console.log('삭제 실패', error));
   };
 
   return (
