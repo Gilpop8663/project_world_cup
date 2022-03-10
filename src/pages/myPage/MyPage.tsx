@@ -4,6 +4,7 @@ import { BASE_URL } from 'constants/contants';
 import { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { IUserObjProps } from 'utils/interface';
+import Loading from 'components/Loading';
 
 const Container = styled.div`
   display: flex;
@@ -28,22 +29,27 @@ const NoData = styled.h2`
 export default function MyPage({ userObj }: IUserObjProps) {
   const [myData, setMyData] = useState([]);
   const [refetch, setRefetch] = useState(false);
+  const [loading, setLoading] = useState<boolean>(true);
+
   useEffect(() => {
     axios.get(`${BASE_URL}/world?creatorId=${userObj.userId}`).then((res) => {
+      if (res.data.length === 0) {
+        setLoading(false);
+      }
       const isOwner = res.data[0].creatorId === userObj.userId;
       if (!isOwner || !myData[0]) {
         setMyData([]);
       }
       setMyData(res.data);
+      setLoading(false);
     });
   }, [refetch, userObj.userId]);
-
-  console.log(myData);
 
   return (
     <Container>
       <MyPageTitle>내가 만든 월드컵</MyPageTitle>
-      {myData.length > 0 ? (
+      {loading && <Loading />}
+      {!loading && myData.length > 0 ? (
         <WorldCupList
           setData={setMyData}
           userObj={userObj}
@@ -51,7 +57,9 @@ export default function MyPage({ userObj }: IUserObjProps) {
           data={myData}
         />
       ) : (
-        <NoData>😢 만든 월드컵이 없습니다. 월드컵을 생성해주세요.</NoData>
+        !loading && (
+          <NoData>😢 만든 월드컵이 없습니다. 월드컵을 생성해주세요.</NoData>
+        )
       )}
     </Container>
   );

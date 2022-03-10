@@ -6,6 +6,7 @@ import { useLocation } from 'react-router-dom';
 import styled from 'styled-components';
 import { IUserObjProps } from 'utils/interface';
 import CommentForm from './components/CommentForm';
+import Loading from 'components/Loading';
 
 const Container = styled.div`
   display: grid;
@@ -19,7 +20,6 @@ const Wrapper = styled.div`
 `;
 
 const CommentWrapper = styled.div`
-  display: flex;
   height: 100%;
   justify-content: center;
 `;
@@ -38,6 +38,7 @@ const NoData = styled.span`
 
 export default function Result({ userObj }: IUserObjProps) {
   const [noData, setNoData] = useState(false);
+  const [loading, setLoading] = useState<boolean>(true);
   const location = useLocation();
   const keyword = location.pathname.split('/');
   useEffect(() => {
@@ -45,13 +46,17 @@ export default function Result({ userObj }: IUserObjProps) {
       if (res.data[0].count === 0) {
         setNoData(true);
       }
+      setLoading(false);
     });
   }, []);
   console.log(noData);
   return (
     <Container>
-      {noData && <NoData>😢 진행된 적 없는 월드컵입니다.</NoData>}
-      {!noData && (
+      {loading ? (
+        <Loading />
+      ) : noData ? (
+        <NoData>😢 진행된 적 없는 월드컵입니다.</NoData>
+      ) : (
         <>
           <Ranking />
           <Wrapper>

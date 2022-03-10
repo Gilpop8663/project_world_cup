@@ -1,6 +1,5 @@
 import axios from 'axios';
 import { BASE_URL } from 'constants/contants';
-import WorldCup from 'pages/worldCup/WorldCup';
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
