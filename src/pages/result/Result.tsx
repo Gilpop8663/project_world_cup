@@ -20,6 +20,7 @@ const Wrapper = styled.div`
 `;
 
 const CommentWrapper = styled.div`
+  display: flex;
   height: 100%;
   justify-content: center;
 `;
