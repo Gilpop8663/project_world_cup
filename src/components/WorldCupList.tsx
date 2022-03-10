@@ -1,6 +1,5 @@
 import axios from 'axios';
 import { BASE_URL } from 'constants/contants';
-import WorldCup from 'pages/worldCup/WorldCup';
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
@@ -40,7 +39,7 @@ const WorldCupTitle = styled.p`
 
 const LinkWrapper = styled.div<{ isDelete: boolean }>`
   margin-top: 10px;
-  width: 90%;
+  width: 100%;
   display: grid;
   grid-template-columns: ${({ isDelete }) =>
     isDelete ? 'repeat(3, 1fr)' : 'repeat(2, 1fr)'};
@@ -49,11 +48,12 @@ const LinkWrapper = styled.div<{ isDelete: boolean }>`
 `;
 
 const LinkSelectButton = styled.div`
-  padding: 10px 15px;
+  padding: 10px 0px;
   background-color: white;
   cursor: pointer;
   border-radius: 7px;
   border: 2px solid #7982c9;
+  font-size: 14px;
   font-weight: 600;
   color: #424874;
 `;
