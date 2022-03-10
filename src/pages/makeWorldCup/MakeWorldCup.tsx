@@ -292,10 +292,9 @@ export default function MakeWorldCup({ userObj }: IMakeProps) {
       })
       .then((res) => {
         console.log('성공');
+        navigate('/');
       })
       .catch((error) => console.log(error));
-
-    navigate('/');
   };
 
   const onCancelClick = () => {

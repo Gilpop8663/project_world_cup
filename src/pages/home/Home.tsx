@@ -1,4 +1,5 @@
 import axios from 'axios';
+import Loading from 'components/Loading';
 import WorldCupList from 'components/WorldCupList';
 import { BASE_URL } from 'constants/contants';
 import { useEffect, useState } from 'react';
@@ -27,7 +28,7 @@ const SortText = styled.div`
 `;
 
 export default function Home() {
-  const [listArr, setListArr] = useState<any>([{}]);
+  const [listArr, setListArr] = useState<any>([]);
   const [isSort, setIsSort] = useState<boolean>(true);
   useEffect(() => {
     axios.get(`${BASE_URL}/world`).then((res) => {
@@ -62,6 +63,7 @@ export default function Home() {
   };
   return (
     <Container>
+      <Loading />
       <SortTextWrapper>
         <SortText onClick={() => sortList('sortCount')}>👍 인기순</SortText>
         <SortText onClick={() => sortList('sortDate')}>⏱ 최신순</SortText>

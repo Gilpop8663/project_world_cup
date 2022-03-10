@@ -85,13 +85,17 @@ export default function WorldCupList({
   const onDeleteClick = (worldId: string) => {
     if (!setData) return;
     if (!setRefetch) return;
-    if (data.length === 1) {
-      setData([]);
+    const ok = window.confirm('정말 삭제하시겠습니까?');
+    console.log(ok);
+    if (ok) {
+      if (data.length === 1) {
+        setData([]);
+      }
+      axios
+        .delete(`${BASE_URL}/world/${worldId}`)
+        .then(() => setRefetch((prev) => !prev))
+        .catch((error) => console.log('삭제 실패', error));
     }
-    axios
-      .delete(`${BASE_URL}/world/${worldId}`)
-      .then(() => setRefetch((prev) => !prev))
-      .catch((error) => console.log('삭제 실패', error));
   };
 
   return (
