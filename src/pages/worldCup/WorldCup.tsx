@@ -18,7 +18,8 @@ const SelectContainer = styled.div`
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
-  width: 100%;
+  align-items: center;
+  width: 80%;
   margin-top: 40px;
 `;
 
@@ -73,6 +74,14 @@ const RoundText = styled.span`
   color: #424874;
   background-color: white;
 `;
+
+const VsText = styled.p`
+  font-size: 100px;
+  color: white;
+  font-weight: 800;
+  -webkit-text-stroke: 4px #7982c9;
+`;
+
 function WorldCup() {
   const [data, setData] = useState<any>({});
   const [list, setList] = useState<any>([]);
@@ -219,6 +228,7 @@ function WorldCup() {
                 {list[index] && list[index].candidate}
               </LeftCandidate>
             </LeftSelectBox>
+            <VsText>VS</VsText>
             <RightSelectBox onClick={rightSelect}>
               <RightCandidate>
                 {list[index + 1] && list[index + 1].candidate}
