@@ -4,120 +4,120 @@
       "title": "음식",
       "list": [
         {
-          "id": "4574d4b9-2f2c-4de1-8feb-c0268f820492",
-          "candidate": "피자",
-          "roundWin": 19,
+          "id": "87023ba9-2213-4027-92bb-b1efa4d913fe",
+          "candidate": "순대볶음",
+          "roundWin": 26,
+          "roundLose": 24,
+          "champion": 1
+        },
+        {
+          "id": "e6ede41c-dfee-4b7c-878f-08011d1bbc2f",
+          "candidate": "치킨",
+          "roundWin": 28,
           "roundLose": 20,
+          "champion": 5
+        },
+        {
+          "id": "369d4551-970f-47d2-899d-fac3f3bb3942",
+          "candidate": "돈까스",
+          "roundWin": 27,
+          "roundLose": 23,
           "champion": 2
         },
         {
-          "id": "5a98ba8c-18f2-40ab-a77c-1b41514c4471",
-          "candidate": "떡볶이",
-          "roundWin": 22,
-          "roundLose": 21,
+          "id": "da14f5e9-6dd0-4f14-b9b4-c055bfcaa69d",
+          "candidate": "김치볶음밥",
+          "roundWin": 16,
+          "roundLose": 24,
           "champion": 1
+        },
+        {
+          "id": "4574d4b9-2f2c-4de1-8feb-c0268f820492",
+          "candidate": "피자",
+          "roundWin": 23,
+          "roundLose": 23,
+          "champion": 2
+        },
+        {
+          "id": "ff886f71-82b3-4df3-bed3-e09bc2e905e5",
+          "candidate": "짬뽕",
+          "roundWin": 14,
+          "roundLose": 25,
+          "champion": 0
+        },
+        {
+          "id": "28f85fe7-2099-4b70-a453-debb4fa4019f",
+          "candidate": "닭갈비",
+          "roundWin": 19,
+          "roundLose": 25,
+          "champion": 0
         },
         {
           "id": "ffe78228-5525-4b67-892f-a358a29f3a9b",
           "candidate": "샐러드",
-          "roundWin": 16,
-          "roundLose": 21,
+          "roundWin": 17,
+          "roundLose": 24,
           "champion": 1
         },
         {
-          "id": "e5bb2bad-4569-4038-acb4-309f991b016f",
-          "candidate": "삼겹살",
-          "roundWin": 33,
-          "roundLose": 19,
+          "id": "5a98ba8c-18f2-40ab-a77c-1b41514c4471",
+          "candidate": "떡볶이",
+          "roundWin": 28,
+          "roundLose": 24,
+          "champion": 1
+        },
+        {
+          "id": "91c1e593-9685-4c76-9f97-5512af92a949",
+          "candidate": "부대찌개",
+          "roundWin": 26,
+          "roundLose": 22,
           "champion": 3
         },
         {
           "id": "246ed0eb-c264-4b2d-aeb8-14f6abb5cabb",
           "candidate": "칼국수",
-          "roundWin": 24,
-          "roundLose": 20,
+          "roundWin": 27,
+          "roundLose": 23,
           "champion": 2
         },
         {
           "id": "9d544885-50eb-4178-b7e7-d0a3147cd7b2",
           "candidate": "돼지갈비",
-          "roundWin": 28,
-          "roundLose": 21,
-          "champion": 1
+          "roundWin": 32,
+          "roundLose": 23,
+          "champion": 2
         },
         {
-          "id": "28f85fe7-2099-4b70-a453-debb4fa4019f",
-          "candidate": "닭갈비",
-          "roundWin": 18,
+          "id": "e5bb2bad-4569-4038-acb4-309f991b016f",
+          "candidate": "삼겹살",
+          "roundWin": 34,
           "roundLose": 22,
-          "champion": 0
-        },
-        {
-          "id": "dbf7a0dd-4c7f-4041-a7cd-22f7a15b4cd7",
-          "candidate": "곱창",
-          "roundWin": 16,
-          "roundLose": 22,
-          "champion": 0
-        },
-        {
-          "id": "87023ba9-2213-4027-92bb-b1efa4d913fe",
-          "candidate": "순대볶음",
-          "roundWin": 23,
-          "roundLose": 21,
-          "champion": 1
+          "champion": 3
         },
         {
           "id": "17a87e11-8de7-4df6-b0c6-fdb5b3a814ff",
           "candidate": "된장찌개",
-          "roundWin": 14,
-          "roundLose": 20,
-          "champion": 2
-        },
-        {
-          "id": "e6ede41c-dfee-4b7c-878f-08011d1bbc2f",
-          "candidate": "치킨",
-          "roundWin": 24,
-          "roundLose": 18,
-          "champion": 4
-        },
-        {
-          "id": "da14f5e9-6dd0-4f14-b9b4-c055bfcaa69d",
-          "candidate": "김치볶음밥",
-          "roundWin": 12,
-          "roundLose": 22,
-          "champion": 0
-        },
-        {
-          "id": "ff886f71-82b3-4df3-bed3-e09bc2e905e5",
-          "candidate": "짬뽕",
-          "roundWin": 11,
-          "roundLose": 22,
-          "champion": 0
-        },
-        {
-          "id": "91c1e593-9685-4c76-9f97-5512af92a949",
-          "candidate": "부대찌개",
-          "roundWin": 25,
-          "roundLose": 19,
-          "champion": 3
-        },
-        {
-          "id": "369d4551-970f-47d2-899d-fac3f3bb3942",
-          "candidate": "돈까스",
-          "roundWin": 25,
-          "roundLose": 20,
+          "roundWin": 15,
+          "roundLose": 23,
           "champion": 2
         },
         {
           "id": "2ba555d2-7cdb-4a1c-9ad0-dc704d15635b",
           "candidate": "닭볶음탕",
-          "roundWin": 20,
-          "roundLose": 22,
+          "roundWin": 25,
+          "roundLose": 25,
+          "champion": 0
+        },
+        {
+          "id": "dbf7a0dd-4c7f-4041-a7cd-22f7a15b4cd7",
+          "candidate": "곱창",
+          "roundWin": 18,
+          "roundLose": 25,
           "champion": 0
         }
       ],
       "id": "edcf43fd-1e15-4267-a375-a7c6b61e19c6",
-      "count": 22,
+      "count": 25,
       "createdAt": 1646674723241,
       "comments": [
         {

@@ -16,7 +16,7 @@ const SortTextWrapper = styled.div`
 `;
 
 const SortText = styled.div`
-  margin-right: 15px;
+  margin-right: 13px;
   padding: 8px;
   background-color: white;
   color: #424874;
