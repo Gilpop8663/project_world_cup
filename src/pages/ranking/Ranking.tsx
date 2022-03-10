@@ -268,9 +268,7 @@ export default function Ranking() {
   };
 
   if (!data) return null;
-  if (data[0].roundWin === 0 && data[0].roundLose === 0) {
-    return <p>데이터가 없는 월드컵 입니다</p>;
-  }
+
   return (
     <Container>
       <TitleWrapper>

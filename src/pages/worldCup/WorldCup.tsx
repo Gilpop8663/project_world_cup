@@ -4,6 +4,8 @@ import axios from 'axios';
 import Modal from 'components/Modal';
 import { useLocation } from 'react-router-dom';
 import { BASE_URL } from 'constants/contants';
+import Loading from 'components/Loading';
+
 const TitleText = styled.div`
   margin: 20px 0px 30px 0px;
   font-size: 45px;
@@ -83,6 +85,7 @@ function WorldCup() {
   const [modal, setModal] = useState(false);
   const location = useLocation();
   const keyword = location.pathname.slice(7);
+  const [loading, setLoading] = useState<boolean>(true);
 
   const toggleModal = () => {
     setModal(!modal);
@@ -97,11 +100,11 @@ function WorldCup() {
   };
 
   useEffect(() => {
-    axios
-      .get(`${BASE_URL}/world?id=${keyword}`)
-      .then(
-        (res) => (setData(res.data[0]), setList(shuffleArray(res.data[0].list)))
-      );
+    axios.get(`${BASE_URL}/world?id=${keyword}`).then((res) => {
+      setData(res.data[0]);
+      setList(shuffleArray(res.data[0].list));
+      setLoading(false);
+    });
   }, []);
 
   useEffect(() => {
@@ -140,8 +143,6 @@ function WorldCup() {
         .then((res) => console.log('성공'));
     }
   }, [winner]);
-
-  console.log(data);
 
   const setDraw = (addNum: number, setListFunction: any, setList: any) => {
     setListFunction((prev: any) => {
@@ -203,24 +204,31 @@ function WorldCup() {
   };
 
   return (
-    <>
-      <TitleText>{data.title} 월드컵</TitleText>
-
-      <RoundBox>
-        <RoundText>{roundInfo} </RoundText>
-      </RoundBox>
-      <SelectContainer>
-        <LeftSelectBox onClick={leftSelect}>
-          <LeftCandidate>{list[index] && list[index].candidate}</LeftCandidate>
-        </LeftSelectBox>
-        <RightSelectBox onClick={rightSelect}>
-          <RightCandidate>
-            {list[index + 1] && list[index + 1].candidate}
-          </RightCandidate>
-        </RightSelectBox>
-      </SelectContainer>
-      {modal && <Modal winner={winner} resultId={keyword} />}
-    </>
+    <div>
+      {loading ? (
+        <Loading />
+      ) : (
+        <>
+          <TitleText>{data.title} 월드컵</TitleText>
+          <RoundBox>
+            <RoundText>{roundInfo} </RoundText>
+          </RoundBox>
+          <SelectContainer>
+            <LeftSelectBox onClick={leftSelect}>
+              <LeftCandidate>
+                {list[index] && list[index].candidate}
+              </LeftCandidate>
+            </LeftSelectBox>
+            <RightSelectBox onClick={rightSelect}>
+              <RightCandidate>
+                {list[index + 1] && list[index + 1].candidate}
+              </RightCandidate>
+            </RightSelectBox>
+          </SelectContainer>
+          {modal && <Modal winner={winner} resultId={keyword} />}
+        </>
+      )}
+    </div>
   );
 }
 

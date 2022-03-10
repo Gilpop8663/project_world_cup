@@ -8,10 +8,10 @@ import { useLocation } from 'react-router-dom';
 import { BASE_URL, GUEST_ICON, GUEST_NAME } from '../../../constants/contants';
 import { IUserObjProps, IWorldCupCommentProps } from 'utils/interface';
 
-const Container = styled.div`
+const Container = styled.div<{ isLoading: boolean }>`
   padding-top: 23px;
   width: 100%;
-  display: flex;
+  display: ${({ isLoading }) => (isLoading ? 'none' : 'flex')};
   flex-direction: column;
   padding-right: 20px;
 `;
@@ -110,6 +110,7 @@ export default function CommentForm({ userObj }: IUserObjProps) {
   const [data, setData] = useState<any>([{}]);
   const [comment, setComment] = useState<any>([]);
   const [refetch, setRefetch] = useState(false);
+  const [loading, setLoading] = useState<boolean>(true);
   const location = useLocation();
   const keyword = location.pathname.split('/');
 
@@ -117,6 +118,7 @@ export default function CommentForm({ userObj }: IUserObjProps) {
     axios.get(`${BASE_URL}/world/${keyword[2]}`).then((res) => {
       setData(res.data);
       setComment(res.data.comments);
+      setLoading(false);
     });
   }, [refetch]);
 
@@ -148,7 +150,7 @@ export default function CommentForm({ userObj }: IUserObjProps) {
     setMessage(value);
   };
   return (
-    <Container>
+    <Container isLoading={loading}>
       <Form onSubmit={onSubmit} onKeyPress={(e) => onEnterPress(e, onSubmit)}>
         <ToDoWelcome>댓글</ToDoWelcome>
         <InputWrapper>
