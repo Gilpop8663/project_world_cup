@@ -49,8 +49,6 @@ export default function Home() {
     });
   }, []);
 
-  console.log(loading);
-
   const sortList = (sortType: any) => {
     if (sortType === 'sortCount') {
       setListArr(

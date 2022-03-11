@@ -3,7 +3,7 @@ import { BASE_URL } from 'constants/contants';
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
-import { IUserObjProps, IWorldCupProps } from 'utils/interface';
+import { IUserObj, IWorldCupProps } from 'utils/interface';
 
 const Container = styled.div`
   display: grid;
@@ -78,7 +78,7 @@ const LinkSelectButton = styled.div`
 
 interface IWorldCupList {
   data: IWorldCupProps[];
-  userObj?: IUserObjProps | any;
+  userObj?: IUserObj;
   setData?: React.Dispatch<React.SetStateAction<IWorldCupProps[]>>;
   setRefetch?: React.Dispatch<React.SetStateAction<boolean>>;
 }
@@ -104,7 +104,6 @@ export default function WorldCupList({
     if (!setData) return;
     if (!setRefetch) return;
     const ok = window.confirm('정말 삭제하시겠습니까?');
-    console.log(ok);
     if (ok) {
       if (data.length === 1) {
         setData([]);
@@ -112,7 +111,7 @@ export default function WorldCupList({
       axios
         .delete(`${BASE_URL}/world/${worldId}`)
         .then(() => setRefetch((prev) => !prev))
-        .catch((error) => console.log('삭제 실패', error));
+        .catch((error) => console.error('삭제 실패', error));
     }
   };
 

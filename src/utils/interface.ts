@@ -1,6 +1,6 @@
 export interface IUser {
   userObj?: IUserObj;
-  setUserObj: React.Dispatch<React.SetStateAction<{}>>;
+  setUserObj: React.Dispatch<React.SetStateAction<IUserObj>>;
   setMakeFetch?: React.Dispatch<React.SetStateAction<boolean>>;
   makeFetch?: boolean;
 }

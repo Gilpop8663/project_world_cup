@@ -5,7 +5,7 @@ import { onEnterPress } from 'utils/utilFn';
 import Comment from './Comment';
 import axios from 'axios';
 import { useLocation } from 'react-router-dom';
-import { BASE_URL, GUEST_ICON, GUEST_NAME } from '../../../constants/contants';
+import { BASE_URL, GUEST_NAME } from '../../../constants/contants';
 import {
   IUserObjProps,
   IWorldCupCommentProps,
@@ -120,8 +120,8 @@ const MessageContainer = styled.ul<{ isData: boolean }>`
 
 export default function CommentForm({ userObj }: IUserObjProps) {
   const [message, setMessage] = useState('');
-  const [data, setData] = useState<any>();
-  const [comment, setComment] = useState<any>([]);
+  const [data, setData] = useState<IWorldCupProps>();
+  const [comment, setComment] = useState<IWorldCupCommentProps[]>([]);
   const [refetch, setRefetch] = useState(false);
   const [loading, setLoading] = useState<boolean>(true);
   const location = useLocation();
@@ -153,7 +153,7 @@ export default function CommentForm({ userObj }: IUserObjProps) {
         ],
       })
       .then((res) => setRefetch((prev) => !prev))
-      .catch((error) => console.log(error));
+      .catch((error) => console.error(error));
     setMessage('');
   };
   const onChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
