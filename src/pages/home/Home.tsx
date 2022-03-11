@@ -34,7 +34,7 @@ const SortText = styled.div`
 `;
 
 export default function Home() {
-  const [listArr, setListArr] = useState<any>([]);
+  const [listArr, setListArr] = useState<IWorldCupProps[]>();
   const [isSort, setIsSort] = useState<boolean>(true);
   const [loading, setLoading] = useState<boolean>(true);
 

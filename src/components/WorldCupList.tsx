@@ -79,7 +79,7 @@ const LinkSelectButton = styled.div`
 interface IWorldCupList {
   data: IWorldCupProps[];
   userObj?: IUserObjProps | any;
-  setData?: React.Dispatch<React.SetStateAction<never[]>>;
+  setData?: React.Dispatch<React.SetStateAction<IWorldCupProps[]>>;
   setRefetch?: React.Dispatch<React.SetStateAction<boolean>>;
 }
 

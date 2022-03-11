@@ -1,15 +1,15 @@
 export interface IUser {
-  userObj?: IUserObj | null | any;
+  userObj?: IUserObj;
   setUserObj: React.Dispatch<React.SetStateAction<{}>>;
   setMakeFetch?: React.Dispatch<React.SetStateAction<boolean>>;
   makeFetch?: boolean;
 }
 
 export interface IUserObjProps {
-  userObj: IUserObj | null | any;
+  userObj: IUserObj;
 }
 
-interface IUserObj {
+export interface IUserObj {
   userId: number;
   email: string;
   userName: string;
