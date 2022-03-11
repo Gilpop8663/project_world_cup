@@ -1,5 +1,5 @@
-import styled, { keyframes } from 'styled-components';
-import React, { useEffect, useRef, useState } from 'react';
+import styled from 'styled-components';
+import { useEffect, useState } from 'react';
 import axios from 'axios';
 import Modal from 'components/Modal';
 import { useLocation } from 'react-router-dom';
@@ -10,6 +10,7 @@ import {
   RIGHT_SELECT,
 } from 'constants/contants';
 import Loading from 'components/Loading';
+import { IWorldCupItemProps, IWorldCupProps } from 'utils/interface';
 
 const TitleText = styled.div`
   margin: 20px 0px 30px 0px;
@@ -153,15 +154,14 @@ const VsText = styled.p<{ selectState: string }>`
     -webkit-text-stroke: 2px #7982c9;
   }
 `;
-
 function WorldCup() {
-  const [data, setData] = useState<any>({});
+  const [data, setData] = useState<IWorldCupProps>();
   const [list, setList] = useState<any>([]);
-  const [index, setIndex] = useState(0);
+  const [index, setIndex] = useState<number>(0);
   const [quarterFinals, setQuarterFinals] = useState<any>([]);
   const [semiFinals, setSemiFinals] = useState<any>([]);
   const [final, setFinal] = useState<any>([]);
-  const [winner, setWinner] = useState<any>([]);
+  const [winner, setWinner] = useState<IWorldCupItemProps[]>();
   const [roundInfo, setRoundInfo] = useState<string>('🏆 16강');
   const [modal, setModal] = useState(false);
   const location = useLocation();
@@ -172,7 +172,7 @@ function WorldCup() {
     setModal(!modal);
   };
 
-  const shuffleArray = (array: any) => {
+  const shuffleArray = (array: IWorldCupItemProps[]) => {
     for (let i = 0; i < array.length; i++) {
       let j = Math.floor(Math.random() * (i + 1));
       [array[i], array[j]] = [array[j], array[i]];
@@ -211,7 +211,6 @@ function WorldCup() {
       setRoundInfo('🏆 결승');
     }
   }, [final]); // 결승 선택 완료 시 리스트 세팅
-
   useEffect(() => {
     if (winner.length === 1) {
       toggleModal();
@@ -225,8 +224,12 @@ function WorldCup() {
     }
   }, [winner]);
 
-  const setDraw = (addNum: number, setListFunction: any, setList: any) => {
-    setListFunction((prev: any) => {
+  const setDraw = (
+    addNum: number,
+    setListFunction: React.Dispatch<any>,
+    setList: IWorldCupItemProps[]
+  ) => {
+    setListFunction((prev: IWorldCupItemProps[]) => {
       const winnerList = setList[index + addNum];
       return [...prev, winnerList];
     });
@@ -247,7 +250,6 @@ function WorldCup() {
       }
     }
   };
-
   const selectCondidate = (addNum: number) => {
     if (quarterFinals.length < 8) {
       setDraw(addNum, setQuarterFinals, list);
