@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 import { GoogleLogout } from 'react-google-login';
-import { IUser } from 'utils/interface';
+import { IUserObj } from 'utils/interface';
 import GoogleLoginBtn from './GoogleLoginBtn';
 
 const Container = styled.div`
@@ -135,6 +135,7 @@ const MobileMenu = styled.div`
 const MenuConatiner = styled.div`
   display: flex;
   align-items: center;
+  z-index: 1;
   @media only screen and (min-width: 768px) {
     display: none;
     visibility: hidden;
@@ -151,7 +152,12 @@ const clientId: any = process.env.REACT_APP_GOOGLE_ID;
 
 const WOLRD_LOGIN = '로그인 하고\n월드컵을 만들어주세요';
 
-export default function Header({ setUserObj, userObj }: IUser) {
+interface IHeader {
+  setUserObj: React.Dispatch<React.SetStateAction<IUserObj>>;
+  userObj: IUserObj;
+}
+
+export default function Header({ setUserObj, userObj }: IHeader) {
   const navigate = useNavigate();
   const [onMenu, setOnMenu] = useState(false);
   const onLogoutClick = () => {
@@ -169,7 +175,7 @@ export default function Header({ setUserObj, userObj }: IUser) {
 
   return (
     <Container>
-      {Object.keys(userObj).length === 3 && (
+      {userObj !== null && (
         <MenuConatiner>
           <Svg
             onClick={onMenuClick}
@@ -181,7 +187,7 @@ export default function Header({ setUserObj, userObj }: IUser) {
         </MenuConatiner>
       )}
 
-      {Object.keys(userObj).length === 0 && (
+      {userObj === null && (
         <MobileHomeLink to="/">
           <HomeImage src="/images/home.png" />
         </MobileHomeLink>
@@ -189,20 +195,18 @@ export default function Header({ setUserObj, userObj }: IUser) {
       <HomeLink to="/">
         <HomeImage src="/images/home.png" />
       </HomeLink>
-      {Object.keys(userObj).length === 3 ? (
+      {userObj !== null ? (
         <MakeLink to="/make">월드컵 만들기</MakeLink>
       ) : (
         <HeadText>{WOLRD_LOGIN}</HeadText>
       )}
-      {Object.keys(userObj).length === 0 && (
+      {userObj === null && (
         <GoogleLoginBtn setUserObj={setUserObj} onGoogleLogin={onLoginClick}>
           로그인
         </GoogleLoginBtn>
       )}
-      {Object.keys(userObj).length === 3 && (
-        <MyWorldLink to="/my-page">나의 월드컵</MyWorldLink>
-      )}
-      {Object.keys(userObj).length === 3 && (
+      {userObj !== null && <MyWorldLink to="/my-page">나의 월드컵</MyWorldLink>}
+      {userObj !== null && (
         <LogoutContainer>
           <GoogleLogout clientId={clientId} onLogoutSuccess={onLogoutClick}>
             로그아웃
@@ -217,14 +221,14 @@ export default function Header({ setUserObj, userObj }: IUser) {
               <HomeImage src="/images/home.png" />
               <HomeTitle>홈으로</HomeTitle>
             </LinkHeadText>
-            {Object.keys(userObj).length === 3 ? (
+            {userObj !== null ? (
               <LinkHeadText onClick={onMenuClick} to="/make">
                 월드컵 만들기
               </LinkHeadText>
             ) : (
               <HeadText>{WOLRD_LOGIN}</HeadText>
             )}
-            {Object.keys(userObj).length === 3 && (
+            {userObj !== null && (
               <LinkHeadText onClick={onMenuClick} to="/my-page">
                 나의 월드컵
               </LinkHeadText>
