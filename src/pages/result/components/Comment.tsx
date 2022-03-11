@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import { IUserObjProps } from 'utils/interface';
 import { dateFormater } from 'utils/utilFn';
 
-interface IToDoProps {
+interface ICommentProps {
   id: string;
   text: string;
   userId: string;
@@ -32,7 +32,7 @@ const Container = styled.li`
   }
 `;
 
-const ToDoText = styled.span`
+const CommentText = styled.span`
   font-size: 1.2em;
   white-space: pre-wrap;
   margin-bottom: 20px;
@@ -107,7 +107,7 @@ export default function Comment({
   data,
   setRefetch,
   userObj,
-}: IToDoProps) {
+}: ICommentProps) {
   const location = useLocation();
   const keyword = location.pathname.split('/');
   const onDeleteClick = async (id: string) => {
@@ -143,7 +143,7 @@ export default function Comment({
             </ButtonWrapper>
           )}
         </UserWrapper>
-        <ToDoText>{text}</ToDoText>
+        <CommentText>{text}</CommentText>
       </MessageWrapper>
     </Container>
   );

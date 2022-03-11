@@ -31,7 +31,19 @@ const NoData = styled.h2`
   font-size: 40px;
   font-weight: 600;
   color: white;
+  white-space: pre-wrap;
+  line-height: 50px;
+  @media only screen and (max-width: 1024px) {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  @media only screen and (max-width: 768px) {
+    font-size: 24px;
+    line-height: 30px;
+  }
 `;
+
+const NO_DATA = '😢 만든 월드컵이 없습니다.\n월드컵을 생성해주세요.';
 
 export default function MyPage({ userObj }: IUserObjProps) {
   const navigate = useNavigate();
@@ -71,9 +83,7 @@ export default function MyPage({ userObj }: IUserObjProps) {
           data={myData}
         />
       ) : (
-        !loading && (
-          <NoData>😢 만든 월드컵이 없습니다. 월드컵을 생성해주세요.</NoData>
-        )
+        !loading && <NoData>{NO_DATA}</NoData>
       )}
     </Container>
   );
