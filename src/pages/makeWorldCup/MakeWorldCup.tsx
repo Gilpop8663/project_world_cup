@@ -261,7 +261,6 @@ interface IMakeProps {
 
 export default function MakeWorldCup({ userObj }: IMakeProps) {
   const navigate = useNavigate();
-  console.log(Boolean(userObj.userId));
   useEffect(() => {
     if (Boolean(!userObj.userId)) {
       navigate('/');
@@ -273,7 +272,6 @@ export default function MakeWorldCup({ userObj }: IMakeProps) {
     formState: { errors },
   } = useForm();
   const onSubmit = async (data: any) => {
-    console.log(data);
     let listArr = [
       {
         id: uuidv4(),
@@ -400,10 +398,8 @@ export default function MakeWorldCup({ userObj }: IMakeProps) {
       })
       .then((res) => {
         navigate('/');
-        console.log('성공');
-        navigate('/');
       })
-      .catch((error) => console.log(error));
+      .catch((error) => console.error(error));
   };
 
   const onCancelClick = () => {

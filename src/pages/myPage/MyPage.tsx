@@ -55,7 +55,7 @@ export default function MyPage({ userObj }: IUserObjProps) {
     if (Boolean(!userObj.userId)) {
       navigate('/');
     }
-  }, []);
+  }, [userObj.userId, navigate]);
 
   useEffect(() => {
     axios.get(`${BASE_URL}/world?creatorId=${userObj.userId}`).then((res) => {

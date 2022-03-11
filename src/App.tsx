@@ -1,10 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import { useState } from 'react';
 import Router from 'router/Router';
-import { IUser } from 'utils/interface';
+import { IUserObj } from 'utils/interface';
 
 function App() {
-  const [userObj, setUserObj] = useState<any>({});
-  console.log(userObj);
+  const [userObj, setUserObj] = useState<IUserObj>();
   return <Router userObj={userObj} setUserObj={setUserObj} />;
 }
 

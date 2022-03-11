@@ -11,7 +11,7 @@ import { IUserObj } from 'utils/interface';
 
 interface IRouterProps {
   userObj: IUserObj;
-  setUserObj: React.Dispatch<React.SetStateAction<{}>>;
+  setUserObj: React.Dispatch<React.SetStateAction<IUserObj>>;
 }
 
 export default function Router({ userObj, setUserObj }: IRouterProps) {

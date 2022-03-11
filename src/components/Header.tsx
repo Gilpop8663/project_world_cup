@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 import { GoogleLogout } from 'react-google-login';
@@ -15,14 +15,6 @@ const Container = styled.div`
   @media only screen and (max-width: 768px) {
     padding: 10px 10px;
   }
-`;
-
-const LinkContainer = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  padding: 10px 0px;
 `;
 
 const LinkHeadText = styled(Link)`
@@ -149,12 +141,6 @@ const MenuConatiner = styled.div`
   }
 `;
 
-const MobileTitle = styled.h1`
-  margin-left: 10px;
-  font-weight: bold;
-  color: #424874;
-`;
-
 const LogoutContainer = styled.div`
   margin-right: 10px;
   @media only screen and (max-width: 768px) {
@@ -169,25 +155,18 @@ export default function Header({ setUserObj, userObj }: IUser) {
   const navigate = useNavigate();
   const [onMenu, setOnMenu] = useState(false);
   const onLogoutClick = () => {
-    console.log('로그아웃 성공');
-    setUserObj({});
+    setUserObj(null);
     setOnMenu(false);
     navigate('/');
   };
   const onLoginClick = async (e: React.MouseEvent<HTMLButtonElement>) => {
-    console.log('로그인 클릭');
     setOnMenu(false);
     navigate('/');
   };
   const onMenuClick = () => {
     setOnMenu((prev) => !prev);
   };
-  useEffect(() => {
-    const handleResize = () => {
-      console.log(window.innerHeight);
-    };
-    window.addEventListener('resize', handleResize);
-  }, []);
+
   return (
     <Container>
       {Object.keys(userObj).length === 3 && (
