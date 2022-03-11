@@ -63,7 +63,6 @@ export default function Result({ userObj }: IUserObjProps) {
       setLoading(false);
     });
   }, []);
-  console.log(noData);
   return (
     <Container>
       {loading ? (

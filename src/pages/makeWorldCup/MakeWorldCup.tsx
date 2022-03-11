@@ -16,8 +16,8 @@ import { onEnterPress } from 'utils/utilFn';
 
 const Container = styled.div`
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 `;
 
 const Form = styled.form`
@@ -48,7 +48,7 @@ const Title = styled.input.attrs({ type: 'text' })`
   }
   @media only screen and (max-width: 768px) {
     font-size: 24px;
-    width: 250px;
+    width: 200px;
     height: 50px;
     border-radius: 10px;
     margin-right: 10px;
@@ -92,6 +92,19 @@ const ItemInputWrapper = styled.div`
   }
   @media only screen and (max-width: 768px) {
     margin-right: 0px;
+    left: -30px;
+    &:first-child {
+      order: 0;
+    }
+    &:nth-child(2) {
+      order: 1;
+    }
+    &:nth-child(3) {
+      order: 2;
+    }
+    &:last-child {
+      order: 3;
+    }
   }
 `;
 
@@ -104,7 +117,7 @@ const ItemInput = styled.input.attrs({ type: 'text' })`
     border: 1.5px solid #424874;
   }
   @media only screen and (max-width: 1024px) {
-    width: 250px;
+    width: 200px;
     height: 50px;
     border-radius: 10px;
     margin-right: 30px;
@@ -115,7 +128,7 @@ const ItemInput = styled.input.attrs({ type: 'text' })`
     font-size: 24px;
   }
   @media only screen and (max-width: 768px) {
-    width: 250px;
+    width: 200px;
     height: 50px;
     border-radius: 10px;
     margin-right: 10px;
@@ -135,8 +148,6 @@ const ItemWrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   position: relative;
-  left: -30px;
-  right: 0px;
   margin-bottom: 10px;
 `;
 
@@ -146,7 +157,7 @@ const ErrorMessage = styled.div`
 
 const TitleWrapper = styled.div`
   display: flex;
-  flex-direction: column;
+  justify-content: center;
 `;
 
 const ButtonWrapper = styled.div`
@@ -197,23 +208,26 @@ const SubmitInput = styled.input`
 const TitleContainer = styled.div`
   display: flex;
   position: relative;
+  justify-content: center;
   align-items: center;
   margin-bottom: 10px;
 `;
 
 const WorldCupText = styled.span`
   margin-left: 10px;
-  font-size: 16px;
-  width: 100px;
+  width: 70px;
+  font-size: 20px;
   left: 180px;
+  color: #424874;
+  font-weight: bold;
   position: absolute;
   @media only screen and (max-width: 1024px) {
-    font-size: 24px;
+    font-size: 16px;
     left: 320px;
   }
   @media only screen and (max-width: 768px) {
-    font-size: 24px;
-    left: 260px;
+    font-size: 18px;
+    left: 210px;
   }
 `;
 
@@ -221,7 +235,6 @@ const ItemInfo = styled.span`
   font-size: 16px;
   color: white;
   font-weight: bold;
-  margin-right: 3px;
   @media only screen and (max-width: 1024px) {
     font-size: 24px;
   }
@@ -232,9 +245,9 @@ const ItemInfo = styled.span`
 
 const ItemNumber = styled.span`
   color: white;
-  font-size: 8px;
+  margin-right: 2px;
+  font-size: 14px;
   font-weight: bold;
-  margin-right: 5px;
   @media only screen and (max-width: 1024px) {
     font-size: 15px;
   }
@@ -435,8 +448,8 @@ export default function MakeWorldCup({ userObj }: IMakeProps) {
             <InputBox>
               <ItemWrapper>
                 <ItemNumberWrapper>
-                  <ItemInfo>1</ItemInfo>
                   <ItemNumber>NO</ItemNumber>
+                  <ItemInfo>.1</ItemInfo>
                 </ItemNumberWrapper>
                 <ItemInput
                   {...register(`${WORLD_CUP_ITEM}1`, {
@@ -459,8 +472,8 @@ export default function MakeWorldCup({ userObj }: IMakeProps) {
             <InputBox>
               <ItemWrapper>
                 <ItemNumberWrapper>
-                  <ItemInfo>2</ItemInfo>
                   <ItemNumber>NO</ItemNumber>
+                  <ItemInfo>.2</ItemInfo>
                 </ItemNumberWrapper>
                 <ItemInput
                   {...register(`${WORLD_CUP_ITEM}2`, {
@@ -483,8 +496,8 @@ export default function MakeWorldCup({ userObj }: IMakeProps) {
             <InputBox>
               <ItemWrapper>
                 <ItemNumberWrapper>
-                  <ItemInfo>3</ItemInfo>
                   <ItemNumber>NO</ItemNumber>
+                  <ItemInfo>.3</ItemInfo>
                 </ItemNumberWrapper>
                 <ItemInput
                   {...register(`${WORLD_CUP_ITEM}3`, {
@@ -507,8 +520,8 @@ export default function MakeWorldCup({ userObj }: IMakeProps) {
             <InputBox>
               <ItemWrapper>
                 <ItemNumberWrapper>
-                  <ItemInfo>4</ItemInfo>
                   <ItemNumber>NO</ItemNumber>
+                  <ItemInfo>.4</ItemInfo>
                 </ItemNumberWrapper>
                 <ItemInput
                   {...register(`${WORLD_CUP_ITEM}4`, {
@@ -533,8 +546,8 @@ export default function MakeWorldCup({ userObj }: IMakeProps) {
             <InputBox>
               <ItemWrapper>
                 <ItemNumberWrapper>
-                  <ItemInfo>5</ItemInfo>
                   <ItemNumber>NO</ItemNumber>
+                  <ItemInfo>.5</ItemInfo>
                 </ItemNumberWrapper>
                 <ItemInput
                   {...register(`${WORLD_CUP_ITEM}5`, {
@@ -557,8 +570,8 @@ export default function MakeWorldCup({ userObj }: IMakeProps) {
             <InputBox>
               <ItemWrapper>
                 <ItemNumberWrapper>
-                  <ItemInfo>6</ItemInfo>
                   <ItemNumber>NO</ItemNumber>
+                  <ItemInfo>.6</ItemInfo>
                 </ItemNumberWrapper>
                 <ItemInput
                   {...register(`${WORLD_CUP_ITEM}6`, {
@@ -581,8 +594,8 @@ export default function MakeWorldCup({ userObj }: IMakeProps) {
             <InputBox>
               <ItemWrapper>
                 <ItemNumberWrapper>
-                  <ItemInfo>7</ItemInfo>
                   <ItemNumber>NO</ItemNumber>
+                  <ItemInfo>.7</ItemInfo>
                 </ItemNumberWrapper>
                 <ItemInput
                   {...register(`${WORLD_CUP_ITEM}7`, {
@@ -605,8 +618,8 @@ export default function MakeWorldCup({ userObj }: IMakeProps) {
             <InputBox>
               <ItemWrapper>
                 <ItemNumberWrapper>
-                  <ItemInfo>8</ItemInfo>
                   <ItemNumber>NO</ItemNumber>
+                  <ItemInfo>.8</ItemInfo>
                 </ItemNumberWrapper>
                 <ItemInput
                   {...register(`${WORLD_CUP_ITEM}8`, {
@@ -631,8 +644,8 @@ export default function MakeWorldCup({ userObj }: IMakeProps) {
             <InputBox>
               <ItemWrapper>
                 <ItemNumberWrapper>
-                  <ItemInfo>9</ItemInfo>
                   <ItemNumber>NO</ItemNumber>
+                  <ItemInfo>.9</ItemInfo>
                 </ItemNumberWrapper>
                 <ItemInput
                   {...register(`${WORLD_CUP_ITEM}9`, {
@@ -655,8 +668,8 @@ export default function MakeWorldCup({ userObj }: IMakeProps) {
             <InputBox>
               <ItemWrapper>
                 <ItemNumberWrapper>
-                  <ItemInfo>10</ItemInfo>
                   <ItemNumber>NO</ItemNumber>
+                  <ItemInfo>.10</ItemInfo>
                 </ItemNumberWrapper>
                 <ItemInput
                   {...register(`${WORLD_CUP_ITEM}10`, {
@@ -679,8 +692,8 @@ export default function MakeWorldCup({ userObj }: IMakeProps) {
             <InputBox>
               <ItemWrapper>
                 <ItemNumberWrapper>
-                  <ItemInfo>11</ItemInfo>
                   <ItemNumber>NO</ItemNumber>
+                  <ItemInfo>.11</ItemInfo>
                 </ItemNumberWrapper>
                 <ItemInput
                   {...register(`${WORLD_CUP_ITEM}11`, {
@@ -703,8 +716,8 @@ export default function MakeWorldCup({ userObj }: IMakeProps) {
             <InputBox>
               <ItemWrapper>
                 <ItemNumberWrapper>
-                  <ItemInfo>12</ItemInfo>
                   <ItemNumber>NO</ItemNumber>
+                  <ItemInfo>.12</ItemInfo>
                 </ItemNumberWrapper>
                 <ItemInput
                   {...register(`${WORLD_CUP_ITEM}12`, {
@@ -729,8 +742,8 @@ export default function MakeWorldCup({ userObj }: IMakeProps) {
             <InputBox>
               <ItemWrapper>
                 <ItemNumberWrapper>
-                  <ItemInfo>13</ItemInfo>
                   <ItemNumber>NO</ItemNumber>
+                  <ItemInfo>.13</ItemInfo>
                 </ItemNumberWrapper>
                 <ItemInput
                   {...register(`${WORLD_CUP_ITEM}13`, {
@@ -753,8 +766,8 @@ export default function MakeWorldCup({ userObj }: IMakeProps) {
             <InputBox>
               <ItemWrapper>
                 <ItemNumberWrapper>
-                  <ItemInfo>14</ItemInfo>
                   <ItemNumber>NO</ItemNumber>
+                  <ItemInfo>.14</ItemInfo>
                 </ItemNumberWrapper>
                 <ItemInput
                   {...register(`${WORLD_CUP_ITEM}14`, {
@@ -777,8 +790,8 @@ export default function MakeWorldCup({ userObj }: IMakeProps) {
             <InputBox>
               <ItemWrapper>
                 <ItemNumberWrapper>
-                  <ItemInfo>15</ItemInfo>
                   <ItemNumber>NO</ItemNumber>
+                  <ItemInfo>.15</ItemInfo>
                 </ItemNumberWrapper>
                 <ItemInput
                   {...register(`${WORLD_CUP_ITEM}15`, {
@@ -801,8 +814,8 @@ export default function MakeWorldCup({ userObj }: IMakeProps) {
             <InputBox>
               <ItemWrapper>
                 <ItemNumberWrapper>
-                  <ItemInfo>16</ItemInfo>
                   <ItemNumber>NO</ItemNumber>
+                  <ItemInfo>.16</ItemInfo>
                 </ItemNumberWrapper>
 
                 <ItemInput
