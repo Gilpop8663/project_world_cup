@@ -172,8 +172,6 @@ function WorldCup() {
     setModal(!modal);
   };
 
-  console.log('as', winner);
-
   const shuffleArray = (array: IWorldCupItemProps[]) => {
     for (let i = 0; i < array.length; i++) {
       let j = Math.floor(Math.random() * (i + 1));
