@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { IUserObjProps } from 'utils/interface';
 import Loading from 'components/Loading';
+import { useNavigate } from 'react-router-dom';
 
 const Container = styled.div`
   display: flex;
@@ -27,9 +28,16 @@ const NoData = styled.h2`
 `;
 
 export default function MyPage({ userObj }: IUserObjProps) {
+  const navigate = useNavigate();
   const [myData, setMyData] = useState([]);
   const [refetch, setRefetch] = useState(false);
   const [loading, setLoading] = useState<boolean>(true);
+
+  useEffect(() => {
+    if (Boolean(!userObj.userId)) {
+      navigate('/');
+    }
+  }, []);
 
   useEffect(() => {
     axios.get(`${BASE_URL}/world?creatorId=${userObj.userId}`).then((res) => {

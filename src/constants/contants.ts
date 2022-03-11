@@ -24,3 +24,7 @@ export const ERROR_MAX = '10글자 이하로 입력해주세요';
 export const ERROR_REQUIRED = '필수로 입력해야 합니다';
 
 export const BASE_URL = 'https://dry-hollows-03672.herokuapp.com';
+
+export const RIGHT_SELECT = 'right';
+export const LEFT_SELECT = 'left';
+export const DEFAULT_SELECT = 'default';

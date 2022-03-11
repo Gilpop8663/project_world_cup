@@ -1,9 +1,14 @@
-import styled from 'styled-components';
-import React, { useEffect, useState } from 'react';
+import styled, { keyframes } from 'styled-components';
+import React, { useEffect, useRef, useState } from 'react';
 import axios from 'axios';
 import Modal from 'components/Modal';
 import { useLocation } from 'react-router-dom';
-import { BASE_URL } from 'constants/contants';
+import {
+  BASE_URL,
+  DEFAULT_SELECT,
+  LEFT_SELECT,
+  RIGHT_SELECT,
+} from 'constants/contants';
 import Loading from 'components/Loading';
 
 const TitleText = styled.div`
@@ -11,6 +16,7 @@ const TitleText = styled.div`
   font-size: 45px;
   font-weight: 600;
   text-align: center;
+  width: 100%;
   color: white;
 `;
 
@@ -19,11 +25,36 @@ const SelectContainer = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 80%;
-  margin-top: 40px;
+  max-width: 1400px;
+  margin-top: 100px;
+  overflow: hidden;
 `;
 
-const LeftSelectBox = styled.div`
+const LeftSelectBox = styled.div<{ selectState: string }>`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 400px;
+  background-color: white;
+  text-align: center;
+  color: #424874;
+  border-radius: 14px;
+  padding: 15px;
+  border: 2px solid #7982c9;
+  opacity: ${({ selectState }) =>
+    selectState === LEFT_SELECT || selectState === DEFAULT_SELECT ? '1' : '0'};
+  transition: ${({ selectState }) =>
+    selectState === LEFT_SELECT
+      ? 'all 1s ease-in-out'
+      : selectState === RIGHT_SELECT
+      ? 'all 0.5s ease-in-out'
+      : 'none'};
+  transform: ${({ selectState }) =>
+    selectState === LEFT_SELECT ? 'translateX(100%)' : 'none'};
+`;
+
+const RightSelectBox = styled.div<{ selectState: string }>`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,20 +66,16 @@ const LeftSelectBox = styled.div`
   border-radius: 14px;
   padding: 15px;
   border: 2px solid #7982c9;
-`;
-
-const RightSelectBox = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 400px;
-  height: 400px;
-  background-color: white;
-  color: #424874;
-  text-align: center;
-  border-radius: 14px;
-  padding: 15px;
-  border: 2px solid #7982c9;
+  opacity: ${({ selectState }) =>
+    selectState === RIGHT_SELECT || selectState === DEFAULT_SELECT ? '1' : '0'};
+  transition: ${({ selectState }) =>
+    selectState === RIGHT_SELECT
+      ? 'all 1s ease-in-out'
+      : selectState === LEFT_SELECT
+      ? 'all 0.5s ease-in-out'
+      : 'none'};
+  transform: ${({ selectState }) =>
+    selectState === RIGHT_SELECT ? 'translateX(-100%)' : 'none'};
 `;
 
 const LeftCandidate = styled.p`
@@ -75,11 +102,13 @@ const RoundText = styled.span`
   background-color: white;
 `;
 
-const VsText = styled.p`
+const VsText = styled.p<{ selectState: string }>`
   font-size: 100px;
   color: white;
   font-weight: 800;
   -webkit-text-stroke: 4px #7982c9;
+  /* transition: all 0.5s ease-in-out; */
+  opacity: ${({ selectState }) => (selectState !== DEFAULT_SELECT ? '0' : '1')};
 `;
 
 function WorldCup() {
@@ -95,7 +124,7 @@ function WorldCup() {
   const location = useLocation();
   const keyword = location.pathname.slice(7);
   const [loading, setLoading] = useState<boolean>(true);
-
+  const [selectedStyle, setSelectedStyle] = useState(DEFAULT_SELECT);
   const toggleModal = () => {
     setModal(!modal);
   };
@@ -203,13 +232,23 @@ function WorldCup() {
   };
 
   const leftSelect = () => {
+    if (selectedStyle !== DEFAULT_SELECT) return;
     const addNum = 0;
-    selectCondidate(addNum);
+    setSelectedStyle(LEFT_SELECT);
+    setTimeout(() => {
+      selectCondidate(addNum);
+      setSelectedStyle(DEFAULT_SELECT);
+    }, 2000);
   };
 
   const rightSelect = () => {
+    if (selectedStyle !== DEFAULT_SELECT) return;
     const addNum = 1;
-    selectCondidate(addNum);
+    setSelectedStyle(RIGHT_SELECT);
+    setTimeout(() => {
+      selectCondidate(addNum);
+      setSelectedStyle(DEFAULT_SELECT);
+    }, 2000);
   };
 
   return (
@@ -223,13 +262,13 @@ function WorldCup() {
             <RoundText>{roundInfo} </RoundText>
           </RoundBox>
           <SelectContainer>
-            <LeftSelectBox onClick={leftSelect}>
+            <LeftSelectBox selectState={selectedStyle} onClick={leftSelect}>
               <LeftCandidate>
                 {list[index] && list[index].candidate}
               </LeftCandidate>
             </LeftSelectBox>
-            <VsText>VS</VsText>
-            <RightSelectBox onClick={rightSelect}>
+            <VsText selectState={selectedStyle}>VS</VsText>
+            <RightSelectBox selectState={selectedStyle} onClick={rightSelect}>
               <RightCandidate>
                 {list[index + 1] && list[index + 1].candidate}
               </RightCandidate>

@@ -31,6 +31,10 @@ body {
 	line-height: 1;
 	font-family: 'Nanum Gothic', sans-serif;
 	background-color: #a6b1e1;
+	-webkit-user-select:none;
+	 -moz-user-select:none;
+	 -ms-user-select:none; 
+	user-select:none;
 }
 ol, ul {
 	list-style: none;
@@ -51,9 +55,7 @@ button {
 	border: none;
 	background-color: transparent;
 }
-body{
 
-}
 a { 
 	text-decoration: none;
 } 
@@ -66,7 +68,5 @@ a:link {
 }
 
 `;
-
-//nine01223.tistory.com/180 [스프링연구소(spring-lab)]
 
 export default GlobalStyle;

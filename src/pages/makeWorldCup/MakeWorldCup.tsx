@@ -5,8 +5,7 @@ import {
   ERROR_REQUIRED,
   WORLD_CUP_ITEM,
 } from 'constants/contants';
-
-import React from 'react';
+import React, { useEffect } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import { useForm } from 'react-hook-form';
 import styled from 'styled-components';
@@ -159,6 +158,12 @@ interface IMakeProps {
 
 export default function MakeWorldCup({ userObj }: IMakeProps) {
   const navigate = useNavigate();
+  console.log(Boolean(userObj.userId));
+  useEffect(() => {
+    if (Boolean(!userObj.userId)) {
+      navigate('/');
+    }
+  }, []);
   const {
     register,
     handleSubmit,
@@ -293,6 +298,7 @@ export default function MakeWorldCup({ userObj }: IMakeProps) {
       .then((res) => {
         navigate('/');
         console.log('성공');
+        navigate('/');
       })
       .catch((error) => console.log(error));
   };
@@ -341,7 +347,7 @@ export default function MakeWorldCup({ userObj }: IMakeProps) {
                       message: ERROR_MIN,
                     },
                     maxLength: {
-                      value: 10,
+                      value: 20,
                       message: ERROR_MAX,
                     },
                   })}
@@ -365,7 +371,7 @@ export default function MakeWorldCup({ userObj }: IMakeProps) {
                       message: ERROR_MIN,
                     },
                     maxLength: {
-                      value: 10,
+                      value: 20,
                       message: ERROR_MAX,
                     },
                   })}
@@ -389,7 +395,7 @@ export default function MakeWorldCup({ userObj }: IMakeProps) {
                       message: ERROR_MIN,
                     },
                     maxLength: {
-                      value: 10,
+                      value: 20,
                       message: ERROR_MAX,
                     },
                   })}
@@ -413,7 +419,7 @@ export default function MakeWorldCup({ userObj }: IMakeProps) {
                       message: ERROR_MIN,
                     },
                     maxLength: {
-                      value: 10,
+                      value: 20,
                       message: ERROR_MAX,
                     },
                   })}
@@ -439,7 +445,7 @@ export default function MakeWorldCup({ userObj }: IMakeProps) {
                       message: ERROR_MIN,
                     },
                     maxLength: {
-                      value: 10,
+                      value: 20,
                       message: ERROR_MAX,
                     },
                   })}
@@ -463,7 +469,7 @@ export default function MakeWorldCup({ userObj }: IMakeProps) {
                       message: ERROR_MIN,
                     },
                     maxLength: {
-                      value: 10,
+                      value: 20,
                       message: ERROR_MAX,
                     },
                   })}
@@ -487,7 +493,7 @@ export default function MakeWorldCup({ userObj }: IMakeProps) {
                       message: ERROR_MIN,
                     },
                     maxLength: {
-                      value: 10,
+                      value: 20,
                       message: ERROR_MAX,
                     },
                   })}
@@ -511,7 +517,7 @@ export default function MakeWorldCup({ userObj }: IMakeProps) {
                       message: ERROR_MIN,
                     },
                     maxLength: {
-                      value: 10,
+                      value: 20,
                       message: ERROR_MAX,
                     },
                   })}
@@ -537,7 +543,7 @@ export default function MakeWorldCup({ userObj }: IMakeProps) {
                       message: ERROR_MIN,
                     },
                     maxLength: {
-                      value: 10,
+                      value: 20,
                       message: ERROR_MAX,
                     },
                   })}
@@ -561,7 +567,7 @@ export default function MakeWorldCup({ userObj }: IMakeProps) {
                       message: ERROR_MIN,
                     },
                     maxLength: {
-                      value: 10,
+                      value: 20,
                       message: ERROR_MAX,
                     },
                   })}
@@ -585,7 +591,7 @@ export default function MakeWorldCup({ userObj }: IMakeProps) {
                       message: ERROR_MIN,
                     },
                     maxLength: {
-                      value: 10,
+                      value: 20,
                       message: ERROR_MAX,
                     },
                   })}
@@ -609,7 +615,7 @@ export default function MakeWorldCup({ userObj }: IMakeProps) {
                       message: ERROR_MIN,
                     },
                     maxLength: {
-                      value: 10,
+                      value: 20,
                       message: ERROR_MAX,
                     },
                   })}
@@ -635,7 +641,7 @@ export default function MakeWorldCup({ userObj }: IMakeProps) {
                       message: ERROR_MIN,
                     },
                     maxLength: {
-                      value: 10,
+                      value: 20,
                       message: ERROR_MAX,
                     },
                   })}
@@ -659,7 +665,7 @@ export default function MakeWorldCup({ userObj }: IMakeProps) {
                       message: ERROR_MIN,
                     },
                     maxLength: {
-                      value: 10,
+                      value: 20,
                       message: ERROR_MAX,
                     },
                   })}
@@ -683,7 +689,7 @@ export default function MakeWorldCup({ userObj }: IMakeProps) {
                       message: ERROR_MIN,
                     },
                     maxLength: {
-                      value: 10,
+                      value: 20,
                       message: ERROR_MAX,
                     },
                   })}
@@ -708,7 +714,7 @@ export default function MakeWorldCup({ userObj }: IMakeProps) {
                       message: ERROR_MIN,
                     },
                     maxLength: {
-                      value: 10,
+                      value: 20,
                       message: ERROR_MAX,
                     },
                   })}
