@@ -31,9 +31,27 @@ const Title = styled.input.attrs({ type: 'text' })`
   height: 30px;
   border-radius: 7px;
   border: 1.5px solid #7982c9;
+  position: relative;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
   &:focus {
     outline: none;
     border: 1.5px solid #424874;
+  }
+  @media only screen and (max-width: 1024px) {
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 24px;
+    margin-right: 30px;
+  }
+  @media only screen and (max-width: 768px) {
+    font-size: 24px;
+    width: 250px;
+    height: 50px;
+    border-radius: 10px;
+    margin-right: 10px;
   }
 `;
 
@@ -42,12 +60,39 @@ const InputContainer = styled.div`
   justify-content: space-between;
   margin-top: 50px;
   margin-bottom: 50px;
+  @media only screen and (max-width: 1024px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-content: center;
+  }
+  @media only screen and (max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 `;
 
 const ItemInputWrapper = styled.div`
   display: flex;
+  position: relative;
   flex-direction: column;
-  margin-right: 30px;
+  margin-right: 20px;
+  @media only screen and (max-width: 1024px) {
+    margin-right: 10px;
+    &:first-child {
+      order: 0;
+    }
+    &:nth-child(2) {
+      order: 2;
+    }
+    &:nth-child(3) {
+      order: 1;
+    }
+    &:last-child {
+      order: 4;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    margin-right: 0px;
+  }
 `;
 
 const ItemInput = styled.input.attrs({ type: 'text' })`
@@ -57,6 +102,24 @@ const ItemInput = styled.input.attrs({ type: 'text' })`
   &:focus {
     outline: none;
     border: 1.5px solid #424874;
+  }
+  @media only screen and (max-width: 1024px) {
+    width: 250px;
+    height: 50px;
+    border-radius: 10px;
+    margin-right: 30px;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    font-size: 24px;
+  }
+  @media only screen and (max-width: 768px) {
+    width: 250px;
+    height: 50px;
+    border-radius: 10px;
+    margin-right: 10px;
+    font-size: 24px;
   }
 `;
 
@@ -71,6 +134,9 @@ const ItemWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  left: -30px;
+  right: 0px;
   margin-bottom: 10px;
 `;
 
@@ -88,6 +154,12 @@ const ButtonWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media only screen and (max-width: 1024px) {
+    padding-bottom: 100px;
+  }
+  @media only screen and (max-width: 768px) {
+    padding-bottom: 100px;
+  }
 `;
 
 const CancelButton = styled.button`
@@ -124,6 +196,7 @@ const SubmitInput = styled.input`
 
 const TitleContainer = styled.div`
   display: flex;
+  position: relative;
   align-items: center;
   margin-bottom: 10px;
 `;
@@ -131,6 +204,17 @@ const TitleContainer = styled.div`
 const WorldCupText = styled.span`
   margin-left: 10px;
   font-size: 16px;
+  width: 100px;
+  left: 180px;
+  position: absolute;
+  @media only screen and (max-width: 1024px) {
+    font-size: 24px;
+    left: 320px;
+  }
+  @media only screen and (max-width: 768px) {
+    font-size: 24px;
+    left: 260px;
+  }
 `;
 
 const ItemInfo = styled.span`
@@ -138,6 +222,12 @@ const ItemInfo = styled.span`
   color: white;
   font-weight: bold;
   margin-right: 3px;
+  @media only screen and (max-width: 1024px) {
+    font-size: 24px;
+  }
+  @media only screen and (max-width: 768px) {
+    font-size: 24px;
+  }
 `;
 
 const ItemNumber = styled.span`
@@ -145,11 +235,24 @@ const ItemNumber = styled.span`
   font-size: 8px;
   font-weight: bold;
   margin-right: 5px;
+  @media only screen and (max-width: 1024px) {
+    font-size: 15px;
+  }
+  @media only screen and (max-width: 768px) {
+    font-size: 12px;
+  }
 `;
 
 const ItemNumberWrapper = styled.div`
   display: flex;
   align-items: flex-end;
+
+  @media only screen and (max-width: 1024px) {
+    margin-right: 10px;
+  }
+  @media only screen and (max-width: 768px) {
+    margin-right: 10px;
+  }
 `;
 
 interface IMakeProps {
