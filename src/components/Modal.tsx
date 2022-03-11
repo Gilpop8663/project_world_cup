@@ -31,15 +31,21 @@ const ModalContent = styled.div`
   align-items: center;
   flex-direction: column;
   position: absolute;
+  padding: 20px;
   transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
   width: 70%;
   height: 70%;
-
   border-radius: 14px;
   border: 2px solid #7982c9;
   background: white;
+  @media screen and (max-width: 1024px) {
+    height: 45%;
+  }
+  @media screen and (max-width: 768px) {
+    height: 25%;
+  }
 `;
 
 const WinnerText = styled.h1`
@@ -48,6 +54,12 @@ const WinnerText = styled.h1`
   font-weight: 800;
   color: #424874;
   margin-bottom: 40px;
+  @media screen and (max-width: 1024px) {
+    font-size: 36px;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 23px;
+  }
 `;
 
 const GoRankingText = styled.div`
@@ -59,6 +71,12 @@ const GoRankingText = styled.div`
   color: white;
   border-radius: 10px;
   cursor: pointer;
+  @media screen and (max-width: 1024px) {
+    font-size: 30px;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 26px;
+  }
 `;
 
 export default function Modal({ winner, resultId }: any) {

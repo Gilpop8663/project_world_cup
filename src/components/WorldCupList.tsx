@@ -9,6 +9,15 @@ const Container = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 40px;
+  @media screen and (max-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+  }
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
 `;
 
 const WorldCupWrapper = styled.div`
@@ -21,7 +30,7 @@ const TitleBox: any = styled.div`
   background-color: white;
   border-radius: 10px;
   width: 100%;
-  height: 200px;
+  height: 230px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,6 +38,12 @@ const TitleBox: any = styled.div`
   color: #424874;
   font-weight: 600;
   border: 2px solid #7982c9;
+  @media screen and (max-width: 1024px) {
+    height: 200px;
+  }
+  @media screen and (max-width: 768px) {
+    height: 150px;
+  }
 `;
 
 const WorldCupTitle = styled.p`
@@ -56,6 +71,9 @@ const LinkSelectButton = styled.div`
   font-size: 14px;
   font-weight: 600;
   color: #424874;
+  @media screen and (max-width: 768px) {
+    font-size: 12px;
+  }
 `;
 
 interface IWorldCupList {
