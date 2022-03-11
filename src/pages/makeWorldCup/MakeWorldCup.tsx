@@ -556,11 +556,11 @@ export default function MakeWorldCup({ userObj }: IMakeProps) {
             <InputBox>
               <ItemWrapper>
                 <ItemNumberWrapper>
-                  <ItemInfo>20</ItemInfo>
+                  <ItemInfo>10</ItemInfo>
                   <ItemNumber>NO</ItemNumber>
                 </ItemNumberWrapper>
                 <ItemInput
-                  {...register(`${WORLD_CUP_ITEM}20`, {
+                  {...register(`${WORLD_CUP_ITEM}10`, {
                     required: ERROR_REQUIRED,
                     minLength: {
                       value: 1,
@@ -573,8 +573,8 @@ export default function MakeWorldCup({ userObj }: IMakeProps) {
                   })}
                 />
               </ItemWrapper>
-              {errors.worldCupItem20 && (
-                <ErrorMessage>{errors.worldCupItem20?.message}</ErrorMessage>
+              {errors.worldCupItem10 && (
+                <ErrorMessage>{errors.worldCupItem10?.message}</ErrorMessage>
               )}
             </InputBox>
             <InputBox>
