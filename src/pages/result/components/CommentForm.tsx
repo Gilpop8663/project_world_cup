@@ -6,7 +6,11 @@ import Comment from './Comment';
 import axios from 'axios';
 import { useLocation } from 'react-router-dom';
 import { BASE_URL, GUEST_ICON, GUEST_NAME } from '../../../constants/contants';
-import { IUserObjProps, IWorldCupCommentProps } from 'utils/interface';
+import {
+  IUserObjProps,
+  IWorldCupCommentProps,
+  IWorldCupProps,
+} from 'utils/interface';
 
 const Container = styled.div<{ isLoading: boolean }>`
   padding-top: 23px;
@@ -64,7 +68,7 @@ const Input = styled.textarea`
   }
 `;
 
-const ToDoWelcome = styled.div`
+const CommentTitle = styled.div`
   font-size: 1.2em;
   font-weight: 600;
   margin-bottom: 30px;
@@ -116,7 +120,7 @@ const MessageContainer = styled.ul<{ isData: boolean }>`
 
 export default function CommentForm({ userObj }: IUserObjProps) {
   const [message, setMessage] = useState('');
-  const [data, setData] = useState<any>([{}]);
+  const [data, setData] = useState<any>();
   const [comment, setComment] = useState<any>([]);
   const [refetch, setRefetch] = useState(false);
   const [loading, setLoading] = useState<boolean>(true);
@@ -161,7 +165,7 @@ export default function CommentForm({ userObj }: IUserObjProps) {
   return (
     <Container isLoading={loading}>
       <Form onSubmit={onSubmit} onKeyPress={(e) => onEnterPress(e, onSubmit)}>
-        <ToDoWelcome>댓글</ToDoWelcome>
+        <CommentTitle>댓글</CommentTitle>
         <InputWrapper>
           <Input
             disabled={Object.keys(userObj).length !== 3}
