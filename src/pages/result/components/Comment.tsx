@@ -2,7 +2,7 @@ import axios from 'axios';
 import { BASE_URL } from 'constants/contants';
 import { useLocation } from 'react-router-dom';
 import styled from 'styled-components';
-import { IUserObjProps } from 'utils/interface';
+import { IWorldCupProps, IUserObj } from 'utils/interface';
 import { dateFormater } from 'utils/utilFn';
 
 interface ICommentProps {
@@ -11,8 +11,8 @@ interface ICommentProps {
   userId: string;
   createdAt: number | Date;
   creatorId: string;
-  data: any;
-  userObj: IUserObjProps | any;
+  data: IWorldCupProps;
+  userObj: IUserObj;
   setRefetch: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
@@ -40,7 +40,7 @@ const CommentText = styled.span`
 
 const ButtonWrapper = styled.div``;
 
-const ToDoBtn = styled.button`
+const CommentButton = styled.button`
   width: 60px;
   height: 30px;
   font-size: 0.8em;
@@ -56,7 +56,7 @@ const ToDoBtn = styled.button`
   }
 `;
 
-const DeleteButton = styled(ToDoBtn)`
+const DeleteButton = styled(CommentButton)`
   color: red;
   margin-right: 10px;
 `;
@@ -135,7 +135,7 @@ export default function Comment({
             <UserInfo>{userId}</UserInfo>
             {createdAt && <CreateDate>{dateFormater(createdAt)}</CreateDate>}
           </UserInfoWrapper>
-          {userObj.userId === creatorId && (
+          {String(userObj.userId) === creatorId && (
             <ButtonWrapper>
               <DeleteButton onClick={() => onDeleteClick(id)}>
                 삭제
