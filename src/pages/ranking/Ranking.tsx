@@ -12,6 +12,28 @@ const Container = styled.div`
 const TitleText: any = styled.p`
   font-size: 17px;
   font-weight: 700;
+  @media screen and (max-width: 1024px) {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 12px;
+    font-weight: 600;
+    display: flex;
+  }
+`;
+
+const Description = styled.p`
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
+`;
+
+const RankingNumberText = styled.span`
+  display: none;
+  @media screen and (max-width: 768px) {
+    display: flex;
+  }
 `;
 
 const TitleWrapper = styled.div`
@@ -32,6 +54,9 @@ const RankingTitle = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 const NameTitle: any = styled.div`
@@ -44,9 +69,11 @@ const NameTitle: any = styled.div`
   border: 2px solid #7982c9;
   margin: 3px;
   cursor: pointer;
-  text-align: center;
   padding: 10px;
   border-radius: 6px;
+  @media screen and (max-width: 768px) {
+    width: 30%;
+  }
 `;
 
 const ChampionTitle: any = styled.div`
@@ -62,6 +89,9 @@ const ChampionTitle: any = styled.div`
   padding: 10px;
   padding-right: 20px;
   border-radius: 6px;
+  @media screen and (max-width: 768px) {
+    width: 40%;
+  }
 `;
 
 const WinnerTitle: any = styled.div`
@@ -77,6 +107,9 @@ const WinnerTitle: any = styled.div`
   padding: 10px;
   padding-right: 20px;
   border-radius: 6px;
+  @media screen and (max-width: 768px) {
+    width: 40%;
+  }
 `;
 
 const ListWrapper = styled.div`
@@ -96,6 +129,9 @@ const RankingTitleList: any = styled.div`
   margin: 3px;
   padding: 10px;
   border-radius: 6px;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 const NameTitleList = styled.div`
@@ -109,6 +145,9 @@ const NameTitleList = styled.div`
   margin: 3px;
   padding: 10px;
   border-radius: 6px;
+  @media screen and (max-width: 768px) {
+    width: 30%;
+  }
 `;
 
 const PercentTitleList = styled.div`
@@ -121,6 +160,9 @@ const PercentTitleList = styled.div`
   padding: 10px;
   padding-right: 20px;
   border-radius: 6px;
+  @media screen and (max-width: 768px) {
+    width: 40%;
+  }
 `;
 
 const ChartWrapper = styled.div`
@@ -286,7 +328,7 @@ export default function Ranking() {
           <TitleText>
             우승비율
             <br />
-            (최종 우승 횟수 / 전체 게임수)
+            <Description>(최종 우승 횟수 / 전체 게임수)</Description>
           </TitleText>
           {nowSortChampion && (
             <TitleText>{isSortChampion ? '🔻' : '🔺'}</TitleText>
@@ -296,7 +338,7 @@ export default function Ranking() {
           <TitleText>
             라운드 승률
             <br />
-            (라운드 이긴 횟수 / 라운드 진행 수)
+            <Description>(라운드 이긴 횟수 / 라운드 진행 수)</Description>
           </TitleText>
           {nowSortWin && <TitleText>{isSortWin ? '🔻' : '🔺'}</TitleText>}
         </WinnerTitle>
@@ -308,7 +350,10 @@ export default function Ranking() {
               <TitleText>{idx + 1}위</TitleText>
             </RankingTitleList>
             <NameTitleList>
-              <TitleText>{ele.candidate}</TitleText>
+              <TitleText>
+                {/* <RankingNumberText>{idx + 1}위. </RankingNumberText> */}
+                {ele.candidate}
+              </TitleText>
             </NameTitleList>
             <PercentTitleList>
               <TitleText>{championPercent(ele.champion)}%</TitleText>

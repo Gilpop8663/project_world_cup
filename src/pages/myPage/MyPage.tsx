@@ -12,6 +12,12 @@ const Container = styled.div`
   flex-direction: column;
   padding: 60px 200px;
   justify-content: flex-start;
+  @media screen and (max-width: 1024px) {
+    padding: 60px 60px;
+  }
+  @media screen and (max-width: 768px) {
+    padding: 30px 20px;
+  }
 `;
 
 const MyPageTitle = styled.h2`

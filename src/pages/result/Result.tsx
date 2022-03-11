@@ -12,11 +12,18 @@ const Container = styled.div`
   display: grid;
   grid-template-columns: 3fr 1fr;
   height: 100%;
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 const Wrapper = styled.div`
   width: 100%;
   height: 1441px;
+  @media screen and (max-width: 768px) {
+    height: 1000px;
+  }
 `;
 
 const CommentWrapper = styled.div`

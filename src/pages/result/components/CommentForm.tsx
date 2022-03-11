@@ -13,7 +13,10 @@ const Container = styled.div<{ isLoading: boolean }>`
   width: 100%;
   display: ${({ isLoading }) => (isLoading ? 'none' : 'flex')};
   flex-direction: column;
-  padding-right: 20px;
+  padding-right: 23px;
+  @media screen and (max-width: 768px) {
+    padding: 23px;
+  }
 `;
 
 const Form = styled.form`
@@ -56,12 +59,18 @@ const Input = styled.textarea`
     border: none;
     width: 100%;
   }
+  @media screen and (max-width: 768px) {
+    font-size: 15px;
+  }
 `;
 
 const ToDoWelcome = styled.div`
   font-size: 1.2em;
   font-weight: 600;
   margin-bottom: 30px;
+  @media screen and (max-width: 768px) {
+    font-size: 15px;
+  }
 `;
 
 const SubmitInput = styled.input<{ isMessage: boolean }>`

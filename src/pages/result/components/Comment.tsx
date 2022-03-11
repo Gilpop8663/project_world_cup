@@ -51,6 +51,9 @@ const ToDoBtn = styled.button`
   &:hover {
     background-color: rgba(0, 0, 0, 0.2);
   }
+  @media screen and (max-width: 768px) {
+    font-size: 15px;
+  }
 `;
 
 const DeleteButton = styled(ToDoBtn)`
@@ -68,6 +71,10 @@ const CreateDate = styled.span`
   color: rgba(0, 0, 0, 0.5);
   font-weight: 100;
   margin-left: 10px;
+  @media screen and (max-width: 768px) {
+    padding-bottom: 10px;
+    font-size: 15px;
+  }
 `;
 
 const UserWrapper = styled.div`
@@ -79,6 +86,10 @@ const UserWrapper = styled.div`
 const UserInfo = styled.div`
   font-size: 1.2em;
   font-weight: bold;
+  @media screen and (max-width: 768px) {
+    padding-bottom: 10px;
+    font-size: 15px;
+  }
 `;
 
 const MessageWrapper = styled.div`
