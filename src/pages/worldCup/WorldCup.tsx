@@ -156,12 +156,12 @@ const VsText = styled.p<{ selectState: string }>`
 `;
 function WorldCup() {
   const [data, setData] = useState<IWorldCupProps>();
-  const [list, setList] = useState<any>([]);
+  const [list, setList] = useState<IWorldCupItemProps[]>([]);
   const [index, setIndex] = useState<number>(0);
-  const [quarterFinals, setQuarterFinals] = useState<any>([]);
-  const [semiFinals, setSemiFinals] = useState<any>([]);
-  const [final, setFinal] = useState<any>([]);
-  const [winner, setWinner] = useState<IWorldCupItemProps[]>();
+  const [quarterFinals, setQuarterFinals] = useState<IWorldCupItemProps[]>([]);
+  const [semiFinals, setSemiFinals] = useState<IWorldCupItemProps[]>([]);
+  const [final, setFinal] = useState<IWorldCupItemProps[]>([]);
+  const [winner, setWinner] = useState<IWorldCupItemProps[]>([]);
   const [roundInfo, setRoundInfo] = useState<string>('🏆 16강');
   const [modal, setModal] = useState(false);
   const location = useLocation();
@@ -171,6 +171,7 @@ function WorldCup() {
   const toggleModal = () => {
     setModal(!modal);
   };
+  console.log('1', winner);
 
   const shuffleArray = (array: IWorldCupItemProps[]) => {
     for (let i = 0; i < array.length; i++) {

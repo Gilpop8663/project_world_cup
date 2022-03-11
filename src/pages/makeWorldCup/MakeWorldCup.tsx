@@ -208,11 +208,11 @@ const WorldCupText = styled.span`
   left: 180px;
   position: absolute;
   @media only screen and (max-width: 1024px) {
-    font-size: 24px;
+    font-size: 15px;
     left: 320px;
   }
   @media only screen and (max-width: 768px) {
-    font-size: 24px;
+    font-size: 15px;
     left: 260px;
   }
 `;
