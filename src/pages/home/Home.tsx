@@ -7,8 +7,14 @@ import { IWorldCupProps } from 'utils/interface';
 import Loading from 'components/Loading';
 
 const Container = styled.div`
-  padding: 60px 200px;
+  padding: 60px 150px;
   background-color: #a6b1e1;
+  @media screen and (max-width: 1024px) {
+    padding: 60px 60px;
+  }
+  @media screen and (max-width: 768px) {
+    padding: 30px 20px;
+  }
 `;
 
 const SortTextWrapper = styled.div`

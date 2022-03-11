@@ -23,25 +23,31 @@ const TitleText = styled.div`
 const SelectContainer = styled.div`
   margin: 0 auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  max-width: 1400px;
+  width: 1024px;
   margin-top: 100px;
-  overflow: hidden;
+  @media screen and (max-width: 1024px) {
+    width: 650px;
+  }
+  @media screen and (max-width: 768px) {
+    width: 365px;
+  }
 `;
 
 const LeftSelectBox = styled.div<{ selectState: string }>`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 400px;
-  height: 400px;
+  width: 360px;
+  height: 360px;
   background-color: white;
   text-align: center;
   color: #424874;
   border-radius: 14px;
   padding: 15px;
   border: 2px solid #7982c9;
+  word-break: break-all;
   opacity: ${({ selectState }) =>
     selectState === LEFT_SELECT || selectState === DEFAULT_SELECT ? '1' : '0'};
   transition: ${({ selectState }) =>
@@ -51,21 +57,34 @@ const LeftSelectBox = styled.div<{ selectState: string }>`
       ? 'all 0.5s ease-in-out'
       : 'none'};
   transform: ${({ selectState }) =>
-    selectState === LEFT_SELECT ? 'translateX(100%)' : 'none'};
+    selectState === LEFT_SELECT ? 'translateX(315px)' : 'none'};
+  @media screen and (max-width: 1024px) {
+    width: 200px;
+    height: 200px;
+    transform: ${({ selectState }) =>
+      selectState === LEFT_SELECT ? 'translateX(208px)' : 'none'};
+  }
+  @media screen and (max-width: 768px) {
+    width: 110px;
+    height: 110px;
+    transform: ${({ selectState }) =>
+      selectState === LEFT_SELECT ? 'translateX(113px)' : 'none'};
+  }
 `;
 
 const RightSelectBox = styled.div<{ selectState: string }>`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 400px;
-  height: 400px;
+  width: 360px;
+  height: 360px;
   background-color: white;
   color: #424874;
   text-align: center;
   border-radius: 14px;
   padding: 15px;
   border: 2px solid #7982c9;
+  word-break: break-all;
   opacity: ${({ selectState }) =>
     selectState === RIGHT_SELECT || selectState === DEFAULT_SELECT ? '1' : '0'};
   transition: ${({ selectState }) =>
@@ -75,17 +94,32 @@ const RightSelectBox = styled.div<{ selectState: string }>`
       ? 'all 0.5s ease-in-out'
       : 'none'};
   transform: ${({ selectState }) =>
-    selectState === RIGHT_SELECT ? 'translateX(-100%)' : 'none'};
+    selectState === RIGHT_SELECT ? 'translateX(-315px)' : 'none'};
+  @media screen and (max-width: 1024px) {
+    width: 200px;
+    height: 200px;
+    transform: ${({ selectState }) =>
+      selectState === RIGHT_SELECT ? 'translateX(-208px)' : 'none'};
+  }
+  @media screen and (max-width: 768px) {
+    width: 110px;
+    height: 110px;
+    transform: ${({ selectState }) =>
+      selectState === RIGHT_SELECT ? 'translateX(-113px)' : 'none'};
+  }
 `;
 
-const LeftCandidate = styled.p`
+const Candidate = styled.p`
   font-size: 70px;
   font-weight: 900;
-`;
-
-const RightCandidate = styled.div`
-  font-size: 70px;
-  font-weight: 800;
+  @media screen and (max-width: 1024px) {
+    font-size: 40px;
+    font-weight: 700;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 20px;
+    font-weight: 600;
+  }
 `;
 
 const RoundBox = styled.div`
@@ -107,8 +141,17 @@ const VsText = styled.p<{ selectState: string }>`
   color: white;
   font-weight: 800;
   -webkit-text-stroke: 4px #7982c9;
-  /* transition: all 0.5s ease-in-out; */
   opacity: ${({ selectState }) => (selectState !== DEFAULT_SELECT ? '0' : '1')};
+  @media screen and (max-width: 1024px) {
+    -webkit-text-stroke: 3px #7982c9;
+    font-size: 70px;
+    font-weight: 700;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 40px;
+    font-weight: 600;
+    -webkit-text-stroke: 2px #7982c9;
+  }
 `;
 
 function WorldCup() {
@@ -119,7 +162,7 @@ function WorldCup() {
   const [semiFinals, setSemiFinals] = useState<any>([]);
   const [final, setFinal] = useState<any>([]);
   const [winner, setWinner] = useState<any>([]);
-  const [roundInfo, setRoundInfo] = useState<string>('🏆 16강전');
+  const [roundInfo, setRoundInfo] = useState<string>('🏆 16강');
   const [modal, setModal] = useState(false);
   const location = useLocation();
   const keyword = location.pathname.slice(7);
@@ -149,7 +192,7 @@ function WorldCup() {
     if (quarterFinals.length === 8) {
       setList(quarterFinals);
       setIndex(0);
-      setRoundInfo('🏆 8강전');
+      setRoundInfo('🏆 8강');
     }
   }, [quarterFinals]); // 8강 선택 완료 시 리스트 세팅
 
@@ -157,7 +200,7 @@ function WorldCup() {
     if (semiFinals.length === 4) {
       setList(semiFinals);
       setIndex(0);
-      setRoundInfo('🏆 4강전');
+      setRoundInfo('🏆 4강');
     }
   }, [semiFinals]); // 4강 선택 완료 시 리스트 세팅
 
@@ -165,7 +208,7 @@ function WorldCup() {
     if (final.length === 2) {
       setList(final);
       setIndex(0);
-      setRoundInfo('🏆 결승전');
+      setRoundInfo('🏆 결승');
     }
   }, [final]); // 결승 선택 완료 시 리스트 세팅
 
@@ -263,15 +306,13 @@ function WorldCup() {
           </RoundBox>
           <SelectContainer>
             <LeftSelectBox selectState={selectedStyle} onClick={leftSelect}>
-              <LeftCandidate>
-                {list[index] && list[index].candidate}
-              </LeftCandidate>
+              <Candidate>{list[index] && list[index].candidate}</Candidate>
             </LeftSelectBox>
             <VsText selectState={selectedStyle}>VS</VsText>
             <RightSelectBox selectState={selectedStyle} onClick={rightSelect}>
-              <RightCandidate>
+              <Candidate>
                 {list[index + 1] && list[index + 1].candidate}
-              </RightCandidate>
+              </Candidate>
             </RightSelectBox>
           </SelectContainer>
           {modal && <Modal winner={winner} resultId={keyword} />}
