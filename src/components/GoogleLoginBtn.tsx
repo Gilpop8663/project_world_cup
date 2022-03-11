@@ -1,9 +1,17 @@
 import axios from 'axios';
 import React from 'react';
 import GoogleLogin from 'react-google-login';
+import styled from 'styled-components';
 
 const clientId =
   '586282779729-89d3k141i3b637fm739kvc5odonnmgm3.apps.googleusercontent.com';
+
+const Container = styled.div`
+  display: flex;
+  @media only screen and (max-width: 768px) {
+    margin-right: 10px;
+  }
+`;
 
 export default function GoogleLoginBtn({ onGoogleLogin, setUserObj }: any) {
   const onSuccess = async (response: any) => {
@@ -28,7 +36,7 @@ export default function GoogleLoginBtn({ onGoogleLogin, setUserObj }: any) {
 
   const ID: any = process.env.REACT_APP_GOOGLE_ID;
   return (
-    <div>
+    <Container>
       <GoogleLogin
         buttonText="로그인"
         clientId={ID}
@@ -36,6 +44,6 @@ export default function GoogleLoginBtn({ onGoogleLogin, setUserObj }: any) {
         onSuccess={onSuccess}
         onFailure={onFailure}
       />
-    </div>
+    </Container>
   );
 }
