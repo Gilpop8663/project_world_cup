@@ -11,15 +11,27 @@
     "@types/react": "^17.0.39",
     "@types/react-dom": "^17.0.11",
     "axios": "^0.26.0",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.0.0",
+    "firebase": "^9.6.7",
+    "i": "^0.3.7",
+    "json-server": "^0.17.0",
+    "npm": "^8.5.3",
+    "passport-google-oauth20": "^2.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-google-login": "^5.2.2",
+    "react-hook-form": "^7.27.1",
+    "react-router-dom": "^6.2.2",
     "react-scripts": "5.0.0",
     "styled-components": "^5.3.3",
     "typescript": "^4.5.5",
+    "uuid": "^8.3.2",
     "web-vitals": "^2.1.4"
   },
   "devDependencies": {
     "@types/styled-components": "^5.1.23",
+    "@types/uuid": "^8.3.4",
     "eslint": "^8.7.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
@@ -27,10 +39,12 @@
     "prettier-eslint": "^13.0.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "node server.ts",
+    "start:dev": "cross-env NODE_PATH=src react-scripts start",
+    "build": "cross-env NODE_PATH=src react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "heroku-postbuild": "cross-env NODE_PATH=src npm run build"
   },
   "eslintConfig": {
     "extends": [

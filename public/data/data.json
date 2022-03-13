@@ -1,9 +1,12 @@
 {
   "title": "자바스크립트 월드컵 (16강)",
+  "count": 0,
+
   "list": [
     {
       "id": 1,
-      "candidate": "1번"
+      "candidate": "1번",
+      "victory": 4
     },
     {
       "id": 2,
