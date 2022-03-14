@@ -168,12 +168,12 @@ export default function CommentForm({ userObj }: IUserObjProps) {
         <CommentTitle>댓글</CommentTitle>
         <InputWrapper>
           <Input
-            disabled={Object.keys(userObj).length !== 3}
+            disabled={userObj === null}
             minLength={1}
             maxLength={100}
             onChange={onChange}
             placeholder={
-              Object.keys(userObj).length !== 3
+              userObj === null
                 ? '로그인 후에 입력 가능합니다'
                 : '댓글을 입력해주세요'
             }

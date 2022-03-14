@@ -35,6 +35,7 @@ const Container = styled.li`
 const CommentText = styled.span`
   font-size: 1.2em;
   white-space: pre-wrap;
+  line-height: 23px;
   margin-bottom: 20px;
 `;
 
@@ -95,6 +96,7 @@ const UserInfo = styled.div`
 const MessageWrapper = styled.div`
   display: flex;
   flex-direction: column;
+  line-height: 23px;
   margin-left: 10px;
 `;
 

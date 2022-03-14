@@ -275,7 +275,7 @@ interface IMakeProps {
 export default function MakeWorldCup({ userObj }: IMakeProps) {
   const navigate = useNavigate();
   useEffect(() => {
-    if (Boolean(!userObj.userId)) {
+    if (userObj === null) {
       navigate('/');
     }
   }, []);
