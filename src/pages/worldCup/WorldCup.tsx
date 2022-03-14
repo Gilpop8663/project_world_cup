@@ -214,13 +214,11 @@ function WorldCup() {
   useEffect(() => {
     if (winner?.length === 1) {
       toggleModal();
-      axios
-        .put(`${BASE_URL}/world/${keyword}`, {
-          ...data,
-          list: data.list,
-          count: (data.count += 1),
-        })
-        .then((res) => console.log('성공'));
+      axios.put(`${BASE_URL}/world/${keyword}`, {
+        ...data,
+        list: data.list,
+        count: (data.count += 1),
+      });
     }
   }, [winner]);
 

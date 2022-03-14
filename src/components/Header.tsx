@@ -148,7 +148,7 @@ const LogoutContainer = styled.div`
   }
 `;
 
-const clientId: any = process.env.REACT_APP_GOOGLE_ID;
+const clientId: string = process.env.REACT_APP_GOOGLE_ID;
 
 const WOLRD_LOGIN = '로그인 하고\n월드컵을 만들어주세요';
 

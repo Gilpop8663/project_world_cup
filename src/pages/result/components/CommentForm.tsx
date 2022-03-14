@@ -188,7 +188,7 @@ export default function CommentForm({ userObj }: IUserObjProps) {
       </Form>
 
       <MessageContainer isData={comment.length > 0}>
-        {comment?.map((item: any) => (
+        {comment?.map((item: IWorldCupCommentProps) => (
           <Comment
             key={item.id}
             id={item.id}
