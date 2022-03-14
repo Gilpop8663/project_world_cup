@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { BASE_URL } from 'constants/contants';
 import Ranking from 'pages/ranking/Ranking';
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import styled from 'styled-components';
 import { IUserObjProps } from 'utils/interface';
@@ -21,8 +21,9 @@ const Container = styled.div`
 const Wrapper = styled.div`
   width: 100%;
   height: 1441px;
+  max-height: 1441px;
   @media screen and (max-width: 768px) {
-    height: 1000px;
+    max-height: 1000px;
   }
 `;
 

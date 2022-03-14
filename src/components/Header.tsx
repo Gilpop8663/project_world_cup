@@ -119,7 +119,7 @@ const MobileMenu = styled.div`
   flex-direction: column;
   align-items: flex-start;
   position: fixed;
-  width: 280px;
+  width: 60%;
   height: 100%;
   left: 0;
   top: 0;
