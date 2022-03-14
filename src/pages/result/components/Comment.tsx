@@ -48,7 +48,7 @@ const ButtonWrapper = styled.div``;
 const CommentButton = styled.button`
   width: 60px;
   height: 30px;
-  font-size: 0.8em;
+  font-size: 12px;
   border-radius: 15px;
   border: ${({ theme }) => theme.baseBorderStyle};
   font-weight: bold;
@@ -63,7 +63,9 @@ const CommentButton = styled.button`
 
 const DeleteButton = styled(CommentButton)`
   color: red;
+  font-size: 12px;
   margin-right: 10px;
+  font-family: 'Nanum Gothic', sans-serif;
 `;
 
 const UserInfoWrapper = styled.div`

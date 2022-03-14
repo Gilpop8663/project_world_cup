@@ -4,6 +4,7 @@ import styled from 'styled-components';
 
 const Container = styled.div`
   display: flex;
+  font-family: 'Nanum Gothic', sans-serif;
   @media only screen and (max-width: 768px) {
     margin-right: 10px;
   }
