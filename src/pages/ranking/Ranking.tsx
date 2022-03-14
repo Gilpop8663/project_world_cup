@@ -28,14 +28,6 @@ const Description = styled.p`
     display: none;
   }
 `;
-
-const RankingNumberText = styled.span`
-  display: none;
-  @media screen and (max-width: 768px) {
-    display: flex;
-  }
-`;
-
 const TitleWrapper = styled.div`
   display: flex;
   width: 100%;
@@ -145,6 +137,7 @@ const NameTitleList = styled.div`
   margin: 3px;
   padding: 10px;
   border-radius: 6px;
+  word-break: break-all;
   @media screen and (max-width: 768px) {
     width: 30%;
   }
