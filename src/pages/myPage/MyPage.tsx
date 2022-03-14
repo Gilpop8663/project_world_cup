@@ -52,24 +52,24 @@ export default function MyPage({ userObj }: IUserObjProps) {
   const [loading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
-    if (Boolean(!userObj.userId)) {
+    if (userObj === null) {
       navigate('/');
     }
   }, []);
 
   useEffect(() => {
-    axios.get(`${BASE_URL}/world?creatorId=${userObj.userId}`).then((res) => {
+    axios.get(`${BASE_URL}/world?creatorId=${userObj?.userId}`).then((res) => {
       if (res.data.length === 0) {
         setLoading(false);
       }
-      const isOwner = res.data[0].creatorId === userObj.userId;
+      const isOwner = res.data[0]?.creatorId === userObj?.userId;
       if (!isOwner || !myData[0]) {
         setMyData([]);
       }
       setMyData(res.data);
       setLoading(false);
     });
-  }, [refetch, userObj.userId]);
+  }, [refetch, userObj?.userId]);
 
   return (
     <Container>

@@ -141,6 +141,7 @@ const VsText = styled.p<{ selectState: string }>`
   font-size: 100px;
   color: white;
   font-weight: 800;
+  font-family: sans-serif;
   -webkit-text-stroke: 4px #7982c9;
   opacity: ${({ selectState }) => (selectState !== DEFAULT_SELECT ? '0' : '1')};
   @media screen and (max-width: 1024px) {
@@ -212,6 +213,7 @@ function WorldCup() {
       setRoundInfo('🏆 결승');
     }
   }, [final]); // 결승 선택 완료 시 리스트 세팅
+
   useEffect(() => {
     if (winner.length === 1) {
       toggleModal();
@@ -296,6 +298,10 @@ function WorldCup() {
       setSelectedStyle(DEFAULT_SELECT);
     }, 2000);
   };
+
+  console.log('8강 대진표 리스트', quarterFinals);
+  console.log('4강 대진표 리스트', semiFinals);
+  console.log('결승 대진표 리스트', final);
 
   return (
     <div>

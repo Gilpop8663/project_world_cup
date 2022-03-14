@@ -1,13 +1,10 @@
-import axios from 'axios';
 import React from 'react';
 import GoogleLogin from 'react-google-login';
 import styled from 'styled-components';
 
-const clientId =
-  '586282779729-89d3k141i3b637fm739kvc5odonnmgm3.apps.googleusercontent.com';
-
 const Container = styled.div`
   display: flex;
+  font-family: 'Nanum Gothic', sans-serif;
   @media only screen and (max-width: 768px) {
     margin-right: 10px;
   }
@@ -25,16 +22,15 @@ export default function GoogleLoginBtn({ onGoogleLogin, setUserObj }: any) {
       email: email,
       userName: name,
     };
-    console.log(googleId);
     await onGoogleLogin();
     setUserObj(userInfoObj);
   };
 
   const onFailure = (error: string) => {
-    console.log(error);
+    console.error(error);
   };
 
-  const ID: any = process.env.REACT_APP_GOOGLE_ID;
+  const ID: string = process.env.REACT_APP_GOOGLE_ID;
   return (
     <Container>
       <GoogleLogin

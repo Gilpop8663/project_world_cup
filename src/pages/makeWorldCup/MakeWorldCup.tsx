@@ -16,8 +16,8 @@ import { onEnterPress } from 'utils/utilFn';
 
 const Container = styled.div`
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 `;
 
 const Form = styled.form`
@@ -48,7 +48,7 @@ const Title = styled.input.attrs({ type: 'text' })`
   }
   @media only screen and (max-width: 768px) {
     font-size: 24px;
-    width: 250px;
+    width: 200px;
     height: 50px;
     border-radius: 10px;
     margin-right: 10px;
@@ -92,6 +92,19 @@ const ItemInputWrapper = styled.div`
   }
   @media only screen and (max-width: 768px) {
     margin-right: 0px;
+    left: -30px;
+    &:first-child {
+      order: 0;
+    }
+    &:nth-child(2) {
+      order: 1;
+    }
+    &:nth-child(3) {
+      order: 2;
+    }
+    &:last-child {
+      order: 3;
+    }
   }
 `;
 
@@ -99,12 +112,15 @@ const ItemInput = styled.input.attrs({ type: 'text' })`
   height: 30px;
   border-radius: 7px;
   border: 1.5px solid #7982c9;
+  &::placeholder {
+    font-family: 'Nanum Gothic', sans-serif;
+  }
   &:focus {
     outline: none;
     border: 1.5px solid #424874;
   }
   @media only screen and (max-width: 1024px) {
-    width: 250px;
+    width: 200px;
     height: 50px;
     border-radius: 10px;
     margin-right: 30px;
@@ -115,7 +131,7 @@ const ItemInput = styled.input.attrs({ type: 'text' })`
     font-size: 24px;
   }
   @media only screen and (max-width: 768px) {
-    width: 250px;
+    width: 200px;
     height: 50px;
     border-radius: 10px;
     margin-right: 10px;
@@ -135,8 +151,6 @@ const ItemWrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   position: relative;
-  left: -30px;
-  right: 0px;
   margin-bottom: 10px;
 `;
 
@@ -146,7 +160,7 @@ const ErrorMessage = styled.div`
 
 const TitleWrapper = styled.div`
   display: flex;
-  flex-direction: column;
+  justify-content: center;
 `;
 
 const ButtonWrapper = styled.div`
@@ -154,6 +168,7 @@ const ButtonWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   @media only screen and (max-width: 1024px) {
     padding-bottom: 100px;
   }
@@ -163,6 +178,7 @@ const ButtonWrapper = styled.div`
 `;
 
 const CancelButton = styled.button`
+  font-family: 'Nanum Gothic', sans-serif;
   padding: 7px 14px;
   border-radius: 5px;
   color: #404675;
@@ -179,6 +195,7 @@ const CancelButton = styled.button`
 `;
 
 const SubmitInput = styled.input`
+  font-family: 'Nanum Gothic', sans-serif;
   padding: 7px 14px;
   border-radius: 5px;
   color: #404675;
@@ -197,23 +214,35 @@ const SubmitInput = styled.input`
 const TitleContainer = styled.div`
   display: flex;
   position: relative;
+  justify-content: center;
   align-items: center;
   margin-bottom: 10px;
 `;
 
 const WorldCupText = styled.span`
   margin-left: 10px;
-  font-size: 16px;
-  width: 100px;
+  width: 70px;
+  font-size: 20px;
   left: 180px;
+  color: #424874;
+  font-weight: bold;
   position: absolute;
   @media only screen and (max-width: 1024px) {
+<<<<<<< HEAD
     font-size: 15px;
     left: 320px;
   }
   @media only screen and (max-width: 768px) {
     font-size: 15px;
     left: 260px;
+=======
+    font-size: 16px;
+    left: 320px;
+  }
+  @media only screen and (max-width: 768px) {
+    font-size: 18px;
+    left: 210px;
+>>>>>>> 38557032493cbf55544e84615455074a255cd6a0
   }
 `;
 
@@ -221,7 +250,6 @@ const ItemInfo = styled.span`
   font-size: 16px;
   color: white;
   font-weight: bold;
-  margin-right: 3px;
   @media only screen and (max-width: 1024px) {
     font-size: 24px;
   }
@@ -232,9 +260,9 @@ const ItemInfo = styled.span`
 
 const ItemNumber = styled.span`
   color: white;
-  font-size: 8px;
+  font-size: 14px;
   font-weight: bold;
-  margin-right: 5px;
+  margin-right: 2px;
   @media only screen and (max-width: 1024px) {
     font-size: 15px;
   }
@@ -246,7 +274,7 @@ const ItemNumber = styled.span`
 const ItemNumberWrapper = styled.div`
   display: flex;
   align-items: flex-end;
-
+  margin-right: 7px;
   @media only screen and (max-width: 1024px) {
     margin-right: 10px;
   }
@@ -259,11 +287,30 @@ interface IMakeProps {
   userObj: IUserObjProps | any;
 }
 
+interface IRegister {
+  title: string;
+  worldCupItem1: string;
+  worldCupItem2: string;
+  worldCupItem3: string;
+  worldCupItem4: string;
+  worldCupItem5: string;
+  worldCupItem6: string;
+  worldCupItem7: string;
+  worldCupItem8: string;
+  worldCupItem9: string;
+  worldCupItem10: string;
+  worldCupItem11: string;
+  worldCupItem12: string;
+  worldCupItem13: string;
+  worldCupItem14: string;
+  worldCupItem15: string;
+  worldCupItem16: string;
+}
+
 export default function MakeWorldCup({ userObj }: IMakeProps) {
   const navigate = useNavigate();
-  console.log(Boolean(userObj.userId));
   useEffect(() => {
-    if (Boolean(!userObj.userId)) {
+    if (userObj === null) {
       navigate('/');
     }
   }, []);
@@ -271,9 +318,8 @@ export default function MakeWorldCup({ userObj }: IMakeProps) {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm();
-  const onSubmit = async (data: any) => {
-    console.log(data);
+  } = useForm<IRegister>();
+  const onSubmit = handleSubmit(async (data) => {
     let listArr = [
       {
         id: uuidv4(),
@@ -400,11 +446,9 @@ export default function MakeWorldCup({ userObj }: IMakeProps) {
       })
       .then((res) => {
         navigate('/');
-        console.log('성공');
-        navigate('/');
       })
-      .catch((error) => console.log(error));
-  };
+      .catch((error) => console.error(error));
+  });
 
   const onCancelClick = () => {
     navigate('/');
@@ -413,9 +457,9 @@ export default function MakeWorldCup({ userObj }: IMakeProps) {
   return (
     <Container>
       <Form
-        onSubmit={handleSubmit(onSubmit)}
+        onSubmit={onSubmit}
         onKeyPress={(e: React.KeyboardEvent<HTMLFormElement>) =>
-          onEnterPress(e, handleSubmit(onSubmit))
+          onEnterPress(e, onSubmit)
         }
       >
         <TitleWrapper>
@@ -439,8 +483,8 @@ export default function MakeWorldCup({ userObj }: IMakeProps) {
             <InputBox>
               <ItemWrapper>
                 <ItemNumberWrapper>
-                  <ItemInfo>1</ItemInfo>
                   <ItemNumber>NO</ItemNumber>
+                  <ItemInfo>.1</ItemInfo>
                 </ItemNumberWrapper>
                 <ItemInput
                   {...register(`${WORLD_CUP_ITEM}1`, {
@@ -463,8 +507,8 @@ export default function MakeWorldCup({ userObj }: IMakeProps) {
             <InputBox>
               <ItemWrapper>
                 <ItemNumberWrapper>
-                  <ItemInfo>2</ItemInfo>
                   <ItemNumber>NO</ItemNumber>
+                  <ItemInfo>.2</ItemInfo>
                 </ItemNumberWrapper>
                 <ItemInput
                   {...register(`${WORLD_CUP_ITEM}2`, {
@@ -487,8 +531,8 @@ export default function MakeWorldCup({ userObj }: IMakeProps) {
             <InputBox>
               <ItemWrapper>
                 <ItemNumberWrapper>
-                  <ItemInfo>3</ItemInfo>
                   <ItemNumber>NO</ItemNumber>
+                  <ItemInfo>.3</ItemInfo>
                 </ItemNumberWrapper>
                 <ItemInput
                   {...register(`${WORLD_CUP_ITEM}3`, {
@@ -511,8 +555,8 @@ export default function MakeWorldCup({ userObj }: IMakeProps) {
             <InputBox>
               <ItemWrapper>
                 <ItemNumberWrapper>
-                  <ItemInfo>4</ItemInfo>
                   <ItemNumber>NO</ItemNumber>
+                  <ItemInfo>.4</ItemInfo>
                 </ItemNumberWrapper>
                 <ItemInput
                   {...register(`${WORLD_CUP_ITEM}4`, {
@@ -537,8 +581,8 @@ export default function MakeWorldCup({ userObj }: IMakeProps) {
             <InputBox>
               <ItemWrapper>
                 <ItemNumberWrapper>
-                  <ItemInfo>5</ItemInfo>
                   <ItemNumber>NO</ItemNumber>
+                  <ItemInfo>.5</ItemInfo>
                 </ItemNumberWrapper>
                 <ItemInput
                   {...register(`${WORLD_CUP_ITEM}5`, {
@@ -561,8 +605,8 @@ export default function MakeWorldCup({ userObj }: IMakeProps) {
             <InputBox>
               <ItemWrapper>
                 <ItemNumberWrapper>
-                  <ItemInfo>6</ItemInfo>
                   <ItemNumber>NO</ItemNumber>
+                  <ItemInfo>.6</ItemInfo>
                 </ItemNumberWrapper>
                 <ItemInput
                   {...register(`${WORLD_CUP_ITEM}6`, {
@@ -585,8 +629,8 @@ export default function MakeWorldCup({ userObj }: IMakeProps) {
             <InputBox>
               <ItemWrapper>
                 <ItemNumberWrapper>
-                  <ItemInfo>7</ItemInfo>
                   <ItemNumber>NO</ItemNumber>
+                  <ItemInfo>.7</ItemInfo>
                 </ItemNumberWrapper>
                 <ItemInput
                   {...register(`${WORLD_CUP_ITEM}7`, {
@@ -609,8 +653,8 @@ export default function MakeWorldCup({ userObj }: IMakeProps) {
             <InputBox>
               <ItemWrapper>
                 <ItemNumberWrapper>
-                  <ItemInfo>8</ItemInfo>
                   <ItemNumber>NO</ItemNumber>
+                  <ItemInfo>.8</ItemInfo>
                 </ItemNumberWrapper>
                 <ItemInput
                   {...register(`${WORLD_CUP_ITEM}8`, {
@@ -635,8 +679,8 @@ export default function MakeWorldCup({ userObj }: IMakeProps) {
             <InputBox>
               <ItemWrapper>
                 <ItemNumberWrapper>
-                  <ItemInfo>9</ItemInfo>
                   <ItemNumber>NO</ItemNumber>
+                  <ItemInfo>.9</ItemInfo>
                 </ItemNumberWrapper>
                 <ItemInput
                   {...register(`${WORLD_CUP_ITEM}9`, {
@@ -659,8 +703,8 @@ export default function MakeWorldCup({ userObj }: IMakeProps) {
             <InputBox>
               <ItemWrapper>
                 <ItemNumberWrapper>
-                  <ItemInfo>10</ItemInfo>
                   <ItemNumber>NO</ItemNumber>
+                  <ItemInfo>.10</ItemInfo>
                 </ItemNumberWrapper>
                 <ItemInput
                   {...register(`${WORLD_CUP_ITEM}10`, {
@@ -683,8 +727,8 @@ export default function MakeWorldCup({ userObj }: IMakeProps) {
             <InputBox>
               <ItemWrapper>
                 <ItemNumberWrapper>
-                  <ItemInfo>11</ItemInfo>
                   <ItemNumber>NO</ItemNumber>
+                  <ItemInfo>.11</ItemInfo>
                 </ItemNumberWrapper>
                 <ItemInput
                   {...register(`${WORLD_CUP_ITEM}11`, {
@@ -707,8 +751,8 @@ export default function MakeWorldCup({ userObj }: IMakeProps) {
             <InputBox>
               <ItemWrapper>
                 <ItemNumberWrapper>
-                  <ItemInfo>12</ItemInfo>
                   <ItemNumber>NO</ItemNumber>
+                  <ItemInfo>.12</ItemInfo>
                 </ItemNumberWrapper>
                 <ItemInput
                   {...register(`${WORLD_CUP_ITEM}12`, {
@@ -733,8 +777,8 @@ export default function MakeWorldCup({ userObj }: IMakeProps) {
             <InputBox>
               <ItemWrapper>
                 <ItemNumberWrapper>
-                  <ItemInfo>13</ItemInfo>
                   <ItemNumber>NO</ItemNumber>
+                  <ItemInfo>.13</ItemInfo>
                 </ItemNumberWrapper>
                 <ItemInput
                   {...register(`${WORLD_CUP_ITEM}13`, {
@@ -757,8 +801,8 @@ export default function MakeWorldCup({ userObj }: IMakeProps) {
             <InputBox>
               <ItemWrapper>
                 <ItemNumberWrapper>
-                  <ItemInfo>14</ItemInfo>
                   <ItemNumber>NO</ItemNumber>
+                  <ItemInfo>.14</ItemInfo>
                 </ItemNumberWrapper>
                 <ItemInput
                   {...register(`${WORLD_CUP_ITEM}14`, {
@@ -781,8 +825,8 @@ export default function MakeWorldCup({ userObj }: IMakeProps) {
             <InputBox>
               <ItemWrapper>
                 <ItemNumberWrapper>
-                  <ItemInfo>15</ItemInfo>
                   <ItemNumber>NO</ItemNumber>
+                  <ItemInfo>.15</ItemInfo>
                 </ItemNumberWrapper>
                 <ItemInput
                   {...register(`${WORLD_CUP_ITEM}15`, {
@@ -805,8 +849,8 @@ export default function MakeWorldCup({ userObj }: IMakeProps) {
             <InputBox>
               <ItemWrapper>
                 <ItemNumberWrapper>
-                  <ItemInfo>16</ItemInfo>
                   <ItemNumber>NO</ItemNumber>
+                  <ItemInfo>.16</ItemInfo>
                 </ItemNumberWrapper>
 
                 <ItemInput

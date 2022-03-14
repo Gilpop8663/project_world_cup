@@ -49,9 +49,7 @@ export default function Home() {
     });
   }, []);
 
-  console.log(loading);
-
-  const sortList = (sortType: any) => {
+  const sortList = (sortType: string) => {
     if (sortType === 'sortCount') {
       setListArr(
         listArr.sort(
@@ -62,12 +60,19 @@ export default function Home() {
     }
     if (sortType === 'sortName') {
       setListArr(
-        listArr.sort((a: any, b: any) => (b.title > a.title ? -1 : 1))
+        listArr.sort((a: IWorldCupProps, b: IWorldCupProps) =>
+          b.title > a.title ? -1 : 1
+        )
       );
       setIsSort(!isSort);
     }
     if (sortType === 'sortDate') {
-      setListArr(listArr.sort((a: any, b: any) => b.createdAt - a.createdAt));
+      setListArr(
+        listArr.sort(
+          (a: IWorldCupProps, b: IWorldCupProps) =>
+            Number(b.createdAt) - Number(a.createdAt)
+        )
+      );
       setIsSort(!isSort);
     }
   };

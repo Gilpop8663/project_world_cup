@@ -3,7 +3,7 @@ import { BASE_URL } from 'constants/contants';
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
-import { IUserObjProps, IWorldCupProps } from 'utils/interface';
+import { IUserObj, IWorldCupProps } from 'utils/interface';
 
 const Container = styled.div`
   display: grid;
@@ -26,7 +26,7 @@ const WorldCupWrapper = styled.div`
   align-items: center;
 `;
 
-const TitleBox: any = styled.div`
+const TitleBox = styled.div`
   background-color: white;
   border-radius: 10px;
   width: 100%;
@@ -78,7 +78,7 @@ const LinkSelectButton = styled.div`
 
 interface IWorldCupList {
   data: IWorldCupProps[];
-  userObj?: IUserObjProps | any;
+  userObj?: IUserObj;
   setData?: React.Dispatch<React.SetStateAction<IWorldCupProps[]>>;
   setRefetch?: React.Dispatch<React.SetStateAction<boolean>>;
 }
@@ -104,7 +104,6 @@ export default function WorldCupList({
     if (!setData) return;
     if (!setRefetch) return;
     const ok = window.confirm('정말 삭제하시겠습니까?');
-    console.log(ok);
     if (ok) {
       if (data.length === 1) {
         setData([]);
@@ -112,13 +111,13 @@ export default function WorldCupList({
       axios
         .delete(`${BASE_URL}/world/${worldId}`)
         .then(() => setRefetch((prev) => !prev))
-        .catch((error) => console.log('삭제 실패', error));
+        .catch((error) => console.error('삭제 실패', error));
     }
   };
 
   return (
     <Container>
-      {data?.map((item: any, idx: any) => (
+      {data?.map((item: IWorldCupProps, idx: number) => (
         <WorldCupWrapper key={idx}>
           <TitleBox
             onClick={() => {
@@ -138,7 +137,7 @@ export default function WorldCupList({
             <LinkSelectButton onClick={() => goToResult(item.id)}>
               랭킹보기
             </LinkSelectButton>
-            {isDelete && item.creatorId === userObj?.userId && (
+            {isDelete && item.creatorId === String(userObj?.userId) && (
               <LinkSelectButton onClick={() => onDeleteClick(item.id)}>
                 삭제하기
               </LinkSelectButton>

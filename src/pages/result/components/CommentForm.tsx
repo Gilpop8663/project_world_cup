@@ -5,7 +5,7 @@ import { onEnterPress } from 'utils/utilFn';
 import Comment from './Comment';
 import axios from 'axios';
 import { useLocation } from 'react-router-dom';
-import { BASE_URL, GUEST_ICON, GUEST_NAME } from '../../../constants/contants';
+import { BASE_URL, GUEST_NAME } from '../../../constants/contants';
 import {
   IUserObjProps,
   IWorldCupCommentProps,
@@ -18,6 +18,7 @@ const Container = styled.div<{ isLoading: boolean }>`
   display: ${({ isLoading }) => (isLoading ? 'none' : 'flex')};
   flex-direction: column;
   padding-right: 23px;
+
   @media screen and (max-width: 768px) {
     padding: 23px;
   }
@@ -42,7 +43,8 @@ const Input = styled.textarea`
   resize: none;
   margin-bottom: 10px;
   &::placeholder {
-    font-size: 1.2em;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 1em;
     border: none;
     width: 100%;
     background-color: white;
@@ -88,7 +90,8 @@ const SubmitInput = styled.input<{ isMessage: boolean }>`
   background: none;
   color: white;
   font-weight: 600;
-  font-size: 0.8em;
+  font-size: 12px;
+  font-family: 'Nanum Gothic', sans-serif;
   cursor: ${({ isMessage }) => (isMessage ? 'pointer' : 'click')};
   background-color: ${({ isMessage }) => (isMessage ? '#8A94E1' : '#A6B1E1')};
 `;
@@ -120,8 +123,8 @@ const MessageContainer = styled.ul<{ isData: boolean }>`
 
 export default function CommentForm({ userObj }: IUserObjProps) {
   const [message, setMessage] = useState('');
-  const [data, setData] = useState<any>();
-  const [comment, setComment] = useState<any>([]);
+  const [data, setData] = useState<IWorldCupProps>();
+  const [comment, setComment] = useState<IWorldCupCommentProps[]>([]);
   const [refetch, setRefetch] = useState(false);
   const [loading, setLoading] = useState<boolean>(true);
   const location = useLocation();
@@ -153,7 +156,7 @@ export default function CommentForm({ userObj }: IUserObjProps) {
         ],
       })
       .then((res) => setRefetch((prev) => !prev))
-      .catch((error) => console.log(error));
+      .catch((error) => console.error(error));
     setMessage('');
   };
   const onChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
@@ -168,12 +171,12 @@ export default function CommentForm({ userObj }: IUserObjProps) {
         <CommentTitle>댓글</CommentTitle>
         <InputWrapper>
           <Input
-            disabled={Object.keys(userObj).length !== 3}
+            disabled={userObj === null}
             minLength={1}
             maxLength={100}
             onChange={onChange}
             placeholder={
-              Object.keys(userObj).length !== 3
+              userObj === null
                 ? '로그인 후에 입력 가능합니다'
                 : '댓글을 입력해주세요'
             }
@@ -188,7 +191,7 @@ export default function CommentForm({ userObj }: IUserObjProps) {
       </Form>
 
       <MessageContainer isData={comment.length > 0}>
-        {comment?.map((item: any) => (
+        {comment?.map((item: IWorldCupCommentProps) => (
           <Comment
             key={item.id}
             id={item.id}
