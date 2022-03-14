@@ -9,7 +9,7 @@ const Container = styled.div`
   padding: 20px;
 `;
 
-const TitleText = styled.p`
+const TitleText = styled.span`
   font-size: 17px;
   font-weight: 700;
   @media screen and (max-width: 1024px) {
