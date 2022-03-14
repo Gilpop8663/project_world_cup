@@ -112,6 +112,9 @@ const ItemInput = styled.input.attrs({ type: 'text' })`
   height: 30px;
   border-radius: 7px;
   border: 1.5px solid #7982c9;
+  &::placeholder {
+    font-family: 'Nanum Gothic', sans-serif;
+  }
   &:focus {
     outline: none;
     border: 1.5px solid #424874;
@@ -165,6 +168,7 @@ const ButtonWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   @media only screen and (max-width: 1024px) {
     padding-bottom: 100px;
   }
@@ -174,6 +178,7 @@ const ButtonWrapper = styled.div`
 `;
 
 const CancelButton = styled.button`
+  font-family: 'Nanum Gothic', sans-serif;
   padding: 7px 14px;
   border-radius: 5px;
   color: #404675;
@@ -190,6 +195,7 @@ const CancelButton = styled.button`
 `;
 
 const SubmitInput = styled.input`
+  font-family: 'Nanum Gothic', sans-serif;
   padding: 7px 14px;
   border-radius: 5px;
   color: #404675;
