@@ -18,6 +18,7 @@ const Container = styled.div<{ isLoading: boolean }>`
   display: ${({ isLoading }) => (isLoading ? 'none' : 'flex')};
   flex-direction: column;
   padding-right: 23px;
+
   @media screen and (max-width: 768px) {
     padding: 23px;
   }
@@ -42,7 +43,8 @@ const Input = styled.textarea`
   resize: none;
   margin-bottom: 10px;
   &::placeholder {
-    font-size: 1.2em;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 1em;
     border: none;
     width: 100%;
     background-color: white;
@@ -88,7 +90,8 @@ const SubmitInput = styled.input<{ isMessage: boolean }>`
   background: none;
   color: white;
   font-weight: 600;
-  font-size: 0.8em;
+  font-size: 12px;
+  font-family: 'Nanum Gothic', sans-serif;
   cursor: ${({ isMessage }) => (isMessage ? 'pointer' : 'click')};
   background-color: ${({ isMessage }) => (isMessage ? '#8A94E1' : '#A6B1E1')};
 `;

@@ -1,10 +1,10 @@
-import axios from 'axios';
 import React from 'react';
 import GoogleLogin from 'react-google-login';
 import styled from 'styled-components';
 
 const Container = styled.div`
   display: flex;
+  font-family: 'Nanum Gothic', sans-serif;
   @media only screen and (max-width: 768px) {
     margin-right: 10px;
   }
@@ -12,7 +12,6 @@ const Container = styled.div`
 
 export default function GoogleLoginBtn({ onGoogleLogin, setUserObj }: any) {
   const onSuccess = async (response: any) => {
-    console.log(response);
     const {
       googleId,
       profileObj: { email, name },
