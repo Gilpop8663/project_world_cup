@@ -26,6 +26,20 @@ export default function Router({ userObj, setUserObj }: IRouterProps) {
           href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap"
           rel="stylesheet"
         />
+        <meta
+          property="og:url"
+          content="https://project-worldcup.netlify.app/"
+        />
+        <meta property="og:title" content="월드컵 프로젝트!!" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:image"
+          content="https://user-images.githubusercontent.com/80146176/158144798-1619f8e7-d408-4c6e-8afc-f1372a38a074.png"
+        />
+        <meta
+          property="og:description"
+          content="다양한 월드컵에 참여해주세요"
+        />
       </Helmet>
       <Header setUserObj={setUserObj} userObj={userObj} />
       <Routes>
