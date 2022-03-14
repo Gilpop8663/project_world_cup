@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { IWorldCupItemProps } from 'utils/interface';
 
 const ModalBox = styled.div`
   position: fixed;
@@ -79,7 +80,12 @@ const GoRankingText = styled.div`
   }
 `;
 
-export default function Modal({ winner, resultId }: any) {
+interface IModalProps {
+  winner: IWorldCupItemProps[];
+  resultId: string;
+}
+
+export default function Modal({ winner, resultId }: IModalProps) {
   const navigate = useNavigate();
 
   const goToResult = () => {
