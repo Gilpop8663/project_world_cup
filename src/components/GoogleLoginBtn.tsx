@@ -35,6 +35,7 @@ export default function GoogleLoginBtn({ onGoogleLogin, setUserObj }: any) {
     <Container>
       <GoogleLogin
         buttonText="로그인"
+        isSignedIn={true}
         clientId={ID}
         responseType="id_token"
         onSuccess={onSuccess}
