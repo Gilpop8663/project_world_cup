@@ -6,6 +6,7 @@ import Ranking from 'pages/ranking/Ranking';
 import Result from 'pages/result/Result';
 import WorldCup from 'pages/worldCup/WorldCup';
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { IUserObj } from 'utils/interface';
 
@@ -17,6 +18,15 @@ interface IRouterProps {
 export default function Router({ userObj, setUserObj }: IRouterProps) {
   return (
     <BrowserRouter>
+      <Helmet>
+        <title>월드컵 프로젝트</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap"
+          rel="stylesheet"
+        />
+      </Helmet>
       <Header setUserObj={setUserObj} userObj={userObj} />
       <Routes>
         <Route
