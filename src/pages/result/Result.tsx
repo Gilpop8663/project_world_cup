@@ -4,7 +4,7 @@ import Ranking from 'pages/ranking/Ranking';
 import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import styled from 'styled-components';
-import { IUserObjProps, IWorldCupProps } from 'utils/interface';
+import { IUserObjProps } from 'utils/interface';
 import CommentForm from './components/CommentForm';
 import Loading from 'components/Loading';
 
