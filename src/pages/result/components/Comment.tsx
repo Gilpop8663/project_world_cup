@@ -2,7 +2,11 @@ import axios from 'axios';
 import { BASE_URL } from 'constants/contants';
 import { useLocation } from 'react-router-dom';
 import styled from 'styled-components';
-import { IWorldCupProps, IUserObj } from 'utils/interface';
+import {
+  IWorldCupProps,
+  IUserObj,
+  IWorldCupCommentProps,
+} from 'utils/interface';
 import { dateFormater } from 'utils/utilFn';
 
 interface ICommentProps {
@@ -35,6 +39,7 @@ const Container = styled.li`
 const CommentText = styled.span`
   font-size: 1.2em;
   white-space: pre-wrap;
+  line-height: 23px;
   margin-bottom: 20px;
 `;
 
@@ -95,6 +100,7 @@ const UserInfo = styled.div`
 const MessageWrapper = styled.div`
   display: flex;
   flex-direction: column;
+  line-height: 23px;
   margin-left: 10px;
 `;
 
@@ -113,7 +119,9 @@ export default function Comment({
   const onDeleteClick = async (id: string) => {
     const ok = window.confirm('정말 삭제하시겠습니까?');
     if (ok) {
-      const findIndex = data.comments.findIndex((item: any) => item.id === id);
+      const findIndex = data.comments.findIndex(
+        (item: IWorldCupCommentProps) => item.id === id
+      );
       const newComments = [
         ...data.comments.slice(0, findIndex),
         ...data.comments.slice(findIndex + 1),
@@ -135,7 +143,7 @@ export default function Comment({
             <UserInfo>{userId}</UserInfo>
             {createdAt && <CreateDate>{dateFormater(createdAt)}</CreateDate>}
           </UserInfoWrapper>
-          {String(userObj.userId) === creatorId && (
+          {String(userObj?.userId) === creatorId && (
             <ButtonWrapper>
               <DeleteButton onClick={() => onDeleteClick(id)}>
                 삭제

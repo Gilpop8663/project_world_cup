@@ -212,15 +212,13 @@ function WorldCup() {
     }
   }, [final]); // 결승 선택 완료 시 리스트 세팅
   useEffect(() => {
-    if (winner.length === 1) {
+    if (winner?.length === 1) {
       toggleModal();
-      axios
-        .put(`${BASE_URL}/world/${keyword}`, {
-          ...data,
-          list: data.list,
-          count: (data.count += 1),
-        })
-        .then((res) => console.log('성공'));
+      axios.put(`${BASE_URL}/world/${keyword}`, {
+        ...data,
+        list: data.list,
+        count: (data.count += 1),
+      });
     }
   }, [winner]);
 
@@ -231,7 +229,11 @@ function WorldCup() {
   ) => {
     setListFunction((prev: IWorldCupItemProps[]) => {
       const winnerList = setList[index + addNum];
-      return [...prev, winnerList];
+      if (prev) {
+        return [...prev, winnerList];
+      } else {
+        return [winnerList];
+      }
     });
     if (addNum === 0) {
       setList[index].roundWin += 1;

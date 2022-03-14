@@ -9,7 +9,7 @@ const Container = styled.div`
   padding: 20px;
 `;
 
-const TitleText: any = styled.p`
+const TitleText = styled.p`
   font-size: 17px;
   font-weight: 700;
   @media screen and (max-width: 1024px) {
@@ -59,7 +59,7 @@ const RankingTitle = styled.div`
   }
 `;
 
-const NameTitle: any = styled.div`
+const NameTitle = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -76,7 +76,7 @@ const NameTitle: any = styled.div`
   }
 `;
 
-const ChampionTitle: any = styled.div`
+const ChampionTitle = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -94,7 +94,7 @@ const ChampionTitle: any = styled.div`
   }
 `;
 
-const WinnerTitle: any = styled.div`
+const WinnerTitle = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -118,7 +118,7 @@ const ListWrapper = styled.div`
   width: 100%;
 `;
 
-const RankingTitleList: any = styled.div`
+const RankingTitleList = styled.div`
   background-color: white;
   width: 8%;
   height: 54px;

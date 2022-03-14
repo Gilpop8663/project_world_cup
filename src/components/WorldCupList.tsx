@@ -26,7 +26,7 @@ const WorldCupWrapper = styled.div`
   align-items: center;
 `;
 
-const TitleBox: any = styled.div`
+const TitleBox = styled.div`
   background-color: white;
   border-radius: 10px;
   width: 100%;
@@ -117,7 +117,7 @@ export default function WorldCupList({
 
   return (
     <Container>
-      {data?.map((item: any, idx: any) => (
+      {data?.map((item: IWorldCupProps, idx: number) => (
         <WorldCupWrapper key={idx}>
           <TitleBox
             onClick={() => {
@@ -137,7 +137,7 @@ export default function WorldCupList({
             <LinkSelectButton onClick={() => goToResult(item.id)}>
               랭킹보기
             </LinkSelectButton>
-            {isDelete && item.creatorId === userObj?.userId && (
+            {isDelete && item.creatorId === String(userObj?.userId) && (
               <LinkSelectButton onClick={() => onDeleteClick(item.id)}>
                 삭제하기
               </LinkSelectButton>

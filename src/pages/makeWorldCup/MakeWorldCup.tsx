@@ -245,9 +245,9 @@ const ItemInfo = styled.span`
 
 const ItemNumber = styled.span`
   color: white;
-  margin-right: 2px;
   font-size: 14px;
   font-weight: bold;
+  margin-right: 2px;
   @media only screen and (max-width: 1024px) {
     font-size: 15px;
   }
@@ -259,7 +259,7 @@ const ItemNumber = styled.span`
 const ItemNumberWrapper = styled.div`
   display: flex;
   align-items: flex-end;
-
+  margin-right: 7px;
   @media only screen and (max-width: 1024px) {
     margin-right: 10px;
   }
@@ -272,10 +272,30 @@ interface IMakeProps {
   userObj: IUserObjProps | any;
 }
 
+interface IRegister {
+  title: string;
+  worldCupItem1: string;
+  worldCupItem2: string;
+  worldCupItem3: string;
+  worldCupItem4: string;
+  worldCupItem5: string;
+  worldCupItem6: string;
+  worldCupItem7: string;
+  worldCupItem8: string;
+  worldCupItem9: string;
+  worldCupItem10: string;
+  worldCupItem11: string;
+  worldCupItem12: string;
+  worldCupItem13: string;
+  worldCupItem14: string;
+  worldCupItem15: string;
+  worldCupItem16: string;
+}
+
 export default function MakeWorldCup({ userObj }: IMakeProps) {
   const navigate = useNavigate();
   useEffect(() => {
-    if (Boolean(!userObj.userId)) {
+    if (userObj === null) {
       navigate('/');
     }
   }, []);
@@ -283,8 +303,8 @@ export default function MakeWorldCup({ userObj }: IMakeProps) {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm();
-  const onSubmit = async (data: any) => {
+  } = useForm<IRegister>();
+  const onSubmit = handleSubmit(async (data) => {
     let listArr = [
       {
         id: uuidv4(),
@@ -413,7 +433,7 @@ export default function MakeWorldCup({ userObj }: IMakeProps) {
         navigate('/');
       })
       .catch((error) => console.error(error));
-  };
+  });
 
   const onCancelClick = () => {
     navigate('/');
@@ -422,9 +442,9 @@ export default function MakeWorldCup({ userObj }: IMakeProps) {
   return (
     <Container>
       <Form
-        onSubmit={handleSubmit(onSubmit)}
+        onSubmit={onSubmit}
         onKeyPress={(e: React.KeyboardEvent<HTMLFormElement>) =>
-          onEnterPress(e, handleSubmit(onSubmit))
+          onEnterPress(e, onSubmit)
         }
       >
         <TitleWrapper>
