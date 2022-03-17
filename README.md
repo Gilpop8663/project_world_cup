@@ -29,7 +29,7 @@
 - Json-Server의 API를 **Axios**를 이용하여 REST-API 방식으로 통신을 했습니다.
 
 #### 월드컵 프로젝트에 필요한 API 설계
-> ```javascript
+```javascript
 [
   {
     "title": 월드컵 이름,
@@ -63,6 +63,7 @@
     ],
   },
 ]
+```
   
 ---
 
@@ -98,7 +99,7 @@
 
 #### 월드컵 입장 시 리스트 배열 순서 랜덤화
 - 좀 더 정확한 통계를 위하여 배열의 순서를 섞어주는 로직 구현.
-> ```javascript
+```javascript
 const shuffleArray = (array: IWorldCupItemProps[]) => {
     for (let i = 0; i < array.length; i++) {
       let j = Math.floor(Math.random() * (i + 1));
@@ -106,6 +107,7 @@ const shuffleArray = (array: IWorldCupItemProps[]) => {
     }
     return array;
   };
+```
   
 #### 진행된 월드컵의 데이터를 기존의 데이터에 추가
 - 사용자가 중간에 월드컵을 진행하다가 페이지에서 이탈 시 에는 데이터에 영향이 가지 않도록 useEffect의 의존성 배열에 우승자 state를 할당하여 우승자의 state값이 변경 되었을 때 변경된 데이터를 Axios의 put 메서드를 사용하여 기존의 데이터에 변경할 수 있도록 하였습니다.
@@ -138,7 +140,7 @@ const shuffleArray = (array: IWorldCupItemProps[]) => {
 ![](https://images.velog.io/images/yshh0514/post/b82cd7a2-4ac7-4711-a762-1a78801410b4/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202022-03-17%20%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB%201.03.58.png)
 #### 월드컵이 생성되기만 하고 진행된 적이 없을 때
 
-> ```
+```
 noData ? (
         <NoData>😢 진행된 적 없는 월드컵입니다.</NoData>
       ) : (
@@ -151,6 +153,7 @@ noData ? (
           </Wrapper>
         </>
       )}
+```
 
 
 - 통계 데이터가 없다면 기존의 화면이 아닌 '😢 진행된 적 없는 월드컵입니다.' 라는 텍스트를 출력 하도록 **삼항연산자**를 활용하여 예외처리 했습니다.
@@ -171,7 +174,7 @@ noData ? (
 
 #### 댓글 삭제 로직
 
->```javascript
+```javascript
   const onDeleteClick = async (id: string) => {
     const ok = window.confirm('정말 삭제하시겠습니까?');
     if (ok) {
@@ -190,6 +193,7 @@ noData ? (
         .then(() => setRefetch((prev) => !prev));
     }
   };
+```
 
 
 - confirm 기능을 이용해 사용자가 실수로 삭제하지 않도록 하였습니다.
