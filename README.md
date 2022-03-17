@@ -1,3 +1,6 @@
+### <span style="color:#7982c9">[배포된 월드컵 사이트 보러가기](https://project-worldcup.netlify.app/)</span>
+### <span style="color:#7982c9">[프로젝트 깃허브 보러가기](https://github.com/ysh0514/project_world_cup/)</span>
+
 ## <span style="color:#7982c9">프로젝트 소개</span>
 
 ### 월드컵 프로젝트 소개
