@@ -299,10 +299,6 @@ function WorldCup() {
     }, 2000);
   };
 
-  console.log('8강 대진표 리스트', quarterFinals);
-  console.log('4강 대진표 리스트', semiFinals);
-  console.log('결승 대진표 리스트', final);
-
   return (
     <div>
       {loading ? (
