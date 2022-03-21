@@ -65,6 +65,8 @@ const NameTitle = styled.div`
   border-radius: 6px;
   @media screen and (max-width: 768px) {
     width: 30%;
+    padding: 5px;
+    height: 56px;
   }
 `;
 
@@ -83,6 +85,8 @@ const ChampionTitle = styled.div`
   border-radius: 6px;
   @media screen and (max-width: 768px) {
     width: 40%;
+    padding: 8px;
+    padding-right: 20px;
   }
 `;
 
@@ -101,6 +105,8 @@ const WinnerTitle = styled.div`
   border-radius: 6px;
   @media screen and (max-width: 768px) {
     width: 40%;
+    padding: 8px;
+    padding-right: 20px;
   }
 `;
 
@@ -140,6 +146,7 @@ const NameTitleList = styled.div`
   word-break: break-all;
   @media screen and (max-width: 768px) {
     width: 30%;
+    padding: 5px;
   }
 `;
 
@@ -155,6 +162,8 @@ const PercentTitleList = styled.div`
   border-radius: 6px;
   @media screen and (max-width: 768px) {
     width: 40%;
+    padding: 8px;
+    padding-right: 20px;
   }
 `;
 
