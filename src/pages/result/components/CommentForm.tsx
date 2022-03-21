@@ -18,6 +18,7 @@ const Container = styled.div<{ isLoading: boolean }>`
   display: ${({ isLoading }) => (isLoading ? 'none' : 'flex')};
   flex-direction: column;
   padding-right: 23px;
+
   @media screen and (max-width: 768px) {
     padding: 23px;
   }
@@ -42,7 +43,8 @@ const Input = styled.textarea`
   resize: none;
   margin-bottom: 10px;
   &::placeholder {
-    font-size: 1.2em;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 1em;
     border: none;
     width: 100%;
     background-color: white;
@@ -88,7 +90,8 @@ const SubmitInput = styled.input<{ isMessage: boolean }>`
   background: none;
   color: white;
   font-weight: 600;
-  font-size: 0.8em;
+  font-size: 12px;
+  font-family: 'Nanum Gothic', sans-serif;
   cursor: ${({ isMessage }) => (isMessage ? 'pointer' : 'click')};
   background-color: ${({ isMessage }) => (isMessage ? '#8A94E1' : '#A6B1E1')};
 `;
@@ -168,12 +171,12 @@ export default function CommentForm({ userObj }: IUserObjProps) {
         <CommentTitle>댓글</CommentTitle>
         <InputWrapper>
           <Input
-            disabled={Object.keys(userObj).length !== 3}
+            disabled={userObj === null}
             minLength={1}
             maxLength={100}
             onChange={onChange}
             placeholder={
-              Object.keys(userObj).length !== 3
+              userObj === null
                 ? '로그인 후에 입력 가능합니다'
                 : '댓글을 입력해주세요'
             }
@@ -188,7 +191,7 @@ export default function CommentForm({ userObj }: IUserObjProps) {
       </Form>
 
       <MessageContainer isData={comment.length > 0}>
-        {comment?.map((item: any) => (
+        {comment?.map((item: IWorldCupCommentProps) => (
           <Comment
             key={item.id}
             id={item.id}

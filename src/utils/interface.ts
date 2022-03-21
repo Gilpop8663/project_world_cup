@@ -20,7 +20,7 @@ export interface IWorldCupProps {
   list: IWorldCupItemProps[];
   id: string;
   count: number;
-  createdAt: Date;
+  createdAt: Date | number;
   comments: IWorldCupCommentProps[];
   creatorId: string;
 }

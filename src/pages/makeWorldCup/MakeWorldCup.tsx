@@ -112,6 +112,9 @@ const ItemInput = styled.input.attrs({ type: 'text' })`
   height: 30px;
   border-radius: 7px;
   border: 1.5px solid #7982c9;
+  &::placeholder {
+    font-family: 'Nanum Gothic', sans-serif;
+  }
   &:focus {
     outline: none;
     border: 1.5px solid #424874;
@@ -165,6 +168,7 @@ const ButtonWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   @media only screen and (max-width: 1024px) {
     padding-bottom: 100px;
   }
@@ -174,6 +178,7 @@ const ButtonWrapper = styled.div`
 `;
 
 const CancelButton = styled.button`
+  font-family: 'Nanum Gothic', sans-serif;
   padding: 7px 14px;
   border-radius: 5px;
   color: #404675;
@@ -190,6 +195,7 @@ const CancelButton = styled.button`
 `;
 
 const SubmitInput = styled.input`
+  font-family: 'Nanum Gothic', sans-serif;
   padding: 7px 14px;
   border-radius: 5px;
   color: #404675;
@@ -222,12 +228,21 @@ const WorldCupText = styled.span`
   font-weight: bold;
   position: absolute;
   @media only screen and (max-width: 1024px) {
+<<<<<<< HEAD
+    font-size: 15px;
+    left: 320px;
+  }
+  @media only screen and (max-width: 768px) {
+    font-size: 15px;
+    left: 260px;
+=======
     font-size: 16px;
     left: 320px;
   }
   @media only screen and (max-width: 768px) {
     font-size: 18px;
     left: 210px;
+>>>>>>> 38557032493cbf55544e84615455074a255cd6a0
   }
 `;
 
@@ -245,9 +260,9 @@ const ItemInfo = styled.span`
 
 const ItemNumber = styled.span`
   color: white;
-  margin-right: 2px;
   font-size: 14px;
   font-weight: bold;
+  margin-right: 2px;
   @media only screen and (max-width: 1024px) {
     font-size: 15px;
   }
@@ -259,7 +274,7 @@ const ItemNumber = styled.span`
 const ItemNumberWrapper = styled.div`
   display: flex;
   align-items: flex-end;
-
+  margin-right: 7px;
   @media only screen and (max-width: 1024px) {
     margin-right: 10px;
   }
@@ -272,10 +287,30 @@ interface IMakeProps {
   userObj: IUserObjProps | any;
 }
 
+interface IRegister {
+  title: string;
+  worldCupItem1: string;
+  worldCupItem2: string;
+  worldCupItem3: string;
+  worldCupItem4: string;
+  worldCupItem5: string;
+  worldCupItem6: string;
+  worldCupItem7: string;
+  worldCupItem8: string;
+  worldCupItem9: string;
+  worldCupItem10: string;
+  worldCupItem11: string;
+  worldCupItem12: string;
+  worldCupItem13: string;
+  worldCupItem14: string;
+  worldCupItem15: string;
+  worldCupItem16: string;
+}
+
 export default function MakeWorldCup({ userObj }: IMakeProps) {
   const navigate = useNavigate();
   useEffect(() => {
-    if (Boolean(!userObj.userId)) {
+    if (userObj === null) {
       navigate('/');
     }
   }, []);
@@ -283,8 +318,8 @@ export default function MakeWorldCup({ userObj }: IMakeProps) {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm();
-  const onSubmit = async (data: any) => {
+  } = useForm<IRegister>();
+  const onSubmit = handleSubmit(async (data) => {
     let listArr = [
       {
         id: uuidv4(),
@@ -413,7 +448,7 @@ export default function MakeWorldCup({ userObj }: IMakeProps) {
         navigate('/');
       })
       .catch((error) => console.error(error));
-  };
+  });
 
   const onCancelClick = () => {
     navigate('/');
@@ -422,9 +457,9 @@ export default function MakeWorldCup({ userObj }: IMakeProps) {
   return (
     <Container>
       <Form
-        onSubmit={handleSubmit(onSubmit)}
+        onSubmit={onSubmit}
         onKeyPress={(e: React.KeyboardEvent<HTMLFormElement>) =>
-          onEnterPress(e, handleSubmit(onSubmit))
+          onEnterPress(e, onSubmit)
         }
       >
         <TitleWrapper>
