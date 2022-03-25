@@ -229,7 +229,7 @@ function WorldCup() {
 
   const setDraw = (
     addNum: number,
-    setListFunction: React.Dispatch<any>,
+    setListFunction: React.Dispatch<React.SetStateAction<IWorldCupItemProps[]>>,
     setList: IWorldCupItemProps[]
   ) => {
     setListFunction((prev: IWorldCupItemProps[]) => {
