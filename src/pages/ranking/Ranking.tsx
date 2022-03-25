@@ -1,6 +1,7 @@
 import axios from 'axios';
 import { BASE_URL } from 'constants/contants';
 import React, { useState, useEffect } from 'react';
+import { IWorldCupItemProps } from 'utils/interface';
 import { useLocation } from 'react-router-dom';
 import styled from 'styled-components';
 
@@ -184,7 +185,7 @@ const Chart = styled.div`
 `;
 
 export default function Ranking() {
-  const [data, setData] = useState<any>();
+  const [data, setData] = useState<IWorldCupItemProps[]>();
   const [count, setCount] = useState<number>(0);
   const [isSortChampion, setIsSortChampion] = useState<boolean>(true);
   const [isSortWin, setIsSortWin] = useState<boolean>(false);
@@ -193,16 +194,23 @@ export default function Ranking() {
   const [nowSortWin, setNowSortWin] = useState<boolean>(false);
   const [nowSortName, setNowSortName] = useState<boolean>(false);
 
+  console.log(data);
+
   const location = useLocation();
   const keyword = location.pathname.split('/');
   useEffect(() => {
     axios.get(`${BASE_URL}/world?id=${keyword[2]}`).then((res) => {
-      const sortRoundWin: any = res.data[0].list.sort(
-        (a: any, b: any) =>
+      const sortRoundWin: IWorldCupItemProps[] = res.data[0].list.sort(
+        (a: IWorldCupItemProps, b: IWorldCupItemProps) =>
           b.roundWin / (b.roundWin + b.roundLose) -
           a.roundWin / (a.roundWin + a.roundLose)
       );
-      setData(sortRoundWin.sort((a: any, b: any) => b.champion - a.champion));
+      setData(
+        sortRoundWin.sort(
+          (a: IWorldCupItemProps, b: IWorldCupItemProps) =>
+            b.champion - a.champion
+        )
+      );
       setData(sortRoundWin);
       setCount(res.data[0].count);
     });
@@ -213,12 +221,14 @@ export default function Ranking() {
     return percent.toFixed(1);
   };
 
-  const championPercent = (num: any) => {
+  const championPercent = (num: number) => {
     const percent: number = (num / count) * 100;
     return percent.toFixed(1);
   };
 
-  const nowSort = (nowSortFunction: any) => {
+  const nowSort = (
+    nowSortFunction: React.Dispatch<React.SetStateAction<boolean>>
+  ) => {
     if (nowSortFunction === setIsSortChampion) {
       setNowSortChampion(true);
       setNowSortName(false);
@@ -242,40 +252,49 @@ export default function Ranking() {
     }
   };
 
-  const sortList = (sortListFunction: any) => {
+  const sortList = (
+    sortListFunction: React.Dispatch<React.SetStateAction<boolean>>
+  ) => {
     if (sortListFunction === setIsSortChampion && isSortChampion === false) {
       const reverseSortChampion = data.sort(
-        (a: any, b: any) =>
+        (a: IWorldCupItemProps, b: IWorldCupItemProps) =>
           b.roundWin / (b.roundWin + b.roundLose) -
           a.roundWin / (a.roundWin + a.roundLose)
       );
       nowSort(setIsSortChampion);
       setIsSortChampion(true);
       setData(
-        reverseSortChampion.sort((a: any, b: any) => b.champion - a.champion)
+        reverseSortChampion.sort(
+          (a: IWorldCupItemProps, b: IWorldCupItemProps) =>
+            b.champion - a.champion
+        )
       );
     }
     if (sortListFunction === setIsSortChampion && isSortChampion === true) {
       const reverseSortChampion = data.sort(
-        (a: any, b: any) =>
+        (a: IWorldCupItemProps, b: IWorldCupItemProps) =>
           a.roundWin / (a.roundWin + a.roundLose) -
           b.roundWin / (b.roundWin + b.roundLose)
       );
       nowSort(setIsSortChampion);
       setIsSortChampion(false);
       setData(
-        reverseSortChampion.sort((a: any, b: any) => a.champion - b.champion)
+        reverseSortChampion.sort(
+          (a: IWorldCupItemProps, b: IWorldCupItemProps) =>
+            a.champion - b.champion
+        )
       );
     }
     if (sortListFunction === setIsSortWin && isSortWin === false) {
       const reverseSortChampion = data.sort(
-        (a: any, b: any) => b.champion - a.champion
+        (a: IWorldCupItemProps, b: IWorldCupItemProps) =>
+          b.champion - a.champion
       );
       nowSort(setIsSortWin);
       setIsSortWin(true);
       setData(
         reverseSortChampion.sort(
-          (a: any, b: any) =>
+          (a: IWorldCupItemProps, b: IWorldCupItemProps) =>
             b.roundWin / (b.roundWin + b.roundLose) -
             a.roundWin / (a.roundWin + a.roundLose)
         )
@@ -283,13 +302,14 @@ export default function Ranking() {
     }
     if (sortListFunction === setIsSortWin && isSortWin === true) {
       const reverseSortChampion = data.sort(
-        (a: any, b: any) => a.champion - b.champion
+        (a: IWorldCupItemProps, b: IWorldCupItemProps) =>
+          a.champion - b.champion
       );
       nowSort(setIsSortWin);
       setIsSortWin(false);
       setData(
         reverseSortChampion.sort(
-          (a: any, b: any) =>
+          (a: IWorldCupItemProps, b: IWorldCupItemProps) =>
             a.roundWin / (a.roundWin + a.roundLose) -
             b.roundWin / (b.roundWin + b.roundLose)
         )
@@ -299,14 +319,18 @@ export default function Ranking() {
       nowSort(setIsSortName);
       setIsSortName(true);
       setData(
-        data.sort((a: any, b: any) => (b.candidate > a.candidate ? -1 : 1))
+        data.sort((a: IWorldCupItemProps, b: IWorldCupItemProps) =>
+          b.candidate > a.candidate ? -1 : 1
+        )
       );
     }
     if (sortListFunction === setIsSortName && isSortName === true) {
       nowSort(setIsSortName);
       setIsSortName(false);
       setData(
-        data.sort((a: any, b: any) => (a.candidate > b.candidate ? -1 : 1))
+        data.sort((a: IWorldCupItemProps, b: IWorldCupItemProps) =>
+          a.candidate > b.candidate ? -1 : 1
+        )
       );
     }
   };
@@ -346,16 +370,13 @@ export default function Ranking() {
         </WinnerTitle>
       </TitleWrapper>
       {data &&
-        data.map((ele: any, idx: number) => (
+        data.map((ele: IWorldCupItemProps, idx: number) => (
           <ListWrapper key={idx}>
             <RankingTitleList>
               <TitleText>{idx + 1}위</TitleText>
             </RankingTitleList>
             <NameTitleList>
-              <TitleText>
-                {/* <RankingNumberText>{idx + 1}위. </RankingNumberText> */}
-                {ele.candidate}
-              </TitleText>
+              <TitleText>{ele.candidate}</TitleText>
             </NameTitleList>
             <PercentTitleList>
               <TitleText>{championPercent(ele.champion)}%</TitleText>
