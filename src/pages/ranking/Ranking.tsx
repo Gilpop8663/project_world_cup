@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { BASE_URL } from 'constants/contants';
+import { BASE_URL } from 'constant';
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import styled from 'styled-components';

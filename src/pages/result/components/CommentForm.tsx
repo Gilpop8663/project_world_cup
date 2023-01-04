@@ -5,7 +5,7 @@ import { onEnterPress } from 'utils/utilFn';
 import Comment from './Comment';
 import axios from 'axios';
 import { useLocation } from 'react-router-dom';
-import { BASE_URL, GUEST_NAME } from '../../../constants/contants';
+import { BASE_URL, GUEST_NAME } from 'constant';
 import {
   IUserObjProps,
   IWorldCupCommentProps,

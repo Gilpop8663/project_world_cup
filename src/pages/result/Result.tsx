@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { BASE_URL } from 'constants/contants';
+import { BASE_URL } from 'constant';
 import Ranking from 'pages/ranking/Ranking';
 import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';

@@ -1,6 +1,6 @@
 import axios from 'axios';
 import WorldCupList from 'components/WorldCupList';
-import { BASE_URL } from 'constants/contants';
+import { BASE_URL } from 'constant';
 import { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { IWorldCupProps } from 'utils/interface';

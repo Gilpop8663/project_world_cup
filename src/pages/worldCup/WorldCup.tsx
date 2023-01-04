@@ -3,12 +3,7 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import Modal from 'components/Modal';
 import { useLocation } from 'react-router-dom';
-import {
-  BASE_URL,
-  DEFAULT_SELECT,
-  LEFT_SELECT,
-  RIGHT_SELECT,
-} from 'constants/contants';
+import { BASE_URL, DEFAULT_SELECT, LEFT_SELECT, RIGHT_SELECT } from 'constant';
 import Loading from 'components/Loading';
 import { IWorldCupItemProps, IWorldCupProps } from 'utils/interface';
 

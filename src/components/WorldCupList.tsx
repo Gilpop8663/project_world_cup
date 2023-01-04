@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { BASE_URL } from 'constants/contants';
+import { BASE_URL } from 'constant';
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';

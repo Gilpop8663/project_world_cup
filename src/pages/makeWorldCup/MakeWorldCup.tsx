@@ -4,7 +4,7 @@ import {
   ERROR_MIN,
   ERROR_REQUIRED,
   WORLD_CUP_ITEM,
-} from 'constants/contants';
+} from 'constant';
 import React, { useEffect } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import { useForm } from 'react-hook-form';
@@ -228,21 +228,12 @@ const WorldCupText = styled.span`
   font-weight: bold;
   position: absolute;
   @media only screen and (max-width: 1024px) {
-<<<<<<< HEAD
     font-size: 15px;
     left: 320px;
   }
   @media only screen and (max-width: 768px) {
     font-size: 15px;
     left: 260px;
-=======
-    font-size: 16px;
-    left: 320px;
-  }
-  @media only screen and (max-width: 768px) {
-    font-size: 18px;
-    left: 210px;
->>>>>>> 38557032493cbf55544e84615455074a255cd6a0
   }
 `;
 
