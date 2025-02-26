@@ -23,7 +23,11 @@ export const ERROR_MIN = '1글자 이상 입력해주세요';
 export const ERROR_MAX = '10글자 이하로 입력해주세요';
 export const ERROR_REQUIRED = '필수로 입력해야 합니다';
 
+<<<<<<< HEAD
 export const BASE_URL = 'https://portfolio.coddink.com/api/fakeProjects';
+=======
+export const BASE_URL = 'https://www.portfolio.coddink.com/api/fakeProjects';
+>>>>>>> 34c0421 (chore: BASE_URL 변경)
 
 export const RIGHT_SELECT = 'right';
 export const LEFT_SELECT = 'left';
