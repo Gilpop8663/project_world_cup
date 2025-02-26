@@ -24,7 +24,7 @@ export const ERROR_MAX = '10글자 이하로 입력해주세요';
 export const ERROR_REQUIRED = '필수로 입력해야 합니다';
 
 export const BASE_URL =
-  'https://port-0-node-express-3vw25lci3y9wi.gksl2.cloudtype.app';
+  'https://portfolio.coddink.com/api/fakeProjects';
 
 export const RIGHT_SELECT = 'right';
 export const LEFT_SELECT = 'left';
